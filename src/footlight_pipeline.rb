@@ -17,7 +17,7 @@ def FooltightPipeline()
   
   puts "Validating shapes..."
   pipeline.validate("https://raw.githubusercontent.com/culturecreates/artsdata-data-model/master/shacl/shacl_artsdata.ttl")
-  pipeline.report("../output/#{graph.split("/").last}.txt")
+  pipeline.report("../output/#{dump.split("/").last}.txt")
 end
 
 FooltightPipeline()

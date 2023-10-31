@@ -1,0 +1,364 @@
+Result for: focus: <http://kg.footlight.io/64413e1d7a29930064510b34>
+  path: schema:location
+  shape: <http://kg.artsdata.ca/shacl/LocationSh>
+  resultSeverity: shacl:Violation
+  component: shacl:MinCountConstraintComponent
+  message: "0 >= minCount 1"
+Result for: focus: <http://kg.footlight.io/64413e1d7a29930064510b34>
+  path: schema:startDate
+  shape: <http://kg.artsdata.ca/shacl/StartDateSh>
+  resultSeverity: shacl:Violation
+  component: shacl:MinCountConstraintComponent
+  message: "0 >= minCount 1"
+Result for: "EventScheduled"
+  focus: <http://kg.footlight.io/64413e1d7a29930064510b34>
+  path: schema:eventStatus
+  shape: <http://kg.artsdata.ca/shacl/EventStatusSh>
+  resultSeverity: shacl:Violation
+  component: shacl:InConstraintComponent
+  message: "is not a value in (schema:EventPostponed schema:EventScheduled schema:EventCancelled schema:EventRescheduled schema:EventMovedOnline)"
+Result for: focus: <http://kg.footlight.io/64413e1f7a29930064510b6e>
+  path: schema:location
+  shape: <http://kg.artsdata.ca/shacl/LocationSh>
+  resultSeverity: shacl:Violation
+  component: shacl:MinCountConstraintComponent
+  message: "0 >= minCount 1"
+Result for: focus: <http://kg.footlight.io/64413e1f7a29930064510b6e>
+  path: schema:startDate
+  shape: <http://kg.artsdata.ca/shacl/StartDateSh>
+  resultSeverity: shacl:Violation
+  component: shacl:MinCountConstraintComponent
+  message: "0 >= minCount 1"
+Result for: "EventScheduled"
+  focus: <http://kg.footlight.io/64413e1f7a29930064510b6e>
+  path: schema:eventStatus
+  shape: <http://kg.artsdata.ca/shacl/EventStatusSh>
+  resultSeverity: shacl:Violation
+  component: shacl:InConstraintComponent
+  message: "is not a value in (schema:EventPostponed schema:EventScheduled schema:EventCancelled schema:EventRescheduled schema:EventMovedOnline)"
+Result for: focus: <http://kg.footlight.io/64413e1f7a29930064510b8d>
+  path: schema:location
+  shape: <http://kg.artsdata.ca/shacl/LocationSh>
+  resultSeverity: shacl:Violation
+  component: shacl:MinCountConstraintComponent
+  message: "0 >= minCount 1"
+Result for: "EventScheduled"
+  focus: <http://kg.footlight.io/64413e1f7a29930064510b8d>
+  path: schema:eventStatus
+  shape: <http://kg.artsdata.ca/shacl/EventStatusSh>
+  resultSeverity: shacl:Violation
+  component: shacl:InConstraintComponent
+  message: "is not a value in (schema:EventPostponed schema:EventScheduled schema:EventCancelled schema:EventRescheduled schema:EventMovedOnline)"
+Result for: focus: <http://kg.footlight.io/64413e207a29930064510bc3>
+  path: schema:location
+  shape: <http://kg.artsdata.ca/shacl/LocationSh>
+  resultSeverity: shacl:Violation
+  component: shacl:MinCountConstraintComponent
+  message: "0 >= minCount 1"
+Result for: focus: <http://kg.footlight.io/64413e207a29930064510bc3>
+  path: schema:startDate
+  shape: <http://kg.artsdata.ca/shacl/StartDateSh>
+  resultSeverity: shacl:Violation
+  component: shacl:MinCountConstraintComponent
+  message: "0 >= minCount 1"
+Result for: "EventScheduled"
+  focus: <http://kg.footlight.io/64413e207a29930064510bc3>
+  path: schema:eventStatus
+  shape: <http://kg.artsdata.ca/shacl/EventStatusSh>
+  resultSeverity: shacl:Violation
+  component: shacl:InConstraintComponent
+  message: "is not a value in (schema:EventPostponed schema:EventScheduled schema:EventCancelled schema:EventRescheduled schema:EventMovedOnline)"
+Result for: focus: <http://kg.footlight.io/64413e217a29930064510bf9>
+  path: schema:location
+  shape: <http://kg.artsdata.ca/shacl/LocationSh>
+  resultSeverity: shacl:Violation
+  component: shacl:MinCountConstraintComponent
+  message: "0 >= minCount 1"
+Result for: focus: <http://kg.footlight.io/64413e217a29930064510bf9>
+  path: schema:startDate
+  shape: <http://kg.artsdata.ca/shacl/StartDateSh>
+  resultSeverity: shacl:Violation
+  component: shacl:MinCountConstraintComponent
+  message: "0 >= minCount 1"
+Result for: "EventScheduled"
+  focus: <http://kg.footlight.io/64413e217a29930064510bf9>
+  path: schema:eventStatus
+  shape: <http://kg.artsdata.ca/shacl/EventStatusSh>
+  resultSeverity: shacl:Violation
+  component: shacl:InConstraintComponent
+  message: "is not a value in (schema:EventPostponed schema:EventScheduled schema:EventCancelled schema:EventRescheduled schema:EventMovedOnline)"
+Result for: focus: <http://kg.footlight.io/64413e227a29930064510c43>
+  path: schema:location
+  shape: <http://kg.artsdata.ca/shacl/LocationSh>
+  resultSeverity: shacl:Violation
+  component: shacl:MinCountConstraintComponent
+  message: "0 >= minCount 1"
+Result for: "EventScheduled"
+  focus: <http://kg.footlight.io/64413e227a29930064510c43>
+  path: schema:eventStatus
+  shape: <http://kg.artsdata.ca/shacl/EventStatusSh>
+  resultSeverity: shacl:Violation
+  component: shacl:InConstraintComponent
+  message: "is not a value in (schema:EventPostponed schema:EventScheduled schema:EventCancelled schema:EventRescheduled schema:EventMovedOnline)"
+Result for: focus: <http://kg.footlight.io/64413e227a29930064510c79>
+  path: schema:location
+  shape: <http://kg.artsdata.ca/shacl/LocationSh>
+  resultSeverity: shacl:Violation
+  component: shacl:MinCountConstraintComponent
+  message: "0 >= minCount 1"
+Result for: "EventScheduled"
+  focus: <http://kg.footlight.io/64413e227a29930064510c79>
+  path: schema:eventStatus
+  shape: <http://kg.artsdata.ca/shacl/EventStatusSh>
+  resultSeverity: shacl:Violation
+  component: shacl:InConstraintComponent
+  message: "is not a value in (schema:EventPostponed schema:EventScheduled schema:EventCancelled schema:EventRescheduled schema:EventMovedOnline)"
+Result for: focus: <http://kg.footlight.io/64413e237a29930064510caf>
+  path: schema:location
+  shape: <http://kg.artsdata.ca/shacl/LocationSh>
+  resultSeverity: shacl:Violation
+  component: shacl:MinCountConstraintComponent
+  message: "0 >= minCount 1"
+Result for: "EventScheduled"
+  focus: <http://kg.footlight.io/64413e237a29930064510caf>
+  path: schema:eventStatus
+  shape: <http://kg.artsdata.ca/shacl/EventStatusSh>
+  resultSeverity: shacl:Violation
+  component: shacl:InConstraintComponent
+  message: "is not a value in (schema:EventPostponed schema:EventScheduled schema:EventCancelled schema:EventRescheduled schema:EventMovedOnline)"
+Result for: focus: <http://kg.footlight.io/64413e247a29930064510cda>
+  path: schema:location
+  shape: <http://kg.artsdata.ca/shacl/LocationSh>
+  resultSeverity: shacl:Violation
+  component: shacl:MinCountConstraintComponent
+  message: "0 >= minCount 1"
+Result for: "EventScheduled"
+  focus: <http://kg.footlight.io/64413e247a29930064510cda>
+  path: schema:eventStatus
+  shape: <http://kg.artsdata.ca/shacl/EventStatusSh>
+  resultSeverity: shacl:Violation
+  component: shacl:InConstraintComponent
+  message: "is not a value in (schema:EventPostponed schema:EventScheduled schema:EventCancelled schema:EventRescheduled schema:EventMovedOnline)"
+Result for: focus: <http://kg.footlight.io/64413e247a29930064510d10>
+  path: schema:location
+  shape: <http://kg.artsdata.ca/shacl/LocationSh>
+  resultSeverity: shacl:Violation
+  component: shacl:MinCountConstraintComponent
+  message: "0 >= minCount 1"
+Result for: "EventScheduled"
+  focus: <http://kg.footlight.io/64413e247a29930064510d10>
+  path: schema:eventStatus
+  shape: <http://kg.artsdata.ca/shacl/EventStatusSh>
+  resultSeverity: shacl:Violation
+  component: shacl:InConstraintComponent
+  message: "is not a value in (schema:EventPostponed schema:EventScheduled schema:EventCancelled schema:EventRescheduled schema:EventMovedOnline)"
+Result for: _:b88
+  focus: <http://kg.footlight.io/6420c6162831190064570cc8>
+  path: schema:sameAs
+  shape: <http://kg.artsdata.ca/shacl/SameAsSh>
+  resultSeverity: shacl:Violation
+  component: shacl:NodeKindConstraintComponent
+  message: "is not a node kind match of shacl:IRI"
+Result for: _:b89
+  focus: <http://kg.footlight.io/6420c6162831190064570cc8>
+  path: schema:sameAs
+  shape: <http://kg.artsdata.ca/shacl/SameAsSh>
+  resultSeverity: shacl:Violation
+  component: shacl:NodeKindConstraintComponent
+  message: "is not a node kind match of shacl:IRI"
+Result for: _:b88
+  focus: <http://kg.footlight.io/6420c6162831190064570cc8>
+  path: schema:sameAs
+  shape: <http://kg.artsdata.ca/shacl/SameAsSh>
+  resultSeverity: shacl:Violation
+  component: shacl:PatternConstraintComponent
+  message: "is not a match /^http/"
+Result for: _:b89
+  focus: <http://kg.footlight.io/6420c6162831190064570cc8>
+  path: schema:sameAs
+  shape: <http://kg.artsdata.ca/shacl/SameAsSh>
+  resultSeverity: shacl:Violation
+  component: shacl:PatternConstraintComponent
+  message: "is not a match /^http/"
+Result for: _:b69
+  focus: <http://kg.footlight.io/6425cb44ede2c60065ca06ed>
+  path: schema:sameAs
+  shape: <http://kg.artsdata.ca/shacl/SameAsSh>
+  resultSeverity: shacl:Violation
+  component: shacl:NodeKindConstraintComponent
+  message: "is not a node kind match of shacl:IRI"
+Result for: _:b70
+  focus: <http://kg.footlight.io/6425cb44ede2c60065ca06ed>
+  path: schema:sameAs
+  shape: <http://kg.artsdata.ca/shacl/SameAsSh>
+  resultSeverity: shacl:Violation
+  component: shacl:NodeKindConstraintComponent
+  message: "is not a node kind match of shacl:IRI"
+Result for: _:b69
+  focus: <http://kg.footlight.io/6425cb44ede2c60065ca06ed>
+  path: schema:sameAs
+  shape: <http://kg.artsdata.ca/shacl/SameAsSh>
+  resultSeverity: shacl:Violation
+  component: shacl:PatternConstraintComponent
+  message: "is not a match /^http/"
+Result for: _:b70
+  focus: <http://kg.footlight.io/6425cb44ede2c60065ca06ed>
+  path: schema:sameAs
+  shape: <http://kg.artsdata.ca/shacl/SameAsSh>
+  resultSeverity: shacl:Violation
+  component: shacl:PatternConstraintComponent
+  message: "is not a match /^http/"
+Result for: _:b15
+  focus: <http://kg.footlight.io/645bd8ef7db98f0065dd22f5>
+  path: schema:sameAs
+  shape: <http://kg.artsdata.ca/shacl/SameAsSh>
+  resultSeverity: shacl:Violation
+  component: shacl:NodeKindConstraintComponent
+  message: "is not a node kind match of shacl:IRI"
+Result for: _:b16
+  focus: <http://kg.footlight.io/645bd8ef7db98f0065dd22f5>
+  path: schema:sameAs
+  shape: <http://kg.artsdata.ca/shacl/SameAsSh>
+  resultSeverity: shacl:Violation
+  component: shacl:NodeKindConstraintComponent
+  message: "is not a node kind match of shacl:IRI"
+Result for: _:b15
+  focus: <http://kg.footlight.io/645bd8ef7db98f0065dd22f5>
+  path: schema:sameAs
+  shape: <http://kg.artsdata.ca/shacl/SameAsSh>
+  resultSeverity: shacl:Violation
+  component: shacl:PatternConstraintComponent
+  message: "is not a match /^http/"
+Result for: _:b16
+  focus: <http://kg.footlight.io/645bd8ef7db98f0065dd22f5>
+  path: schema:sameAs
+  shape: <http://kg.artsdata.ca/shacl/SameAsSh>
+  resultSeverity: shacl:Violation
+  component: shacl:PatternConstraintComponent
+  message: "is not a match /^http/"
+Result for: _:b28
+  focus: <http://kg.footlight.io/64413e1e7a29930064510b4f>
+  path: schema:sameAs
+  shape: <http://kg.artsdata.ca/shacl/SameAsSh>
+  resultSeverity: shacl:Violation
+  component: shacl:NodeKindConstraintComponent
+  message: "is not a node kind match of shacl:IRI"
+Result for: _:b29
+  focus: <http://kg.footlight.io/64413e1e7a29930064510b4f>
+  path: schema:sameAs
+  shape: <http://kg.artsdata.ca/shacl/SameAsSh>
+  resultSeverity: shacl:Violation
+  component: shacl:NodeKindConstraintComponent
+  message: "is not a node kind match of shacl:IRI"
+Result for: _:b34
+  focus: <http://kg.footlight.io/64413e1e7a29930064510b4f>
+  path: schema:sameAs
+  shape: <http://kg.artsdata.ca/shacl/SameAsSh>
+  resultSeverity: shacl:Violation
+  component: shacl:NodeKindConstraintComponent
+  message: "is not a node kind match of shacl:IRI"
+Result for: _:b35
+  focus: <http://kg.footlight.io/64413e1e7a29930064510b4f>
+  path: schema:sameAs
+  shape: <http://kg.artsdata.ca/shacl/SameAsSh>
+  resultSeverity: shacl:Violation
+  component: shacl:NodeKindConstraintComponent
+  message: "is not a node kind match of shacl:IRI"
+Result for: _:b28
+  focus: <http://kg.footlight.io/64413e1e7a29930064510b4f>
+  path: schema:sameAs
+  shape: <http://kg.artsdata.ca/shacl/SameAsSh>
+  resultSeverity: shacl:Violation
+  component: shacl:PatternConstraintComponent
+  message: "is not a match /^http/"
+Result for: _:b29
+  focus: <http://kg.footlight.io/64413e1e7a29930064510b4f>
+  path: schema:sameAs
+  shape: <http://kg.artsdata.ca/shacl/SameAsSh>
+  resultSeverity: shacl:Violation
+  component: shacl:PatternConstraintComponent
+  message: "is not a match /^http/"
+Result for: _:b34
+  focus: <http://kg.footlight.io/64413e1e7a29930064510b4f>
+  path: schema:sameAs
+  shape: <http://kg.artsdata.ca/shacl/SameAsSh>
+  resultSeverity: shacl:Violation
+  component: shacl:PatternConstraintComponent
+  message: "is not a match /^http/"
+Result for: _:b35
+  focus: <http://kg.footlight.io/64413e1e7a29930064510b4f>
+  path: schema:sameAs
+  shape: <http://kg.artsdata.ca/shacl/SameAsSh>
+  resultSeverity: shacl:Violation
+  component: shacl:PatternConstraintComponent
+  message: "is not a match /^http/"
+Result for: _:b46
+  focus: <http://kg.footlight.io/6451675ee19f7200646d2519>
+  path: schema:sameAs
+  shape: <http://kg.artsdata.ca/shacl/SameAsSh>
+  resultSeverity: shacl:Violation
+  component: shacl:NodeKindConstraintComponent
+  message: "is not a node kind match of shacl:IRI"
+Result for: _:b47
+  focus: <http://kg.footlight.io/6451675ee19f7200646d2519>
+  path: schema:sameAs
+  shape: <http://kg.artsdata.ca/shacl/SameAsSh>
+  resultSeverity: shacl:Violation
+  component: shacl:NodeKindConstraintComponent
+  message: "is not a node kind match of shacl:IRI"
+Result for: _:b46
+  focus: <http://kg.footlight.io/6451675ee19f7200646d2519>
+  path: schema:sameAs
+  shape: <http://kg.artsdata.ca/shacl/SameAsSh>
+  resultSeverity: shacl:Violation
+  component: shacl:PatternConstraintComponent
+  message: "is not a match /^http/"
+Result for: _:b47
+  focus: <http://kg.footlight.io/6451675ee19f7200646d2519>
+  path: schema:sameAs
+  shape: <http://kg.artsdata.ca/shacl/SameAsSh>
+  resultSeverity: shacl:Violation
+  component: shacl:PatternConstraintComponent
+  message: "is not a match /^http/"
+Result for: _:b114
+  focus: <http://kg.footlight.io/645bd8f67db98f0065dd251b>
+  path: schema:sameAs
+  shape: <http://kg.artsdata.ca/shacl/SameAsSh>
+  resultSeverity: shacl:Violation
+  component: shacl:NodeKindConstraintComponent
+  message: "is not a node kind match of shacl:IRI"
+Result for: _:b115
+  focus: <http://kg.footlight.io/645bd8f67db98f0065dd251b>
+  path: schema:sameAs
+  shape: <http://kg.artsdata.ca/shacl/SameAsSh>
+  resultSeverity: shacl:Violation
+  component: shacl:NodeKindConstraintComponent
+  message: "is not a node kind match of shacl:IRI"
+Result for: _:b116
+  focus: <http://kg.footlight.io/645bd8f67db98f0065dd251b>
+  path: schema:sameAs
+  shape: <http://kg.artsdata.ca/shacl/SameAsSh>
+  resultSeverity: shacl:Violation
+  component: shacl:NodeKindConstraintComponent
+  message: "is not a node kind match of shacl:IRI"
+Result for: _:b114
+  focus: <http://kg.footlight.io/645bd8f67db98f0065dd251b>
+  path: schema:sameAs
+  shape: <http://kg.artsdata.ca/shacl/SameAsSh>
+  resultSeverity: shacl:Violation
+  component: shacl:PatternConstraintComponent
+  message: "is not a match /^http/"
+Result for: _:b115
+  focus: <http://kg.footlight.io/645bd8f67db98f0065dd251b>
+  path: schema:sameAs
+  shape: <http://kg.artsdata.ca/shacl/SameAsSh>
+  resultSeverity: shacl:Violation
+  component: shacl:PatternConstraintComponent
+  message: "is not a match /^http/"
+Result for: _:b116
+  focus: <http://kg.footlight.io/645bd8f67db98f0065dd251b>
+  path: schema:sameAs
+  shape: <http://kg.artsdata.ca/shacl/SameAsSh>
+  resultSeverity: shacl:Violation
+  component: shacl:PatternConstraintComponent
+  message: "is not a match /^http/"
