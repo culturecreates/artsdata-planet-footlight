@@ -1,0 +1,1927 @@
+{
+  "@context": {
+    "@vocab": "http://schema.org/"
+  },
+  "@graph": [
+    {
+      "@id": "_:b10",
+      "@type": "ImageObject",
+      "description": null,
+      "name": null,
+      "url": null
+    },
+    {
+      "@id": "_:b101",
+      "@type": "AggregateOffer",
+      "description": null,
+      "name": null,
+      "url": {
+        "@id": "https://toutculture.ca/evenements/sans-objet-un-renku-photographique-une-exposition-de-raymond-aubin-richard-perron-et-richard-robesco/22954",
+        "@type": "uri"
+      }
+    },
+    {
+      "@id": "_:b106",
+      "@type": "large",
+      "description": null,
+      "name": null,
+      "url": null
+    },
+    {
+      "@id": "_:b107",
+      "@type": "original",
+      "description": null,
+      "name": null,
+      "url": null
+    },
+    {
+      "@id": "_:b108",
+      "@type": "thumbnail",
+      "description": null,
+      "name": null,
+      "url": null
+    },
+    {
+      "@id": "_:b109",
+      "@type": "ImageObject",
+      "description": null,
+      "name": null,
+      "url": null
+    },
+    {
+      "@id": "_:b114",
+      "@type": "ArtsdataIdentifier",
+      "description": null,
+      "name": null,
+      "url": null
+    },
+    {
+      "@id": "_:b118",
+      "@type": "ArtsdataIdentifier",
+      "description": null,
+      "name": null,
+      "url": null
+    },
+    {
+      "@id": "_:b122",
+      "@type": "AggregateOffer",
+      "description": null,
+      "name": null,
+      "url": {
+        "@id": "https://toutculture.ca/evenements/la-ou-le-temps-s-arrete-where-time-stands-still-de-by-rene-lyne-charlebois/24303",
+        "@type": "uri"
+      }
+    },
+    {
+      "@id": "_:b124",
+      "@type": "ArtsdataIdentifier",
+      "description": null,
+      "name": null,
+      "url": null
+    },
+    {
+      "@id": "_:b128",
+      "@type": "AggregateOffer",
+      "description": null,
+      "name": null,
+      "url": {
+        "@id": "https://toutculture.ca/evenements/exposition-benjamin-j-allard/24669",
+        "@type": "uri"
+      }
+    },
+    {
+      "@id": "_:b130",
+      "@type": "ArtsdataIdentifier",
+      "description": null,
+      "name": null,
+      "url": null
+    },
+    {
+      "@id": "_:b15",
+      "@type": "ArtsdataIdentifier",
+      "description": null,
+      "name": null,
+      "url": null
+    },
+    {
+      "@id": "_:b18",
+      "@type": "ArtsdataIdentifier",
+      "description": null,
+      "name": null,
+      "url": null
+    },
+    {
+      "@id": "_:b2",
+      "@type": "AggregateOffer",
+      "description": null,
+      "name": [
+        {
+          "@language": "en",
+          "@value": "54.00 $ – "
+        },
+        {
+          "@language": "fr",
+          "@value": "54.00 $ – "
+        }
+      ],
+      "url": {
+        "@id": "https://www.maisondelaculture.ca/Salle-Odyssee/index.html",
+        "@type": "uri"
+      }
+    },
+    {
+      "@id": "_:b20",
+      "@type": "http://www.wikidata.org/entity/P2013",
+      "description": null,
+      "name": null,
+      "url": null
+    },
+    {
+      "@id": "_:b23",
+      "@type": "AggregateOffer",
+      "description": null,
+      "name": [
+        {
+          "@language": "en",
+          "@value": "26.14 $ – "
+        },
+        {
+          "@language": "fr",
+          "@value": "26.14 $ – "
+        }
+      ],
+      "url": {
+        "@id": "https://lepointdevente.com/tickets/sqr230415001",
+        "@type": "uri"
+      }
+    },
+    {
+      "@id": "_:b28",
+      "@type": "ArtsdataIdentifier",
+      "description": null,
+      "name": null,
+      "url": null
+    },
+    {
+      "@id": "_:b34",
+      "@type": "ArtsdataIdentifier",
+      "description": null,
+      "name": null,
+      "url": null
+    },
+    {
+      "@id": "_:b37",
+      "@type": "ArtsdataIdentifier",
+      "description": null,
+      "name": null,
+      "url": null
+    },
+    {
+      "@id": "_:b41",
+      "@type": "AggregateOffer",
+      "description": null,
+      "name": null,
+      "url": null
+    },
+    {
+      "@id": "_:b46",
+      "@type": "ArtsdataIdentifier",
+      "description": null,
+      "name": null,
+      "url": null
+    },
+    {
+      "@id": "_:b49",
+      "@type": "ArtsdataIdentifier",
+      "description": null,
+      "name": null,
+      "url": null
+    },
+    {
+      "@id": "_:b55",
+      "@type": "AggregateOffer",
+      "description": null,
+      "name": null,
+      "url": {
+        "@id": "https://www.maisondelaculture.ca/Salle-Odyssee/index.html",
+        "@type": "uri"
+      }
+    },
+    {
+      "@id": "_:b56",
+      "@type": "Offer",
+      "description": null,
+      "name": null,
+      "url": null
+    },
+    {
+      "@id": "_:b58",
+      "@type": "ArtsdataIdentifier",
+      "description": null,
+      "name": null,
+      "url": null
+    },
+    {
+      "@id": "_:b60",
+      "@type": "http://www.wikidata.org/entity/P2013",
+      "description": null,
+      "name": null,
+      "url": null
+    },
+    {
+      "@id": "_:b64",
+      "@type": "AggregateOffer",
+      "description": null,
+      "name": null,
+      "url": {
+        "@id": "https://lepointdevente.com/billets/1l2230428001",
+        "@type": "uri"
+      }
+    },
+    {
+      "@id": "_:b65",
+      "@type": "Offer",
+      "description": null,
+      "name": null,
+      "url": null
+    },
+    {
+      "@id": "_:b7",
+      "@type": "large",
+      "description": null,
+      "name": null,
+      "url": null
+    },
+    {
+      "@id": "_:b70",
+      "@type": "ArtsdataIdentifier",
+      "description": null,
+      "name": null,
+      "url": null
+    },
+    {
+      "@id": "_:b72",
+      "@type": "ArtsdataIdentifier",
+      "description": null,
+      "name": null,
+      "url": null
+    },
+    {
+      "@id": "_:b77",
+      "@type": "AggregateOffer",
+      "description": null,
+      "name": null,
+      "url": null
+    },
+    {
+      "@id": "_:b8",
+      "@type": "original",
+      "description": null,
+      "name": null,
+      "url": null
+    },
+    {
+      "@id": "_:b83",
+      "@type": "ImageObject",
+      "description": null,
+      "name": null,
+      "url": null
+    },
+    {
+      "@id": "_:b88",
+      "@type": "ArtsdataIdentifier",
+      "description": null,
+      "name": null,
+      "url": null
+    },
+    {
+      "@id": "_:b9",
+      "@type": "thumbnail",
+      "description": null,
+      "name": null,
+      "url": null
+    },
+    {
+      "@id": "_:b91",
+      "@type": "ArtsdataIdentifier",
+      "description": null,
+      "name": null,
+      "url": null
+    },
+    {
+      "@id": "_:b95",
+      "@type": "AggregateOffer",
+      "description": null,
+      "name": null,
+      "url": {
+        "@id": "https://toutculture.ca/evenements/illumination-du-pont-felix-gabriel-marchand/22948",
+        "@type": "uri"
+      }
+    },
+    {
+      "@id": "_:b97",
+      "@type": "ArtsdataIdentifier",
+      "description": null,
+      "name": null,
+      "url": null
+    },
+    {
+      "@id": "http://kg.footlight.io/63a09b1a1c6b6c005aad2dba",
+      "@type": "Audience",
+      "description": null,
+      "name": [
+        {
+          "@language": "en",
+          "@value": "General public"
+        },
+        {
+          "@language": "fr",
+          "@value": "Grand public"
+        }
+      ],
+      "url": null
+    },
+    {
+      "@id": "http://kg.footlight.io/63a09b1a1c6b6c005aad2dbc",
+      "@type": "Audience",
+      "description": null,
+      "name": [
+        {
+          "@language": "en",
+          "@value": "Adult (18+)"
+        },
+        {
+          "@language": "fr",
+          "@value": "Adulte (18+)"
+        }
+      ],
+      "url": null
+    },
+    {
+      "@id": "http://kg.footlight.io/63bc4e481c6b6c005aad5537",
+      "@type": "Language",
+      "description": null,
+      "name": [
+        {
+          "@language": "en",
+          "@value": "French"
+        },
+        {
+          "@language": "fr",
+          "@value": "Français"
+        }
+      ],
+      "url": null
+    },
+    {
+      "@id": "http://kg.footlight.io/63ceb9c4230627006f5670c3",
+      "@type": "Audience",
+      "description": null,
+      "name": [
+        {
+          "@language": "en",
+          "@value": "Not specified"
+        },
+        {
+          "@language": "fr",
+          "@value": "Indéterminé"
+        }
+      ],
+      "url": null
+    },
+    {
+      "@id": "http://kg.footlight.io/6420c6162831190064570cc8",
+      "@type": "Organization",
+      "contactPoint": {
+        "@id": "_:b78",
+        "email": {
+          "@id": "http://kg.footlight.io/info@folkloreoutaouais.org"
+        },
+        "name": [
+          {
+            "@language": "en",
+            "@value": "Folklore Outaouais"
+          },
+          {
+            "@language": "fr",
+            "@value": "Folklore Outaouais"
+          }
+        ],
+        "telephone": {
+          "@id": "http://kg.footlight.io/873-673-9514"
+        },
+        "url": {
+          "@id": "https://folkloreoutaouais.org/",
+          "@type": "uri"
+        }
+      },
+      "description": [
+        {
+          "@language": "en",
+          "@value": "We are Folklore Outaouais your folklore destination in the beautiful Outaouais region. If you're looking for the AQLF Outaouais, you've come to the right place, we've changed our name, but we're still dedicated to promoting the influence of folklore in the region.Our main activities are :The presentation of Quebec folklore evenings.Folklore workshops promoting the learning and development of skills in various fields related to folklore such as fiddle, accordion, fléché, call art, jigging and folk dancing."
+        },
+        {
+          "@language": "fr",
+          "@value": "Nous sommes Folklore Outaouais votre destination folklorique dans la belle région de l’Outaouais. Si vous recherchez l’AQLF Outaouais, vous êtes au bon endroit, nous avons changé de nom, mais nous restons aussi dévoués à promouvoir le rayonnement du folklore dans la région.Nos principales activités sont :La présentation de veillées folkloriques québécoises.Les ateliers folkloriques favorisant l’apprentissage et le développement d’aptitudes dans divers domaines reliés au folklore tel que le violon, l’accordéon, le fléché, l’art du call, la gigue et la danse folklorique."
+        }
+      ],
+      "name": [
+        {
+          "@language": "en",
+          "@value": "Folklore Outaouais"
+        },
+        {
+          "@language": "fr",
+          "@value": "Folklore Outaouais"
+        }
+      ],
+      "sameAs": [
+        {
+          "@id": "_:b88",
+          "@type": "ArtsdataIdentifier",
+          "uri": "http://kg.artsdata.ca/resource/K5-23"
+        },
+        {
+          "@id": "_:b89",
+          "uri": "http://kg.footlight.io/resource/704a25c8-3d80-4e60-b62e-7efb8cad1291"
+        }
+      ],
+      "url": null
+    },
+    {
+      "@id": "http://kg.footlight.io/6425cb44ede2c60065ca06ed",
+      "@type": "Organization",
+      "description": null,
+      "name": {
+        "@language": "fr",
+        "@value": "La Chicane"
+      },
+      "sameAs": [
+        {
+          "@id": "_:b69",
+          "uri": "http://kg.footlight.io/resource/bf9fd7de-86bf-46c5-8963-25b2d196b247"
+        },
+        {
+          "@id": "_:b70",
+          "@type": "ArtsdataIdentifier",
+          "uri": "http://kg.artsdata.ca/resource/K5-32"
+        }
+      ],
+      "url": null
+    },
+    {
+      "@id": "http://kg.footlight.io/64413e1d7a29930064510b34",
+      "@type": "Event",
+      "audience": {
+        "@id": "http://kg.footlight.io/63ceb9c4230627006f5670c3",
+        "@type": "Audience",
+        "name": [
+          {
+            "@language": "en",
+            "@value": "Not specified"
+          },
+          {
+            "@language": "fr",
+            "@value": "Indéterminé"
+          }
+        ]
+      },
+      "description": {
+        "@language": "fr",
+        "@value": "\n<p>Dans le quartier où tout le monde l’appelle « Le Boss », François Brochu lutte pour maintenir en vie son gaz bar, malgré la maladie qui l'affaiblit, la criminalité qui s’intensifie et la concurrence impitoyable que lui mène la nouvelle station service voisine. Il voit bien que son temps est compté : ses enfants rêvent d’une autre vie, nous sommes en 1989, et pendant qu’il était occupé à besogner, le monde a avancé. Vingt ans après sa sortie, le film Gaz Bar Blues, de Louis Bélanger, devient une pièce de théâtre. Cette histoire tendre et émouvante, puisée à même les souvenirs de jeunesse du cinéaste, prend ainsi vie sur scène, avec ses personnages typés et attachants, figures d’un milieu et d’une époque. Martin Drainville reprend la partition que Serge Thériault avait créée au grand écran et la musique, qui était au cœur du film, occupe une place de choix sur scène alors que des acteurs-musiciens interprètent en direct une trame originale. </p>\n<p>D’après le film Gaz Bar Blues de Louis Bélanger</p>\n<p>Adaptation théâtrale David Laurin</p>\n<p>Mise en scène Édith Patenaud</p>\n<p>Distribution Bertrand Alain, Miryam Amrouche, Martin Drainville, Francis La Haye, Frédéric Lemay, Hubert Lemire, Steven Lee Potvin, Jean-François Poulin et Luc Proulx</p>\n<p>Coproduction Duceppe et La Bordée</p>\n\n"
+      },
+      "endDate": {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-04-15"
+      },
+      "eventStatus": "EventScheduled",
+      "keywords": [
+        "Théâtre",
+        "Event Series"
+      ],
+      "name": {
+        "@language": "fr",
+        "@value": "Gaz Bar Blues"
+      },
+      "offers": {
+        "@id": "_:b2",
+        "@type": "AggregateOffer",
+        "additionalType": "PAID",
+        "name": [
+          {
+            "@language": "en",
+            "@value": "54.00 $ – "
+          },
+          {
+            "@language": "fr",
+            "@value": "54.00 $ – "
+          }
+        ],
+        "url": {
+          "@id": "https://www.maisondelaculture.ca/Salle-Odyssee/index.html",
+          "@type": "uri"
+        }
+      },
+      "organizers": {
+        "@id": "http://kg.footlight.io/645bd8ef7db98f0065dd22f5",
+        "@type": "Organization",
+        "creator": {
+          "date": "2023-05-10T17:48:31.430Z",
+          "userId": "6420c1e62831190064570a93"
+        },
+        "derivedFrom": {
+          "uri": "http://kg.artsdata.ca/resource/K16-67"
+        },
+        "description": [
+          {
+            "@language": "en",
+            "@value": "<p>The Maison de la culture de Gatineau is a multidisciplinary complex housing :</p><p><strong>Salle Odyssée</strong>, an award-winning 830-seat concert hall;</p><p>The<strong> Centre d'exposition Art-image</strong>, recognized as a museum institution by the Ministère de la Culture et des Communications du Québec</p><p><strong>Guy-Sanche branch </strong>of the municipal library</p><p>Many partner organizations, including <strong>Académie de danse de l'Outaouais</strong>, <strong>Archives de Gatineau</strong>, <strong>Bibliothèque et archives nationales du Québec</strong>, <strong>Centre régional d'archives de l'Outaouais</strong>, <strong>Société de généalogie de l'Outaouais</strong>, <strong>École de musique de l'Outaouais</strong> and <strong>Radio-Jeunesse</strong>.</p><p>The Maison de la culture de Gatineau is a privileged instrument for fostering the development of cultural life in Gatineau.</p>"
+          },
+          {
+            "@language": "fr",
+            "@value": "<p>La Maison de la culture de Gatineau est un complexe multidisciplinaire abritant :</p><p>La <strong>salle Odyssée</strong>, une salle de spectacles de 830 places mainte fois récompensée;</p><p>Le <strong>Centre d'exposition Art-image</strong>, reconnu comme institution muséale par le ministère de la Culture et des Communications du Québec</p><p><strong>Succursale Guy-Sanche</strong> de la bibliothèque municipale</p><p>Plusieurs organismes partenaires dont l'<strong>Académie de danse de l'Outaouais</strong>, les <strong>Archives de Gatineau</strong>, <strong>Bibliothèque et archives nationales du Québec</strong>, le <strong>Centre régional d'archives&nbsp;de l'Outaouais</strong>, la <strong>Société de généalogie de l'Outaouais</strong>, l'<strong>École de musique de l'Outaouais</strong> et <strong>Radio-Jeunesse</strong>.</p><p>La Maison de la culture de Gatineau constitue un instrument privilégiépour favoriser le développement de la vie culturelle sur le territoire de la ville de Gatineau.</p>"
+          }
+        ],
+        "disambiguatingDescription": {
+          "en": "Multidisciplinary cultural complex, Gatineau, QC",
+          "fr": "Complexe multidisciplinaire en culture, Gatineau, QC"
+        },
+        "dynamicFields": {
+          "conceptIds": [
+            "63d167da016e830064fbb03b",
+            "63d167da016e830064fbb03d"
+          ],
+          "taxonomyId": "63d1676b016e830064fbafe1"
+        },
+        "image": [
+          {
+            "@id": "_:b7",
+            "@type": "large",
+            "uri": "http://3.96.80.223:8182/iiif/3/de157465-3412-4454-8317-149ee29b5d59.jpg/0,66,300,169/300,/0/default.jpg"
+          },
+          {
+            "@id": "_:b8",
+            "@type": "original",
+            "entityId": "de157465-3412-4454-8317-149ee29b5d59.jpg",
+            "height": 300,
+            "uri": "http://3.96.80.223:8182/iiif/3/de157465-3412-4454-8317-149ee29b5d59.jpg/full/max/0/default.jpg",
+            "width": 300
+          },
+          {
+            "@id": "_:b9",
+            "@type": "thumbnail",
+            "uri": "http://3.96.80.223:8182/iiif/3/de157465-3412-4454-8317-149ee29b5d59.jpg/0,45,300,210/300,/0/default.jpg"
+          },
+          {
+            "@id": "http://kg.footlight.io/ImageObject",
+            "@type": "@type"
+          }
+        ],
+        "logo": {
+          "@id": "_:b10",
+          "@type": "ImageObject",
+          "large": {
+            "uri": "http://3.96.80.223:8182/iiif/3/410cffd3-e149-4fde-bbff-ddac59c22a7d.jpg/full/409,/0/default.jpg"
+          },
+          "original": {
+            "entityId": "410cffd3-e149-4fde-bbff-ddac59c22a7d.jpg",
+            "height": 410,
+            "uri": "http://3.96.80.223:8182/iiif/3/410cffd3-e149-4fde-bbff-ddac59c22a7d.jpg/full/max/0/default.jpg",
+            "width": 409
+          },
+          "thumbnail": {
+            "uri": "http://3.96.80.223:8182/iiif/3/410cffd3-e149-4fde-bbff-ddac59c22a7d.jpg/full/409,/0/default.jpg"
+          }
+        },
+        "name": [
+          {
+            "@language": "en",
+            "@value": "Maison de la culture de Gatineau"
+          },
+          {
+            "@language": "fr",
+            "@value": "Maison de la culture de Gatineau"
+          }
+        ],
+        "place": {
+          "entityId": "645bb3287db98f0065dc9831"
+        },
+        "sameAs": [
+          {
+            "@id": "_:b15",
+            "@type": "ArtsdataIdentifier",
+            "uri": "http://kg.artsdata.ca/resource/K16-67"
+          },
+          {
+            "@id": "_:b16",
+            "uri": "http://scenepro.ca#Organization284"
+          }
+        ],
+        "sourceId": "K16-67",
+        "url": {
+          "@id": "https://www.maisondelaculture.ca/",
+          "@type": "uri"
+        }
+      },
+      "sameAs": [
+        {
+          "@id": "_:b18",
+          "@type": "ArtsdataIdentifier",
+          "uri": "http://kg.artsdata.ca/resource/K23-123"
+        },
+        {
+          "uri": "http://kg.footlight.io/resource/toutculture-ca_gaz-bar-blues-21954"
+        },
+        {
+          "@id": "_:b20",
+          "@type": "http://www.wikidata.org/entity/P2013",
+          "uri": "https://www.facebook.com/events/994405547842543/994405554509209/?acontext=%7B%22event_action_history%22%3A[%7B%22surface%22%3A%22page%22%7D]%7D"
+        }
+      ],
+      "startDateTime": {
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "@value": "2023-04-14T20:00:00-04:00"
+      },
+      "url": {
+        "@id": "https://toutculture.ca/evenements/gaz-bar-blues/21954"
+      }
+    },
+    {
+      "@id": "http://kg.footlight.io/64413e1e7a29930064510b4f",
+      "@type": "Organization",
+      "description": null,
+      "name": {
+        "@language": "fr",
+        "@value": "Société de musique de chambre de Gatineau"
+      },
+      "sameAs": [
+        {
+          "@id": "_:b28",
+          "@type": "ArtsdataIdentifier",
+          "uri": "http://kg.artsdata.ca/resource/K5-3"
+        },
+        {
+          "@id": "_:b29",
+          "uri": "http://kg.footlight.io/resource/eae00a40-9a73-4940-b9c3-fd7db5e65be3"
+        },
+        {
+          "@id": "_:b34",
+          "@type": "ArtsdataIdentifier",
+          "uri": "http://kg.artsdata.ca/resource/K5-3"
+        },
+        {
+          "@id": "_:b35",
+          "uri": "http://kg.footlight.io/resource/eae00a40-9a73-4940-b9c3-fd7db5e65be3"
+        }
+      ],
+      "url": {
+        "@id": "https://ensembleprisme.ca",
+        "@type": "uri"
+      }
+    },
+    {
+      "@id": "http://kg.footlight.io/64413e1f7a29930064510b6e",
+      "@type": "Event",
+      "audience": {
+        "@id": "http://kg.footlight.io/63a09b1a1c6b6c005aad2dba",
+        "@type": "Audience",
+        "name": [
+          {
+            "@language": "en",
+            "@value": "General public"
+          },
+          {
+            "@language": "fr",
+            "@value": "Grand public"
+          }
+        ]
+      },
+      "description": {
+        "@language": "fr",
+        "@value": "\n<p>CONCERTAutour de MolièreÉglise Notre-Dame-de-La-Guadeloupe – 30, rue Saint-Onge, Gatineau, QC J8Y 5T6</p>\n<p>\n AU PROGRAMME\n</p>\n\n<p>Le malade imaginaire – Marc-Antoine CharpentierPour flûte, hautbois, violon, alto, violoncelle et clavecinQuatuor de Paris no. 6 TWV43:e4 – Georg Philip TelemannPour flûte, violon, violoncelle et clavecinConcert donné au souper du Roy – Jean-Baptiste LullyPour flûte, hautbois, violon, alto, violoncelle et clavecinEn ce 400e anniversaire de naissance de Jean-Baptiste Poquelin, dit Molière, l’Ensemble Prisme rend hommage à ce grand artiste en se penchant sur la musique de son époque, qui a tant marqué les compositeurs des décennies suivantes.Tout d’abord, Prisme interprétera la musique que Marc-Antoine Charpentier, à l’époque jeune musicien, a écrit pour Le malade imaginaire, dernière pièce de Molière.Cette musique avait tellement d’attrait, même pour les oreilles étrangères, que de nombreux compositeurs allemands ont écrit dans le style français, dont Georg Philip Telemann, qui a écrit six quatuors de Paris.Finalement, rendons hommage à Jean-Baptiste Lully, cet Italien immigré en France pour y créer le style baroque français et premier collaborateur de Molière.Une soirée au théâtre de Molière et à la cour de Louis XIV, avec son panache et son goût pour la danse.Les membres de l’Ensemble Prisme, Jeffrey Miller à la flûte, Frédéric Hodgson au hautbois, Laura Nerenberg au violon, Olivier Philippe-Auguste à l’alto, Anne Contant au violoncelle et Marie Bouchard au clavecin vous convient à cette soirée des plus spéciales. Les billets sont disponibles à la porte le soir du concert ou par <a href=\"https://lepointdevente.com/tickets/sqr230415001\">SUR LE POINT DE VENTE</a></p>\n\n"
+      },
+      "eventStatus": "EventScheduled",
+      "keywords": [
+        "Concert classique",
+        "musique de chambre"
+      ],
+      "name": {
+        "@language": "fr",
+        "@value": "Autour de Molière"
+      },
+      "offers": {
+        "@id": "_:b23",
+        "@type": "AggregateOffer",
+        "additionalType": "PAID",
+        "name": [
+          {
+            "@language": "en",
+            "@value": "26.14 $ – "
+          },
+          {
+            "@language": "fr",
+            "@value": "26.14 $ – "
+          }
+        ],
+        "url": {
+          "@id": "https://lepointdevente.com/tickets/sqr230415001",
+          "@type": "uri"
+        }
+      },
+      "organizers": {
+        "@id": "http://kg.footlight.io/64413e1e7a29930064510b4f",
+        "@type": "Organization",
+        "creator": [
+          {
+            "date": "2023-04-20T13:29:02.228Z",
+            "userId": "6420c1e62831190064570a93"
+          },
+          {
+            "date": "2023-04-20T13:29:02.228Z",
+            "userId": "6420c1e62831190064570a93"
+          }
+        ],
+        "derivedFrom": [
+          {
+            "uri": "http://kg.artsdata.ca/resource/K5-3"
+          },
+          {
+            "uri": "http://kg.artsdata.ca/resource/K5-3"
+          }
+        ],
+        "disambiguatingDescription": [
+          {
+            "en": "Organization",
+            "fr": "Organisation"
+          },
+          {
+            "en": "Organization",
+            "fr": "Organisation"
+          }
+        ],
+        "dynamicFields": [
+          {
+            "conceptIds": "63d167da016e830064fbb03b",
+            "taxonomyId": "63d1676b016e830064fbafe1"
+          },
+          {
+            "conceptIds": "63d167da016e830064fbb03b",
+            "taxonomyId": "63d1676b016e830064fbafe1"
+          }
+        ],
+        "name": {
+          "@language": "fr",
+          "@value": "Société de musique de chambre de Gatineau"
+        },
+        "sameAs": [
+          {
+            "@id": "_:b28",
+            "@type": "ArtsdataIdentifier",
+            "uri": "http://kg.artsdata.ca/resource/K5-3"
+          },
+          {
+            "@id": "_:b29",
+            "uri": "http://kg.footlight.io/resource/eae00a40-9a73-4940-b9c3-fd7db5e65be3"
+          },
+          {
+            "@id": "_:b34",
+            "@type": "ArtsdataIdentifier",
+            "uri": "http://kg.artsdata.ca/resource/K5-3"
+          },
+          {
+            "@id": "_:b35",
+            "uri": "http://kg.footlight.io/resource/eae00a40-9a73-4940-b9c3-fd7db5e65be3"
+          }
+        ],
+        "sourceId": "K5-3",
+        "url": {
+          "@id": "https://ensembleprisme.ca",
+          "@type": "uri"
+        }
+      },
+      "performers": {
+        "@id": "http://kg.footlight.io/64413e1e7a29930064510b4f"
+      },
+      "sameAs": [
+        {
+          "@id": "_:b37",
+          "@type": "ArtsdataIdentifier",
+          "uri": "http://kg.artsdata.ca/resource/K23-124"
+        },
+        {
+          "uri": "http://kg.footlight.io/resource/toutculture-ca_autour-de-moliere-24813"
+        }
+      ],
+      "startDateTime": {
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "@value": "2023-04-15T20:00:00-04:00"
+      },
+      "url": {
+        "@id": "https://toutculture.ca/evenements/autour-de-moliere/24813"
+      }
+    },
+    {
+      "@id": "http://kg.footlight.io/64413e1f7a29930064510b8d",
+      "@type": "Event",
+      "audience": [
+        {
+          "@id": "http://kg.footlight.io/63a09b1a1c6b6c005aad2dba",
+          "@type": "Audience",
+          "name": [
+            {
+              "@language": "en",
+              "@value": "General public"
+            },
+            {
+              "@language": "fr",
+              "@value": "Grand public"
+            }
+          ]
+        },
+        {
+          "@id": "http://kg.footlight.io/63a09b1a1c6b6c005aad2dbc",
+          "@type": "Audience",
+          "name": [
+            {
+              "@language": "en",
+              "@value": "Adult (18+)"
+            },
+            {
+              "@language": "fr",
+              "@value": "Adulte (18+)"
+            }
+          ]
+        }
+      ],
+      "description": [
+        {
+          "@language": "en",
+          "@value": "<p>&nbsp;</p>"
+        },
+        {
+          "@language": "fr",
+          "@value": "<p>À l’occasion de la Journée du poème à porter, orchestrée par&nbsp;<a href=\"https://lapoesiepartout.com/\" rel=\"noopener noreferrer\" target=\"_blank\">La poésie partout</a>&nbsp;le 27 avril 2023, la <a href=\"https://slo.qc.ca/la-maison-des-arts-litteraires/\" rel=\"noopener noreferrer\" target=\"_blank\">Maison des arts littéraires</a> a proposé à plusieurs poètes de la région de se projeter dans l’altérité avec leur art.&nbsp;<em>L’un.e l’autre</em>&nbsp;est une invitation à la rencontre entre la poésie et les arts visuels qui met à contribution des artistes d’ici pour mettre en valeur la vitalité artistique et culturelle au sein du territoire de Gatineau. Une exposition de leurs poèmes-affiches étend sa toile dans la ville. Amusez-vous à les retrouver dans un parcours poétique à travers les cinq secteurs de la ville.</p><p><strong>Lancement de la saison</strong></p><p>Le 27 avril, 18h, au Bar le Minotaure, venez rencontrer les artistes et leurs œuvres lors du lancement de l’exposition qui sera aussi l’occasion de célébrer la nouvelle saison de la Maison des arts littéraires! Une soirée à ne pas manquer!&nbsp;</p>"
+        }
+      ],
+      "endDate": {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-05-11"
+      },
+      "eventStatus": "EventScheduled",
+      "inLanguage": {
+        "@id": "http://kg.footlight.io/63bc4e481c6b6c005aad5537",
+        "@type": "Language",
+        "name": [
+          {
+            "@language": "en",
+            "@value": "French"
+          },
+          {
+            "@language": "fr",
+            "@value": "Français"
+          }
+        ]
+      },
+      "name": {
+        "@language": "fr",
+        "@value": "Journée du poème à porter"
+      },
+      "offers": {
+        "@id": "_:b41",
+        "@type": "AggregateOffer",
+        "additionalType": "FREE",
+        "price": 0,
+        "priceCurrency": "CAD"
+      },
+      "organizers": {
+        "@id": "http://kg.footlight.io/6451675ee19f7200646d2519",
+        "@type": "Organization",
+        "creator": {
+          "date": "2023-05-02T19:41:18.603Z",
+          "userId": "6420c1e62831190064570a93"
+        },
+        "derivedFrom": {
+          "uri": "http://kg.artsdata.ca/resource/K5-168"
+        },
+        "description": [
+          {
+            "@language": "en",
+            "@value": "The Corporation du Salon du livre de l'Outaouais is a non-profit organization that is dedicated to introducing its public to French-language literature from the Outaouais, Quebec, Canada and the world.From one edition to the next, the Salon du livre de l'Outaouais works to create a great book festival where the passion for reading, the awakening of knowledge, discovery and curiosity are all part of the event. Young and old are invited to come and learn about the literary world, to exchange and share their passion for books with their peers and with the authors."
+          },
+          {
+            "@language": "fr",
+            "@value": "La Corporation du Salon du livre de l’Outaouais est un organisme à but non lucratif qui a à cœur de faire connaître à son public la littérature de langue française de l’Outaouais, du Québec, du Canada et du monde.D’édition en édition, le Salon du livre de l’Outaouais travaille à créer une grande fête du livre où la passion de la lecture, l’éveil au savoir, à la découverte et à la curiosité sont au rendez-vous. Jeunes et moins jeunes sont invité.e.s à venir s’initier à l’univers littéraire, à échanger et à partager leur passion des livres avec leurs pairs ainsi qu’avec les auteur.trice.s."
+          }
+        ],
+        "disambiguatingDescription": {
+          "en": "Organization",
+          "fr": "Organisation"
+        },
+        "dynamicFields": {
+          "conceptIds": "63d167da016e830064fbb03b",
+          "taxonomyId": "63d1676b016e830064fbafe1"
+        },
+        "name": [
+          {
+            "@language": "en",
+            "@value": "Salon du livre de l'Outaouais"
+          },
+          {
+            "@language": "fr",
+            "@value": "Salon du livre de l'Outaouais"
+          }
+        ],
+        "sameAs": [
+          {
+            "@id": "_:b46",
+            "@type": "ArtsdataIdentifier",
+            "uri": "http://kg.artsdata.ca/resource/K5-168"
+          },
+          {
+            "@id": "_:b47",
+            "uri": "http://toutculture.ca/organization/29"
+          }
+        ],
+        "sourceId": "K5-168",
+        "url": {
+          "@id": "http://www.slo.qc.ca/",
+          "@type": "uri"
+        }
+      },
+      "sameAs": [
+        {
+          "@id": "_:b49",
+          "@type": "ArtsdataIdentifier",
+          "uri": "http://kg.artsdata.ca/resource/K23-125"
+        },
+        {
+          "uri": "http://kg.footlight.io/resource/toutculture-ca_journee-du-poeme-a-porter-1-24801"
+        },
+        {
+          "uri": "https://www.facebook.com/events/667458512054958"
+        }
+      ],
+      "startDate": {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-04-27"
+      },
+      "url": {
+        "@id": "https://toutculture.ca/evenements/journee-du-poeme-a-porter-1/24801"
+      }
+    },
+    {
+      "@id": "http://kg.footlight.io/64413e207a29930064510bc3",
+      "@type": "Event",
+      "audience": {
+        "@id": "http://kg.footlight.io/63ceb9c4230627006f5670c3",
+        "@type": "Audience",
+        "name": [
+          {
+            "@language": "en",
+            "@value": "Not specified"
+          },
+          {
+            "@language": "fr",
+            "@value": "Indéterminé"
+          }
+        ]
+      },
+      "contactPoint": {
+        "email": {
+          "@id": "http://kg.footlight.io/salleodyssee@gatineau.ca"
+        },
+        "name": null,
+        "telephone": {
+          "@id": "http://kg.footlight.io/819 243-2525"
+        },
+        "url": null
+      },
+      "description": {
+        "@language": "fr",
+        "@value": "<p>Après avoir séduit le Québec pendant 12 semaines sur les ondes de TVA, les deux finalistes de l’édition 2022 de Star Académie iront à la rencontre de leur public lors d’une grande tournée de spectacles, laquelle les mènera à travers Québec dès le printemps 2023.</p>"
+      },
+      "eventStatus": "EventScheduled",
+      "name": {
+        "@language": "fr",
+        "@value": "Tournée Star Académie"
+      },
+      "offers": [
+        {
+          "@id": "_:b55",
+          "@type": "AggregateOffer",
+          "additionalType": "PAID",
+          "url": {
+            "@id": "https://www.maisondelaculture.ca/Salle-Odyssee/index.html",
+            "@type": "uri"
+          }
+        },
+        {
+          "@id": "_:b56",
+          "@type": "Offer",
+          "price": 44,
+          "priceCurrency": "CAD"
+        }
+      ],
+      "sameAs": [
+        {
+          "@id": "_:b58",
+          "@type": "ArtsdataIdentifier",
+          "uri": "http://kg.artsdata.ca/resource/K23-126"
+        },
+        {
+          "uri": "http://kg.footlight.io/resource/toutculture-ca_tournee-star-academie-21961"
+        },
+        {
+          "@id": "_:b60",
+          "@type": "http://www.wikidata.org/entity/P2013",
+          "uri": "https://www.facebook.com/events/3136287043310470/?acontext=%7B%22event_action_history%22%3A[%7B%22surface%22%3A%22page%22%7D]%7D"
+        }
+      ],
+      "startDateTime": {
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "@value": "2023-04-23T20:00:00-04:00"
+      },
+      "url": null
+    },
+    {
+      "@id": "http://kg.footlight.io/64413e217a29930064510bf9",
+      "@type": "Event",
+      "audience": {
+        "@id": "http://kg.footlight.io/63ceb9c4230627006f5670c3",
+        "@type": "Audience",
+        "name": [
+          {
+            "@language": "en",
+            "@value": "Not specified"
+          },
+          {
+            "@language": "fr",
+            "@value": "Indéterminé"
+          }
+        ]
+      },
+      "contactPoint": {
+        "email": {
+          "@id": "http://kg.footlight.io/info@p2vallees.ca"
+        },
+        "name": [
+          {
+            "@language": "en",
+            "@value": "Yan Proulx"
+          },
+          {
+            "@language": "fr",
+            "@value": "Yan Proulx"
+          }
+        ],
+        "telephone": {
+          "@id": "http://kg.footlight.io/8196173205"
+        },
+        "url": {
+          "@id": "https://p2vallees.ca/",
+          "@type": "uri"
+        }
+      },
+      "description": {
+        "@language": "fr",
+        "@value": "<p>La Chicane nous revient en force cette année avec un tout nouvel album La Chicane QUAND ÇA VA BEN. Le lancement et la tournée sont prévus au printemps 2022.En 2017, La Chicane célébrait leur 20e anniversaire en présentant, le temps d’un été, le spectacle 20 ans déjà sur les scènes estivales du Québec. Celui-ci a fait renaître un véritable engouement dans le coeur des fans!Si bien qu’après plus de 160 représentations avec des records de foules autant dans les festivals que dans les salles en supplémentaire, le groupe a décidé de poursuivre cette aventure qui a débuté en 1997. Le public pourra ainsi revoir ce groupe coup de coeur des années 90 et venir chanter avec eux leurs nombreux succès tel que Calvaire, Juste pour voir le monde, Tu m’manques et plusieurs autres.Inspirés par leurs fans qui leur ont redonné la flamme, Boom Desjardins et ses acolytes nous offrent un album composé de nouvelles chansons originales, près de 20 ans après leur dernier opus « Ent’nous autres » paru en 2003.Cette nouvelle tournée soulignera également les 25 ans de carrière de Boom Desjardins, leader incontesté du groupe.</p>"
+      },
+      "eventStatus": "EventScheduled",
+      "name": {
+        "@language": "fr",
+        "@value": "La Chicane - Quand ça va ben"
+      },
+      "offers": [
+        {
+          "@id": "_:b64",
+          "@type": "AggregateOffer",
+          "additionalType": "PAID",
+          "url": {
+            "@id": "https://lepointdevente.com/billets/1l2230428001",
+            "@type": "uri"
+          }
+        },
+        {
+          "@id": "_:b65",
+          "@type": "Offer",
+          "price": 52.25,
+          "priceCurrency": "CAD"
+        }
+      ],
+      "performers": {
+        "@id": "http://kg.footlight.io/6425cb44ede2c60065ca06ed",
+        "@type": "Organization",
+        "creator": {
+          "date": "2023-03-30T17:47:48.684Z",
+          "userId": "6420c1e62831190064570a93"
+        },
+        "derivedFrom": {
+          "uri": "http://kg.artsdata.ca/resource/K5-32"
+        },
+        "disambiguatingDescription": {
+          "en": "Organization",
+          "fr": "Organisation"
+        },
+        "name": {
+          "@language": "fr",
+          "@value": "La Chicane"
+        },
+        "sameAs": [
+          {
+            "@id": "_:b69",
+            "uri": "http://kg.footlight.io/resource/bf9fd7de-86bf-46c5-8963-25b2d196b247"
+          },
+          {
+            "@id": "_:b70",
+            "@type": "ArtsdataIdentifier",
+            "uri": "http://kg.artsdata.ca/resource/K5-32"
+          }
+        ],
+        "sourceId": "K5-32"
+      },
+      "sameAs": [
+        {
+          "@id": "_:b72",
+          "@type": "ArtsdataIdentifier",
+          "uri": "http://kg.artsdata.ca/resource/K23-127"
+        },
+        {
+          "uri": "http://kg.footlight.io/resource/toutculture-ca_la-chicane-quand-ca-va-ben-22495"
+        }
+      ],
+      "startDateTime": {
+        "@type": "http://www.w3.org/2001/XMLSchema#dateTime",
+        "@value": "2023-04-28T19:30:00-04:00"
+      },
+      "url": null
+    },
+    {
+      "@id": "http://kg.footlight.io/64413e227a29930064510c43",
+      "@type": "Event",
+      "audience": {
+        "@id": "http://kg.footlight.io/63a09b1a1c6b6c005aad2dba",
+        "@type": "Audience",
+        "name": [
+          {
+            "@language": "en",
+            "@value": "General public"
+          },
+          {
+            "@language": "fr",
+            "@value": "Grand public"
+          }
+        ]
+      },
+      "contactPoint": {
+        "email": {
+          "@id": "http://kg.footlight.io/info@folkloreoutaouais.org"
+        },
+        "name": [
+          {
+            "@language": "en",
+            "@value": "Folklore Outaouais"
+          },
+          {
+            "@language": "fr",
+            "@value": "Folklore Outaouais"
+          }
+        ],
+        "telephone": {
+          "@id": "http://kg.footlight.io/873-673-9514"
+        },
+        "url": {
+          "@id": "https://folkloreoutaouais.org/",
+          "@type": "uri"
+        }
+      },
+      "description": {
+        "@language": "fr",
+        "@value": "<p>Folklore Outaouais vous propose des Jam Trad À La Dérive Brasserie Artisanale.&nbsp;C’est les&nbsp;mardis du 4 octobre au 29 novembre, de 18h30 à 21h30. Nous avons aussi les 6 et le 13 décembre et puis tous les mardis de janvier à avril 2023. C’est au 1015 rue Jacques-Cartier à Gatineau, en face du Quai des Légendes. Un grand stationnement public gratuit est disponible à 2 minutes de marche au bout de la rue des Montgolfières.&nbsp;&nbsp;&nbsp;&nbsp;</p><p>&nbsp;Pas besoin d’apporter votre chaise. Chacune et chacun présente sa musique et à sa vitesse, avec son instrument préféré : violon, accordéon, guitare, mandoline et autres! La chanson folklorique est aussi la bienvenue! Le répertoire est principalement du folklore québécois et ses nombreux variants irlandais, écossais et canadiens. Aucune inscription ou réservation nécessaires! Ou venez tout simplement écouter, regarder et nous faire un beau sourire.&nbsp;</p>"
+      },
+      "endDate": {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-04-18"
+      },
+      "eventStatus": "EventScheduled",
+      "keywords": [
+        "Musique",
+        "musiques traditionnelles"
+      ],
+      "name": {
+        "@language": "fr",
+        "@value": "Jam Trad – À la Dérive"
+      },
+      "offers": {
+        "@id": "_:b77",
+        "@type": "AggregateOffer",
+        "additionalType": "FREE",
+        "price": 0,
+        "priceCurrency": "CAD"
+      },
+      "organizers": {
+        "@id": "http://kg.footlight.io/6420c6162831190064570cc8",
+        "@type": "Organization",
+        "contactPoint": {
+          "@id": "_:b78",
+          "email": {
+            "@id": "http://kg.footlight.io/info@folkloreoutaouais.org"
+          },
+          "name": [
+            {
+              "@language": "en",
+              "@value": "Folklore Outaouais"
+            },
+            {
+              "@language": "fr",
+              "@value": "Folklore Outaouais"
+            }
+          ],
+          "telephone": {
+            "@id": "http://kg.footlight.io/873-673-9514"
+          },
+          "url": {
+            "@id": "https://folkloreoutaouais.org/"
+          }
+        },
+        "creator": {
+          "date": "2023-03-26T22:24:22.380Z",
+          "userId": "6420c1e62831190064570a93"
+        },
+        "derivedFrom": {
+          "uri": "http://kg.artsdata.ca/resource/K5-23"
+        },
+        "description": [
+          {
+            "@language": "en",
+            "@value": "We are Folklore Outaouais your folklore destination in the beautiful Outaouais region. If you're looking for the AQLF Outaouais, you've come to the right place, we've changed our name, but we're still dedicated to promoting the influence of folklore in the region.Our main activities are :The presentation of Quebec folklore evenings.Folklore workshops promoting the learning and development of skills in various fields related to folklore such as fiddle, accordion, fléché, call art, jigging and folk dancing."
+          },
+          {
+            "@language": "fr",
+            "@value": "Nous sommes Folklore Outaouais votre destination folklorique dans la belle région de l’Outaouais. Si vous recherchez l’AQLF Outaouais, vous êtes au bon endroit, nous avons changé de nom, mais nous restons aussi dévoués à promouvoir le rayonnement du folklore dans la région.Nos principales activités sont :La présentation de veillées folkloriques québécoises.Les ateliers folkloriques favorisant l’apprentissage et le développement d’aptitudes dans divers domaines reliés au folklore tel que le violon, l’accordéon, le fléché, l’art du call, la gigue et la danse folklorique."
+          }
+        ],
+        "disambiguatingDescription": {
+          "en": "Organizer of folklore events and workshops in the Outaouais",
+          "fr": "Organisateur d'événements et d'ateliers folkloriques en Outaouais"
+        },
+        "dynamicFields": {
+          "conceptIds": "63d167da016e830064fbb03b",
+          "taxonomyId": "63d1676b016e830064fbafe1"
+        },
+        "logo": {
+          "@id": "_:b83",
+          "@type": "ImageObject",
+          "large": {
+            "uri": "http://3.96.80.223:8182/iiif/3/9bdd1a9b-90b5-4c5a-a236-eacd2dc5fac4.jpg/full/max/0/default.jpg"
+          },
+          "original": {
+            "entityId": "9bdd1a9b-90b5-4c5a-a236-eacd2dc5fac4.jpg",
+            "uri": "http://3.96.80.223:8182/iiif/3/9bdd1a9b-90b5-4c5a-a236-eacd2dc5fac4.jpg/full/max/0/default.jpg"
+          },
+          "thumbnail": {
+            "uri": "http://3.96.80.223:8182/iiif/3/9bdd1a9b-90b5-4c5a-a236-eacd2dc5fac4.jpg/full/max/0/default.jpg"
+          }
+        },
+        "name": [
+          {
+            "@language": "en",
+            "@value": "Folklore Outaouais"
+          },
+          {
+            "@language": "fr",
+            "@value": "Folklore Outaouais"
+          }
+        ],
+        "place": {
+          "entityId": "645bf5417db98f0065dd6a78"
+        },
+        "sameAs": [
+          {
+            "@id": "_:b88",
+            "@type": "ArtsdataIdentifier",
+            "uri": "http://kg.artsdata.ca/resource/K5-23"
+          },
+          {
+            "@id": "_:b89",
+            "uri": "http://kg.footlight.io/resource/704a25c8-3d80-4e60-b62e-7efb8cad1291"
+          }
+        ],
+        "sourceId": "K5-23"
+      },
+      "sameAs": [
+        {
+          "@id": "_:b91",
+          "@type": "ArtsdataIdentifier",
+          "uri": "http://kg.artsdata.ca/resource/K23-19"
+        },
+        {
+          "uri": "http://kg.footlight.io/resource/toutculture-ca_jam-trad-a-la-derive-2-23155"
+        }
+      ],
+      "startDate": {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-01-03"
+      },
+      "url": {
+        "@id": "https://toutculture.ca/evenements/jam-trad-a-la-derive-2/23155"
+      }
+    },
+    {
+      "@id": "http://kg.footlight.io/64413e227a29930064510c79",
+      "@type": "Event",
+      "audience": {
+        "@id": "http://kg.footlight.io/63ceb9c4230627006f5670c3",
+        "@type": "Audience",
+        "name": [
+          {
+            "@language": "en",
+            "@value": "Not specified"
+          },
+          {
+            "@language": "fr",
+            "@value": "Indéterminé"
+          }
+        ]
+      },
+      "description": {
+        "@language": "fr",
+        "@value": "\n<p> </p>\n<p>Illumination permanente du pont Félix Gabriel Marchand </p>\n<p>Illumination du pontFélix-Gabriel-Marchandà Mansfield-et-Pontefract Après plus de deux ans de travail, Phare Ouest est heureux de vous présenter enfin l'éclairage pérenne du pont rouge! Affichez vos couleurs :en tout temps. Depuis le 30 avril 2022,  le système d'éclairage interactif du pont, réalisé par NOVOM INTERACTIVE, en collaboration avec la municipalité de Mansfield-et-Pontefract ainsi que plusieurs partenaires locaux, régionaux et nationaux est maintenant fonctionnel. Interactif? Hé oui! Vous pouvez, par le biais de votre appareil mobile, jouer à l'éclairagiste en modifiant l'éclairage pendant un moment. Rendez-vous sur l'application (pont marchand) en ligne pour en faire l'expérience! </p>\n<p>Nouvel éclairage le premier décembre 2022</p>\n<p>Le pont s'illumine tout les jours à partir du coucher du soleil pour s'éteindre au lever du soleil. </p>\n<p>Nouvelle éclairage le 21 décembre 2022 et de Noel le 23 décembre </p>\n<p> </p>\n\n"
+      },
+      "endDate": {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-04-06"
+      },
+      "eventStatus": "EventScheduled",
+      "keywords": "Arts visuels",
+      "name": {
+        "@language": "fr",
+        "@value": "illumination du pont Félix Gabriel Marchand"
+      },
+      "offers": {
+        "@id": "_:b95",
+        "@type": "AggregateOffer",
+        "additionalType": "FREE",
+        "price": 0,
+        "url": {
+          "@id": "https://toutculture.ca/evenements/illumination-du-pont-felix-gabriel-marchand/22948",
+          "@type": "uri"
+        }
+      },
+      "sameAs": [
+        {
+          "@id": "_:b97",
+          "@type": "ArtsdataIdentifier",
+          "uri": "http://kg.artsdata.ca/resource/K23-20"
+        },
+        {
+          "uri": "http://kg.footlight.io/resource/toutculture-ca_illumination-du-pont-felix-gabriel-marchand-22948"
+        }
+      ],
+      "startDate": {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-01-04"
+      },
+      "url": {
+        "@id": "https://toutculture.ca/evenements/illumination-du-pont-felix-gabriel-marchand/22948"
+      }
+    },
+    {
+      "@id": "http://kg.footlight.io/64413e237a29930064510caf",
+      "@type": "Event",
+      "audience": {
+        "@id": "http://kg.footlight.io/63a09b1a1c6b6c005aad2dba",
+        "@type": "Audience",
+        "name": [
+          {
+            "@language": "en",
+            "@value": "General public"
+          },
+          {
+            "@language": "fr",
+            "@value": "Grand public"
+          }
+        ]
+      },
+      "description": {
+        "@language": "fr",
+        "@value": "\n<p>Sans objet présente la transposition en photographie de la forme poétique japonaise du renku en une suite de 54 photographies créées à tour de rôle par les artistes Aubin, Perron et Robesco.</p>\n<p>Chaque photographie comprend un lien avec la précédente et une ouverture vers une réalité autre, sans pour autant s’engager dans un récit. Chaque transition est marquée d’un mot-lien. Visuellement, les photographies adoptent la forme carrée ainsi que le noir et blanc.</p>\n<p>En galerie, ce corpus de base se présente comme une installation qui comprend une frise des 54 photographies à la cimaise, une vidéo des mêmes images, une représentation visuelle et sonore des mots-liens et une station interactive où le public est invité à composer son propre renku.</p>\n<p>Image : Raymond Aubin, Richard Perron, Richard Robesco, Sans objet (détail), photographie, série complétée en 2022.</p>\n\n"
+      },
+      "endDate": {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-04-30"
+      },
+      "eventStatus": "EventScheduled",
+      "keywords": [
+        "Richard Robesco",
+        "Richard Perron"
+      ],
+      "name": {
+        "@language": "fr",
+        "@value": "Sans objet : un renku photographique, une exposition de Raymond Aubin, Richard Perron et Richard Robesco"
+      },
+      "offers": {
+        "@id": "_:b101",
+        "@type": "AggregateOffer",
+        "additionalType": "FREE",
+        "price": 0,
+        "url": {
+          "@id": "https://toutculture.ca/evenements/sans-objet-un-renku-photographique-une-exposition-de-raymond-aubin-richard-perron-et-richard-robesco/22954",
+          "@type": "uri"
+        }
+      },
+      "organizers": {
+        "@id": "http://kg.footlight.io/645bd8f67db98f0065dd251b",
+        "@type": "Organization",
+        "creator": {
+          "date": "2023-05-10T17:48:38.443Z",
+          "userId": "6420c1e62831190064570a93"
+        },
+        "derivedFrom": {
+          "uri": "http://kg.artsdata.ca/resource/K16-114"
+        },
+        "description": [
+          {
+            "@language": "en",
+            "@value": "<p>Since 2002, Theatre Wakefield has developed arts and culture in the Lower Gatineau Valley.Theatre Wakefield presents a variety of programs for all ages ranging from training workshops to heritage projects that provide professional learning, personal development opportunities… and fun too!We produce main-stage performances, dramatic readings, heritage animation projects, Wakefield Doc Fest, Ta Da! Festival, various hosted productions and a variety of training workshops. Our focus is on community theatre and film but we are continually embracing new artistic genres in response to community demand.</p>"
+          },
+          {
+            "@language": "fr",
+            "@value": "<p>En culture, l’action de la Ville est principalement mise en œuvre par le Service des arts, de la cultureet des lettres (SACL), avec l’appui d’autres services municipaux. Le Service compte environ 65 employés à temps plein et 200 employés occasionnels et à horaire variable, notamment pour couvrirles besoins du réseau de bibliothèques.Mission du Service des arts, de la culture et des lettres/ Mettre les citoyens de tout âge et origine en contact avec la culture pour dynamiser leur milieude vie, favoriser l’appartenance au territoire ainsi que la cohésion sociale./ Faire de la culture un des piliers du développement, de la vitalité et de l’identité de Gatineau./ Être un leader dans la mise en place des conditions propices au développement et au rayonnement des artistes, artisans, auteurs, organismes et travailleurs culturels d’ici./ Faire de Gatineau une destination événementielle sportive et culturelle de classe internationale./ Démocratiser l’accès à la culture en reconnaissant le rôle pivot de la pratique culturelleamateur.</p>"
+          }
+        ],
+        "disambiguatingDescription": {
+          "en": "Municipal Organisation",
+          "fr": "Organisation municipale"
+        },
+        "dynamicFields": {
+          "conceptIds": "63d167da016e830064fbb03b",
+          "taxonomyId": "63d1676b016e830064fbafe1"
+        },
+        "image": [
+          {
+            "@id": "_:b106",
+            "@type": "large",
+            "uri": "http://3.96.80.223:8182/iiif/3/9a3005df-bd50-4cda-9232-caaa7b27c9cb.jpg/0,12,640,360/640,/0/default.jpg"
+          },
+          {
+            "@id": "_:b107",
+            "@type": "original",
+            "entityId": "9a3005df-bd50-4cda-9232-caaa7b27c9cb.jpg",
+            "height": 384,
+            "uri": "http://3.96.80.223:8182/iiif/3/9a3005df-bd50-4cda-9232-caaa7b27c9cb.jpg/full/max/0/default.jpg",
+            "width": 640
+          },
+          {
+            "@id": "_:b108",
+            "@type": "thumbnail",
+            "uri": "http://3.96.80.223:8182/iiif/3/9a3005df-bd50-4cda-9232-caaa7b27c9cb.jpg/45,0,549,384/412,/0/default.jpg"
+          },
+          {
+            "@id": "http://kg.footlight.io/ImageObject",
+            "@type": "@type"
+          }
+        ],
+        "logo": {
+          "@id": "_:b109",
+          "@type": "ImageObject",
+          "large": {
+            "uri": "http://3.96.80.223:8182/iiif/3/1531be48-d7d5-4c8a-843e-13a1f393ed92.png/full/722,/0/default.png"
+          },
+          "original": {
+            "entityId": "1531be48-d7d5-4c8a-843e-13a1f393ed92.png",
+            "height": 434,
+            "uri": "http://3.96.80.223:8182/iiif/3/1531be48-d7d5-4c8a-843e-13a1f393ed92.png/full/max/0/default.png",
+            "width": 722
+          },
+          "thumbnail": {
+            "uri": "http://3.96.80.223:8182/iiif/3/1531be48-d7d5-4c8a-843e-13a1f393ed92.png/full/412,/0/default.png"
+          }
+        },
+        "name": [
+          {
+            "@language": "en",
+            "@value": "Ville de Gatineau"
+          },
+          {
+            "@language": "fr",
+            "@value": "Ville de Gatineau"
+          }
+        ],
+        "place": {},
+        "sameAs": [
+          {
+            "@id": "_:b114",
+            "@type": "ArtsdataIdentifier",
+            "uri": "http://kg.artsdata.ca/resource/K16-114"
+          },
+          {
+            "@id": "_:b115",
+            "uri": "http://scenepro.ca#Organization345"
+          },
+          {
+            "@id": "_:b116",
+            "uri": "http://kg.footlight.io/resource/e3e03abf-45cb-46a4-854b-bc0358d6c652"
+          }
+        ],
+        "sourceId": "K16-114",
+        "url": {
+          "@id": "https://www.gatineau.ca",
+          "@type": "uri"
+        }
+      },
+      "sameAs": [
+        {
+          "@id": "_:b118",
+          "@type": "ArtsdataIdentifier",
+          "uri": "http://kg.artsdata.ca/resource/K23-22"
+        },
+        {
+          "uri": "http://kg.footlight.io/resource/toutculture-ca_sans-objet-un-renku-photographique-une-exposition-de-raymond-aubin-richard-perron-et-richard-robesco-22954"
+        }
+      ],
+      "startDate": {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-03-16"
+      },
+      "url": {
+        "@id": "https://toutculture.ca/evenements/sans-objet-un-renku-photographique-une-exposition-de-raymond-aubin-richard-perron-et-richard-robesco/22954"
+      }
+    },
+    {
+      "@id": "http://kg.footlight.io/64413e247a29930064510cda",
+      "@type": "Event",
+      "audience": {
+        "@id": "http://kg.footlight.io/63a09b1a1c6b6c005aad2dba",
+        "@type": "Audience",
+        "name": [
+          {
+            "@language": "en",
+            "@value": "General public"
+          },
+          {
+            "@language": "fr",
+            "@value": "Grand public"
+          }
+        ]
+      },
+      "description": {
+        "@language": "fr",
+        "@value": "\n<p><strong>Vernissage : Dimanche le 12 mars de 13h à 16h L’artiste sera également présente les 19, 26 mars et 2 avril de 14h à 16h</strong> </p>\n<p>La Galerie Old Chelsea a le plaisir de présenter les magnifiques peintures d’atmosphère, dites tonales, de René-Lyne Charlebois, La peinture tonale consiste à harmoniser ou à unifier la couleur en termes de lumière ou d'atmosphère générale de l'œuvre. Le peintre utilise une palette intentionnellement limitée, s'appuyant sur la valeur, la température et la couleur discrète pour transmettre ses idées. Amoureuse du mouvement tonal et de l’impressionnisme, Charlebois crée de plus en plus selon un style tonalisme américain, avec une touche d’impressionnisme « français » Elle choisit le contemplatif plutôt que l’actif, elle concède tout l’espace à l’émotion et elle refuse s’en mettre à la raison pour expliquer le sens de l’être. Sur la toile, tout se concentre sur le lien entre l’espace pictural, les couleurs du paysage et l’émotion sous-jacente, pour devenir parfaitement « tonal ».  « J’utilise des tons sombres et neutres sous la ligne d’horizon, mais dans le ciel, l’impressionnisme explose et prend tout son éclat, et j’y accorde beaucoup d’espace.  Cette fusion entre ces deux styles divise le regard entre le sombre et l’éclatant. La vie se joue entre le ciel et la terre ; une nature paisible sous un ciel exalté » nous explique Charlebois.   </p>\n<p>Dans le ciel, elle intègre la spatule afin d’augmenter le mouvement qui domine l’espace.  Tandis que pour la portion de terre, elle crée au pinceau l’illusion du détail dans tous les éléments du paysage.  Tout est création tirée entièrement de son imagination picturale et de l’émotion grandement inspirée par son besoin d’espace, de nature et de paix.</p>\n<p>-----------------------------</p>\n<p><strong>Vernissage: Sunday March 12, 1 to 4 pmThe artist will also be present on March 19, 26 and April 2 between 2 and 4 pm</strong></p>\n<p>Galerie Old Chelsea is pleased to present the beautifully atmospheric paintings or tonal paintings by René-Lyne Charlebois. Tonal painting involves harmonizing or unifying color in terms of the overall light or atmosphere of the work. The painter uses an intentionally limited palette, relying on value, temperature and low-key colour to convey their ideas.Charlebois loves both the tonal movement and impressionism, and so more and more she creates following an American tonalism with a touch of \"French\" impressionism. She chooses the contemplative over the active, she gives her emotion the entire space and refuses to rely on reason to explain the meaning of our existence. On canvas, she focuses on the link between the pictorial space, the colors of the landscape and the underlying emotion, to become perfectly “tonal”.  “I use dark, neutral tones below the horizon line, but in the sky where impressionism explodes and comes into its own, I give it plenty of space. This fusion between these two styles divides the look between the dark and the bright. Life is played out between heaven and earth; a peaceful nature under an exalted sky” explains Charlebois. In the sky, she uses a spatula to increase movement so that it dominates spatially while for the land section, she paints the illusion of detail in all the landscape elements. Everything is creation drawn entirely from her pictorial imagination and the emotion greatly inspired by her need for space, nature,and peace.                    </p>\n<p> </p>\n\n"
+      },
+      "endDate": {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-04-05"
+      },
+      "eventStatus": "EventScheduled",
+      "keywords": [
+        "art épuré",
+        "art visuels"
+      ],
+      "name": {
+        "@language": "fr",
+        "@value": "« Là où le temps s’arrête…/Where Time Stands Still…» de/by René-Lyne Charlebois"
+      },
+      "offers": {
+        "@id": "_:b122",
+        "@type": "AggregateOffer",
+        "additionalType": "FREE",
+        "price": 0,
+        "url": {
+          "@id": "https://toutculture.ca/evenements/la-ou-le-temps-s-arrete-where-time-stands-still-de-by-rene-lyne-charlebois/24303",
+          "@type": "uri"
+        }
+      },
+      "sameAs": [
+        {
+          "@id": "_:b124",
+          "@type": "ArtsdataIdentifier",
+          "uri": "http://kg.artsdata.ca/resource/K23-29"
+        },
+        {
+          "uri": "http://kg.footlight.io/resource/toutculture-ca_la-ou-le-temps-s-arrete-where-time-stands-still-de-by-rene-lyne-charlebois-24303"
+        }
+      ],
+      "startDate": {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-03-10"
+      },
+      "url": {
+        "@id": "https://toutculture.ca/evenements/la-ou-le-temps-s-arrete-where-time-stands-still-de-by-rene-lyne-charlebois/24303"
+      }
+    },
+    {
+      "@id": "http://kg.footlight.io/64413e247a29930064510d10",
+      "@type": "Event",
+      "audience": {
+        "@id": "http://kg.footlight.io/63ceb9c4230627006f5670c3",
+        "@type": "Audience",
+        "name": [
+          {
+            "@language": "en",
+            "@value": "Not specified"
+          },
+          {
+            "@language": "fr",
+            "@value": "Indéterminé"
+          }
+        ]
+      },
+      "description": {
+        "@language": "fr",
+        "@value": "\n<p><strong>Projet de relocalisation</strong></p>\n<p>AXENEO7 a été fondé au début des années quatre-vingt pour offrir un espace aux artistes. Loin du repère espéré, leurs premiers locaux exigeaient un entretien constant qui est rapidement devenu un obstacle au bon fonctionnement de l'organisme. Les personnes impliquées au centre ont donc élaboré, souvent de manière bénévole, des propositions d'endroits plus propices.</p>\n<p>Au milieu des années quatre-vingt-dix, la ville de Hull a refusé la demande de relocalisation d’AXENÉO7 à l'ancien cinéma Cartier. Devant cette impasse, l'équipe du centre a produit une carte postale détaillant leurs revendications et dénoncé la situation lors d'entrevues à Radio-Canada. Ce coup d'éclat a contribué à faire aboutir les négociations avec la ville et a permis en 2002 le déménagement du centre à son espace actuel, l'usine Hanson Hosiery Mills.</p>\n<p>Cette exposition s'inscrit dans le cadre d'un projet plus large, sur les liens entre les réseaux de l'art contemporain et la radiophonie. Ici, la radio publique est utilisée comme porte-voix. Alors qu'une municipalité ferme la porte à une proposition ambitieuse, les artistes s'organisent pour revendiquer sa nécessité.</p>\n<p>L'anecdote de cette carte postale et des entrevues radio a été le point de départ à la recherche d'autres traces du projet de relocalisation. Pendant vingt ans, ces démarches ont mené à l'étude du patrimoine bâti en plus d'évoluer au gré des décisions politiques et à l'engagement de plusieurs partenaires. Si les documents d'archives qui s'y rattachent décrivent les détails techniques d'un espace viable, ils cherchent surtout à démontrer les ambitions AXENÉO7 et témoignent de son importance pour sa communauté.</p>\n<p>Lors de la création de l'exposition, une réflexion a aussi été entamée avec le centre sur la pérennité de leurs archives. Vingt ans après le déménagement, elles prennent aujourd'hui la forme d'une collection plus ou moins ordonnée, parfois bien classée dans des caissons en plastique, ou accumulée par hasard dans des boîtes de carton recyclées. Un trou dans le mur de la galerie vous permet de voir la salle où elles sont entreposées.</p>\n<p>Cette exposition comprend une composante sonore que vous pouvez consulter à partir du poste d'écoute. Vous pouvez aussi y accéder en scannant le code QR ou en vous rendant à l'adresse <a href=\"https://anchor.fm/projet-de-relocalisation\">anchor.fm/projet-de-relocalisation</a>.</p>\n<p>— Benjamin J. Allard</p>\n\n"
+      },
+      "endDate": {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-04-15"
+      },
+      "eventStatus": "EventScheduled",
+      "keywords": "Arts visuels",
+      "name": {
+        "@language": "fr",
+        "@value": "Exposition Benjamin J. Allard"
+      },
+      "offers": {
+        "@id": "_:b128",
+        "@type": "AggregateOffer",
+        "additionalType": "FREE",
+        "price": 0,
+        "url": {
+          "@id": "https://toutculture.ca/evenements/exposition-benjamin-j-allard/24669",
+          "@type": "uri"
+        }
+      },
+      "sameAs": [
+        {
+          "@id": "_:b130",
+          "@type": "ArtsdataIdentifier",
+          "uri": "http://kg.artsdata.ca/resource/K23-30"
+        },
+        {
+          "uri": "http://kg.footlight.io/resource/toutculture-ca_exposition-benjamin-j-allard-24669"
+        }
+      ],
+      "startDate": {
+        "@type": "http://www.w3.org/2001/XMLSchema#date",
+        "@value": "2023-03-15"
+      },
+      "url": {
+        "@id": "https://toutculture.ca/evenements/exposition-benjamin-j-allard/24669"
+      }
+    },
+    {
+      "@id": "http://kg.footlight.io/6451675ee19f7200646d2519",
+      "@type": "Organization",
+      "description": [
+        {
+          "@language": "en",
+          "@value": "The Corporation du Salon du livre de l'Outaouais is a non-profit organization that is dedicated to introducing its public to French-language literature from the Outaouais, Quebec, Canada and the world.From one edition to the next, the Salon du livre de l'Outaouais works to create a great book festival where the passion for reading, the awakening of knowledge, discovery and curiosity are all part of the event. Young and old are invited to come and learn about the literary world, to exchange and share their passion for books with their peers and with the authors."
+        },
+        {
+          "@language": "fr",
+          "@value": "La Corporation du Salon du livre de l’Outaouais est un organisme à but non lucratif qui a à cœur de faire connaître à son public la littérature de langue française de l’Outaouais, du Québec, du Canada et du monde.D’édition en édition, le Salon du livre de l’Outaouais travaille à créer une grande fête du livre où la passion de la lecture, l’éveil au savoir, à la découverte et à la curiosité sont au rendez-vous. Jeunes et moins jeunes sont invité.e.s à venir s’initier à l’univers littéraire, à échanger et à partager leur passion des livres avec leurs pairs ainsi qu’avec les auteur.trice.s."
+        }
+      ],
+      "name": [
+        {
+          "@language": "en",
+          "@value": "Salon du livre de l'Outaouais"
+        },
+        {
+          "@language": "fr",
+          "@value": "Salon du livre de l'Outaouais"
+        }
+      ],
+      "sameAs": [
+        {
+          "@id": "_:b46",
+          "@type": "ArtsdataIdentifier",
+          "uri": "http://kg.artsdata.ca/resource/K5-168"
+        },
+        {
+          "@id": "_:b47",
+          "uri": "http://toutculture.ca/organization/29"
+        }
+      ],
+      "url": {
+        "@id": "http://www.slo.qc.ca/",
+        "@type": "uri"
+      }
+    },
+    {
+      "@id": "http://kg.footlight.io/645bd8ef7db98f0065dd22f5",
+      "@type": "Organization",
+      "description": [
+        {
+          "@language": "en",
+          "@value": "<p>The Maison de la culture de Gatineau is a multidisciplinary complex housing :</p><p><strong>Salle Odyssée</strong>, an award-winning 830-seat concert hall;</p><p>The<strong> Centre d'exposition Art-image</strong>, recognized as a museum institution by the Ministère de la Culture et des Communications du Québec</p><p><strong>Guy-Sanche branch </strong>of the municipal library</p><p>Many partner organizations, including <strong>Académie de danse de l'Outaouais</strong>, <strong>Archives de Gatineau</strong>, <strong>Bibliothèque et archives nationales du Québec</strong>, <strong>Centre régional d'archives de l'Outaouais</strong>, <strong>Société de généalogie de l'Outaouais</strong>, <strong>École de musique de l'Outaouais</strong> and <strong>Radio-Jeunesse</strong>.</p><p>The Maison de la culture de Gatineau is a privileged instrument for fostering the development of cultural life in Gatineau.</p>"
+        },
+        {
+          "@language": "fr",
+          "@value": "<p>La Maison de la culture de Gatineau est un complexe multidisciplinaire abritant :</p><p>La <strong>salle Odyssée</strong>, une salle de spectacles de 830 places mainte fois récompensée;</p><p>Le <strong>Centre d'exposition Art-image</strong>, reconnu comme institution muséale par le ministère de la Culture et des Communications du Québec</p><p><strong>Succursale Guy-Sanche</strong> de la bibliothèque municipale</p><p>Plusieurs organismes partenaires dont l'<strong>Académie de danse de l'Outaouais</strong>, les <strong>Archives de Gatineau</strong>, <strong>Bibliothèque et archives nationales du Québec</strong>, le <strong>Centre régional d'archives&nbsp;de l'Outaouais</strong>, la <strong>Société de généalogie de l'Outaouais</strong>, l'<strong>École de musique de l'Outaouais</strong> et <strong>Radio-Jeunesse</strong>.</p><p>La Maison de la culture de Gatineau constitue un instrument privilégiépour favoriser le développement de la vie culturelle sur le territoire de la ville de Gatineau.</p>"
+        }
+      ],
+      "image": [
+        {
+          "@id": "_:b7",
+          "@type": "large"
+        },
+        {
+          "@id": "_:b8",
+          "@type": "original"
+        },
+        {
+          "@id": "_:b9",
+          "@type": "thumbnail"
+        },
+        {
+          "@id": "http://kg.footlight.io/ImageObject",
+          "@type": "@type"
+        }
+      ],
+      "name": [
+        {
+          "@language": "en",
+          "@value": "Maison de la culture de Gatineau"
+        },
+        {
+          "@language": "fr",
+          "@value": "Maison de la culture de Gatineau"
+        }
+      ],
+      "sameAs": [
+        {
+          "@id": "_:b15",
+          "@type": "ArtsdataIdentifier",
+          "uri": "http://kg.artsdata.ca/resource/K16-67"
+        },
+        {
+          "@id": "_:b16",
+          "uri": "http://scenepro.ca#Organization284"
+        }
+      ],
+      "url": {
+        "@id": "https://www.maisondelaculture.ca/",
+        "@type": "uri"
+      }
+    },
+    {
+      "@id": "http://kg.footlight.io/645bd8f67db98f0065dd251b",
+      "@type": "Organization",
+      "description": [
+        {
+          "@language": "en",
+          "@value": "<p>Since 2002, Theatre Wakefield has developed arts and culture in the Lower Gatineau Valley.Theatre Wakefield presents a variety of programs for all ages ranging from training workshops to heritage projects that provide professional learning, personal development opportunities… and fun too!We produce main-stage performances, dramatic readings, heritage animation projects, Wakefield Doc Fest, Ta Da! Festival, various hosted productions and a variety of training workshops. Our focus is on community theatre and film but we are continually embracing new artistic genres in response to community demand.</p>"
+        },
+        {
+          "@language": "fr",
+          "@value": "<p>En culture, l’action de la Ville est principalement mise en œuvre par le Service des arts, de la cultureet des lettres (SACL), avec l’appui d’autres services municipaux. Le Service compte environ 65 employés à temps plein et 200 employés occasionnels et à horaire variable, notamment pour couvrirles besoins du réseau de bibliothèques.Mission du Service des arts, de la culture et des lettres/ Mettre les citoyens de tout âge et origine en contact avec la culture pour dynamiser leur milieude vie, favoriser l’appartenance au territoire ainsi que la cohésion sociale./ Faire de la culture un des piliers du développement, de la vitalité et de l’identité de Gatineau./ Être un leader dans la mise en place des conditions propices au développement et au rayonnement des artistes, artisans, auteurs, organismes et travailleurs culturels d’ici./ Faire de Gatineau une destination événementielle sportive et culturelle de classe internationale./ Démocratiser l’accès à la culture en reconnaissant le rôle pivot de la pratique culturelleamateur.</p>"
+        }
+      ],
+      "image": [
+        {
+          "@id": "_:b106",
+          "@type": "large"
+        },
+        {
+          "@id": "_:b107",
+          "@type": "original"
+        },
+        {
+          "@id": "_:b108",
+          "@type": "thumbnail"
+        },
+        {
+          "@id": "http://kg.footlight.io/ImageObject",
+          "@type": "@type"
+        }
+      ],
+      "name": [
+        {
+          "@language": "en",
+          "@value": "Ville de Gatineau"
+        },
+        {
+          "@language": "fr",
+          "@value": "Ville de Gatineau"
+        }
+      ],
+      "sameAs": [
+        {
+          "@id": "_:b114",
+          "@type": "ArtsdataIdentifier",
+          "uri": "http://kg.artsdata.ca/resource/K16-114"
+        },
+        {
+          "@id": "_:b115",
+          "uri": "http://scenepro.ca#Organization345"
+        },
+        {
+          "@id": "_:b116",
+          "uri": "http://kg.footlight.io/resource/e3e03abf-45cb-46a4-854b-bc0358d6c652"
+        }
+      ],
+      "url": {
+        "@id": "https://www.gatineau.ca",
+        "@type": "uri"
+      }
+    },
+    {
+      "@id": "http://kg.footlight.io/ImageObject",
+      "@type": "@type",
+      "description": null,
+      "name": null,
+      "url": null
+    },
+    {
+      "@id": "http://www.slo.qc.ca/",
+      "@type": "uri",
+      "description": null,
+      "name": null,
+      "url": null
+    },
+    {
+      "@id": "https://ensembleprisme.ca",
+      "@type": "uri",
+      "description": null,
+      "name": null,
+      "url": null
+    },
+    {
+      "@id": "https://folkloreoutaouais.org/",
+      "@type": "uri",
+      "description": null,
+      "name": null,
+      "url": null
+    },
+    {
+      "@id": "https://lepointdevente.com/billets/1l2230428001",
+      "@type": "uri",
+      "description": null,
+      "name": null,
+      "url": null
+    },
+    {
+      "@id": "https://lepointdevente.com/tickets/sqr230415001",
+      "@type": "uri",
+      "description": null,
+      "name": null,
+      "url": null
+    },
+    {
+      "@id": "https://p2vallees.ca/",
+      "@type": "uri",
+      "description": null,
+      "name": null,
+      "url": null
+    },
+    {
+      "@id": "https://toutculture.ca/evenements/exposition-benjamin-j-allard/24669",
+      "@type": "uri",
+      "description": null,
+      "name": null,
+      "url": null
+    },
+    {
+      "@id": "https://toutculture.ca/evenements/illumination-du-pont-felix-gabriel-marchand/22948",
+      "@type": "uri",
+      "description": null,
+      "name": null,
+      "url": null
+    },
+    {
+      "@id": "https://toutculture.ca/evenements/la-ou-le-temps-s-arrete-where-time-stands-still-de-by-rene-lyne-charlebois/24303",
+      "@type": "uri",
+      "description": null,
+      "name": null,
+      "url": null
+    },
+    {
+      "@id": "https://toutculture.ca/evenements/sans-objet-un-renku-photographique-une-exposition-de-raymond-aubin-richard-perron-et-richard-robesco/22954",
+      "@type": "uri",
+      "description": null,
+      "name": null,
+      "url": null
+    },
+    {
+      "@id": "https://www.gatineau.ca",
+      "@type": "uri",
+      "description": null,
+      "name": null,
+      "url": null
+    },
+    {
+      "@id": "https://www.maisondelaculture.ca/",
+      "@type": "uri",
+      "description": null,
+      "name": null,
+      "url": null
+    },
+    {
+      "@id": "https://www.maisondelaculture.ca/Salle-Odyssee/index.html",
+      "@type": "uri",
+      "description": null,
+      "name": null,
+      "url": null
+    }
+  ]
+}
