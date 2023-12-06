@@ -17,20 +17,22 @@ jobs:
     - name: Login to retrieve access token and download ttl file
       run: |
         access_token=$(curl --location ${{ secrets.CMS_LOGIN_URL }} \
-        --header 'Content-Type: application/json' \
+        -H 'Content-Type: application/json' \
+        -H "Referer: ${{ secrets.CMS_REFERER_HEADER }}" \
         --data-raw '{
             "email": ${{ secrets.USER_EMAIL }},
             "password": ${{ secrets.USER_PASSWORD }}
         }' | jq -r '.accessToken')
 
         curl --output /home/ubuntu/event.ttl  --location ${{ secrets.CMS_URL_TO_EXPORT_EVENTS }} \
-        --header "Authorization: Bearer $token" \
-        --header 'calendar-id: ${{ secrets.CALENDAR_ID }}' 
+        -H "Authorization: Bearer $token" \
+        -H "Referer: ${{ secrets.CMS_REFERER_HEADER }}" \
+        -H 'calendar-id: ${{ secrets.CALENDAR_ID }}' 
         
     - name: Upload TTL file to GraphDB
       run: |
         curl --location ${{ secrets.GRAPH_DB_URL }} \
-        --header 'Content-Type: text/turtle' \
+        -H 'Content-Type: text/turtle' \
         --data '@/home/ubuntu/event.ttl'
     
     - name: To remove ttl file after uploading to Graphdb
