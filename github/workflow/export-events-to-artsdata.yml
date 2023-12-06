@@ -1,0 +1,38 @@
+name: To export events to Artsdata
+
+on:
+  workflow_dispatch:
+
+jobs: 
+  download-ttl-and-upload:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Install jq
+      run: sudo apt install jq
+
+    - name: Login to retrieve access token and download ttl file
+      run: |
+        access_token=$(curl --location ${{ secrets.CMS_LOGIN_URL }} \
+        --header 'Content-Type: application/json' \
+        --data-raw '{
+            "email": ${{ secrets.USER_EMAIL }},
+            "password": ${{ secrets.USER_PASSWORD }}
+        }' | jq -r '.accessToken')
+
+        curl --output /home/ubuntu/event.ttl  --location ${{ secrets.CMS_URL_TO_EXPORT_EVENTS }} \
+        --header "Authorization: Bearer $token" \
+        --header 'calendar-id: ${{ secrets.CALENDAR_ID }}' 
+        
+    - name: Upload TTL file to GraphDB
+      run: |
+        curl --location ${{ secrets.GRAPH_DB_URL }} \
+        --header 'Content-Type: text/turtle' \
+        --data '@/home/ubuntu/event.ttl'
+    
+    - name: To remove ttl file after uploading to Graphdb
+      run: |
+        rm /home/ubuntu/event.ttl
