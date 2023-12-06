@@ -16,7 +16,7 @@ jobs:
 
     - name: Login to retrieve access token and download ttl file
       run: |
-        access_token=$(curl --location ${{ secrets.CMS_LOGIN_URL }} \
+        token=$(curl --location ${{ secrets.CMS_LOGIN_URL }} \
         -H 'Content-Type: application/json' \
         -H "Referer: ${{ secrets.CMS_REFERER_HEADER }}" \
         --data-raw '{
