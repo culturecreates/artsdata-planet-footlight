@@ -12,15 +12,25 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Install jq
-      run: sudo apt install jq
+      run: sudo apt update && sudo apt install jq
 
     - name: Login to retrieve access token and download ttl file
       run: |
-        token=$(curl --location ${{ secrets.CMS_LOGIN_URL }} -H "Content-Type: application/json" -H "Referer: ${{ secrets.CMS_REFERER_HEADER }}" --data-raw '{ "email": ${{ secrets.USER_EMAIL }}, "password": ${{ secrets.USER_PASSWORD }} }' | jq -r '.accessToken'); curl --output /home/ubuntu/event.ttl  --location ${{ secrets.CMS_URL_TO_EXPORT_EVENTS }} -H "Authorization: Bearer $token" -H "Referer: ${{ secrets.CMS_REFERER_HEADER }}" -H "calendar-id: ${{ secrets.CALENDAR_ID }}" 
+        token=$(curl --location "${{ secrets.CMS_LOGIN_URL }}" \
+          -H "Content-Type: application/json" \
+          -H "Referer: ${{ secrets.CMS_REFERER_HEADER }}" \
+          --data-raw '{ "email": ${{ secrets.USER_EMAIL }}, "password": ${{ secrets.USER_PASSWORD }} }' | jq -r '.accessToken'); 
+
+        echo "Access Token: $token"
+          
+        curl --output /home/ubuntu/event.ttl  --location "${{ secrets.CMS_URL_TO_EXPORT_EVENTS }}" \
+          -H "Authorization: Bearer $token" \
+          -H "Referer: ${{ secrets.CMS_REFERER_HEADER }}" \
+          -H "calendar-id: ${{ secrets.CALENDAR_ID }}" 
         
     - name: Upload TTL file to GraphDB
       run: |
-        curl --location ${{ secrets.GRAPH_DB_URL }} -H "Content-Type: text/turtle" --data '@/home/ubuntu/event.ttl'
+        curl --location "${{ secrets.GRAPH_DB_URL }}" -H "Content-Type: text/turtle" --data '@/home/ubuntu/event.ttl'
     
     - name: To remove ttl file after uploading to Graphdb
       run: |
