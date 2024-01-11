@@ -9,7 +9,7 @@ on:
         required: true
       footlight-url:
         type: string
-        description: The URL that provides data in json format
+        description: The URL that provides data in json format.
         required: true
       artifact-name:
         type: string
@@ -17,7 +17,7 @@ on:
         required: true
       call-back-url:
         type: string
-        description: The artifact name is used to identify the dataset in Nebula.
+        description: The call back url.
         required: true
 
 jobs:
@@ -81,5 +81,5 @@ jobs:
                     "version": "${{ steps.version.outputs.dumpdate }}",
                     "downloadUrl": "https://footlight-aggregator-pipeline-files.s3.ca-central-1.amazonaws.com/events.ttl",
                     "downloadFile": "events.ttl",
-                    "reportCallbackUrl": "https://webhook.site/be245341-5a1b-44cd-896f-590003162b07"
+                    "reportCallbackUrl": "${{inputs.call-back-url}}"
                   }'
