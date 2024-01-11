@@ -1,0 +1,85 @@
+name: Export entities from footlight to Artsdata
+
+on:
+  workflow_dispatch:
+    inputs:
+      onto-refine-confiuration-url:
+        type: string
+        description: OntoRefine project configuration URL. This configuration is used to transform data.
+        required: true
+      footlight-url:
+        type: string
+        description: The URL that provides data in json format
+        required: true
+      artifact-name:
+        type: string
+        description: The artifact name is used to identify the dataset in Nebula.
+        required: true
+      call-back-url:
+        type: string
+        description: The artifact name is used to identify the dataset in Nebula.
+        required: true
+
+jobs:
+  transform-open-api-events-using-ontorefine:
+    runs-on: ubuntu-latest
+    container:
+      image: ontotext/refine:1.2.1
+      options: --user root
+      ports:
+        - 7333:7333
+    steps:
+      - name: Run ontorefine server
+        run: /opt/ontorefine/dist/bin/ontorefine &
+
+      - name: Download json data from the API
+        run: |
+          apk update && apk add curl && \
+          curl '${{inputs.footlight-url}}' >> events.json
+
+      - name: Download project-configuration-file
+        run: | 
+          curl '${{inputs.onto-refine-confiuration-url}}' >> project-config.json
+
+      - name: Transform json data to RDF
+        run: |
+          /opt/ontorefine/dist/bin/ontorefine-cli \
+          transform events.json \
+          -u http://localhost:7333 \
+          --configurations project-config.json \
+          -f json >> events.ttl
+
+      - name: Upload RDF file to S3
+        uses: keithweaver/aws-s3-github-action@v1.0.0
+        with:
+          command: cp
+          source: events.ttl
+          destination: s3://footlight-aggregator-pipeline-files
+          aws_access_key_id: ${{ secrets.S3_ACCESS_KEY_ID}}
+          aws_secret_access_key: ${{ secrets.S3_SECRET_ACCESS_KEY }}
+          aws_region: ca-central-1
+          flags: --acl public-read
+
+
+  upload-to-artsdata:
+    needs: transform-open-api-events-using-ontorefine
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set current date as output
+        id: version  # this is used on variable path
+        run: echo "dumpdate=$(date +'%Y-%m-%dT%H-%M-%S')" >> $GITHUB_OUTPUT
+
+      - name: Call Artsdata Databus
+        run: |
+          curl \
+          -H 'Content-Type: application/json' \
+          -X POST http://api.artsdata.ca/databus/  \
+          --data '{ "artifact": "${{inputs.artifact-name}}",
+                    "comment": "Events from the Footlight CMS",
+                    "publisher": "${{ secrets.PUBLISHER_URI_GREGORY }}",
+                    "group": "${{ github.event.repository.name }}",
+                    "version": "${{ steps.version.outputs.dumpdate }}",
+                    "downloadUrl": "https://footlight-aggregator-pipeline-files.s3.ca-central-1.amazonaws.com/events.ttl",
+                    "downloadFile": "events.ttl",
+                    "reportCallbackUrl": "https://webhook.site/be245341-5a1b-44cd-896f-590003162b07"
+                  }'
