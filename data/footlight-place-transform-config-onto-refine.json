@@ -13,9 +13,9 @@
       "includeFileSources": false,
       "includeArchiveFileName": false,
       "disableAutoPreview": false,
-      "projectName": "events",
+      "projectName": "places",
       "projectTags": [],
-      "fileSource": "https://api.footlight.io/calendars/tout-culture/events?page=1&limit=10",
+      "fileSource": "https://api.footlight.io/calendars/tout-culture/places?page=1&limit=200",
       "archiveFileName": null
     }
   ],
@@ -34,14 +34,10 @@
       "mapping": {
         "baseIRI": "http://example.com/base/",
         "namespaces": {
-          "schema": "http://schema.org/",
-          "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
-          "xsd": "http://www.w3.org/2001/XMLSchema#",
-          "footlight_events": "http://api.footlight.io/events/",
           "footlight_places": "http://api.footlight.io/places/",
-          "footlight_concepts": "http://api.footlight.io/concepts/",
-          "footlight_postaladdress": "http://api.footlight.io/postal_Address/",
-          "skos": "http://www.w3.org/2004/02/skos/core#"
+          "schema": "http://schema.org/",
+          "footlight_concept": "http://api.footlight.io/concepts/",
+          "footlight_postaladdress": "http://api.footlight.io/postal_Address/"
         },
         "subjectMappings": [
           {
@@ -52,14 +48,14 @@
               },
               "transformation": {
                 "language": "prefix",
-                "expression": "footlight_events"
+                "expression": "footlight_places"
               }
             },
             "typeMappings": [
               {
                 "valueSource": {
                   "source": "constant",
-                  "constant": "Event"
+                  "constant": "Place"
                 },
                 "transformation": {
                   "language": "prefix",
@@ -67,20 +63,6 @@
                 }
               }
             ],
-            "propertyMappings": []
-          },
-          {
-            "subject": {
-              "valueSource": {
-                "source": "column",
-                "columnName": "_ - id"
-              },
-              "transformation": {
-                "language": "prefix",
-                "expression": "footlight_events"
-              }
-            },
-            "typeMappings": [],
             "propertyMappings": [
               {
                 "property": {
@@ -108,21 +90,7 @@
                         }
                       }
                     }
-                  }
-                ]
-              },
-              {
-                "property": {
-                  "valueSource": {
-                    "source": "constant",
-                    "constant": "name"
                   },
-                  "transformation": {
-                    "language": "prefix",
-                    "expression": "schema"
-                  }
-                },
-                "values": [
                   {
                     "valueSource": {
                       "source": "column",
@@ -144,7 +112,7 @@
                 "property": {
                   "valueSource": {
                     "source": "constant",
-                    "constant": "startDate"
+                    "constant": "description"
                   },
                   "transformation": {
                     "language": "prefix",
@@ -155,18 +123,29 @@
                   {
                     "valueSource": {
                       "source": "column",
-                      "columnName": "_ - startDate"
+                      "columnName": "_ - description - en"
                     },
                     "valueType": {
-                      "type": "datatype_literal",
-                      "datatype": {
+                      "type": "language_literal",
+                      "language": {
                         "valueSource": {
                           "source": "constant",
-                          "constant": "date"
-                        },
-                        "transformation": {
-                          "language": "prefix",
-                          "expression": "xsd"
+                          "constant": "en"
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "_ - description - fr"
+                    },
+                    "valueType": {
+                      "type": "language_literal",
+                      "language": {
+                        "valueSource": {
+                          "source": "constant",
+                          "constant": "fr"
                         }
                       }
                     }
@@ -177,7 +156,7 @@
                 "property": {
                   "valueSource": {
                     "source": "constant",
-                    "constant": "startDate"
+                    "constant": "disambiguatingDescription"
                   },
                   "transformation": {
                     "language": "prefix",
@@ -188,18 +167,29 @@
                   {
                     "valueSource": {
                       "source": "column",
-                      "columnName": "_ - startDateTime"
+                      "columnName": "_ - disambiguatingDescription - en"
                     },
                     "valueType": {
-                      "type": "datatype_literal",
-                      "datatype": {
+                      "type": "language_literal",
+                      "language": {
                         "valueSource": {
                           "source": "constant",
-                          "constant": "dateTime"
-                        },
-                        "transformation": {
-                          "language": "prefix",
-                          "expression": "xsd"
+                          "constant": "en"
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "_ - disambiguatingDescription - fr"
+                    },
+                    "valueType": {
+                      "type": "language_literal",
+                      "language": {
+                        "valueSource": {
+                          "source": "constant",
+                          "constant": "fr"
                         }
                       }
                     }
@@ -210,7 +200,7 @@
                 "property": {
                   "valueSource": {
                     "source": "constant",
-                    "constant": "endDate"
+                    "constant": "latitude"
                   },
                   "transformation": {
                     "language": "prefix",
@@ -221,20 +211,10 @@
                   {
                     "valueSource": {
                       "source": "column",
-                      "columnName": "_ - endDate"
+                      "columnName": "_ - geo - latitude"
                     },
                     "valueType": {
-                      "type": "datatype_literal",
-                      "datatype": {
-                        "valueSource": {
-                          "source": "constant",
-                          "constant": "date"
-                        },
-                        "transformation": {
-                          "language": "prefix",
-                          "expression": "xsd"
-                        }
-                      }
+                      "type": "literal"
                     }
                   }
                 ]
@@ -243,7 +223,7 @@
                 "property": {
                   "valueSource": {
                     "source": "constant",
-                    "constant": "endDate"
+                    "constant": "longitude"
                   },
                   "transformation": {
                     "language": "prefix",
@@ -254,49 +234,10 @@
                   {
                     "valueSource": {
                       "source": "column",
-                      "columnName": "_ - endDateTime"
+                      "columnName": "_ - geo - longitude"
                     },
                     "valueType": {
-                      "type": "datatype_literal",
-                      "datatype": {
-                        "valueSource": {
-                          "source": "constant",
-                          "constant": "dateTime"
-                        },
-                        "transformation": {
-                          "language": "prefix",
-                          "expression": "xsd"
-                        }
-                      }
-                    }
-                  }
-                ]
-              },
-              {
-                "property": {
-                  "valueSource": {
-                    "source": "constant",
-                    "constant": "eventAttendanceMode"
-                  },
-                  "transformation": {
-                    "language": "prefix",
-                    "expression": "schema"
-                  }
-                },
-                "values": [
-                  {
-                    "valueSource": {
-                      "source": "column",
-                      "columnName": "_ - eventAttendanceMode"
-                    },
-                    "transformation": {
-                      "language": "prefix",
-                      "expression": "schema"
-                    },
-                    "valueType": {
-                      "type": "iri",
-                      "typeMappings": [],
-                      "propertyMappings": []
+                      "type": "literal"
                     }
                   }
                 ]
@@ -333,7 +274,7 @@
                 "property": {
                   "valueSource": {
                     "source": "constant",
-                    "constant": "location"
+                    "constant": "address"
                   },
                   "transformation": {
                     "language": "prefix",
@@ -344,7 +285,36 @@
                   {
                     "valueSource": {
                       "source": "column",
-                      "columnName": "_ - location - _ - id"
+                      "columnName": "_ - address - id"
+                    },
+                    "transformation": {
+                      "language": "prefix",
+                      "expression": "footlight_postaladdress"
+                    },
+                    "valueType": {
+                      "type": "iri",
+                      "typeMappings": [],
+                      "propertyMappings": []
+                    }
+                  }
+                ]
+              },
+              {
+                "property": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "containedInPlace"
+                  },
+                  "transformation": {
+                    "language": "prefix",
+                    "expression": "schema"
+                  }
+                },
+                "values": [
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "_ - containedInPlace - id"
                     },
                     "transformation": {
                       "language": "prefix",
@@ -364,120 +334,7 @@
             "subject": {
               "valueSource": {
                 "source": "column",
-                "columnName": "_ - location - _ - id"
-              },
-              "transformation": {
-                "language": "prefix",
-                "expression": "footlight_places"
-              }
-            },
-            "typeMappings": [
-              {
-                "valueSource": {
-                  "source": "constant",
-                  "constant": "Place"
-                },
-                "transformation": {
-                  "language": "prefix",
-                  "expression": "schema"
-                }
-              }
-            ],
-            "propertyMappings": [
-              {
-                "property": {
-                  "valueSource": {
-                    "source": "constant",
-                    "constant": "name"
-                  },
-                  "transformation": {
-                    "language": "prefix",
-                    "expression": "schema"
-                  }
-                },
-                "values": [
-                  {
-                    "valueSource": {
-                      "source": "column",
-                      "columnName": "_ - location - _ - name - en"
-                    },
-                    "valueType": {
-                      "type": "language_literal",
-                      "language": {
-                        "valueSource": {
-                          "source": "constant",
-                          "constant": "en"
-                        }
-                      }
-                    }
-                  }
-                ]
-              },
-              {
-                "property": {
-                  "valueSource": {
-                    "source": "constant",
-                    "constant": "name"
-                  },
-                  "transformation": {
-                    "language": "prefix",
-                    "expression": "schema"
-                  }
-                },
-                "values": [
-                  {
-                    "valueSource": {
-                      "source": "column",
-                      "columnName": "_ - location - _ - name - fr"
-                    },
-                    "valueType": {
-                      "type": "language_literal",
-                      "language": {
-                        "valueSource": {
-                          "source": "constant",
-                          "constant": "fr"
-                        }
-                      }
-                    }
-                  }
-                ]
-              },
-              {
-                "property": {
-                  "valueSource": {
-                    "source": "constant",
-                    "constant": "address"
-                  },
-                  "transformation": {
-                    "language": "prefix",
-                    "expression": "schema"
-                  }
-                },
-                "values": [
-                  {
-                    "valueSource": {
-                      "source": "column",
-                      "columnName": "_ - location - _ - address - id"
-                    },
-                    "transformation": {
-                      "language": "prefix",
-                      "expression": "footlight_postaladdress"
-                    },
-                    "valueType": {
-                      "type": "iri",
-                      "typeMappings": [],
-                      "propertyMappings": []
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "subject": {
-              "valueSource": {
-                "source": "column",
-                "columnName": "_ - location - _ - address - id"
+                "columnName": "_ - address - id"
               },
               "transformation": {
                 "language": "prefix",
@@ -501,219 +358,6 @@
                 "property": {
                   "valueSource": {
                     "source": "constant",
-                    "constant": "addressCountry"
-                  },
-                  "transformation": {
-                    "language": "prefix",
-                    "expression": "schema"
-                  }
-                },
-                "values": [
-                  {
-                    "valueSource": {
-                      "source": "column",
-                      "columnName": "_ - location - _ - address - addressCountry - en"
-                    },
-                    "valueType": {
-                      "type": "language_literal",
-                      "language": {
-                        "valueSource": {
-                          "source": "constant",
-                          "constant": "en"
-                        }
-                      }
-                    }
-                  }
-                ]
-              },
-              {
-                "property": {
-                  "valueSource": {
-                    "source": "constant",
-                    "constant": "addressCountry"
-                  },
-                  "transformation": {
-                    "language": "prefix",
-                    "expression": "schema"
-                  }
-                },
-                "values": [
-                  {
-                    "valueSource": {
-                      "source": "column",
-                      "columnName": "_ - location - _ - address - addressCountry - fr"
-                    },
-                    "valueType": {
-                      "type": "language_literal",
-                      "language": {
-                        "valueSource": {
-                          "source": "constant",
-                          "constant": "fr"
-                        }
-                      }
-                    }
-                  }
-                ]
-              },
-              {
-                "property": {
-                  "valueSource": {
-                    "source": "constant",
-                    "constant": "postalCode"
-                  },
-                  "transformation": {
-                    "language": "prefix",
-                    "expression": "schema"
-                  }
-                },
-                "values": [
-                  {
-                    "valueSource": {
-                      "source": "column",
-                      "columnName": "_ - location - _ - address - postalCode"
-                    },
-                    "valueType": {
-                      "type": "literal"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "subject": {
-              "valueSource": {
-                "source": "column",
-                "columnName": "_ - id"
-              },
-              "transformation": {
-                "language": "prefix",
-                "expression": "footlight_events"
-              }
-            },
-            "typeMappings": [],
-            "propertyMappings": [
-              {
-                "property": {
-                  "valueSource": {
-                    "source": "constant",
-                    "constant": "additionalType"
-                  },
-                  "transformation": {
-                    "language": "prefix",
-                    "expression": "schema"
-                  }
-                },
-                "values": [
-                  {
-                    "valueSource": {
-                      "source": "column",
-                      "columnName": "_ - additionalType - _ - id"
-                    },
-                    "transformation": {
-                      "language": "prefix",
-                      "expression": "footlight_concepts"
-                    },
-                    "valueType": {
-                      "type": "iri",
-                      "typeMappings": [],
-                      "propertyMappings": []
-                    }
-                  }
-                ]
-              },
-              {
-                "property": {
-                  "valueSource": {
-                    "source": "constant",
-                    "constant": "eventStatus"
-                  },
-                  "transformation": {
-                    "language": "prefix",
-                    "expression": "schema"
-                  }
-                },
-                "values": [
-                  {
-                    "valueSource": {
-                      "source": "column",
-                      "columnName": "_ - eventStatus"
-                    },
-                    "transformation": {
-                      "language": "prefix",
-                      "expression": "schema"
-                    },
-                    "valueType": {
-                      "type": "iri",
-                      "typeMappings": [],
-                      "propertyMappings": []
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "subject": {
-              "valueSource": {
-                "source": "column",
-                "columnName": "_ - location - _ - address - id"
-              },
-              "transformation": {
-                "language": "prefix",
-                "expression": "footlight_postaladdress"
-              }
-            },
-            "typeMappings": [],
-            "propertyMappings": [
-              {
-                "property": {
-                  "valueSource": {
-                    "source": "constant",
-                    "constant": "addressLocality"
-                  },
-                  "transformation": {
-                    "language": "prefix",
-                    "expression": "schema"
-                  }
-                },
-                "values": [
-                  {
-                    "valueSource": {
-                      "source": "column",
-                      "columnName": "_ - location - _ - name - en"
-                    },
-                    "valueType": {
-                      "type": "language_literal",
-                      "language": {
-                        "valueSource": {
-                          "source": "constant",
-                          "constant": "en"
-                        }
-                      }
-                    }
-                  },
-                  {
-                    "valueSource": {
-                      "source": "column",
-                      "columnName": "_ - location - _ - address - addressLocality - fr"
-                    },
-                    "valueType": {
-                      "type": "language_literal",
-                      "language": {
-                        "valueSource": {
-                          "source": "constant",
-                          "constant": "fr"
-                        }
-                      }
-                    }
-                  }
-                ]
-              },
-              {
-                "property": {
-                  "valueSource": {
-                    "source": "constant",
                     "constant": "streetAddress"
                   },
                   "transformation": {
@@ -725,7 +369,7 @@
                   {
                     "valueSource": {
                       "source": "column",
-                      "columnName": "_ - location - _ - address - streetAddress - en"
+                      "columnName": "_ - address - streetAddress - en"
                     },
                     "valueType": {
                       "type": "language_literal",
@@ -740,7 +384,7 @@
                   {
                     "valueSource": {
                       "source": "column",
-                      "columnName": "_ - location - _ - address - streetAddress - fr"
+                      "columnName": "_ - address - streetAddress - fr"
                     },
                     "valueType": {
                       "type": "language_literal",
@@ -769,7 +413,7 @@
                   {
                     "valueSource": {
                       "source": "column",
-                      "columnName": "_ - location - _ - address - addressRegion - en"
+                      "columnName": "_ - address - addressRegion - en"
                     },
                     "valueType": {
                       "type": "language_literal",
@@ -784,7 +428,7 @@
                   {
                     "valueSource": {
                       "source": "column",
-                      "columnName": "_ - location - _ - address - addressRegion - fr"
+                      "columnName": "_ - address - addressRegion - fr"
                     },
                     "valueType": {
                       "type": "language_literal",
@@ -797,27 +441,12 @@
                     }
                   }
                 ]
-              }
-            ]
-          },
-          {
-            "subject": {
-              "valueSource": {
-                "source": "column",
-                "columnName": "_ - location - _ - id"
               },
-              "transformation": {
-                "language": "prefix",
-                "expression": "footlight_places"
-              }
-            },
-            "typeMappings": [],
-            "propertyMappings": [
               {
                 "property": {
                   "valueSource": {
                     "source": "constant",
-                    "constant": "sameAs"
+                    "constant": "addressLocality"
                   },
                   "transformation": {
                     "language": "prefix",
@@ -828,89 +457,7 @@
                   {
                     "valueSource": {
                       "source": "column",
-                      "columnName": "_ - location - _ - sameAs - sameAs"
-                    },
-                    "transformation": {
-                      "language": "raw"
-                    },
-                    "valueType": {
-                      "type": "iri",
-                      "typeMappings": [],
-                      "propertyMappings": []
-                    }
-                  }
-                ]
-              },
-              {
-                "property": {
-                  "valueSource": {
-                    "source": "constant",
-                    "constant": "url"
-                  },
-                  "transformation": {
-                    "language": "prefix",
-                    "expression": "schema"
-                  }
-                },
-                "values": [
-                  {
-                    "valueSource": {
-                      "source": "column",
-                      "columnName": "_ - location - _ - url"
-                    },
-                    "transformation": {
-                      "language": "raw"
-                    },
-                    "valueType": {
-                      "type": "iri",
-                      "typeMappings": [],
-                      "propertyMappings": []
-                    }
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "subject": {
-              "valueSource": {
-                "source": "column",
-                "columnName": "_ - additionalType - _ - id"
-              },
-              "transformation": {
-                "language": "prefix",
-                "expression": "footlight_concepts"
-              }
-            },
-            "typeMappings": [
-              {
-                "valueSource": {
-                  "source": "constant",
-                  "constant": "Concept"
-                },
-                "transformation": {
-                  "language": "prefix",
-                  "expression": "skos"
-                }
-              }
-            ],
-            "propertyMappings": [
-              {
-                "property": {
-                  "valueSource": {
-                    "source": "constant",
-                    "constant": "name"
-                  },
-                  "transformation": {
-                    "language": "prefix",
-                    "expression": "schema"
-                  }
-                },
-                "values": [
-                  {
-                    "valueSource": {
-                      "source": "column",
-                      "columnName": "_ - additionalType - _ - name - en"
+                      "columnName": "_ - address - addressLocality - en"
                     },
                     "valueType": {
                       "type": "language_literal",
@@ -925,7 +472,7 @@
                   {
                     "valueSource": {
                       "source": "column",
-                      "columnName": "_ - additionalType - _ - name - fr"
+                      "columnName": "_ - address - addressLocality - fr"
                     },
                     "valueType": {
                       "type": "language_literal",
@@ -938,27 +485,12 @@
                     }
                   }
                 ]
-              }
-            ]
-          },
-          {
-            "subject": {
-              "valueSource": {
-                "source": "column",
-                "columnName": "_ - location - _ - id"
               },
-              "transformation": {
-                "language": "prefix",
-                "expression": "footlight_places"
-              }
-            },
-            "typeMappings": [],
-            "propertyMappings": [
               {
                 "property": {
                   "valueSource": {
                     "source": "constant",
-                    "constant": "longitude"
+                    "constant": "addressCountry"
                   },
                   "transformation": {
                     "language": "prefix",
@@ -969,10 +501,31 @@
                   {
                     "valueSource": {
                       "source": "column",
-                      "columnName": "_ - location - _ - geo - longitude"
+                      "columnName": "_ - address - addressCountry - en"
                     },
                     "valueType": {
-                      "type": "literal"
+                      "type": "language_literal",
+                      "language": {
+                        "valueSource": {
+                          "source": "constant",
+                          "constant": "en"
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "_ - address - addressCountry - fr"
+                    },
+                    "valueType": {
+                      "type": "language_literal",
+                      "language": {
+                        "valueSource": {
+                          "source": "constant",
+                          "constant": "fr"
+                        }
+                      }
                     }
                   }
                 ]
@@ -981,7 +534,7 @@
                 "property": {
                   "valueSource": {
                     "source": "constant",
-                    "constant": "latitude"
+                    "constant": "postalCode"
                   },
                   "transformation": {
                     "language": "prefix",
@@ -992,7 +545,7 @@
                   {
                     "valueSource": {
                       "source": "column",
-                      "columnName": "_ - location - _ - geo - latitude"
+                      "columnName": "_ - address - postalCode"
                     },
                     "valueType": {
                       "type": "literal"
