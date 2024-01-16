@@ -65,7 +65,7 @@ jobs:
       - name: Rename file
         id: step-7
         run: |
-          mv entities.ttl $file_name
+          mv -f entities.ttl $file_name
 
       - name: Upload RDF file to S3
         id: step-8
