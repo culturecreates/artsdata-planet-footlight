@@ -20,7 +20,7 @@ on:
         description: The call back url.
         required: true
 env:
-  rdf-file-name: "entities-${{ random_uuid() }}.ttl"
+  rdf-file-name: "entities-$(uuidgen).ttl"
 
 jobs:
   transform-open-api-events-using-ontorefine:
