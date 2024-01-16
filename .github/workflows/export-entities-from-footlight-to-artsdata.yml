@@ -94,7 +94,7 @@ jobs:
                     "comment": "Entites from the Footlight: ${{inputs.footlight-url}}",
                     "publisher": "${{ secrets.PUBLISHER_URI_GREGORY }}",
                     "group": "${{ github.event.repository.name }}",
-                    "version": "${{ steps.version.outputs.dumpdate }}",
+                    "version": "${{ steps.step-1.outputs.dumpdate }}",
                     "downloadUrl": "https://footlight-aggregator-pipeline-files.s3.ca-central-1.amazonaws.com/${{needs.transform-open-api-events-using-ontorefine.outputs.output_file_name}}",
                     "downloadFile": ${{needs.transform-open-api-events-using-ontorefine.outputs.output_file_name}},
                     "reportCallbackUrl": "${{inputs.call-back-url}}"
