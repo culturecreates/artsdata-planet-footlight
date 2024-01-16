@@ -20,7 +20,7 @@ on:
         description: The call back url.
         required: true
 env:
-  rdf-file-name: "entities-$(uuidgen).ttl"
+  rdf-file-name: "entities-${{ random_uuid() }}.ttl"
 
 jobs:
   transform-open-api-events-using-ontorefine:
@@ -31,6 +31,10 @@ jobs:
       ports:
         - 7333:7333
     steps:
+      - name: Set current date as output
+        id: version  # this is used on variable path
+        run: echo "${{env.rdf-file-name}}"
+
       - name: Run ontorefine server
         run: /opt/ontorefine/dist/bin/ontorefine &
 
