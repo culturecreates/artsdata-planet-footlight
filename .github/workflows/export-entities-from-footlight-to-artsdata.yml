@@ -60,9 +60,15 @@ jobs:
           transform entities.json \
           -u http://localhost:7333 \
           --configurations project-config.json \
-          -f json >> "$file_name"
+          -f json >> entities.ttl
+
+      - name: Rename file
+        id: step-7
+        run: |
+          mv entities.ttl $file_name
 
       - name: Upload RDF file to S3
+        id: step-8
         uses: keithweaver/aws-s3-github-action@v1.0.0
         with:
           command: cp
