@@ -60,7 +60,7 @@ jobs:
           transform entities.json \
           -u http://localhost:7333 \
           --configurations project-config.json \
-          -f json > "$file_name"
+          -f json > entities.ttl
 
       - name: Upload RDF file to S3
         id: step-8
@@ -68,7 +68,7 @@ jobs:
         with:
           command: cp
           source: $file_name
-          destination: s3://footlight-aggregator-pipeline-files
+          destination: s3://footlight-aggregator-pipeline-files/$file_name
           aws_access_key_id: ${{ secrets.S3_ACCESS_KEY_ID}}
           aws_secret_access_key: ${{ secrets.S3_SECRET_ACCESS_KEY }}
           aws_region: ca-central-1
