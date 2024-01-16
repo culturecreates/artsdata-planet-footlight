@@ -60,12 +60,7 @@ jobs:
           transform entities.json \
           -u http://localhost:7333 \
           --configurations project-config.json \
-          -f json >> entities.ttl
-
-      - name: Rename file
-        id: step-7
-        run: |
-          cp entities.ttl "$file_name"
+          -f json > "$file_name"
 
       - name: Upload RDF file to S3
         id: step-8
