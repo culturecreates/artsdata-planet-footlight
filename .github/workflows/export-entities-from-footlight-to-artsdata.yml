@@ -51,7 +51,7 @@ jobs:
 
       - name: Set output file name
         id: step-5
-        run: file_name="entities-$(uuidgen).ttl" && $file_name >> "$GITHUB_OUTPUT"
+        run: file_name="entities-$(uuidgen).ttl" && echo "file_name=$file_name" >> "$GITHUB_OUTPUT"
 
       - name: Transform json data to RDF
         id: step-6
