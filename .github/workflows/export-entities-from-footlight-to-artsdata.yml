@@ -58,7 +58,7 @@ jobs:
           aws_access_key_id: ${{ secrets.S3_ACCESS_KEY_ID}}
           aws_secret_access_key: ${{ secrets.S3_SECRET_ACCESS_KEY }}
           aws_region: ca-central-1
-          flags: --acl public-read
+          flags: --acl public-read --content-type text/turtle
 
 
   upload-to-artsdata:
