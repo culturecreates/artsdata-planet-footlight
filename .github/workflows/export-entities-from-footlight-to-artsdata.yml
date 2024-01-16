@@ -51,7 +51,7 @@ jobs:
 
       - name: Set output file name
         id: step-5
-        run: file_name="entities-$(uuidgen).ttl" && echo "file_name=$file_name" >> "$GITHUB_OUTPUT"
+        run: echo "file_name=entities-$(uuidgen).ttl" >> $GITHUB_OUTPUT
 
       - name: Transform json data to RDF
         id: step-6
@@ -60,15 +60,15 @@ jobs:
           transform entities.json \
           -u http://localhost:7333 \
           --configurations project-config.json \
-          -f json >> entities.ttl
+          -f json >> ${{ steps.step-5.outputs.file_name }}
 
       - name: Upload RDF file to S3
         id: step-8
         uses: keithweaver/aws-s3-github-action@v1.0.0
         with:
           command: cp
-          source: entities.ttl
-          destination: s3://footlight-aggregator-pipeline-files/$file_name
+          source: ${{ steps.step-5.outputs.file_name }}
+          destination: s3://footlight-aggregator-pipeline-files/
           aws_access_key_id: ${{ secrets.S3_ACCESS_KEY_ID}}
           aws_secret_access_key: ${{ secrets.S3_SECRET_ACCESS_KEY }}
           aws_region: ca-central-1
