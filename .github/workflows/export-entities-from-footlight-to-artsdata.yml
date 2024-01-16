@@ -60,14 +60,14 @@ jobs:
           transform entities.json \
           -u http://localhost:7333 \
           --configurations project-config.json \
-          -f json > entities.ttl
+          -f json >> entities.ttl
 
       - name: Upload RDF file to S3
         id: step-8
         uses: keithweaver/aws-s3-github-action@v1.0.0
         with:
           command: cp
-          source: $file_name
+          source: entities.ttl
           destination: s3://footlight-aggregator-pipeline-files/$file_name
           aws_access_key_id: ${{ secrets.S3_ACCESS_KEY_ID}}
           aws_secret_access_key: ${{ secrets.S3_SECRET_ACCESS_KEY }}
