@@ -78,12 +78,14 @@ jobs:
     needs: transform-open-api-events-using-ontorefine
     runs-on: ubuntu-latest
     steps:
+      - env:
+          FILE_NAME: ${{needs.transform-open-api-events-using-ontorefine.outputs.output_file_name}}
+        run: |
+          echo "File name : $FILE_NAME"
+
       - name: Set current date as output
         id: version  # this is used on variable path
         run: echo "dumpdate=$(date +'%Y-%m-%dT%H-%M-%S')" >> $GITHUB_OUTPUT
-
-      - env:
-          FILE_NAME: ${{needs.transform-open-api-events-using-ontorefine.outputs.output_file_name}}
 
       - name: Call Artsdata Databus
         run: |
