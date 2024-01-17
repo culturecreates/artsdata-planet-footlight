@@ -68,7 +68,7 @@ jobs:
         with:
           command: cp
           source: ${{ steps.step-5.outputs.file_name }}
-          destination: s3://footlight-aggregator-pipeline-files/
+          destination: s3://footlight-cms-entities-exported/
           aws_access_key_id: ${{ secrets.S3_ACCESS_KEY_ID}}
           aws_secret_access_key: ${{ secrets.S3_SECRET_ACCESS_KEY }}
           aws_region: ca-central-1
@@ -95,7 +95,7 @@ jobs:
                     "publisher": "${{ secrets.PUBLISHER_URI_GREGORY }}",
                     "group": "${{ github.event.repository.name }}",
                     "version": "${{ steps.step-1.outputs.dumpdate }}",
-                    "downloadUrl": "https://footlight-aggregator-pipeline-files.s3.ca-central-1.amazonaws.com/${{needs.transform-open-api-events-using-ontorefine.outputs.output_file_name}}",
+                    "downloadUrl": "https://footlight-cms-entities-exported.s3.ca-central-1.amazonaws.com/${{needs.transform-open-api-events-using-ontorefine.outputs.output_file_name}}",
                     "downloadFile": "${{needs.transform-open-api-events-using-ontorefine.outputs.output_file_name}}",
                     "reportCallbackUrl": "${{inputs.call-back-url}}"
                   }'
