@@ -1,0 +1,140 @@
+name: Export Signe Laval entities
+
+on:
+  workflow_dispatch:
+    inputs:
+      call-back-url:
+        type: string
+        description: The call back url.
+        required: true
+
+jobs:
+  transform-open-api-events-using-ontorefine:
+    runs-on: ubuntu-latest
+    container:
+      image: ontotext/refine:1.2.1
+      options: --user root
+      ports:
+        - 7333:7333
+    outputs:
+      events_file_name: ${{ steps.step-5.outputs.events_file_name }}
+      places_file_name: ${{ steps.step-5.outputs.places_file_name }}
+    steps:
+      - name: Install requirements
+        id: step-1
+        run: apk update && apk add curl && apk add util-linux
+
+      - name: Run ontorefine server
+        id: step-2
+        run: /opt/ontorefine/dist/bin/ontorefine &
+
+      - name: Download signe-laval events
+        id: step-3
+        run: |
+          curl 'https://api.footlight.io/calendars/signe-laval/events?page=1&limit=200' >> events.json
+
+      - name: Download signe-laval events project-configuration-file
+        id: step-4
+        run: | 
+          curl 'https://raw.githubusercontent.com/culturecreates/artsdata-planet-footlight/main/data/footlight-signe-laval-event-transform-config-onto-refine.json' >> event-transform-config.json
+
+      - name: Download signe-laval places
+        id: step-5
+        run: |
+          curl 'https://api.footlight.io/calendars/signe-laval/placss?page=1&limit=200' >> places.json
+
+      - name: Download signe-laval events project-configuration-file
+        id: step-6
+        run: |
+          curl 'https://raw.githubusercontent.com/culturecreates/artsdata-planet-footlight/main/data/footlight-signe-laval-event-transform-config-onto-refine.json' >> places-transform-config.json
+
+      - name: Set output event-file name
+        id: step-7
+        run: echo "events_file_name=signe-laval-events-$(uuidgen).ttl" >> $GITHUB_OUTPUT
+
+      - name: Set output place-file name
+        id: step-8
+        run: echo "places_file_name=signe-laval-places-$(uuidgen).ttl" >> $GITHUB_OUTPUT
+
+      - name: Transform events to RDF
+        id: step-9
+        run: |
+          /opt/ontorefine/dist/bin/ontorefine-cli \
+          transform event.json \
+          -u http://localhost:7333 \
+          --configurations event-transform-config.json \
+          -f json >> ${{ steps.step-7.outputs.events_file_name }}
+
+      - name: Transform places to RDF
+        id: step-10
+        run: |
+          /opt/ontorefine/dist/bin/ontorefine-cli \
+          transform event.json \
+          -u http://localhost:7333 \
+          --configurations place-transform-config.json \
+          -f json >> ${{ steps.step-8.outputs.places_file_name }}
+
+      - name: Upload events in RDF to S3
+        id: step-11
+        uses: keithweaver/aws-s3-github-action@v1.0.0
+        with:
+          command: cp
+          source: ${{ steps.step-7.outputs.events_file_name }}
+          destination: s3://footlight-cms-entities-exported/
+          aws_access_key_id: ${{ secrets.S3_ACCESS_KEY_ID}}
+          aws_secret_access_key: ${{ secrets.S3_SECRET_ACCESS_KEY }}
+          aws_region: ca-central-1
+          flags: --acl public-read --content-type text/turtle
+
+      - name: Upload places in RDF file to S3
+        id: step-12
+        uses: keithweaver/aws-s3-github-action@v1.0.0
+        with:
+          command: cp
+          source: ${{ steps.step-8.outputs.places_file_name }}
+          destination: s3://footlight-cms-entities-exported/
+          aws_access_key_id: ${{ secrets.S3_ACCESS_KEY_ID}}
+          aws_secret_access_key: ${{ secrets.S3_SECRET_ACCESS_KEY }}
+          aws_region: ca-central-1
+          flags: --acl public-read --content-type text/turtle
+
+  import-entities-to-artsdata:
+    needs: transform-open-api-events-using-ontorefine
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Set current date as output
+        id: step-1
+        run: echo "dumpdate=$(date +'%Y-%m-%dT%H-%M-%S')" >> $GITHUB_OUTPUT
+
+      - name: Import events to Artsdata
+        id: step-2
+        run: |
+          curl \
+          -H 'Content-Type: application/json' \
+          -X POST http://api.artsdata.ca/databus/  \
+          --data '{ "artifact": "signe-laval-cms-events",
+                    "comment": "Events from signe-laval-cms-events calendar Footlight",
+                    "publisher": "${{ secrets.PUBLISHER_URI_GREGORY }}",
+                    "group": "${{ github.event.repository.name }}",
+                    "version": "${{ steps.step-1.outputs.dumpdate }}",
+                    "downloadUrl": "https://footlight-cms-entities-exported.s3.ca-central-1.amazonaws.com/${{needs.transform-open-api-events-using-ontorefine.outputs.events_file_name}}",
+                    "downloadFile": "${{needs.transform-open-api-events-using-ontorefine.outputs.events_file_name}}",
+                    "reportCallbackUrl": "${{inputs.call-back-url}}"
+                  }'
+
+      - name: Import places to Artsdata
+        id: step-3
+        run: |
+          curl \
+          -H 'Content-Type: application/json' \
+          -X POST http://api.artsdata.ca/databus/  \
+          --data '{ "artifact": "signe-laval-cms-places",
+                    "comment": "Places from signe-laval-cms-events calendar Footlight",
+                    "publisher": "${{ secrets.PUBLISHER_URI_GREGORY }}",
+                    "group": "${{ github.event.repository.name }}",
+                    "version": "${{ steps.step-1.outputs.dumpdate }}",
+                    "downloadUrl": "https://footlight-cms-entities-exported.s3.ca-central-1.amazonaws.com/${{needs.transform-open-api-events-using-ontorefine.outputs.places_file_name}}",
+                    "downloadFile": "${{needs.transform-open-api-events-using-ontorefine.outputs.places_file_name}}",
+                    "reportCallbackUrl": "${{inputs.call-back-url}}"
+                  }'
