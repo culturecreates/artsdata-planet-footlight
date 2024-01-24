@@ -14,8 +14,8 @@ jobs:
       ports:
         - 7333:7333
     outputs:
-      events_file_name: ${{ steps.step-5.outputs.events_file_name }}
-      places_file_name: ${{ steps.step-5.outputs.places_file_name }}
+      events_file_name: ${{ steps.step-7.outputs.events_file_name }}
+      places_file_name: ${{ steps.step-8.outputs.places_file_name }}
     steps:
       - name: Install requirements
         id: step-1
