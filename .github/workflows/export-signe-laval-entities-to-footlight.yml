@@ -60,7 +60,7 @@ jobs:
         id: step-9
         run: |
           /opt/ontorefine/dist/bin/ontorefine-cli \
-          transform event.json \
+          transform events.json \
           -u http://localhost:7333 \
           --configurations event-transform-config.json \
           -f json >> ${{ steps.step-7.outputs.events_file_name }}
@@ -69,7 +69,7 @@ jobs:
         id: step-10
         run: |
           /opt/ontorefine/dist/bin/ontorefine-cli \
-          transform event.json \
+          transform places.json \
           -u http://localhost:7333 \
           --configurations place-transform-config.json \
           -f json >> ${{ steps.step-8.outputs.places_file_name }}
