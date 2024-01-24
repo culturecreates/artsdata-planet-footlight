@@ -2,14 +2,11 @@ name: Export Tout Culture calendar to Artsdata
 
 on:
   workflow_dispatch:
-    inputs:
-      call-back-url:
-        type: string
-        description: The call back url.
-        required: true
+  schedule:
+    - cron: "0 5 * * 4"  # Run at 2:00 AM ET every Wednesday
 
 jobs:
-  transform-open-api-events-using-ontorefine:
+  transform-tout-culture-calendar:
     runs-on: ubuntu-latest
     container:
       image: ontotext/refine:1.2.1
@@ -24,26 +21,26 @@ jobs:
         id: step-1
         run: apk update && apk add curl && apk add util-linux
 
-      - name: Run ontorefine server
+      - name: Run Onto Refine server
         id: step-2
         run: /opt/ontorefine/dist/bin/ontorefine &
 
-      - name: Download events
+      - name: Download events from Tout Culture calendar
         id: step-3
         run: |
           curl 'https://api.footlight.io/calendars/tout-culture/events?page=1&limit=200' >> events.json
 
-      - name: Download places
+      - name: Download places from Tout Culture calendar
         id: step-4
         run: |
           curl 'https://api.footlight.io/calendars/tout-culture/places?page=1&limit=200' >> places.json
 
-      - name: Download events transform configuration file
+      - name: Download configuration file to transform events
         id: step-5
         run: | 
           curl 'https://raw.githubusercontent.com/culturecreates/artsdata-planet-footlight/main/data/event-transform-config-for-multilingual-calendar.json' >> event-transform-config.json
 
-      - name: Download places transform configuration file
+      - name: Download configuration file to transform places
         id: step-6
         run: |
           curl 'https://raw.githubusercontent.com/culturecreates/artsdata-planet-footlight/main/data/place-transform-config-for-multilingual-calendar.json' >> place-transform-config.json
@@ -56,7 +53,7 @@ jobs:
         id: step-8
         run: echo "places_file_name=tout-culture-places-$(uuidgen).ttl" >> $GITHUB_OUTPUT
 
-      - name: Transform events to RDF
+      - name: Transform events in JSON  to RDF
         id: step-9
         run: |
           /opt/ontorefine/dist/bin/ontorefine-cli \
@@ -65,7 +62,7 @@ jobs:
           --configurations event-transform-config.json \
           -f json >> ${{ steps.step-7.outputs.events_file_name }}
 
-      - name: Transform places to RDF
+      - name: Transform places in JSON to RDF
         id: step-10
         run: |
           /opt/ontorefine/dist/bin/ontorefine-cli \
@@ -99,7 +96,7 @@ jobs:
           flags: --acl public-read --content-type text/turtle
 
   import-entities-to-artsdata:
-    needs: transform-open-api-events-using-ontorefine
+    needs: transform-tout-culture-calendar
     runs-on: ubuntu-latest
     steps:
 
@@ -136,5 +133,5 @@ jobs:
                     "version": "${{ steps.step-1.outputs.dumpdate }}",
                     "downloadUrl": "https://footlight-cms-entities-exported.s3.ca-central-1.amazonaws.com/${{needs.transform-open-api-events-using-ontorefine.outputs.places_file_name}}",
                     "downloadFile": "${{needs.transform-open-api-events-using-ontorefine.outputs.places_file_name}}",
-                    "reportCallbackUrl": "${{inputs.call-back-url}}"
+                    "reportCallbackUrl": "https://webhook.site/be245341-5a1b-44cd-896f-590003162b07"
                   }'
