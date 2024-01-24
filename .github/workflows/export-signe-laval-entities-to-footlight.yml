@@ -115,8 +115,8 @@ jobs:
                     "publisher": "${{ secrets.PUBLISHER_URI_GREGORY }}",
                     "group": "${{ github.event.repository.name }}",
                     "version": "${{ steps.step-1.outputs.dumpdate }}",
-                    "downloadUrl": "https://footlight-cms-entities-exported.s3.ca-central-1.amazonaws.com/${{needs.transform-tout-culture-calendar.outputs.events_file_name}}",
-                    "downloadFile": "${{needs.transform-tout-culture-calendar.outputs.events_file_name}}",
+                    "downloadUrl": "https://footlight-cms-entities-exported.s3.ca-central-1.amazonaws.com/${{needs.transform-signe-laval-calendar.outputs.events_file_name}}",
+                    "downloadFile": "${{needs.transform-signe-laval-calendar.outputs.events_file_name}}",
                     "reportCallbackUrl": "${{inputs.call-back-url}}"
                   }'
 
@@ -131,7 +131,7 @@ jobs:
                     "publisher": "${{ secrets.PUBLISHER_URI_GREGORY }}",
                     "group": "${{ github.event.repository.name }}",
                     "version": "${{ steps.step-1.outputs.dumpdate }}",
-                    "downloadUrl": "https://footlight-cms-entities-exported.s3.ca-central-1.amazonaws.com/${{needs.transform-tout-culture-calendar.outputs.places_file_name}}",
-                    "downloadFile": "${{needs.transform-tout-culture-calendar.outputs.places_file_name}}",
+                    "downloadUrl": "https://footlight-cms-entities-exported.s3.ca-central-1.amazonaws.com/${{needs.transform-signe-laval-calendar.outputs.places_file_name}}",
+                    "downloadFile": "${{needs.transform-signe-laval-calendar.outputs.places_file_name}}",
                     "reportCallbackUrl": "https://webhook.site/be245341-5a1b-44cd-896f-590003162b07"
                   }'
