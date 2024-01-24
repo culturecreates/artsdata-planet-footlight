@@ -28,25 +28,25 @@ jobs:
         id: step-2
         run: /opt/ontorefine/dist/bin/ontorefine &
 
-      - name: Download signe-laval events
+      - name: Download events
         id: step-3
         run: |
           curl 'https://api.footlight.io/calendars/signe-laval/events?page=1&limit=200' >> events.json
 
-      - name: Download signe-laval events project-configuration-file
+      - name: Download places
         id: step-4
-        run: | 
-          curl 'https://raw.githubusercontent.com/culturecreates/artsdata-planet-footlight/main/data/footlight-signe-laval-event-transform-config-onto-refine.json' >> event-transform-config.json
-
-      - name: Download signe-laval places
-        id: step-5
         run: |
           curl 'https://api.footlight.io/calendars/signe-laval/placss?page=1&limit=200' >> places.json
 
-      - name: Download signe-laval events project-configuration-file
+      - name: Download events transform configuration file
+        id: step-5
+        run: | 
+          curl 'https://raw.githubusercontent.com/culturecreates/artsdata-planet-footlight/main/data/footlight-signe-laval-event-transform-config-onto-refine.json' >> event-transform-config.json
+
+      - name: Download places transform configuration file
         id: step-6
         run: |
-          curl 'https://raw.githubusercontent.com/culturecreates/artsdata-planet-footlight/main/data/footlight-signe-laval-event-transform-config-onto-refine.json' >> places-transform-config.json
+          curl 'https://raw.githubusercontent.com/culturecreates/artsdata-planet-footlight/main/data/footlight-place-transform-config-onto-refine.json' >> places-transform-config.json
 
       - name: Set output event-file name
         id: step-7
