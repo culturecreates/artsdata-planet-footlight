@@ -1,4 +1,4 @@
-name: Export Signe Laval entities
+name: Export Signe Laval calendar to Artsdata
 
 on:
   workflow_dispatch:
@@ -41,12 +41,12 @@ jobs:
       - name: Download events transform configuration file
         id: step-5
         run: | 
-          curl 'https://raw.githubusercontent.com/culturecreates/artsdata-planet-footlight/main/data/footlight-signe-laval-event-transform-config-onto-refine.json' >> event-transform-config.json
+          curl 'https://raw.githubusercontent.com/culturecreates/artsdata-planet-footlight/main/data/event-transform-config-for-french-calendar.json' >> event-transform-config.json
 
       - name: Download places transform configuration file
         id: step-6
         run: |
-          curl 'https://raw.githubusercontent.com/culturecreates/artsdata-planet-footlight/main/data/footlight-place-transform-config-onto-refine.json' >> place-transform-config.json
+          curl 'https://raw.githubusercontent.com/culturecreates/artsdata-planet-footlight/main/data/place-transform-config-for-multilingual-calendar.json' >> place-transform-config.json
 
       - name: Set output event-file name
         id: step-7
