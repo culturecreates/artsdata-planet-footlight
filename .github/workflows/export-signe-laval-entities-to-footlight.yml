@@ -46,7 +46,7 @@ jobs:
       - name: Download places transform configuration file
         id: step-6
         run: |
-          curl 'https://raw.githubusercontent.com/culturecreates/artsdata-planet-footlight/main/data/footlight-place-transform-config-onto-refine.json' >> places-transform-config.json
+          curl 'https://raw.githubusercontent.com/culturecreates/artsdata-planet-footlight/main/data/footlight-place-transform-config-onto-refine.json' >> place-transform-config.json
 
       - name: Set output event-file name
         id: step-7
