@@ -36,7 +36,7 @@ jobs:
       - name: Download places
         id: step-4
         run: |
-          curl 'https://api.footlight.io/calendars/signe-laval/placss?page=1&limit=200' >> places.json
+          curl 'https://api.footlight.io/calendars/signe-laval/places?page=1&limit=200' >> places.json
 
       - name: Download events transform configuration file
         id: step-5
