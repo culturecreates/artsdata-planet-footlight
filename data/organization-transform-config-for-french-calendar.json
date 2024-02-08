@@ -78,21 +78,6 @@
                   {
                     "valueSource": {
                       "source": "column",
-                      "columnName": "_ - name - en"
-                    },
-                    "valueType": {
-                      "type": "language_literal",
-                      "language": {
-                        "valueSource": {
-                          "source": "constant",
-                          "constant": "en"
-                        }
-                      }
-                    }
-                  },
-                  {
-                    "valueSource": {
-                      "source": "column",
                       "columnName": "_ - name - fr"
                     },
                     "valueType": {
@@ -119,21 +104,6 @@
                   }
                 },
                 "values": [
-                  {
-                    "valueSource": {
-                      "source": "column",
-                      "columnName": "_ - description - en"
-                    },
-                    "valueType": {
-                      "type": "language_literal",
-                      "language": {
-                        "valueSource": {
-                          "source": "constant",
-                          "constant": "en"
-                        }
-                      }
-                    }
-                  },
                   {
                     "valueSource": {
                       "source": "column",
@@ -309,21 +279,6 @@
                   {
                     "valueSource": {
                       "source": "column",
-                      "columnName": "_ - name - en"
-                    },
-                    "valueType": {
-                      "type": "language_literal",
-                      "language": {
-                        "valueSource": {
-                          "source": "constant",
-                          "constant": "en"
-                        }
-                      }
-                    }
-                  },
-                  {
-                    "valueSource": {
-                      "source": "column",
                       "columnName": "_ - name - fr"
                     },
                     "valueType": {
@@ -350,21 +305,6 @@
                   }
                 },
                 "values": [
-                  {
-                    "valueSource": {
-                      "source": "column",
-                      "columnName": "_ - description - en"
-                    },
-                    "valueType": {
-                      "type": "language_literal",
-                      "language": {
-                        "valueSource": {
-                          "source": "constant",
-                          "constant": "en"
-                        }
-                      }
-                    }
-                  },
                   {
                     "valueSource": {
                       "source": "column",
@@ -481,21 +421,6 @@
                             }
                           },
                           "values": [
-                            {
-                              "valueSource": {
-                                "source": "column",
-                                "columnName": "_ - location - name - en"
-                              },
-                              "valueType": {
-                                "type": "language_literal",
-                                "language": {
-                                  "valueSource": {
-                                    "source": "constant",
-                                    "constant": "en"
-                                  }
-                                }
-                              }
-                            },
                             {
                               "valueSource": {
                                 "source": "column",
