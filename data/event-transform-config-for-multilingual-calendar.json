@@ -13,7 +13,7 @@
       "includeFileSources": false,
       "includeArchiveFileName": false,
       "disableAutoPreview": false,
-      "projectName": "events",
+      "projectName": "tout-culture-0802",
       "projectTags": [],
       "fileSource": "https://api.footlight.io/calendars/tout-culture/events?page=1&limit=100",
       "archiveFileName": null
@@ -471,7 +471,18 @@
                     },
                     "valueType": {
                       "type": "iri",
-                      "typeMappings": [],
+                      "typeMappings": [
+                        {
+                          "valueSource": {
+                            "source": "column",
+                            "columnName": "_ - performers - _ - type"
+                          },
+                          "transformation": {
+                            "language": "prefix",
+                            "expression": "schema"
+                          }
+                        }
+                      ],
                       "propertyMappings": [
                         {
                           "property": {
@@ -513,31 +524,6 @@
                                     "constant": "fr"
                                   }
                                 }
-                              }
-                            }
-                          ]
-                        },
-                        {
-                          "property": {
-                            "valueSource": {
-                              "source": "constant",
-                              "constant": "a"
-                            }
-                          },
-                          "values": [
-                            {
-                              "valueSource": {
-                                "source": "column",
-                                "columnName": "_ - performers - _ - type"
-                              },
-                              "transformation": {
-                                "language": "prefix",
-                                "expression": "schema"
-                              },
-                              "valueType": {
-                                "type": "iri",
-                                "typeMappings": [],
-                                "propertyMappings": []
                               }
                             }
                           ]
