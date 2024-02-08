@@ -13,9 +13,9 @@
       "includeFileSources": false,
       "includeArchiveFileName": false,
       "disableAutoPreview": false,
-      "projectName": "tout-culture-0802",
+      "projectName": "tout-culture-events-0802",
       "projectTags": [],
-      "fileSource": "https://api.footlight.io/calendars/tout-culture/events?page=1&limit=100",
+      "fileSource": "https://api.footlight.io/calendars/tout-culture/events?page=1&limit=10",
       "archiveFileName": null
     }
   ],
@@ -467,7 +467,7 @@
                     },
                     "transformation": {
                       "language": "grel",
-                      "expression": "if(cells[\"_ - performers - _ - type\"].value != null, unescape(\"http://api.footlight.io/\" + toLowercase(cells[\"_ - performers - _ - type\"].value) +\"/\"+cells[\"_ - performers - _ - id\"].value,\"url\"),\"\" )"
+                      "expression": "if(cells[\"_ - performers - _ - type\"].value != null, unescape(\"http://api.footlight.io/\" + toLowercase(cells[\"_ - performers - _ - type\"].value) +\"/\"+cells[\"_ - performers - _ - id\"].value,\"url\"),null )"
                     },
                     "valueType": {
                       "type": "iri",
@@ -551,7 +551,7 @@
                     },
                     "transformation": {
                       "language": "grel",
-                      "expression": "if(cells[\"_ - organizers - _ - type\"].value != null, unescape(\"http://api.footlight.io/\" + toLowercase(cells[\"_ - organizers - _ - type\"].value) +\"/\"+cells[\"_ - organizers - _ - id\"].value,\"url\"),\"\" )"
+                      "expression": "if(cells[\"_ - organizers - _ - type\"].value != null, unescape(\"http://api.footlight.io/\" + toLowercase(cells[\"_ - organizers - _ - type\"].value) +\"/\"+cells[\"_ - organizers - _ - id\"].value,\"url\"),null )"
                     },
                     "valueType": {
                       "type": "iri",

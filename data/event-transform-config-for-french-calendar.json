@@ -437,7 +437,7 @@
                     },
                     "transformation": {
                       "language": "grel",
-                      "expression": "if(cells[\"_ - organizers - _ - type\"].value != null, unescape(\"http://api.footlight.io/\" + toLowercase(cells[\"_ - organizers - _ - type\"].value) +\"/\"+cells[\"_ - organizers - _ - id\"].value,\"url\"),\"\" )"
+                      "expression": "if(cells[\"_ - organizers - _ - type\"].value != null, unescape(\"http://api.footlight.io/\" + toLowercase(cells[\"_ - organizers - _ - type\"].value) +\"/\"+cells[\"_ - organizers - _ - id\"].value,\"url\"), null )"
                     },
                     "valueType": {
                       "type": "iri",
