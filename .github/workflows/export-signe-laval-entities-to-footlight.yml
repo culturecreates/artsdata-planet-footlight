@@ -27,104 +27,73 @@ jobs:
         id: step-2
         run: /opt/ontorefine/dist/bin/ontorefine &
 
-      - name: Download events from Signe Laval calendar
+      - name: Download data from Signe Laval calendar
         id: step-3
         run: |
-          curl 'https://api.footlight.io/calendars/signe-laval/events?page=1&limit=200' >> events.json
-
-      - name: Download places from Signe Laval calendar
-        id: step-4
-        run: |
-          curl 'https://api.footlight.io/calendars/signe-laval/places?page=1&limit=200' >> places.json
-
-      - name: Download organizations from Signe Laval calendar
-        id: step-5
-        run: |
-          curl 'https://api.footlight.io/calendars/signe-laval/organizations?page=1&limit=200' >> organizations.json
-
-      - name: Download people from Signe Laval calendar
-        id: step-6
-        run: |
+          curl 'https://api.footlight.io/calendars/signe-laval/events?page=1&limit=200' >> events.json &&
+          curl 'https://api.footlight.io/calendars/signe-laval/places?page=1&limit=200' >> places.json &&
+          curl 'https://api.footlight.io/calendars/signe-laval/organizations?page=1&limit=200' >> organizations.json &&
           curl 'https://api.footlight.io/calendars/signe-laval/people?page=1&limit=200' >> people.json
 
-      - name: Download configuration file to transform events
-        id: step-7
-        run: | 
-          curl 'https://raw.githubusercontent.com/culturecreates/artsdata-planet-footlight/main/data/event-transform-config-for-french-calendar.json' >> event-transform-config.json
-
-      - name: Download configuration file to transform places
-        id: step-8
+      - name: Download configuration files for transformation
+        id: step-4
         run: |
-          curl 'https://raw.githubusercontent.com/culturecreates/artsdata-planet-footlight/main/data/place-transform-config-for-multilingual-calendar.json' >> place-transform-config.json
-
-      - name: Download configuration file to transform organizations
-        id: step-9
-        run: |
-          curl 'https://raw.githubusercontent.com/culturecreates/artsdata-planet-footlight/main/data/organization-transform-config-for-french-calendar.json' >> organization-transform-config.json
-
-      - name: Download configuration file to transform people
-        id: step-10
-        run: |
+          curl 'https://raw.githubusercontent.com/culturecreates/artsdata-planet-footlight/main/data/event-transform-config-for-french-calendar.json' >> event-transform-config.json &&
+          curl 'https://raw.githubusercontent.com/culturecreates/artsdata-planet-footlight/main/data/place-transform-config-for-multilingual-calendar.json' >> place-transform-config.json &&
+          curl 'https://raw.githubusercontent.com/culturecreates/artsdata-planet-footlight/main/data/organization-transform-config-for-french-calendar.json' >> organization-transform-config.json &&
           curl 'https://raw.githubusercontent.com/culturecreates/artsdata-planet-footlight/main/data/people-transform-config-for-french-calendar.json' >> person-transform-config.json
+      
 
-      - name: Set output event-file name
-        id: step-11
-        run: echo "events_file_name=signe-laval-events-$(uuidgen).ttl" >> $GITHUB_OUTPUT
-
-      - name: Set output place-file name
-        id: step-12
-        run: echo "places_file_name=signe-laval-places-$(uuidgen).ttl" >> $GITHUB_OUTPUT
-
-      - name: Set output organization-file name
-        id: step-13
-        run: echo "organizations_file_name=signe-laval-organizations-$(uuidgen).ttl" >> $GITHUB_OUTPUT  
-
-      - name: Set output person-file name
-        id: step-14
-        run: echo "people_file_name=signe-laval-people-$(uuidgen).ttl" >> $GITHUB_OUTPUT
-
+      - name: Set output file names
+        id: step-5
+        run: |
+          echo "events_file_name=signe-laval-events-$(uuidgen).ttl" >> $GITHUB_OUTPUT &&
+          echo "places_file_name=signe-laval-places-$(uuidgen).ttl" >> $GITHUB_OUTPUT &&
+          echo "organizations_file_name=signe-laval-organizations-$(uuidgen).ttl" >> $GITHUB_OUTPUT &&
+          echo "people_file_name=signe-laval-people-$(uuidgen).ttl" >> $GITHUB_OUTPUT
+        
       - name: Transform events in JSON  to RDF
-        id: step-15
+        id: step-6
         run: |
           /opt/ontorefine/dist/bin/ontorefine-cli \
           transform events.json \
           -u http://localhost:7333 \
           --configurations event-transform-config.json \
-          -f json >> ${{ steps.step-11.outputs.events_file_name }}
+          -f json >> ${{ steps.step-5.outputs.events_file_name }}
 
       - name: Transform places in JSON  to RDF
-        id: step-16
+        id: step-7
         run: |
           /opt/ontorefine/dist/bin/ontorefine-cli \
           transform places.json \
           -u http://localhost:7333 \
           --configurations place-transform-config.json \
-          -f json >> ${{ steps.step-12.outputs.places_file_name }}
+          -f json >> ${{ steps.step-5.outputs.places_file_name }}
 
       - name: Transform organizations in JSON  to RDF
-        id: step-17
+        id: step-8
         run: |
           /opt/ontorefine/dist/bin/ontorefine-cli \
           transform organizations.json \
           -u http://localhost:7333 \
           --configurations organization-transform-config.json \
-          -f json >> ${{ steps.step-13.outputs.organizations_file_name }}
+          -f json >> ${{ steps.step-5.outputs.organizations_file_name }}
 
       - name: Transform people in JSON  to RDF
-        id: step-18
+        id: step-9
         run: |
           /opt/ontorefine/dist/bin/ontorefine-cli \
           transform people.json \
           -u http://localhost:7333 \
           --configurations person-transform-config.json \
-          -f json >> ${{ steps.step-14.outputs.people_file_name }}
+          -f json >> ${{ steps.step-5.outputs.people_file_name }}
 
       - name: Upload events in RDF to S3
-        id: step-19
+        id: step-10
         uses: keithweaver/aws-s3-github-action@v1.0.0
         with:
           command: cp
-          source: ${{ steps.step-11.outputs.events_file_name }}
+          source: ${{ steps.step-5.outputs.events_file_name }}
           destination: s3://footlight-cms-entities-exported/
           aws_access_key_id: ${{ secrets.S3_ACCESS_KEY_ID}}
           aws_secret_access_key: ${{ secrets.S3_SECRET_ACCESS_KEY }}
@@ -132,11 +101,11 @@ jobs:
           flags: --acl public-read --content-type text/turtle
 
       - name: Upload places in RDF file to S3
-        id: step-20
+        id: step-11
         uses: keithweaver/aws-s3-github-action@v1.0.0
         with:
           command: cp
-          source: ${{ steps.step-12.outputs.places_file_name }}
+          source: ${{ steps.step-5.outputs.places_file_name }}
           destination: s3://footlight-cms-entities-exported/
           aws_access_key_id: ${{ secrets.S3_ACCESS_KEY_ID}}
           aws_secret_access_key: ${{ secrets.S3_SECRET_ACCESS_KEY }}
@@ -144,11 +113,11 @@ jobs:
           flags: --acl public-read --content-type text/turtle
 
       - name: Upload organizations in RDF file to S3
-        id: step-21
+        id: step-12
         uses: keithweaver/aws-s3-github-action@v1.0.0
         with:
           command: cp
-          source: ${{ steps.step-13.outputs.organizations_file_name }}
+          source: ${{ steps.step-5.outputs.organizations_file_name }}
           destination: s3://footlight-cms-entities-exported/
           aws_access_key_id: ${{ secrets.S3_ACCESS_KEY_ID}}
           aws_secret_access_key: ${{ secrets.S3_SECRET_ACCESS_KEY }}
@@ -156,11 +125,11 @@ jobs:
           flags: --acl public-read --content-type text/turtle
 
       - name: Upload people in RDF file to S3
-        id: step-22
+        id: step-13
         uses: keithweaver/aws-s3-github-action@v1.0.0
         with:
           command: cp
-          source: ${{ steps.step-14.outputs.people_file_name }}
+          source: ${{ steps.step-5.outputs.people_file_name }}
           destination: s3://footlight-cms-entities-exported/
           aws_access_key_id: ${{ secrets.S3_ACCESS_KEY_ID}}
           aws_secret_access_key: ${{ secrets.S3_SECRET_ACCESS_KEY }}
