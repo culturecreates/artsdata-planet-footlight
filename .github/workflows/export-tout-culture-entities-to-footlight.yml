@@ -95,11 +95,13 @@ jobs:
         uses: actions/setup-python@v4
         with:
           python-version: '3.11'
+
       - name: Convert file
-        run: python ./util/flatten-cms-taxonomies.py ${{ steps.step-5.outputs.taxonomy_file_name }}
+        id: step-9b
+        run: python3 ./util/flatten-cms-taxonomies.py ${{ steps.step-5.outputs.taxonomy_file_name }}
 
       - name: Transform people in JSON to RDF
-        id: step-9b
+        id: step-9c
         run: |
           /opt/ontorefine/dist/bin/ontorefine-cli \
           transform flatten-taxonomy.json \
