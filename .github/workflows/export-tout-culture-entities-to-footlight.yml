@@ -18,7 +18,6 @@ jobs:
       places_file_name: ${{ steps.step-8.outputs.places_file_name }}
       organizations_file_name: ${{ steps.step-9.outputs.organizations_file_name }}
       people_file_name: ${{ steps.step-10.outputs.people_file_name }}
-      taxonomy_file_name: ${{ steps.step-10.outputs.taxonomy_file_name }}
     steps:
       - name: Install requirements
         id: step-1
@@ -42,8 +41,7 @@ jobs:
           curl 'https://raw.githubusercontent.com/culturecreates/artsdata-planet-footlight/main/data/event-transform-config-for-multilingual-calendar.json' >> event-transform-config.json &&
           curl 'https://raw.githubusercontent.com/culturecreates/artsdata-planet-footlight/main/data/place-transform-config-for-multilingual-calendar.json' >> place-transform-config.json &&
           curl 'https://raw.githubusercontent.com/culturecreates/artsdata-planet-footlight/main/data/organization-transform-config-for-multilingual-calendar.json' >> organization-transform-config.json &&
-          curl 'https://raw.githubusercontent.com/culturecreates/artsdata-planet-footlight/main/data/people-transform-config-for-multilingual-calendar.json' >> person-transform-config.json &&
-          curl 'https://raw.githubusercontent.com/culturecreates/artsdata-planet-footlight/main/data/taxonomy-transform-config-for-multilingual-calendar.json' >> taxonomy-transform-config.json
+          curl 'https://raw.githubusercontent.com/culturecreates/artsdata-planet-footlight/main/data/people-transform-config-for-multilingual-calendar.json' >> person-transform-config.json 
 
       - name: Set output file names for Tout Culture
         id: step-5
@@ -51,8 +49,7 @@ jobs:
           echo "events_file_name=tout-culture-events-$(uuidgen).ttl" >> $GITHUB_OUTPUT &&
           echo "places_file_name=tout-culture-places-$(uuidgen).ttl" >> $GITHUB_OUTPUT &&
           echo "organizations_file_name=tout-culture-organizations-$(uuidgen).ttl" >> $GITHUB_OUTPUT &&
-          echo "people_file_name=tout-culture-people-$(uuidgen).ttl" >> $GITHUB_OUTPUT &&
-          echo "taxonomy_file_name=tout-culture-taxonomy-$(uuidgen).ttl" >> $GITHUB_OUTPUT 
+          echo "people_file_name=tout-culture-people-$(uuidgen).ttl" >> $GITHUB_OUTPUT
 
       - name: Transform events in JSON  to RDF
         id: step-6
@@ -89,25 +86,6 @@ jobs:
           -u http://localhost:7333 \
           --configurations person-transform-config.json \
           -f json >> ${{ steps.step-5.outputs.people_file_name }}
-
-      - name: Set up Python
-        id: step-9a
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.11'
-
-      - name: Convert file
-        id: step-9b
-        run: python3 ./util/flatten-cms-taxonomies.py ${{ steps.step-5.outputs.taxonomy_file_name }}
-
-      - name: Transform people in JSON to RDF
-        id: step-9c
-        run: |
-          /opt/ontorefine/dist/bin/ontorefine-cli \
-          transform flatten-taxonomy.json \
-          -u http://localhost:7333 \
-          --configurations taxonomy-transform-config.json \
-          -f json >> ${{ steps.step-5.outputs.taxonomy_file_name }}
 
       - name: Upload events in RDF to S3
         id: step-10
@@ -151,18 +129,6 @@ jobs:
         with:
           command: cp
           source: ${{ steps.step-5.outputs.people_file_name }}
-          destination: s3://footlight-cms-entities-exported/
-          aws_access_key_id: ${{ secrets.S3_ACCESS_KEY_ID}}
-          aws_secret_access_key: ${{ secrets.S3_SECRET_ACCESS_KEY }}
-          aws_region: ca-central-1
-          flags: --acl public-read --content-type text/turtle
-
-      - name: Upload taxonomy in RDF file to S3
-        id: step-24
-        uses: keithweaver/aws-s3-github-action@v1.0.0
-        with:
-          command: cp
-          source: "flatten-"${{ steps.step-5.outputs.taxonomy_file_name }}
           destination: s3://footlight-cms-entities-exported/
           aws_access_key_id: ${{ secrets.S3_ACCESS_KEY_ID}}
           aws_secret_access_key: ${{ secrets.S3_SECRET_ACCESS_KEY }}
