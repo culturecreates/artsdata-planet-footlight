@@ -168,75 +168,75 @@ jobs:
           flags: --acl public-read --content-type text/turtle
           
 
-#  import-entities-to-artsdata:
-#    needs: transform-tout-culture-calendar
-#    runs-on: ubuntu-latest
-#    steps:
-#
-#      - name: Set current date as output
-#        id: step-1
-#        run: echo "dumpdate=$(date +'%Y-%m-%dT%H-%M-%S')" >> $GITHUB_OUTPUT
-#
-#      - name: Import events to Artsdata
-#        id: step-2
-#        run: |
-#          curl \
-#          -H 'Content-Type: application/json' \
-#          -X POST http://api.artsdata.ca/databus/  \
-#          --data '{ "artifact": "tout-culture-cms-events",
-#                    "comment": "Events from Tout Culture calendar Footlight",
-#                    "publisher": "${{ secrets.PUBLISHER_URI_GREGORY }}",
-#                    "group": "${{ github.event.repository.name }}",
-#                    "version": "${{ steps.step-1.outputs.dumpdate }}",
-#                    "downloadUrl": "https://footlight-cms-entities-exported.s3.ca-central-1.amazonaws.com/${{needs.transform-tout-culture-calendar.outputs.events_file_name}}",
-#                    "downloadFile": "${{needs.transform-tout-culture-calendar.outputs.events_file_name}}",
-#                    "reportCallbackUrl": "${{inputs.call-back-url}}"
-#                  }'
-#
-#      - name: Import places to Artsdata
-#        id: step-3
-#        run: |
-#          curl \
-#          -H 'Content-Type: application/json' \
-#          -X POST http://api.artsdata.ca/databus/  \
-#          --data '{ "artifact": "tout-culture-cms-places",
-#                    "comment": "Places from Tout Culture calendar Footlight",
-#                    "publisher": "${{ secrets.PUBLISHER_URI_GREGORY }}",
-#                    "group": "${{ github.event.repository.name }}",
-#                    "version": "${{ steps.step-1.outputs.dumpdate }}",
-#                    "downloadUrl": "https://footlight-cms-entities-exported.s3.ca-central-1.amazonaws.com/${{needs.transform-tout-culture-calendar.outputs.places_file_name}}",
-#                    "downloadFile": "${{needs.transform-tout-culture-calendar.outputs.places_file_name}}",
-#                    "reportCallbackUrl": "https://webhook.site/be245341-5a1b-44cd-896f-590003162b07"
-#                  }'
-#
-#      - name: Import organizations to Artsdata
-#        id: step-4
-#        run: |
-#          curl \
-#          -H 'Content-Type: application/json' \
-#          -X POST http://api.artsdata.ca/databus/  \
-#          --data '{ "artifact": "tout-culture-cms-organizations",
-#                    "comment": "Organizations from Tout Culture calendar Footlight",
-#                    "publisher": "${{ secrets.PUBLISHER_URI_GREGORY }}",
-#                    "group": "${{ github.event.repository.name }}",
-#                    "version": "${{ steps.step-1.outputs.dumpdate }}",
-#                    "downloadUrl": "https://footlight-cms-entities-exported.s3.ca-central-1.amazonaws.com/${{needs.transform-tout-culture-calendar.outputs.organizations_file_name}}",
-#                    "downloadFile": "${{needs.transform-tout-culture-calendar.outputs.organizations_file_name}}",
-#                    "reportCallbackUrl": "https://webhook.site/be245341-5a1b-44cd-896f-590003162b07"
-#                  }'
-#
-#      - name: Import people to Artsdata
-#        id: step-5
-#        run: |
-#          curl \
-#          -H 'Content-Type: application/json' \
-#          -X POST http://api.artsdata.ca/databus/  \
-#          --data '{ "artifact": "tout-culture-cms-people",
-#                    "comment": "People from Tout Culture calendar Footlight",
-#                    "publisher": "${{ secrets.PUBLISHER_URI_GREGORY }}",
-#                    "group": "${{ github.event.repository.name }}",
-#                    "version": "${{ steps.step-1.outputs.dumpdate }}",
-#                    "downloadUrl": "https://footlight-cms-entities-exported.s3.ca-central-1.amazonaws.com/${{needs.transform-tout-culture-calendar.outputs.people_file_name}}",
-#                    "downloadFile": "${{needs.transform-tout-culture-calendar.outputs.people_file_name}}",
-#                    "reportCallbackUrl": "https://webhook.site/be245341-5a1b-44cd-896f-590003162b07"
-#                  }'
+  import-entities-to-artsdata:
+    needs: transform-tout-culture-calendar
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Set current date as output
+        id: step-1
+        run: echo "dumpdate=$(date +'%Y-%m-%dT%H-%M-%S')" >> $GITHUB_OUTPUT
+
+      - name: Import events to Artsdata
+        id: step-2
+        run: |
+          curl \
+          -H 'Content-Type: application/json' \
+          -X POST http://api.artsdata.ca/databus/  \
+          --data '{ "artifact": "tout-culture-cms-events",
+                    "comment": "Events from Tout Culture calendar Footlight",
+                    "publisher": "${{ secrets.PUBLISHER_URI_GREGORY }}",
+                    "group": "${{ github.event.repository.name }}",
+                    "version": "${{ steps.step-1.outputs.dumpdate }}",
+                    "downloadUrl": "https://footlight-cms-entities-exported.s3.ca-central-1.amazonaws.com/${{needs.transform-tout-culture-calendar.outputs.events_file_name}}",
+                    "downloadFile": "${{needs.transform-tout-culture-calendar.outputs.events_file_name}}",
+                    "reportCallbackUrl": "${{inputs.call-back-url}}"
+                  }'
+
+      - name: Import places to Artsdata
+        id: step-3
+        run: |
+          curl \
+          -H 'Content-Type: application/json' \
+          -X POST http://api.artsdata.ca/databus/  \
+          --data '{ "artifact": "tout-culture-cms-places",
+                    "comment": "Places from Tout Culture calendar Footlight",
+                    "publisher": "${{ secrets.PUBLISHER_URI_GREGORY }}",
+                    "group": "${{ github.event.repository.name }}",
+                    "version": "${{ steps.step-1.outputs.dumpdate }}",
+                    "downloadUrl": "https://footlight-cms-entities-exported.s3.ca-central-1.amazonaws.com/${{needs.transform-tout-culture-calendar.outputs.places_file_name}}",
+                    "downloadFile": "${{needs.transform-tout-culture-calendar.outputs.places_file_name}}",
+                    "reportCallbackUrl": "https://webhook.site/be245341-5a1b-44cd-896f-590003162b07"
+                  }'
+
+      - name: Import organizations to Artsdata
+        id: step-4
+        run: |
+          curl \
+          -H 'Content-Type: application/json' \
+          -X POST http://api.artsdata.ca/databus/  \
+          --data '{ "artifact": "tout-culture-cms-organizations",
+                    "comment": "Organizations from Tout Culture calendar Footlight",
+                    "publisher": "${{ secrets.PUBLISHER_URI_GREGORY }}",
+                    "group": "${{ github.event.repository.name }}",
+                    "version": "${{ steps.step-1.outputs.dumpdate }}",
+                    "downloadUrl": "https://footlight-cms-entities-exported.s3.ca-central-1.amazonaws.com/${{needs.transform-tout-culture-calendar.outputs.organizations_file_name}}",
+                    "downloadFile": "${{needs.transform-tout-culture-calendar.outputs.organizations_file_name}}",
+                    "reportCallbackUrl": "https://webhook.site/be245341-5a1b-44cd-896f-590003162b07"
+                  }'
+
+      - name: Import people to Artsdata
+        id: step-5
+        run: |
+          curl \
+          -H 'Content-Type: application/json' \
+          -X POST http://api.artsdata.ca/databus/  \
+          --data '{ "artifact": "tout-culture-cms-people",
+                    "comment": "People from Tout Culture calendar Footlight",
+                    "publisher": "${{ secrets.PUBLISHER_URI_GREGORY }}",
+                    "group": "${{ github.event.repository.name }}",
+                    "version": "${{ steps.step-1.outputs.dumpdate }}",
+                    "downloadUrl": "https://footlight-cms-entities-exported.s3.ca-central-1.amazonaws.com/${{needs.transform-tout-culture-calendar.outputs.people_file_name}}",
+                    "downloadFile": "${{needs.transform-tout-culture-calendar.outputs.people_file_name}}",
+                    "reportCallbackUrl": "https://webhook.site/be245341-5a1b-44cd-896f-590003162b07"
+                  }'
