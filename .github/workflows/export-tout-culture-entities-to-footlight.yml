@@ -40,11 +40,11 @@ jobs:
       ports:
         - 7333:7333
     outputs:
-      events_file_name: ${{ steps.step-7.outputs.events_file_name }}
-      places_file_name: ${{ steps.step-8.outputs.places_file_name }}
-      organizations_file_name: ${{ steps.step-9.outputs.organizations_file_name }}
-      people_file_name: ${{ steps.step-10.outputs.people_file_name }}
-      taxonomies_file_name: ${{steps.step-11.outputs.taxonomies_file_name}}
+      events_file_name: ${{ steps.step-6.outputs.events_file_name }}
+      places_file_name: ${{ steps.step-6.outputs.places_file_name }}
+      organizations_file_name: ${{ steps.step-6.outputs.organizations_file_name }}
+      people_file_name: ${{ steps.step-6.outputs.people_file_name }}
+      taxonomies_file_name: ${{steps.step-6.outputs.taxonomies_file_name}}
     steps:
       - name: Install requirements
         id: step-1
@@ -277,6 +277,6 @@ jobs:
                     "group": "${{ github.event.repository.name }}",
                     "version": "${{ steps.step-1.outputs.dumpdate }}",
                     "downloadUrl": "https://footlight-cms-entities-exported.s3.ca-central-1.amazonaws.com/${{needs.transform-tout-culture-calendar.outputs.taxonomies_file_name}}",
-                    "downloadFile": "${{needs.transform-tout-culture-calendar.outputs.people_file_name}}",
+                    "downloadFile": "${{needs.transform-tout-culture-calendar.outputs.taxonomies_file_name}}",
                     "reportCallbackUrl": "https://webhook.site/be245341-5a1b-44cd-896f-590003162b07"
                   }'
