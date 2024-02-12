@@ -12,9 +12,9 @@
       "includeFileSources": false,
       "includeArchiveFileName": false,
       "disableAutoPreview": false,
-      "projectName": "tout-culture-taxonomies",
+      "projectName": "flatten taxonomies signe laval json",
       "projectTags": [],
-      "fileSource": "flatten-taxonomies-full.json",
+      "fileSource": "flatten-taxonomies-signe-laval.json",
       "archiveFileName": null
     }
   ],
@@ -65,21 +65,6 @@
                   }
                 },
                 "values": [
-                  {
-                    "valueSource": {
-                      "source": "column",
-                      "columnName": "_ - taxonomy_name - en"
-                    },
-                    "valueType": {
-                      "type": "language_literal",
-                      "language": {
-                        "valueSource": {
-                          "source": "constant",
-                          "constant": "en"
-                        }
-                      }
-                    }
-                  },
                   {
                     "valueSource": {
                       "source": "column",
@@ -164,21 +149,6 @@
                   }
                 },
                 "values": [
-                  {
-                    "valueSource": {
-                      "source": "column",
-                      "columnName": "_ - concept_name - en"
-                    },
-                    "valueType": {
-                      "type": "language_literal",
-                      "language": {
-                        "valueSource": {
-                          "source": "constant",
-                          "constant": "en"
-                        }
-                      }
-                    }
-                  },
                   {
                     "valueSource": {
                       "source": "column",
