@@ -6,6 +6,7 @@ on:
     - cron: "0 5 * * 4"  # Run at 2:00 AM ET every Wednesday
 
 jobs:
+
   transform-tout-culture-taxonomies:
     runs-on: ubuntu-latest
     steps: 
@@ -30,7 +31,6 @@ jobs:
           path: ./flatten-taxonomies.json
           retention-days: 1
 
-    
   transform-tout-culture-calendar:
     runs-on: ubuntu-latest
     needs: transform-tout-culture-taxonomies
@@ -84,7 +84,7 @@ jobs:
           echo "places_file_name=tout-culture-places-$(uuidgen).ttl" >> $GITHUB_OUTPUT &&
           echo "organizations_file_name=tout-culture-organizations-$(uuidgen).ttl" >> $GITHUB_OUTPUT &&
           echo "people_file_name=tout-culture-people-$(uuidgen).ttl" >> $GITHUB_OUTPUT &&
-          echo "taxonomy_file_name"=tout-culture-taxonomies-$(uuidgen).ttl >> $GITHUB_OUTPUT
+          echo "taxonomies_file_name"=tout-culture-taxonomies-$(uuidgen).ttl >> $GITHUB_OUTPUT
 
       - name: Transform events in JSON  to RDF
         id: step-7
@@ -129,7 +129,7 @@ jobs:
           transform '/__w/artsdata-planet-footlight/artsdata-planet-footlight/flatten-taxonomies.json' \
           -u http://localhost:7333 \
           --configurations taxonomy-transform-config.json \
-          -f json >> ${{ steps.step-6.outputs.taxonomy_file_name }}
+          -f json >> ${{ steps.step-6.outputs.taxonomies_file_name }}
 
       - name: Upload events in RDF to S3
         id: step-12
@@ -184,14 +184,13 @@ jobs:
         uses: keithweaver/aws-s3-github-action@v1.0.0
         with:
           command: cp
-          source: ${{ steps.step-6.outputs.taxonomy_file_name }}
+          source: ${{ steps.step-6.outputs.taxonomies_file_name }}
           destination: s3://footlight-cms-entities-exported/
           aws_access_key_id: ${{ secrets.S3_ACCESS_KEY_ID}}
           aws_secret_access_key: ${{ secrets.S3_SECRET_ACCESS_KEY }}
           aws_region: ca-central-1
           flags: --acl public-read --content-type text/turtle
           
-
   import-entities-to-artsdata:
     needs: transform-tout-culture-calendar
     runs-on: ubuntu-latest
