@@ -26,7 +26,7 @@
         "baseIRI": "http://example.com/base/",
         "namespaces": {
           "footlight_places": "http://api.footlight.io/places/",
-          "schema": "https://schema.org/",
+          "schema": "http://schema.org/",
           "footlight_postal_address": "http://api.footlight.io/postalAddress/"
         },
         "subjectMappings": [
