@@ -15,11 +15,20 @@
       "disableAutoPreview": false,
       "projectName": "organizations",
       "projectTags": [],
-      "fileSource": "https://api.footlight.io/calendars/culture-mauricie/organizations?page=1&limit=10",
+      "fileSource": "https://api.footlight.io/calendars/culture-mauricie/organizations?page=1&limit=200",
       "archiveFileName": null
     }
   ],
   "operations": [
+    {
+      "op": "core/fill-down",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "columnName": "_ - id",
+      "description": "Fill down cells in column _ - id"
+    },
     {
       "op": "mapping-editor/save-rdf-mapping",
       "mapping": {
@@ -76,6 +85,29 @@
                           "constant": "fr"
                         }
                       }
+                    }
+                  }
+                ]
+              },
+              {
+                "property": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "sameAs"
+                  },
+                  "transformation": {
+                    "language": "prefix",
+                    "expression": "schema"
+                  }
+                },
+                "values": [
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "_ - sameAs - sameAs"
+                    },
+                    "valueType": {
+                      "type": "literal"
                     }
                   }
                 ]
