@@ -54,7 +54,7 @@
               {
                 "valueSource": {
                   "source": "constant",
-                  "constant": "Organziation"
+                  "constant": "Organization"
                 },
                 "transformation": {
                   "language": "prefix",
@@ -255,7 +255,7 @@
               {
                 "valueSource": {
                   "source": "constant",
-                  "constant": "Organziation"
+                  "constant": "Organization"
                 },
                 "transformation": {
                   "language": "prefix",
