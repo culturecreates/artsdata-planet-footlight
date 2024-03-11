@@ -73,9 +73,9 @@ jobs:
         run: |
           curl 'https://raw.githubusercontent.com/culturecreates/artsdata-planet-footlight/main/ontotext-refine/cms-events-configuration.json' >> event-transform-config.json &&
           curl 'https://raw.githubusercontent.com/culturecreates/artsdata-planet-footlight/main/ontotext-refine/cms-place-configuration.json' >> place-transform-config.json &&
-          curl 'https://raw.githubusercontent.com/culturecreates/artsdata-planet-footlight/main/ontotext-refine/organization-transform-config-for-french-calendar.json' >> organization-transform-config.json &&
-          curl 'https://raw.githubusercontent.com/culturecreates/artsdata-planet-footlight/main/ontotext-refine/people-transform-config-for-french-calendar.json' >> person-transform-config.json
-          curl 'https://raw.githubusercontent.com/culturecreates/artsdata-planet-footlight/main/ontotext-refine/taxonomy-transform-config-for-french-calendar.json' >> taxonomy-transform-config.json
+          curl 'https://raw.githubusercontent.com/culturecreates/artsdata-planet-footlight/main/ontotext-refine/cms-organizations-configuration.json' >> organization-transform-config.json &&
+          curl 'https://raw.githubusercontent.com/culturecreates/artsdata-planet-footlight/main/ontotext-refine/cms-people-configuration.json' >> person-transform-config.json
+          curl 'https://raw.githubusercontent.com/culturecreates/artsdata-planet-footlight/main/ontotext-refine/cms-taxonomies-configuration.json' >> taxonomy-transform-config.json
 
       - name: Set output file names for Culture Mauricie
         id: step-6

@@ -1,0 +1,274 @@
+{
+  "importOptions": [
+    {
+      "recordPath": [
+        "_",
+        "data",
+        "_"
+      ],
+      "limit": -1,
+      "trimStrings": false,
+      "guessCellValueTypes": false,
+      "storeEmptyStrings": true,
+      "includeFileSources": false,
+      "includeArchiveFileName": false,
+      "disableAutoPreview": false,
+      "projectName": "cms-people",
+      "projectTags": [],
+      "fileSource": "https://api.footlight.io/calendars/tout-culture/people?page=1&limit=1000",
+      "archiveFileName": null
+    }
+  ],
+  "operations": [
+    {
+      "op": "core/fill-down",
+      "engineConfig": {
+        "facets": [],
+        "mode": "record-based"
+      },
+      "columnName": "_ - id",
+      "description": "Fill down cells in column _ - id"
+    },
+    {
+      "op": "mapping-editor/save-rdf-mapping",
+      "mapping": {
+        "baseIRI": "http://example.com/base/",
+        "namespaces": {
+          "footlight_concepts": "http://api.footlight.io/concepts/",
+          "schema": "http://schema.org/",
+          "footlight_person": "http://api.footlight.io/person/"
+        },
+        "subjectMappings": [
+          {
+            "subject": {
+              "valueSource": {
+                "source": "column",
+                "columnName": "_ - id"
+              },
+              "transformation": {
+                "language": "prefix",
+                "expression": "footlight_person"
+              }
+            },
+            "typeMappings": [
+              {
+                "valueSource": {
+                  "source": "constant",
+                  "constant": "Person"
+                },
+                "transformation": {
+                  "language": "prefix",
+                  "expression": "schema"
+                }
+              }
+            ],
+            "propertyMappings": [
+              {
+                "property": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "name"
+                  },
+                  "transformation": {
+                    "language": "prefix",
+                    "expression": "schema"
+                  }
+                },
+                "values": [
+                  {
+                    "valueSource": {
+                      "source": "row_index"
+                    },
+                    "transformation": {
+                      "language": "grel",
+                      "expression": "if((cells[\"_ - name - en\"].value != null).and(cells[\"_ - name - en\"].value != \"\"), cells[\"_ - name - en\"].value, null)"
+                    },
+                    "valueType": {
+                      "type": "language_literal",
+                      "language": {
+                        "valueSource": {
+                          "source": "constant",
+                          "constant": "en"
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "valueSource": {
+                      "source": "row_index"
+                    },
+                    "transformation": {
+                      "language": "grel",
+                      "expression": "if((cells[\"_ - name - fr\"].value != null).and(cells[\"_ - name - fr\"].value != \"\"), cells[\"_ - name - fr\"].value, null)"
+                    },
+                    "valueType": {
+                      "type": "language_literal",
+                      "language": {
+                        "valueSource": {
+                          "source": "constant",
+                          "constant": "fr"
+                        }
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "property": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "sameAs"
+                  },
+                  "transformation": {
+                    "language": "prefix",
+                    "expression": "schema"
+                  }
+                },
+                "values": [
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "_ - sameAs - sameAs"
+                    },
+                    "transformation": {
+                      "language": "raw"
+                    },
+                    "valueType": {
+                      "type": "iri",
+                      "typeMappings": [],
+                      "propertyMappings": []
+                    }
+                  }
+                ]
+              },
+              {
+                "property": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "description"
+                  },
+                  "transformation": {
+                    "language": "prefix",
+                    "expression": "schema"
+                  }
+                },
+                "values": [
+                  {
+                    "valueSource": {
+                      "source": "row_index"
+                    },
+                    "transformation": {
+                      "language": "grel",
+                      "expression": "if((cells[\"_ - description - en\"].value != null).and(cells[\"_ - description - en\"].value != \"\"), cells[\"_ - description - en\"].value, null)"
+                    },
+                    "valueType": {
+                      "type": "language_literal",
+                      "language": {
+                        "valueSource": {
+                          "source": "constant",
+                          "constant": "en"
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "valueSource": {
+                      "source": "row_index"
+                    },
+                    "transformation": {
+                      "language": "grel",
+                      "expression": "if((cells[\"_ - description - fr\"].value != null).and(cells[\"_ - description - fr\"].value != \"\"), cells[\"_ - description - fr\"].value, null)"
+                    },
+                    "valueType": {
+                      "type": "language_literal",
+                      "language": {
+                        "valueSource": {
+                          "source": "constant",
+                          "constant": "fr"
+                        }
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "property": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "hasOccupation"
+                  },
+                  "transformation": {
+                    "language": "prefix",
+                    "expression": "schema"
+                  }
+                },
+                "values": [
+                  {
+                    "valueSource": {
+                      "source": "row_index"
+                    },
+                    "transformation": {
+                      "language": "grel",
+                      "expression": "if(cells[\"_ - occupation - _ - name - en\"].value != null,cells[\"_ - occupation - _ - name - en\"].value,null )"
+                    },
+                    "valueType": {
+                      "type": "language_literal",
+                      "language": {
+                        "valueSource": {
+                          "source": "constant",
+                          "constant": "en"
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "valueSource": {
+                      "source": "row_index"
+                    },
+                    "transformation": {
+                      "language": "grel",
+                      "expression": "if(cells[\"_ - occupation - _ - name - fr\"].value != null,cells[\"_ - occupation - _ - name - fr\"].value,null )"
+                    },
+                    "valueType": {
+                      "type": "language_literal",
+                      "language": {
+                        "valueSource": {
+                          "source": "constant",
+                          "constant": "fr"
+                        }
+                      }
+                    }
+                  }
+                ]
+              },
+              {
+                "property": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "image"
+                  },
+                  "transformation": {
+                    "language": "prefix",
+                    "expression": "schema"
+                  }
+                },
+                "values": [
+                  {
+                    "valueSource": {
+                      "source": "column",
+                      "columnName": "_ - image - original"
+                    },
+                    "valueType": {
+                      "type": "literal"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "description": "Save RDF Mapping"
+    }
+  ]
+}
