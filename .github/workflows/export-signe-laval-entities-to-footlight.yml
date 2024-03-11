@@ -71,7 +71,7 @@ jobs:
       - name: Download configuration files for transformation
         id: step-5
         run: |
-          curl 'https://raw.githubusercontent.com/culturecreates/artsdata-planet-footlight/main/data/event-transform-config-for-french-calendar.json' >> event-transform-config.json &&
+          curl 'https://raw.githubusercontent.com/culturecreates/artsdata-planet-footlight/main/data/cms-events-project-configuration.json' >> event-transform-config.json &&
           curl 'https://raw.githubusercontent.com/culturecreates/artsdata-planet-footlight/main/data/place-transform-config-for-multilingual-calendar.json' >> place-transform-config.json &&
           curl 'https://raw.githubusercontent.com/culturecreates/artsdata-planet-footlight/main/data/organization-transform-config-for-french-calendar.json' >> organization-transform-config.json &&
           curl 'https://raw.githubusercontent.com/culturecreates/artsdata-planet-footlight/main/data/people-transform-config-for-french-calendar.json' >> person-transform-config.json
