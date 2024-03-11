@@ -72,7 +72,7 @@ jobs:
         id: step-5
         run: |
           curl 'https://raw.githubusercontent.com/culturecreates/artsdata-planet-footlight/main/ontotext-refine/cms-events-configuration.json' >> event-transform-config.json &&
-          curl 'https://raw.githubusercontent.com/culturecreates/artsdata-planet-footlight/main/ontotext-refine/cms-place-configuration.json' >> place-transform-config.json &&
+          curl 'https://raw.githubusercontent.com/culturecreates/artsdata-planet-footlight/main/ontotext-refine/cms-places-configuration.json' >> place-transform-config.json &&
           curl 'https://raw.githubusercontent.com/culturecreates/artsdata-planet-footlight/main/ontotext-refine/cms-organizations-configuration.json' >> organization-transform-config.json &&
           curl 'https://raw.githubusercontent.com/culturecreates/artsdata-planet-footlight/main/ontotext-refine/cms-people-configuration.json' >> person-transform-config.json &&
           curl 'https://raw.githubusercontent.com/culturecreates/artsdata-planet-footlight/main/ontotext-refine/cms-taxonomies-configuration.json' >> taxonomy-transform-config.json
