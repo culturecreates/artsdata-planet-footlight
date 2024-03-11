@@ -1,0 +1,490 @@
+{
+  "baseIRI": "http://example.com/base/",
+  "namespaces": {
+    "footlight_places": "http://api.footlight.io/places/",
+    "schema": "https://schema.org/",
+    "footlight_postal_address": "http://api.footlight.io/postalAddress/",
+    "footlight_concepts": "http://api.footlight.io/concepts/",
+    "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
+  "subjectMappings": [
+    {
+      "propertyMappings": [
+        {
+          "property": {
+            "transformation": {
+              "expression": "schema",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "name"
+            }
+          },
+          "values": [
+            {
+              "transformation": {
+                "expression": "if(cells[\"_ - name - fr\"].value != null,cells[\"_ - name - fr\"].value,null )",
+                "language": "grel"
+              },
+              "valueSource": {
+                "source": "row_index"
+              },
+              "valueType": {
+                "type": "language_literal",
+                "language": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "fr"
+                  }
+                }
+              }
+            },
+            {
+              "transformation": {
+                "expression": "if(cells[\"_ - name - en\"].value != null,cells[\"_ - name - en\"].value,null )",
+                "language": "grel"
+              },
+              "valueSource": {
+                "source": "row_index"
+              },
+              "valueType": {
+                "type": "language_literal",
+                "language": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "en"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "property": {
+            "transformation": {
+              "expression": "schema",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "sameAs"
+            }
+          },
+          "values": [
+            {
+              "valueSource": {
+                "columnName": "_ - sameAs - sameAs",
+                "source": "column"
+              },
+              "valueType": {
+                "type": "literal"
+              }
+            }
+          ]
+        },
+        {
+          "property": {
+            "transformation": {
+              "expression": "schema",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "description"
+            }
+          },
+          "values": [
+            {
+              "transformation": {
+                "expression": "if(cells[\"_ - description - fr\"].value != null,cells[\"_ - description - fr\"].value,null )",
+                "language": "grel"
+              },
+              "valueSource": {
+                "source": "row_index"
+              },
+              "valueType": {
+                "type": "language_literal",
+                "language": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "fr"
+                  }
+                }
+              }
+            },
+            {
+              "transformation": {
+                "expression": "if(cells[\"_ - description - en\"].value != null,cells[\"_ - description - en\"].value,null )",
+                "language": "grel"
+              },
+              "valueSource": {
+                "source": "row_index"
+              },
+              "valueType": {
+                "type": "language_literal",
+                "language": {
+                  "valueSource": {
+                    "source": "constant",
+                    "constant": "en"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "property": {
+            "transformation": {
+              "expression": "schema",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "address"
+            }
+          },
+          "values": [
+            {
+              "transformation": {
+                "expression": "footlight_postal_address",
+                "language": "prefix"
+              },
+              "valueSource": {
+                "columnName": "_ - address - id",
+                "source": "column"
+              },
+              "valueType": {
+                "propertyMappings": [
+                  {
+                    "property": {
+                      "transformation": {
+                        "expression": "schema",
+                        "language": "prefix"
+                      },
+                      "valueSource": {
+                        "source": "constant",
+                        "constant": "addressCountry"
+                      }
+                    },
+                    "values": [
+                      {
+                        "transformation": {
+                          "expression": "if(cells[\"_ - address - addressCountry - fr\"].value != null,cells[\"_ - address - addressCountry - fr\"].value,null )",
+                          "language": "grel"
+                        },
+                        "valueSource": {
+                          "source": "row_index"
+                        },
+                        "valueType": {
+                          "type": "language_literal",
+                          "language": {
+                            "valueSource": {
+                              "source": "constant",
+                              "constant": "fr"
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "transformation": {
+                          "expression": "if(cells[\"_ - address - addressCountry - en\"].value != null,cells[\"_ - address - addressCountry - en\"].value,null )",
+                          "language": "grel"
+                        },
+                        "valueSource": {
+                          "source": "row_index"
+                        },
+                        "valueType": {
+                          "type": "literal"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "property": {
+                      "transformation": {
+                        "expression": "schema",
+                        "language": "prefix"
+                      },
+                      "valueSource": {
+                        "source": "constant",
+                        "constant": "addressLocality"
+                      }
+                    },
+                    "values": [
+                      {
+                        "transformation": {
+                          "expression": "if(cells[\"_ - address - addressLocality - fr\"].value != null,cells[\"_ - address - addressLocality - fr\"].value,null )",
+                          "language": "grel"
+                        },
+                        "valueSource": {
+                          "source": "row_index"
+                        },
+                        "valueType": {
+                          "type": "language_literal",
+                          "language": {
+                            "valueSource": {
+                              "source": "constant",
+                              "constant": "fr"
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "transformation": {
+                          "expression": "if(cells[\"_ - address - addressLocality - en\"].value != null,cells[\"_ - address - addressLocality - en\"].value,null )",
+                          "language": "grel"
+                        },
+                        "valueSource": {
+                          "source": "row_index"
+                        },
+                        "valueType": {
+                          "type": "language_literal",
+                          "language": {
+                            "valueSource": {
+                              "source": "constant",
+                              "constant": "en"
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "property": {
+                      "transformation": {
+                        "expression": "schema",
+                        "language": "prefix"
+                      },
+                      "valueSource": {
+                        "source": "constant",
+                        "constant": "postalCode"
+                      }
+                    },
+                    "values": [
+                      {
+                        "transformation": {
+                          "expression": "if(cells[\"_ - address - postalCode\"].value != null,cells[\"_ - address - postalCode\"].value,null )",
+                          "language": "grel"
+                        },
+                        "valueSource": {
+                          "source": "row_index"
+                        },
+                        "valueType": {
+                          "type": "literal"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "property": {
+                      "transformation": {
+                        "expression": "schema",
+                        "language": "prefix"
+                      },
+                      "valueSource": {
+                        "source": "constant",
+                        "constant": "addressRegion"
+                      }
+                    },
+                    "values": [
+                      {
+                        "transformation": {
+                          "expression": "if(cells[\"_ - address - addressRegion - fr\"].value != null,cells[\"_ - address - addressRegion - fr\"].value,null )",
+                          "language": "grel"
+                        },
+                        "valueSource": {
+                          "source": "row_index"
+                        },
+                        "valueType": {
+                          "type": "language_literal",
+                          "language": {
+                            "valueSource": {
+                              "source": "constant",
+                              "constant": "fr"
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "transformation": {
+                          "expression": "if(cells[\"_ - address - addressRegion - en\"].value != null,cells[\"_ - address - addressRegion - en\"].value,null )",
+                          "language": "grel"
+                        },
+                        "valueSource": {
+                          "source": "row_index"
+                        },
+                        "valueType": {
+                          "type": "language_literal",
+                          "language": {
+                            "valueSource": {
+                              "source": "constant",
+                              "constant": "en"
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "property": {
+                      "transformation": {
+                        "expression": "schema",
+                        "language": "prefix"
+                      },
+                      "valueSource": {
+                        "source": "constant",
+                        "constant": "streetAddress"
+                      }
+                    },
+                    "values": [
+                      {
+                        "transformation": {
+                          "expression": "if(cells[\"_ - address - streetAddress - fr\"].value != null,cells[\"_ - address - streetAddress - fr\"].value,null )",
+                          "language": "grel"
+                        },
+                        "valueSource": {
+                          "source": "row_index"
+                        },
+                        "valueType": {
+                          "type": "language_literal",
+                          "language": {
+                            "valueSource": {
+                              "source": "constant",
+                              "constant": "fr"
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "transformation": {
+                          "expression": "if(cells[\"_ - address - streetAddress - en\"].value != null,cells[\"_ - address - streetAddress - en\"].value,null )",
+                          "language": "grel"
+                        },
+                        "valueSource": {
+                          "source": "row_index"
+                        },
+                        "valueType": {
+                          "type": "language_literal",
+                          "language": {
+                            "valueSource": {
+                              "source": "constant",
+                              "constant": "en"
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "type": "iri",
+                "typeMappings": []
+              }
+            }
+          ]
+        },
+        {
+          "property": {
+            "transformation": {
+              "expression": "schema",
+              "language": "prefix"
+            },
+            "valueSource": {
+              "source": "constant",
+              "constant": "additionalType"
+            }
+          },
+          "values": [
+            {
+              "transformation": {
+                "expression": "if(cells[\"_ - additionalType - _ - id\"].value != null,\"http://api.footlight.io/concepts/\"+cells[\"_ - additionalType - _ - id\"].value,null )",
+                "language": "grel"
+              },
+              "valueSource": {
+                "source": "row_index"
+              },
+              "valueType": {
+                "propertyMappings": [
+                  {
+                    "property": {
+                      "transformation": {
+                        "expression": "skos",
+                        "language": "prefix"
+                      },
+                      "valueSource": {
+                        "source": "constant",
+                        "constant": "prefLabel"
+                      }
+                    },
+                    "values": [
+                      {
+                        "transformation": {
+                          "expression": "if(cells[\"_ - additionalType - _ - name - en\"].value != null,cells[\"_ - additionalType - _ - name - en\"].value,null )",
+                          "language": "grel"
+                        },
+                        "valueSource": {
+                          "source": "row_index"
+                        },
+                        "valueType": {
+                          "type": "language_literal",
+                          "language": {
+                            "valueSource": {
+                              "source": "constant",
+                              "constant": "en"
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "transformation": {
+                          "expression": "if(cells[\"_ - additionalType - _ - name - fr\"].value != null,cells[\"_ - additionalType - _ - name - fr\"].value,null )",
+                          "language": "grel"
+                        },
+                        "valueSource": {
+                          "source": "row_index"
+                        },
+                        "valueType": {
+                          "type": "language_literal",
+                          "language": {
+                            "valueSource": {
+                              "source": "constant",
+                              "constant": "fr"
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  }
+                ],
+                "type": "iri",
+                "typeMappings": []
+              }
+            }
+          ]
+        }
+      ],
+      "subject": {
+        "transformation": {
+          "expression": "footlight_places",
+          "language": "prefix"
+        },
+        "valueSource": {
+          "columnName": "_ - id",
+          "source": "column"
+        }
+      },
+      "typeMappings": [
+        {
+          "transformation": {
+            "expression": "schema",
+            "language": "prefix"
+          },
+          "valueSource": {
+            "source": "constant",
+            "constant": "Place"
+          }
+        }
+      ]
+    }
+  ]
+}
