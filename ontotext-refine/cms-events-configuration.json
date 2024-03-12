@@ -13,9 +13,9 @@
       "includeFileSources": false,
       "includeArchiveFileName": false,
       "disableAutoPreview": false,
-      "projectName": "cms-events",
+      "projectName": "cms-events-new",
       "projectTags": [],
-      "fileSource": "https://api.footlight.io/calendars/tout-culture/events?page=1&limit=10",
+      "fileSource": "https://api.footlight.io/calendars/tout-culture/events?page=1&limit=1000",
       "archiveFileName": null
     }
   ],
@@ -32,7 +32,7 @@
     {
       "op": "mapping-editor/save-rdf-mapping",
       "mapping": {
-        "baseIRI": "http://example.com/base/",
+        "baseIRI": "http://api.footlight.io/",
         "namespaces": {
           "xsd": "http://www.w3.org/2001/XMLSchema#",
           "footlight_events": "http://api.footlight.io/events/",
@@ -168,8 +168,155 @@
                     },
                     "valueType": {
                       "type": "iri",
+                      "typeMappings": [
+                        {
+                          "valueSource": {
+                            "source": "constant",
+                            "constant": "Place"
+                          },
+                          "transformation": {
+                            "language": "prefix",
+                            "expression": "schema"
+                          }
+                        }
+                      ],
+                      "propertyMappings": [
+                        {
+                          "property": {
+                            "valueSource": {
+                              "source": "constant",
+                              "constant": "name"
+                            },
+                            "transformation": {
+                              "language": "prefix",
+                              "expression": "schema"
+                            }
+                          },
+                          "values": [
+                            {
+                              "valueSource": {
+                                "source": "row_index"
+                              },
+                              "transformation": {
+                                "language": "grel",
+                                "expression": "if((cells[\"_ - location - _ - name - en\"].value != null).and(cells[\"_ - location - _ - name - en\"].value != \"\") ,cells[\"_ - location - _ - name - en\"].value,null )"
+                              },
+                              "valueType": {
+                                "type": "language_literal",
+                                "language": {
+                                  "valueSource": {
+                                    "source": "constant",
+                                    "constant": "en"
+                                  }
+                                }
+                              }
+                            },
+                            {
+                              "valueSource": {
+                                "source": "row_index"
+                              },
+                              "transformation": {
+                                "language": "grel",
+                                "expression": "if((cells[\"_ - location - _ - name - fr\"].value != null).and(cells[\"_ - location - _ - name - fr\"].value != \"\") ,cells[\"_ - location - _ - name - fr\"].value,null )"
+                              },
+                              "valueType": {
+                                "type": "language_literal",
+                                "language": {
+                                  "valueSource": {
+                                    "source": "constant",
+                                    "constant": "fr"
+                                  }
+                                }
+                              }
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "valueSource": {
+                      "source": "row_index"
+                    },
+                    "transformation": {
+                      "language": "grel",
+                      "expression": "if(cells[\"_ - location - _ - type\"].value ==\"VirtualLocation\",\"http://api.footlight.io/virtualLocation/\"+cells[\"_ - id\"].value,null )"
+                    },
+                    "valueType": {
+                      "type": "iri",
                       "typeMappings": [],
-                      "propertyMappings": []
+                      "propertyMappings": [
+                        {
+                          "property": {
+                            "valueSource": {
+                              "source": "constant",
+                              "constant": "url"
+                            },
+                            "transformation": {
+                              "language": "prefix",
+                              "expression": "schema"
+                            }
+                          },
+                          "values": [
+                            {
+                              "valueSource": {
+                                "source": "row_index"
+                              },
+                              "transformation": {
+                                "language": "grel",
+                                "expression": "if((cells[\"_ - location - _ - url\"].value !=null).and(cells[\"_ - location - _ - url\"].value !=\"\"),cells[\"_ - location - _ - url\"].value,null )"
+                              },
+                              "valueType": {
+                                "type": "literal"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "property": {
+                            "valueSource": {
+                              "source": "constant",
+                              "constant": "name"
+                            },
+                            "transformation": {
+                              "language": "prefix",
+                              "expression": "schema"
+                            }
+                          },
+                          "values": [
+                            {
+                              "valueSource": {
+                                "source": "row_index"
+                              },
+                              "transformation": {
+                                "language": "grel",
+                                "expression": "if((cells[\"_ - location - _ - name - en\"].value !=null).and(cells[\"_ - location - _ - name - en\"].value !=\"\"),cells[\"_ - location - _ - name - en\"].value,null )"
+                              },
+                              "valueType": {
+                                "type": "language_literal",
+                                "language": {
+                                  "valueSource": {
+                                    "source": "constant",
+                                    "constant": "en"
+                                  }
+                                }
+                              }
+                            },
+                            {
+                              "valueSource": {
+                                "source": "row_index"
+                              },
+                              "transformation": {
+                                "language": "grel",
+                                "expression": "if((cells[\"_ - location - _ - name - fr\"].value !=null).and(cells[\"_ - location - _ - name - fr\"].value !=\"\"),cells[\"_ - location - _ - name - fr\"].value,null )"
+                              },
+                              "valueType": {
+                                "type": "literal"
+                              }
+                            }
+                          ]
+                        }
+                      ]
                     }
                   }
                 ]
