@@ -215,7 +215,7 @@
                         {
                           "valueSource": {
                             "source": "constant",
-                            "constant": "Address"
+                            "constant": "PostalAddress"
                           },
                           "transformation": {
                             "language": "prefix",
