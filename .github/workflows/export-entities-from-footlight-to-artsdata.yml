@@ -1,4 +1,4 @@
-name: Export entities from footlight to Artsdata
+name: Generic workflow -  Export entities from footlight CMS to Artsdata
 
 on:
   workflow_dispatch:
