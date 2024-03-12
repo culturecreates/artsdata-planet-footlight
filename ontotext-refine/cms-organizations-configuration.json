@@ -13,9 +13,9 @@
       "includeFileSources": false,
       "includeArchiveFileName": false,
       "disableAutoPreview": false,
-      "projectName": "cms-organizations",
+      "projectName": "cms-organizations-new",
       "projectTags": [],
-      "fileSource": "https://api.footlight.io/calendars/tout-culture/organizations?page=1&limit=1000",
+      "fileSource": "https://api.footlight.io/calendars/culture-mauricie/organizations?page=1&limit=100",
       "archiveFileName": null
     }
   ],
@@ -231,12 +231,11 @@
                 "values": [
                   {
                     "valueSource": {
-                      "source": "column",
-                      "columnName": "_ - location - id"
+                      "source": "row_index"
                     },
                     "transformation": {
-                      "language": "prefix",
-                      "expression": "footlight_places"
+                      "language": "grel",
+                      "expression": "if(cells[\"_ - location - id\"].value != null,\"http://api.footlight.io/places/\"+cells[\"_ - location - id\"].value,null )"
                     },
                     "valueType": {
                       "type": "iri",
