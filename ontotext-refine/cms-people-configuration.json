@@ -15,7 +15,7 @@
       "disableAutoPreview": false,
       "projectName": "cms-people",
       "projectTags": [],
-      "fileSource": "https://api.footlight.io/calendars/tout-culture/people?page=1&limit=1000",
+      "fileSource": "https://api.footlight.io/calendars/culture-mauricie/people?page=1&limit=10",
       "archiveFileName": null
     }
   ],
@@ -255,8 +255,11 @@
                 "values": [
                   {
                     "valueSource": {
-                      "source": "column",
-                      "columnName": "_ - image - original"
+                      "source": "row_index"
+                    },
+                    "transformation": {
+                      "language": "grel",
+                      "expression": "if(cells[\"_ - image - original\"].value != null,cells[\"_ - image - original\"].value,null )"
                     },
                     "valueType": {
                       "type": "literal"
