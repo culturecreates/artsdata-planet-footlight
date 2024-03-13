@@ -36,7 +36,7 @@
         "namespaces": {
           "footlight_concepts": "http://api.footlight.io/concepts/",
           "schema": "http://schema.org/",
-          "footlight_person": "http://api.footlight.io/person/"
+          "footlight_person": "http://api.footlight.io/people/"
         },
         "subjectMappings": [
           {

@@ -651,7 +651,7 @@
                     },
                     "transformation": {
                       "language": "grel",
-                      "expression": "if(cells[\"_ - performers - _ - type\"].value != null, unescape(\"http://api.footlight.io/\" + toLowercase(cells[\"_ - performers - _ - type\"].value) +\"/\"+cells[\"_ - performers - _ - id\"].value,\"url\"),null )"
+                      "expression": "if(cells[\"_ - performers - _ - type\"].value != null, unescape(\"http://api.footlight.io/\" + (if(cells[\"_ - performers - _ - type\"].value == \"Organization\",\"organizations/\",\"people/\")) +cells[\"_ - performers - _ - id\"].value,\"url\"),null )"
                     },
                     "valueType": {
                       "type": "iri",
@@ -741,7 +741,7 @@
                     },
                     "transformation": {
                       "language": "grel",
-                      "expression": "if(cells[\"_ - organizers - _ - type\"].value != null, unescape(\"http://api.footlight.io/\" + toLowercase(cells[\"_ - organizers - _ - type\"].value) +\"/\"+cells[\"_ - organizers - _ - id\"].value,\"url\"),null )"
+                      "expression": "if(cells[\"_ - organizers - _ - type\"].value != null, unescape(\"http://api.footlight.io/\" + (if(cells[\"_ - organizers - _ - type\"].value == \"Organization\",\"organizations/\",\"people/\")) +cells[\"_ - organizers - _ - id\"].value,\"url\"),null )"
                     },
                     "valueType": {
                       "type": "iri",
