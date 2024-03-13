@@ -13,7 +13,7 @@
       "includeFileSources": false,
       "includeArchiveFileName": false,
       "disableAutoPreview": false,
-      "projectName": "cms-events-new",
+      "projectName": "cms-events",
       "projectTags": [],
       "fileSource": "https://api.footlight.io/calendars/tout-culture/events?page=1&limit=1000",
       "archiveFileName": null
@@ -240,11 +240,22 @@
                     },
                     "transformation": {
                       "language": "grel",
-                      "expression": "if(cells[\"_ - location - _ - type\"].value ==\"VirtualLocation\",\"http://api.footlight.io/virtualLocation/\"+cells[\"_ - id\"].value,null )"
+                      "expression": "if(cells[\"_ - location - _ - type\"].value ==\"VirtualLocation\",\"http://api.footlight.io/events/\"+cells[\"_ - id\"].value+\"#VirtualLocation\",null )"
                     },
                     "valueType": {
                       "type": "iri",
-                      "typeMappings": [],
+                      "typeMappings": [
+                        {
+                          "valueSource": {
+                            "source": "constant",
+                            "constant": "VirtualLocation"
+                          },
+                          "transformation": {
+                            "language": "prefix",
+                            "expression": "schema"
+                          }
+                        }
+                      ],
                       "propertyMappings": [
                         {
                           "property": {
