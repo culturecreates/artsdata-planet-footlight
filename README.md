@@ -7,5 +7,6 @@ This repo's workflow:
 3. Stores RDF output on S3
 4. Publishes the RDF to Artsdata Databus
 
-
-Report link to check on mismatched dates and event status between CMS and Artsdata.
+Maintenance Reports
+===========
+[Check](http://kg.artsdata.ca/query/show?sparql=https://raw.githubusercontent.com/culturecreates/artsdata-planet-footlight/main/sparql/cms-event-start-date-mismatch.sparql&title=Mismatched+dates+and+event+status) on mismatched dates and event status between CMS and Artsdata.
