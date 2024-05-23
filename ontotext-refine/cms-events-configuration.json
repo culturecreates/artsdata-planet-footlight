@@ -839,7 +839,7 @@
                         {
                           "valueSource": {
                             "source": "constant",
-                            "constant": "aggregateOffer"
+                            "constant": "AggregateOffer"
                           },
                           "transformation": {
                             "language": "prefix",
