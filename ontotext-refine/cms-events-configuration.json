@@ -892,17 +892,7 @@
                                 "expression": "if(cells[\"_ - offers - _ - additionalType\"].value == \"FREE\", \"0.0\", nil)"
                               },
                               "valueType": {
-                                "type": "datatype_literal",
-                                "datatype": {
-                                  "valueSource": {
-                                    "source": "constant",
-                                    "constant": "double"
-                                  },
-                                  "transformation": {
-                                    "language": "prefix",
-                                    "expression": "xsd"
-                                  }
-                                }
+                                "type": "literal"
                               }
                             }
                           ]
