@@ -9,7 +9,7 @@
       "limit": -1,
       "trimStrings": false,
       "guessCellValueTypes": false,
-      "storeEmptyStrings": true,
+      "storeEmptyStrings": false,
       "includeFileSources": false,
       "includeArchiveFileName": false,
       "disableAutoPreview": false,
@@ -867,6 +867,42 @@
                               },
                               "valueType": {
                                 "type": "literal"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "property": {
+                            "valueSource": {
+                              "source": "constant",
+                              "constant": "price"
+                            },
+                            "transformation": {
+                              "language": "prefix",
+                              "expression": "schema"
+                            }
+                          },
+                          "values": [
+                            {
+                              "valueSource": {
+                                "source": "row_index"
+                              },
+                              "transformation": {
+                                "language": "grel",
+                                "expression": "if(cells[\"_ - offers - _ - additionalType\"].value == \"FREE\", \"0.0\", nil)"
+                              },
+                              "valueType": {
+                                "type": "datatype_literal",
+                                "datatype": {
+                                  "valueSource": {
+                                    "source": "constant",
+                                    "constant": "double"
+                                  },
+                                  "transformation": {
+                                    "language": "prefix",
+                                    "expression": "xsd"
+                                  }
+                                }
                               }
                             }
                           ]
