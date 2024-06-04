@@ -19,7 +19,7 @@ jobs:
           python-version: '3.10' 
 
       - name: Download taxonomies from tout-culture
-        run: curl 'https://api.footlight.io/calendars/tout-culture/taxonomies?page=1&limit=200' >> taxonomies.json
+        run: curl 'https://api.footlight.io/calendars/tout-culture/taxonomies?page=1&limit=300' >> taxonomies.json
 
       - name: Run Python script
         run: python ./util/flatten-cms-taxonomies.py taxonomies.json
@@ -63,10 +63,10 @@ jobs:
       - name: Download data from Tout Culture calendar
         id: step-4
         run: |
-          curl 'https://api.footlight.io/calendars/tout-culture/events?page=1&limit=200' >> events.json &&
-          curl 'https://api.footlight.io/calendars/tout-culture/places?page=1&limit=200' >> places.json &&
-          curl 'https://api.footlight.io/calendars/tout-culture/organizations?page=1&limit=200' >> organizations.json &&
-          curl 'https://api.footlight.io/calendars/tout-culture/people?page=1&limit=200' >> people.json 
+          curl 'https://api.footlight.io/calendars/tout-culture/events?page=1&limit=300' >> events.json &&
+          curl 'https://api.footlight.io/calendars/tout-culture/places?page=1&limit=300' >> places.json &&
+          curl 'https://api.footlight.io/calendars/tout-culture/organizations?page=1&limit=300' >> organizations.json &&
+          curl 'https://api.footlight.io/calendars/tout-culture/people?page=1&limit=300' >> people.json 
       
       - name: Download configuration files for transformation
         id: step-5
