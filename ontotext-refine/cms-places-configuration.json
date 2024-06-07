@@ -34,10 +34,10 @@
       "mapping": {
         "baseIRI": "http://example.com/base/",
         "namespaces": {
-          "footlight_places": "http://api.footlight.io/places/",
+          "footlight_places": "http://lod.footlight.io/resource/",
           "schema": "http://schema.org/",
-          "footlight_postal_address": "http://api.footlight.io/postalAddress/",
-          "footlight_concepts": "http://api.footlight.io/concepts/",
+          "footlight_postal_address": "http://lod.footlight.io/resource/",
+          "footlight_concepts": "http://lod.footlight.io/resource/",
           "skos": "http://www.w3.org/2004/02/skos/core#"
         },
         "subjectMappings": [
@@ -467,7 +467,7 @@
                     },
                     "transformation": {
                       "language": "grel",
-                      "expression": "if(cells[\"_ - additionalType - _ - id\"].value != null,\"http://api.footlight.io/concepts/\"+cells[\"_ - additionalType - _ - id\"].value,null )"
+                      "expression": "if(cells[\"_ - additionalType - _ - id\"].value != null,\"http://lod.footlight.io/resource/\"+cells[\"_ - additionalType - _ - id\"].value,null )"
                     },
                     "valueType": {
                       "type": "iri",
