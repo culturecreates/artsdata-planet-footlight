@@ -34,9 +34,8 @@
       "mapping": {
         "baseIRI": "http://example.com/base/",
         "namespaces": {
-          "footlight_concepts": "http://api.footlight.io/concepts/",
           "schema": "http://schema.org/",
-          "footlight_person": "http://api.footlight.io/people/"
+          "footlight_person": "http://lod.footlight.io/resource/"
         },
         "subjectMappings": [
           {

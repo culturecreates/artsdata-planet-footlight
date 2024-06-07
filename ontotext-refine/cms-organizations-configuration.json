@@ -34,9 +34,9 @@
       "mapping": {
         "baseIRI": "http://example.com/base/",
         "namespaces": {
-          "footlight_organizations": "http://api.footlight.io/organizations/",
+          "footlight_organizations": "http://lod.footlight.io/resource/",
           "schema": "http://schema.org/",
-          "footlight_places": "http://api.footlight.io/places/"
+          "footlight_places": "http://lod.footlight.io/resource/"
         },
         "subjectMappings": [
           {
@@ -235,7 +235,7 @@
                     },
                     "transformation": {
                       "language": "grel",
-                      "expression": "if(cells[\"_ - location - id\"].value != null,\"http://api.footlight.io/places/\"+cells[\"_ - location - id\"].value,null )"
+                      "expression": "if(cells[\"_ - location - id\"].value != null,\"http://lod.footlight.io/resource/\"+cells[\"_ - location - id\"].value,null )"
                     },
                     "valueType": {
                       "type": "iri",
