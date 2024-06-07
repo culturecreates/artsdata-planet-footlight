@@ -24,8 +24,8 @@
       "mapping": {
         "baseIRI": "http://example.com/base/",
         "namespaces": {
-          "footlight_concepts": "http://api.footlight.io/concepts/",
-          "footlight_taxonomies": "http://api.footlight.io/taxonomies/",
+          "footlight_concepts": "http://lod.footlight.io/resource/",
+          "footlight_taxonomies": "http://lod.footlight.io/resource/",
           "skos": "http://www.w3.org/2004/02/skos/core#"
         },
         "subjectMappings": [
@@ -236,8 +236,8 @@
       "mapping": {
         "baseIRI": "http://example.com/base/",
         "namespaces": {
-          "footlight_concepts": "http://api.footlight.io/concepts/",
-          "footlight_taxonomies": "http://api.footlight.io/taxonomies/",
+          "footlight_concepts": "http://lod.footlight.io/resource/",
+          "footlight_taxonomies": "http://lod.footlight.io/resource/",
           "skos": "http://www.w3.org/2004/02/skos/core#"
         },
         "subjectMappings": [
