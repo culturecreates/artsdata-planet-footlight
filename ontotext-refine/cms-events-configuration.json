@@ -35,9 +35,7 @@
         "baseIRI": "http://lod.footlight.io/resource/",
         "namespaces": {
           "xsd": "http://www.w3.org/2001/XMLSchema#",
-          "footlight_events": "http://lod.footlight.io/resource/",
-          "footlight_places": "http://lod.footlight.io/resource/",
-          "footlight_concepts": "http://lod.footlight.io/resource/",
+          "footlight": "http://lod.footlight.io/resource/",
           "schema": "http://schema.org/",
           "skos": "http://www.w3.org/2004/02/skos/core#"
         },
@@ -50,7 +48,7 @@
               },
               "transformation": {
                 "language": "prefix",
-                "expression": "footlight_events"
+                "expression": "footlight"
               }
             },
             "typeMappings": [
@@ -135,7 +133,7 @@
                     },
                     "transformation": {
                       "language": "prefix",
-                      "expression": "footlight_concepts"
+                      "expression": "footlight"
                     },
                     "valueType": {
                       "type": "iri",
@@ -164,7 +162,7 @@
                     },
                     "transformation": {
                       "language": "prefix",
-                      "expression": "footlight_places"
+                      "expression": "footlight"
                     },
                     "valueType": {
                       "type": "iri",
@@ -912,7 +910,7 @@
               },
               "transformation": {
                 "language": "prefix",
-                "expression": "footlight_concepts"
+                "expression": "footlight"
               }
             },
             "typeMappings": [
@@ -992,7 +990,7 @@
           "xsd": "http://www.w3.org/2001/XMLSchema#",
           "schema": "http://schema.org/",
           "skos": "http://www.w3.org/2004/02/skos/core#",
-          "footlight_resource": "http://lod.footlight.io/resource/"
+          "footlight": "http://lod.footlight.io/resource/"
         },
         "subjectMappings": [
           {
@@ -1003,7 +1001,7 @@
               },
               "transformation": {
                 "language": "prefix",
-                "expression": "footlight_resource"
+                "expression": "footlight"
               }
             },
             "typeMappings": [
@@ -1088,7 +1086,7 @@
                     },
                     "transformation": {
                       "language": "prefix",
-                      "expression": "footlight_resource"
+                      "expression": "footlight"
                     },
                     "valueType": {
                       "type": "iri",
@@ -1117,7 +1115,7 @@
                     },
                     "transformation": {
                       "language": "prefix",
-                      "expression": "footlight_resource"
+                      "expression": "footlight"
                     },
                     "valueType": {
                       "type": "iri",
@@ -1865,7 +1863,7 @@
               },
               "transformation": {
                 "language": "prefix",
-                "expression": "footlight_resource"
+                "expression": "footlight"
               }
             },
             "typeMappings": [

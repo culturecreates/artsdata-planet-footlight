@@ -35,7 +35,7 @@
         "baseIRI": "http://example.com/base/",
         "namespaces": {
           "schema": "http://schema.org/",
-          "footlight_person": "http://lod.footlight.io/resource/"
+          "footlight": "http://lod.footlight.io/resource/"
         },
         "subjectMappings": [
           {
@@ -46,7 +46,7 @@
               },
               "transformation": {
                 "language": "prefix",
-                "expression": "footlight_person"
+                "expression": "footlight"
               }
             },
             "typeMappings": [

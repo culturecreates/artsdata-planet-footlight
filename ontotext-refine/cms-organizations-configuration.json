@@ -34,9 +34,8 @@
       "mapping": {
         "baseIRI": "http://example.com/base/",
         "namespaces": {
-          "footlight_organizations": "http://lod.footlight.io/resource/",
-          "schema": "http://schema.org/",
-          "footlight_places": "http://lod.footlight.io/resource/"
+          "footlight": "http://lod.footlight.io/resource/",
+          "schema": "http://schema.org/"
         },
         "subjectMappings": [
           {
@@ -47,7 +46,7 @@
               },
               "transformation": {
                 "language": "prefix",
-                "expression": "footlight_organizations"
+                "expression": "footlight"
               }
             },
             "typeMappings": [
