@@ -252,7 +252,18 @@
                               },
                               "valueType": {
                                 "type": "iri",
-                                "typeMappings": [],
+                                "typeMappings": [
+                                  {
+                                    "valueSource": {
+                                      "source": "constant",
+                                      "constant": "PostalAddress"
+                                    },
+                                    "transformation": {
+                                      "language": "prefix",
+                                      "expression": "schema"
+                                    }
+                                  }
+                                ],
                                 "propertyMappings": [
                                   {
                                     "property": {
