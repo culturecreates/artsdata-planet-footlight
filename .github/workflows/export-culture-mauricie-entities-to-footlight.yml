@@ -63,7 +63,7 @@ jobs:
       - name: Download data from Culture Mauricie calendar
         id: step-4
         run: |
-          curl 'https://api.footlight.io/calendars/culture-mauricie/events?page=1&limit=300' >> events.json &&
+          curl 'https://api.footlight.io/calendars/culture-mauricie/events?page=1&limit=500' >> events.json &&
           curl 'https://api.footlight.io/calendars/culture-mauricie/places?page=1&limit=300' >> places.json &&
           curl 'https://api.footlight.io/calendars/culture-mauricie/organizations?page=1&limit=300' >> organizations.json &&
           curl 'https://api.footlight.io/calendars/culture-mauricie/people?page=1&limit=300' >> people.json
