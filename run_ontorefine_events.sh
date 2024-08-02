@@ -16,7 +16,7 @@ docker exec onto_refine /opt/ontorefine/dist/bin/ontorefine-cli transform ../dat
   -u http://localhost:7333  \
   --no-clean \
   --configurations ../data/ontotext-refine/cms-events-configuration.json  \
-  -f json >> scenepro-entities.ttl
+  -f json >> event-entities.ttl
 
 # Open the default browser
 open http://localhost:7333
