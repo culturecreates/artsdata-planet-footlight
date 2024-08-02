@@ -19,7 +19,7 @@ jobs:
           python-version: '3.10' 
 
       - name: Download taxonomies from Culture-Mauricie
-        run: curl 'https://api.footlight.io/calendars/culture-mauricie/taxonomies?page=1&limit=300' >> taxonomies.json
+        run: curl 'https://api.footlight.io/calendars/culture-mauricie/taxonomies?page=1&limit=500' >> taxonomies.json
 
       - name: Run Python script
         run: python ./util/flatten-cms-taxonomies.py taxonomies.json
