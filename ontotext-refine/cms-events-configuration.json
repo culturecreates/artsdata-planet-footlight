@@ -258,7 +258,7 @@
                                     "property": {
                                       "valueSource": {
                                         "source": "constant",
-                                        "constant": "country"
+                                        "constant": "addressCountry"
                                       },
                                       "transformation": {
                                         "language": "prefix",
