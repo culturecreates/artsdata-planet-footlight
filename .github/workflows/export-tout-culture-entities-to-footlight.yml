@@ -64,7 +64,7 @@ jobs:
         id: step-4
         run: |
           curl 'https://api.footlight.io/calendars/tout-culture/events?page=1&limit=300' >> events.json &&
-          curl 'https://api.footlight.io/calendars/tout-culture/places?page=1&limit=30' >> places.json &&
+          curl 'https://api.footlight.io/calendars/tout-culture/places?page=1&limit=5' >> places.json &&
           curl 'https://api.footlight.io/calendars/tout-culture/organizations?page=1&limit=300' >> organizations.json &&
           curl 'https://api.footlight.io/calendars/tout-culture/people?page=1&limit=300' >> people.json 
       
