@@ -25,7 +25,7 @@ jobs:
         run: python ./util/flatten-cms-taxonomies.py taxonomies.json
 
       - name: Upload json into artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v2
         with:
           name: taxonomies
           path: ./flatten-taxonomies.json
@@ -56,7 +56,7 @@ jobs:
 
       - name: Download data from artifact
         id: step-3
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v2
         with:
           name: taxonomies
 
@@ -64,7 +64,7 @@ jobs:
         id: step-4
         run: |
           curl 'https://api.footlight.io/calendars/tout-culture/events?page=1&limit=300' >> events.json &&
-          curl 'https://api.footlight.io/calendars/tout-culture/places?page=1&limit=300' >> places.json &&
+          curl 'https://api.footlight.io/calendars/tout-culture/places?page=1&limit=30' >> places.json &&
           curl 'https://api.footlight.io/calendars/tout-culture/organizations?page=1&limit=300' >> organizations.json &&
           curl 'https://api.footlight.io/calendars/tout-culture/people?page=1&limit=300' >> people.json 
       
