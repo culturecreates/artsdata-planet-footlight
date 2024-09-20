@@ -1,0 +1,3720 @@
+@base <http://example.com/base/> .
+@prefix footlight: <http://lod.footlight.io/resource/> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+footlight:6655f5de5066ec00637147b4 a schema:Place;
+  schema:name "101 rue Montcalm"@fr;
+  schema:address footlight:6655f5de5066ec00637147aa .
+
+footlight:6655f5de5066ec00637147aa a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J8Y 3B7";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "101 Rue Montcalm"@fr, "101 Rue Montcalm"@en .
+
+footlight:660d64f214060600646288da a schema:Place;
+  schema:name "120, route 148 Est, Lochaber Canton, QC"@fr;
+  schema:address footlight:660d64f214060600646288d0;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2f009 .
+
+footlight:660d64f214060600646288d0 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Thurso"@fr, "Thurso"@en;
+  schema:postalCode "J0X 3B0";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "120 Québec 148"@fr, "120 Québec 148"@en .
+
+footlight:6418cdb35e4d4e0066a2f009 skos:prefLabel "Other"@en, "Autre"@fr .
+
+footlight:654115f0a37f770066e86ffe a schema:Place;
+  schema:name "135 Eddy "@fr, "135 Eddy"@en;
+  schema:description "<p>Édifice abritant plusieurs organismes en économie sociale et des ateliers d'artistes.</p>"@fr,
+    "<p>Building with multiple social economy organizations and artist studios.&nbsp;</p>"@en;
+  schema:address footlight:654115f0a37f770066e86ff6;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2efef .
+
+footlight:654115f0a37f770066e86ff6 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J8X 2W7";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "135 Rue Eddy"@fr, "135 Rue Eddy"@en .
+
+footlight:6418cdb35e4d4e0066a2efef skos:prefLabel "Artist studio"@en, "Atelier d'artistes"@fr .
+
+footlight:66594628beddbb00645d6aea a schema:Place;
+  schema:name "21, rue Kent Gatineau"@fr;
+  schema:address footlight:66594627beddbb00645d6ae0 .
+
+footlight:66594627beddbb00645d6ae0 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J8X 3J9";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "21 Rue Kent"@fr, "21 Rue Kent"@en .
+
+footlight:66759fb71180fb00646034ef a schema:Place;
+  schema:name "Salle Jean-Despréz, 25, rue Laurier, secteur Gatineau"@fr, "25, rue Laurier, secteur Gatineau"@en;
+  schema:address footlight:66759fb61180fb00646034e5;
+  schema:additionalType footlight:642c839fcf606a0064e5e956 .
+
+footlight:66759fb61180fb00646034e5 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J8X 4C8";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "25 Rue Laurier"@fr, "25 Rue Laurier"@en .
+
+footlight:642c839fcf606a0064e5e956 skos:prefLabel "Performance Hall (Q112688641)"@en,
+    "Salle de spectacle (Q112688641)"@fr .
+
+footlight:648cd3645526a700645065f1 a schema:Place;
+  schema:name "276 rue Desjardins à Plaisance"@fr;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-377", "http://kg.footlight.io/resource/d47c2a03-0aba-4cdd-a8e0-ea02d84d2e14";
+  schema:address footlight:648cd3645526a700645065e6 .
+
+footlight:648cd3645526a700645065e6 a schema:PostalAddress;
+  schema:addressCountry "CA"@fr;
+  schema:addressLocality "Plaisance"@fr;
+  schema:postalCode "J0V 1S0";
+  schema:addressRegion "QC"@fr;
+  schema:streetAddress "276 Rue Desjardins"@fr .
+
+footlight:6675977c1180fb006460323d a schema:Place;
+  schema:name "39, rue Leduc"@fr, "39, rue Leduc"@en;
+  schema:address footlight:6675977c1180fb0064603233;
+  schema:additionalType footlight:642c8832cf606a0064e5ee78 .
+
+footlight:6675977c1180fb0064603233 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J8X 3A3";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "39 Rue Leduc"@fr, "39 Rue Leduc"@en .
+
+footlight:642c8832cf606a0064e5ee78 skos:prefLabel "Cultural center (Q1329623)"@en,
+    "Centre culturel (Q1329623)"@fr .
+
+footlight:66489aaf9f43170063fc1882 a schema:Place;
+  schema:name "40, promenade du Portage"@fr;
+  schema:address footlight:66489aaf9f43170063fc1878 .
+
+footlight:66489aaf9f43170063fc1878 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J8X 2V6";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "40 Promenade du Portage"@fr, "40 Promenade du Portage"@en .
+
+footlight:66489a1d9f43170063fc175c a schema:Place;
+  schema:name "75, boulevard Fournier"@fr;
+  schema:address footlight:66489a1d9f43170063fc1752 .
+
+footlight:66489a1d9f43170063fc1752 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J8X 3P5";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "75 Boulevard Fournier"@fr, "75 Boulevard Fournier"@en .
+
+footlight:66594cb5beddbb00645d6dff a schema:Place;
+  schema:name "920, rue Jacques-Cartier, Gatineau"@fr;
+  schema:address footlight:66594cb5beddbb00645d6df5;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2f003 .
+
+footlight:66594cb5beddbb00645d6df5 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J8T 2W3";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "920 Rue Jacques-Cartier"@fr, "920 Rue Jacques-Cartier"@en .
+
+footlight:6418cdb35e4d4e0066a2f003 skos:prefLabel "Bar / restaurant"@en, "Bar / restaurant"@fr .
+
+footlight:6420c6152831190064570cc0 a schema:Place;
+  schema:name "À La Dérive - Brasserie Artisanale"@fr, "À La Dérive - Brasserie Artisanale"@en;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-9", "http://kg.footlight.io/resource/4c6cf40e-a823-41f7-bafb-ce6b0c0e79f4";
+  schema:description ""@fr, ""@en;
+  schema:address footlight:6420c6152831190064570cb6;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2f003 .
+
+footlight:6420c6152831190064570cb6 a schema:PostalAddress;
+  schema:addressCountry "CA"@fr, "CA";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J8T 2W3";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "1015 rue Jacques-Cartier"@fr, "1015 rue Jacques-Cartier"@en .
+
+footlight:6499a4bc3c19fa0064e4919c a schema:Place;
+  schema:name "Bibliothèque municipale d'Alleyn-et-Cawood"@fr, "Alleyn & Cawood Municipal Library"@en;
+  schema:description "<p>La municipalité d'Alleyn et Cawood&nbsp;est fière d'offrir à ses résidents une des meilleures bibliothèques, non seulement dans le Pontiac, mais aussi dans la région de l'Outaouais.</p><p>Elle a été honorée par le Réseau Biblio-Outaouais qui lui a décerné le prix de la Bibliothèque de l'année pendant plusieurs années dans la catégorie des municipalités ayant une population de 800 ou moins.</p>"@fr,
+    "<p>The Municipality of Alleyn &amp; Cawood is proud to offer its residents one of the best libraries, not only in the Pontiac, but also in the Outaouais region.</p><p>The Municipal Library was honored by the Réseau Biblio-Outaouais, which awarded her the Library of the Year Award for several years in the category of municipalities with a population of 800 or less.</p>"@en;
+  schema:address footlight:6499a4bc3c19fa0064e49194;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2effb .
+
+footlight:6499a4bc3c19fa0064e49194 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Danford Lake"@fr, "Danford Lake"@en;
+  schema:postalCode "J0X 1P0";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "10, chemin Jondee"@fr, "10, chemin Jondee"@en .
+
+footlight:6418cdb35e4d4e0066a2effb skos:prefLabel "Library"@en, "Bibliothèque"@fr .
+
+footlight:645beda47db98f0065dd5b26 a schema:Place;
+  schema:name "Amuzart"@fr, "Amuzart"@en;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-605";
+  schema:address footlight:645beda47db98f0065dd5b1e .
+
+footlight:645beda47db98f0065dd5b1e a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J9J 0N8";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "46 Rue du Tartan"@fr, "46 Rue du Tartan"@en .
+
+footlight:666a9ab484e933006494277f a schema:Place;
+  schema:name "Ancienne cathédrale-église St-Jean-Marie-Vianney"@fr;
+  schema:sameAs "http://kg.footlight.io/resource/5a7794e9-99ad-40bc-9f1a-c1e9929b22b3",
+    "http://kg.artsdata.ca/resource/K5-806";
+  schema:address footlight:666a9ab384e9330064942773 .
+
+footlight:666a9ab384e9330064942773 a schema:PostalAddress;
+  schema:addressCountry "CA"@fr;
+  schema:addressLocality "Gatineau"@fr;
+  schema:postalCode "J8P 5B9";
+  schema:addressRegion "QC"@fr;
+  schema:streetAddress "196 Rue Notre Dame"@fr .
+
+footlight:649f51f23c19fa0064e5940d a schema:Place;
+  schema:name "Ancienne usine CIP"@fr;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-406", "http://kg.footlight.io/resource/0b59b191-908d-4fdb-a31c-913614f0710a";
+  schema:address footlight:649f51f23c19fa0064e59402 .
+
+footlight:649f51f23c19fa0064e59402 a schema:PostalAddress;
+  schema:addressCountry "CA"@fr;
+  schema:addressLocality "Gatineau"@fr;
+  schema:postalCode "J8P 4X6";
+  schema:addressRegion "QC"@fr;
+  schema:streetAddress "79 Rue Main"@fr .
+
+footlight:666a9abb84e9330064942928 a schema:Place;
+  schema:name "Aréna Stade-Pierre-Lafontaine"@fr;
+  schema:sameAs "https://maps.google.com/?cid=14389460784537190456", "http://kg.footlight.io/resource/ff063ef4-c8c3-4389-b042-efe44f73ad39";
+  schema:address footlight:666a9abb84e933006494291c .
+
+footlight:666a9abb84e933006494291c a schema:PostalAddress;
+  schema:addressCountry "CA"@fr;
+  schema:addressLocality "Gatineau"@fr;
+  schema:postalCode "J8T 3M8";
+  schema:addressRegion "QC"@fr;
+  schema:streetAddress "255 Rue Saint-Antoine"@fr .
+
+footlight:66ab332a508ed10064fc1b31 a schema:Place;
+  schema:name "Aréna Stade-Pierre-Lafontaine"@fr;
+  schema:sameAs "http://kg.footlight.io/resource/ff063ef4-c8c3-4389-b042-efe44f73ad39",
+    "http://kg.artsdata.ca/resource/K5-933";
+  schema:address footlight:66ab332a508ed10064fc1b20 .
+
+footlight:66ab332a508ed10064fc1b20 a schema:PostalAddress;
+  schema:addressCountry "CA"@fr;
+  schema:addressLocality "Gatineau"@fr;
+  schema:postalCode "J8T 3M8";
+  schema:addressRegion "QC"@fr;
+  schema:streetAddress "255 Rue Saint-Antoine"@fr .
+
+footlight:64f8bc757d6aa8006435542d a schema:Place;
+  schema:name "Art-image et espace Odyssée"@fr, "Art-image et espace Odyssée"@en;
+  schema:description "<p><span style=\"background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);\">Le Centre d'exposition Art-image et l'espace Odyssée de la Maison de la culture de Gatineau sont deux espaces d'expositions qui ont pour mandat la diffusion de l'art actuel et contemporain dans le but de faire mieux connaître et apprécier ces pratiques du grand public. Les deux espaces présentent des expositions d'artistes professionnels. Ceux-ci proviennent de la région, de la province et du pays. Une fois l'an, le volet Émergence permet à des jeunes créateurs de la région de la Capitale fédérale d'exposer en milieu professionnel.</span></p>"@fr,
+    "<p>The Centre d'exposition Art-image and the Odyssée space at the Maison de la culture de Gatineau are two exhibition spaces whose mandate is to disseminate current and contemporary art in order to increase public awareness and appreciation of these practices. Both spaces present exhibitions by professional artists. These artists come from the region, the province and the country. Once a year, the Émergence programme gives young artists from the Federal Capital Region the opportunity to exhibit their work in a professional environment.</p>"@en;
+  schema:address footlight:64f8bc757d6aa80064355425;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2eff1 .
+
+footlight:64f8bc757d6aa80064355425 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J8T 8H9";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "855, boulevard de la Gappe"@fr, "855, boulevard de la Gappe"@en .
+
+footlight:6418cdb35e4d4e0066a2eff1 skos:prefLabel "Gallery"@en, "Galerie"@fr .
+
+footlight:6420c62f2831190064570ee7 a schema:Place;
+  schema:name "Association Athlétique et sociale Hull-Volant"@fr, "Association Athlétique et sociale Hull-Volant"@en;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-34", "http://kg.footlight.io/resource/00e223b0-d167-4737-9c8e-6b8c844b8fa7";
+  schema:description ""@fr, ""@en;
+  schema:address footlight:6421d7692831190064573d88 .
+
+footlight:6421d7692831190064573d88 a schema:PostalAddress;
+  schema:addressCountry "CA"@fr, "CA";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J8X 1C5";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "115 Bd Sacré-Coeur"@fr, "115 Bd Sacré-Coeur"@en .
+
+footlight:645bee1d7db98f0065dd5b4b a schema:Place;
+  schema:name "Association des amis du Presbytère de Blue Sea"@fr, "Association des amis du Presbytère de Blue Sea"@en;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-630";
+  schema:address footlight:645bee1d7db98f0065dd5b43 .
+
+footlight:645bee1d7db98f0065dd5b43 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Blue Sea"@fr, "Blue Sea"@en;
+  schema:postalCode "J0X 1C0";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "4 Rue Principale"@fr, "4 Rue Principale"@en .
+
+footlight:645beecb7db98f0065dd5c40 a schema:Place;
+  schema:name "Association des artistes du Pontiac"@fr, "Association des artistes du Pontiac"@en;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-638";
+  schema:description ""@fr, ""@en;
+  schema:address footlight:645beecb7db98f0065dd5c38;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2eff1 .
+
+footlight:645beecb7db98f0065dd5c38 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Shawville"@fr, "Shawville"@en;
+  schema:postalCode "J0X 2Y0";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "C.P. 103"@fr, "C.P. 103"@en .
+
+footlight:654bc096122bad006409e88d a schema:Place;
+  schema:name "Association des auteurs et auteures de l'Outaouais"@fr, "Association des auteurs et auteures de l'Outaouais"@en;
+  schema:address footlight:654bc096122bad006409e885;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2f009 .
+
+footlight:654bc096122bad006409e885 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J8Y 0A3";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "195 Boulevard Saint-Joseph"@fr, "195 Boulevard Saint-Joseph"@en .
+
+footlight:65a82e6a9468f3006377530c a schema:Place;
+  schema:name "Atelier Galerie Fontaine"@fr;
+  schema:address footlight:65a82e6a9468f30063775303;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2efef, footlight:6418cdb35e4d4e0066a2eff1 .
+
+footlight:65a82e6a9468f30063775303 a schema:PostalAddress .
+
+footlight:66d729ce3451310064477c52 a schema:Place;
+  schema:name "Atelier à Montebello"@fr, "Atelier Montebello"@en;
+  schema:address footlight:66d729ce3451310064477c48;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2efef .
+
+footlight:66d729ce3451310064477c48 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Montebello"@fr, "Montebello"@en;
+  schema:postalCode "J0V 1L0";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "550 Rue Notre-Dame"@fr, "550 Rue Notre-Dame"@en .
+
+footlight:652d33b813a9e2006425e7aa a schema:Place;
+  schema:name "Ateliers du ruisseau"@fr, "Ateliers du ruisseau"@en;
+  schema:description "<p>Une coopérative de solidarité œuvrant dans le milieu culturel et artistique à Gatineau.</p>"@fr,
+    "<p>An arts and culture cooperative operating artist studios.&nbsp;</p>"@en;
+  schema:address footlight:652d33b813a9e2006425e7a2 .
+
+footlight:652d33b813a9e2006425e7a2 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J8X 2W7";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "135 Eddy Street"@fr, "135 Eddy Street"@en .
+
+footlight:664e57d83d923900641f3838 a schema:Place;
+  schema:name "Ruelle Aubry"@fr, "Aubry Alley"@en;
+  schema:address footlight:664e57d83d923900641f382f;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2f009 .
+
+footlight:664e57d83d923900641f382f a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J8X 2H1";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "1 Rue Aubry"@fr, "1 Rue Aubry"@en .
+
+footlight:6499a6203c19fa0064e49209 a schema:Place;
+  schema:name "Bibliothèque municipale d'Aumond"@fr, "Aumond Municipal Library"@en;
+  schema:description ""@fr, ""@en;
+  schema:address footlight:6499a6203c19fa0064e49201;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2effb .
+
+footlight:6499a6203c19fa0064e49201 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Aumond"@fr, "Aumond"@en;
+  schema:postalCode "J0W 1W0";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "664, rue Principale"@fr, "664, rue Principale"@en .
+
+footlight:6420c6242831190064570de5 a schema:Place;
+  schema:name "AXENÉO7"@fr, "AXENÉO7"@en;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-25", "http://kg.footlight.io/resource/1cd61b1a-1394-4f6b-89ce-31e29ce1b06c";
+  schema:description ""@fr, ""@en;
+  schema:address footlight:645b93c27db98f0065dc53e0;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2eff1 .
+
+footlight:645b93c27db98f0065dc53e0 a schema:PostalAddress;
+  schema:addressCountry "CA"@fr, "CA";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J8Y 3M5";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "80 rue Hanson"@fr, "80 rue Hanson"@en .
+
+footlight:66c6e2f634513100643ebc62 a schema:Place;
+  schema:name "Bibliothèque Bernard-Lonergan"@fr;
+  schema:sameAs "http://kg.footlight.io/resource/5b4868db-8a0e-4717-92b6-adc09b7b0ae7",
+    "http://kg.artsdata.ca/resource/K5-412";
+  schema:address footlight:66c6e2f634513100643ebc56 .
+
+footlight:66c6e2f634513100643ebc56 a schema:PostalAddress;
+  schema:addressCountry "CA"@fr;
+  schema:addressLocality "Gatineau"@fr;
+  schema:postalCode "J8L 1G6";
+  schema:addressRegion "QC"@fr;
+  schema:streetAddress "181 Rue Joseph"@fr .
+
+footlight:649c3c703c19fa0064e515aa a schema:Place;
+  schema:name "Bibliothèque de Plaisance"@fr, "Bibliothèque de Plaisance"@en;
+  schema:description ""@fr, ""@en;
+  schema:address footlight:649c3c703c19fa0064e515a2;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2effb .
+
+footlight:649c3c703c19fa0064e515a2 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Plaisance"@fr, "Plaisance"@en;
+  schema:postalCode "J0V 1S0";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "281, rue Desjardins, C.P. 209"@fr, "281, rue Desjardins, C.P. 209"@en .
+
+footlight:6616e14e140606006469fca0 a schema:Place;
+  schema:name "Bibliothèque de Poltimore (Val-des-Monts)"@fr, "Bibliothèque de Poltimore (Val-des-Monts)"@en;
+  schema:description "<p>Le service de bibliothèques vous donne accès à plus de 11 000 livres avec la possibilité d’effectuer des prêts entre bibliothèques :</p><ul><li>Romans</li><li>Documentaires</li><li>Revues</li><li>Collections jeunesse</li><li>Plusieurs activités culturelles</li><li>Jeux de société</li><li>Instruments de musique</li><li>Prêts de raquettes, de livres audios et de DVD</li></ul><p><br></p><p>Bienvenue aux visiteurs et aux citoyens!</p>"@fr;
+  schema:address footlight:6616e14e140606006469fc96;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2eff9 .
+
+footlight:6616e14e140606006469fc96 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Val-des-Monts"@fr, "Val-des-Monts"@en;
+  schema:postalCode "J8N 2H7";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "2720 Route Principale"@fr, "2720 Route Principale"@en .
+
+footlight:6418cdb35e4d4e0066a2eff9 skos:prefLabel "Bookstore"@en, "Librairie"@fr .
+
+footlight:649c3e5a3c19fa0064e516d4 a schema:Place;
+  schema:name "Bibliothèque de St-André-Avellin"@fr, "Bibliothèque de St-André-Avellin"@en;
+  schema:description ""@fr, ""@en;
+  schema:address footlight:649c3e5a3c19fa0064e516cc;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2effb .
+
+footlight:649c3e5a3c19fa0064e516cc a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Saint-André-Avellin"@fr, "Saint-André-Avellin"@en;
+  schema:postalCode "J0V 1W0";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "532 Rue Charles Auguste Montreuil"@fr, "532 Rue Charles Auguste Montreuil"@en .
+
+footlight:64ac5acd3c19fa0064e6d4bd a schema:Place;
+  schema:name "Bibliothèque Donalda-Charron"@fr;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-402", "http://kg.footlight.io/resource/990eed9d-b39a-4fb6-aeb5-a14474b27aa5";
+  schema:address footlight:64ac5acd3c19fa0064e6d4b2 .
+
+footlight:64ac5acd3c19fa0064e6d4b2 a schema:PostalAddress;
+  schema:addressCountry "CA"@fr;
+  schema:addressLocality "Gatineau"@fr;
+  schema:postalCode "J9J 0G5";
+  schema:addressRegion "QC"@fr;
+  schema:streetAddress "255 Rue de Bruxelles"@fr .
+
+footlight:64ac5ae03c19fa0064e6d65c a schema:Place;
+  schema:name "Bibliothèque Guy-Sanche"@fr;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-418", "http://kg.footlight.io/resource/c2bb79bc-215d-44c0-af21-7db979f71ee4";
+  schema:address footlight:64ac5ae03c19fa0064e6d651 .
+
+footlight:64ac5ae03c19fa0064e6d651 a schema:PostalAddress;
+  schema:addressCountry "CA"@fr;
+  schema:addressLocality "Gatineau"@fr;
+  schema:postalCode "J8T 8H9";
+  schema:addressRegion "QC"@fr;
+  schema:streetAddress "855 Bd de la Gappe"@fr .
+
+footlight:6499a6ee3c19fa0064e4922e a schema:Place;
+  schema:name "Bibliothèque municipale de Blue Sea"@fr, "Blue Sea Municipal Library"@en;
+  schema:description ""@fr, ""@en;
+  schema:address footlight:6499a6ee3c19fa0064e49226;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2effb .
+
+footlight:6499a6ee3c19fa0064e49226 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Blue Sea"@fr, "Blue Sea"@en;
+  schema:postalCode "J0X 1C0";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "4, rue Principale"@fr, "4, rue Principale"@en .
+
+footlight:6499a7f33c19fa0064e4927f a schema:Place;
+  schema:name "Bibliothèque municipale de Bois-Franc"@fr, "Bois-Franc Municipal Library"@en;
+  schema:description ""@fr, ""@en;
+  schema:address footlight:6499a7f33c19fa0064e49277;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2effb .
+
+footlight:6499a7f33c19fa0064e49277 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Bois-Franc"@fr, "Bois-Franc"@en;
+  schema:postalCode "J9E 3A9";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "466, route 105"@fr, "466, route 105"@en .
+
+footlight:653936e0a37f770066e70729 a schema:Place;
+  schema:name "Forêt Boucher"@fr, "Boucher Forest"@en;
+  schema:address footlight:653936e0a37f770066e70721;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2f001 .
+
+footlight:653936e0a37f770066e70721 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J9J 1R8";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "Rue Samuel-Edey"@fr, "Rue Samuel-Edey"@en .
+
+footlight:6418cdb35e4d4e0066a2f001 skos:prefLabel "Park"@en, "Parc"@fr .
+
+footlight:6499a9003c19fa0064e493cc a schema:Place;
+  schema:name "Bibliothèque municipale de Bouchette"@fr, "Bouchette Municipal Library"@en;
+  schema:description ""@fr, ""@en;
+  schema:address footlight:6499a9003c19fa0064e493c4;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2effb .
+
+footlight:6499a9003c19fa0064e493c4 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Bouchette"@fr, "Bouchette"@en;
+  schema:postalCode "J0X 1E0";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "36, rue Principale"@fr, "36, rue Principale"@en .
+
+footlight:65ea2246bec01b006430da90 a schema:Place;
+  schema:name "Pont Brady"@fr, "Brady Bridge"@en;
+  schema:address footlight:65ea2246bec01b006430da87;
+  schema:additionalType footlight:642c839fcf606a0064e5e95a .
+
+footlight:65ea2246bec01b006430da87 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J8Y";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "Rue Brady"@fr, "Rue Brady"@en .
+
+footlight:642c839fcf606a0064e5e95a skos:prefLabel "Open-air Event Venue (Q117187730)"@en,
+    "Lieu pour événements en plein air (Q117187730)"@fr .
+
+footlight:6647acc29f43170063fb8d30 a schema:Place;
+  schema:name "Brasserie du Bas-Canada "@fr;
+  schema:address footlight:6647acc29f43170063fb8d27;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2f003 .
+
+footlight:6647acc29f43170063fb8d27 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J8Z 3G4";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "95 Boulevard de la Technologie"@fr, "95 Boulevard de la Technologie"@en .
+
+footlight:6499d3473c19fa0064e4cf7d a schema:Place;
+  schema:name "Bibliothèque municipale de Bristol"@fr, "Bristol Municipal Library"@en;
+  schema:description ""@fr, ""@en;
+  schema:address footlight:6499d3473c19fa0064e4cf75;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2effb .
+
+footlight:6499d3473c19fa0064e4cf75 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Bristol"@fr, "Bristol"@en;
+  schema:postalCode "J0X 1G0";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "32, rue Aylmer"@fr, "32, rue Aylmer"@en .
+
+footlight:6420c60f2831190064570c3a a schema:Place;
+  schema:name "Cabaret La Basoche"@fr, "Cabaret La Basoche"@en;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-7", "http://kg.footlight.io/resource/a8a7e7bd-5a88-44f8-ba3e-8dd2c2493742";
+  schema:address footlight:645b939b7db98f0065dc4842 .
+
+footlight:645b939b7db98f0065dc4842 a schema:PostalAddress;
+  schema:addressCountry "CA"@fr;
+  schema:addressLocality "Gatineau"@fr;
+  schema:postalCode "J9H 3M3";
+  schema:addressRegion "QC"@fr;
+  schema:streetAddress "120 Rue Principale"@fr .
+
+footlight:65d8b4a3bec01b00642c26cd a schema:Place;
+  schema:name "Cabaret M"@fr, "Cabaret M"@en;
+  schema:description "<p>Restaurant offrant <span style=\"color: rgb(5, 5, 5);\">des soirées souper/spectacle avec artistes locaux et émergeant.</span></p>"@fr;
+  schema:address footlight:65d8b4a3bec01b00642c26c4;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2f003 .
+
+footlight:65d8b4a3bec01b00642c26c4 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Cantley"@fr, "Cantley"@en;
+  schema:postalCode "J8V 3H4";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "839 Montée de la Source"@fr, "839 Montée de la Source"@en .
+
+footlight:66885b8b200e900063ed5b14 a schema:Place;
+  schema:name "Café Downtown"@fr;
+  schema:address footlight:66885b8b200e900063ed5b0b;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2f005 .
+
+footlight:66885b8b200e900063ed5b0b a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Fort-Coulonge"@fr, "Fort-Coulonge"@en;
+  schema:postalCode "J0X 1V0";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "535 Rue Baume"@fr, "535 Rue Baume"@en .
+
+footlight:6418cdb35e4d4e0066a2f005 skos:prefLabel "Café"@en, "Café"@fr .
+
+footlight:6420c6132831190064570c80 a schema:Place;
+  schema:name "Carrefour culturel ESTacade"@fr, "Carrefour culturel ESTacade"@en;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-1", "http://kg.footlight.io/resource/06f4adb2-0605-4092-97a0-8f6b1ddba1a7";
+  schema:description ""@fr, ""@en;
+  schema:address footlight:64515b39e19f7200646d1cb9;
+  schema:additionalType footlight:642c839fcf606a0064e5e956 .
+
+footlight:64515b39e19f7200646d1cb9 a schema:PostalAddress;
+  schema:addressCountry "CA"@fr, "CA";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J8L 2W1";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "580 Rue Maclaren E"@fr, "580 Rue Maclaren E"@en .
+
+footlight:66abe270d09b4d00634b3100 a schema:Place;
+  schema:name "Carrefour culturel Estacade - Salle Desjardins"@fr;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-930", "http://kg.footlight.io/resource/100b127d-485f-4408-9a7b-8ed73dd5273a" .
+
+footlight:6609d5af1406060064617b7d a schema:Place;
+  schema:name "Centre Action Générations des Aînés de la Lièvre ( CAGA)"@fr;
+  schema:address footlight:6609d5af1406060064617b73;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2f009 .
+
+footlight:6609d5af1406060064617b73 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J8L 2G7";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "390 Avenue de Buckingham"@fr, "390 Avenue de Buckingham"@en .
+
+footlight:665633825066ec0063715452 a schema:Place;
+  schema:name "Centre Art 101"@fr;
+  schema:address footlight:665633825066ec0063715448;
+  schema:additionalType footlight:642c839fcf606a0064e5e953 .
+
+footlight:665633825066ec0063715448 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J8Y 3B7";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "101 Rue Montcalm"@fr, "101 Rue Montcalm"@en .
+
+footlight:642c839fcf606a0064e5e953 skos:prefLabel "Event Venue (Q18674739)"@en, "Lieu pour des événements (Q18674739)"@fr .
+
+footlight:645bb3297db98f0065dc9870 a schema:Place;
+  schema:name "Centre Aydelu"@fr;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-191", "http://kg.footlight.io/resource/5311eb1f-4146-4360-8730-476b99f99ebb";
+  schema:description ""@fr, ""@en;
+  schema:address footlight:645bb3297db98f0065dc9865 .
+
+footlight:645bb3297db98f0065dc9865 a schema:PostalAddress;
+  schema:addressCountry "CA"@fr, "CA";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J9H 3P4";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "94 Rue du Patrimoine"@fr, "94 Rue du Patrimoine"@en .
+
+footlight:65540172122bad00640b219c a schema:Place;
+  schema:name "Centre commercial Les Promenades de Gatineau"@fr;
+  schema:address footlight:65540172122bad00640b2193 .
+
+footlight:65540172122bad00640b2193 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J8T 6G3";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "1100 Boulevard Maloney Ouest"@fr, "1100 Boulevard Maloney Ouest"@en .
+
+footlight:645bb3287db98f0065dc981d a schema:Place;
+  schema:name "Centre Communautaire Angers"@fr, "Centre Communautaire Angers"@en;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-188", "http://kg.footlight.io/resource/3af511dc-3ed9-4b4f-9a7c-f6fe4f811b98";
+  schema:description ""@fr, ""@en;
+  schema:address footlight:645bb3287db98f0065dc9812;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2f009 .
+
+footlight:645bb3287db98f0065dc9812 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J8M 1T3";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "1100 Rue Yvon Pichette"@fr, "1100 Rue Yvon Pichette"@en .
+
+footlight:66c6e2f934513100643ebcdd a schema:Place;
+  schema:name "Centre communautaire Apollo"@fr;
+  schema:sameAs "https://maps.google.com/?q=520+Rue+Carle,+Gatineau,+QC+J8P+3G7,+Canada&ftid=0x4cce1b04c4156a07:0xfa65045694c60e48",
+    "http://kg.footlight.io/resource/2e11bea4-ad0b-477e-b682-348fada3bfb6";
+  schema:address footlight:66c6e2f934513100643ebcd1 .
+
+footlight:66c6e2f934513100643ebcd1 a schema:PostalAddress;
+  schema:addressCountry "CA"@fr;
+  schema:addressLocality "Gatineau"@fr;
+  schema:postalCode "J8P 3G7";
+  schema:addressRegion "QC"@fr;
+  schema:streetAddress "520 Rue Carle"@fr .
+
+footlight:665f2214beddbb0064661f77 a schema:Place;
+  schema:name "Centre communautaire de Kazabazua"@fr, "Centre communautaire de Kazabazua"@en;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-916";
+  schema:address footlight:665f2214beddbb0064661f6d;
+  schema:additionalType footlight:642c839fcf606a0064e5e953 .
+
+footlight:665f2214beddbb0064661f6d a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Kazabazua"@fr, "Kazabazua"@en;
+  schema:postalCode "J0X 1X0";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "26 Rue Begley"@fr, "26 Rue Begley"@en .
+
+footlight:664e3e493d923900641f199c a schema:Place;
+  schema:name "Centre communautaire multifonctionnel (CCM)"@fr;
+  schema:address footlight:664e3e493d923900641f1992 .
+
+footlight:664e3e493d923900641f1992 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Cantley"@fr, "Cantley"@en;
+  schema:postalCode "J8V 0C6";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "6 Impasse des Étoiles"@fr, "6 Impasse des Étoiles"@en .
+
+footlight:64d3efca7d6aa80064326a1d a schema:Place;
+  schema:name "Centre communautaire multifonctionnel de Cantley"@fr, "Centre communautaire multifonctionnel de Cantley"@en;
+  schema:description "<p><span style=\"color: rgb(102, 102, 102); background-color: rgb(255, 255, 255);\">Cette salle modulable de 600 mètres carrés permet la tenue d’événements communautaires, sportifs et culturels, et de salons d’exposition, de conférences, de spectacles, d’assemblées à grand déploiement, etc. Cette salle permet également de répondre aux besoins de la communauté en cas de mesure d’urgence en tant que site d’hébergement et de centre de gestion de crise.</span></p>"@fr,
+    "<p>This 600 square metre modular hall can be used for community, sporting and cultural events, exhibition halls, conferences, shows, large-scale meetings, etc. The hall can also be used as an accommodation site and crisis management centre to meet the needs of the community in the event of an emergency.</p>"@en;
+  schema:address footlight:64d3efca7d6aa80064326a15;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2f009 .
+
+footlight:64d3efca7d6aa80064326a15 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Cantley"@fr, "Cantley"@en;
+  schema:postalCode "J8V 0C6";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "6 Impasse des Étoiles"@fr, "6 Impasse des Étoiles"@en .
+
+footlight:6523dfa4448580ab1dd106f6 a schema:Place;
+  schema:name "Centre communautaire Saint-Raymond"@fr;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-435", "http://kg.footlight.io/resource/ae7e9413-d3b8-44e5-a077-36b85a1fd58c";
+  schema:address footlight:6523dfa1448580ab1dd106eb .
+
+footlight:6523dfa1448580ab1dd106eb a schema:PostalAddress;
+  schema:addressCountry "CA"@fr;
+  schema:addressLocality "Gatineau"@fr;
+  schema:postalCode "J8Y 1S8";
+  schema:addressRegion "QC"@fr;
+  schema:streetAddress "99 Bd Saint-Raymond"@fr .
+
+footlight:645bb3267db98f0065dc97a2 a schema:Place;
+  schema:name "Centre communautaire Tétreau"@fr, "Centre communautaire Tétreau"@en;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-70", "http://kg.footlight.io/resource/67676985-fd12-4393-b96c-a2508caef3ca";
+  schema:description ""@fr, ""@en;
+  schema:address footlight:645bb3267db98f0065dc9797 .
+
+footlight:645bb3267db98f0065dc9797 a schema:PostalAddress;
+  schema:addressCountry "CA"@fr, "CA";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J9A";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "361 Bd de Lucerne"@fr, "361 Bd de Lucerne"@en .
+
+footlight:65f45cea997b81006372c6f1 a schema:Place;
+  schema:name "Centre culturel du Vieux-Aylmer"@fr;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-625";
+  schema:address footlight:65f45ce9997b81006372c6e7;
+  schema:additionalType footlight:642c8832cf606a0064e5ee78 .
+
+footlight:65f45ce9997b81006372c6e7 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J9H 3M3";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "120 Rue Principale"@fr, "120 Rue Principale"@en .
+
+footlight:6467c95e137a2200640d6f83 a schema:Place;
+  schema:name "Centre Culturel Jacques-Auger"@fr, "Centre Culturel Jacques-Auger"@en;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-648";
+  schema:description "<p><br></p>"@fr, "<p><br></p>"@en;
+  schema:address footlight:6467c95e137a2200640d6f7b;
+  schema:additionalType footlight:642c8832cf606a0064e5ee78 .
+
+footlight:6467c95e137a2200640d6f7b a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J8X 3A3";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "39 Rue Leduc"@fr, "39 Rue Leduc"@en .
+
+footlight:6420c6282831190064570e4d a schema:Place;
+  schema:name "Centre d'action culturelle De la MRC de Papineau"@fr, "Centre d'action culturelle De la MRC de Papineau"@en;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-28", "http://kg.footlight.io/resource/b00eab2a-2222-46ea-a899-6e2fd9722457";
+  schema:description ""@fr, ""@en;
+  schema:address footlight:645b93e47db98f0065dc5e9c;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2eff1, footlight:6418cdb35e4d4e0066a2eff7 .
+
+footlight:645b93e47db98f0065dc5e9c a schema:PostalAddress;
+  schema:addressCountry "CA"@fr, "CA";
+  schema:addressLocality "Montebello"@fr, "Montebello"@en;
+  schema:postalCode "J0V 1L0";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "548 rue Notre-Dame"@fr, "548 rue Notre-Dame"@en .
+
+footlight:6418cdb35e4d4e0066a2eff7 skos:prefLabel "Boutique"@en, "Boutique"@fr .
+
+footlight:6655ef505066ec00637144c1 a schema:Place;
+  schema:name "Centre d'art contemporain de l'Outaouais"@fr, "Centre d'art contemporain de l'Outaouais"@en;
+  schema:address footlight:6655ef505066ec00637144b8;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2efed, footlight:6418cdb35e4d4e0066a2efef,
+    footlight:6418cdb35e4d4e0066a2eff1 .
+
+footlight:6655ef505066ec00637144b8 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J8Y 3B7";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "101 Rue Montcalm"@fr, "101 Rue Montcalm"@en .
+
+footlight:6418cdb35e4d4e0066a2efed skos:prefLabel "Artist-run centre"@en, "Centre d'artistes"@fr .
+
+footlight:645bb32a7db98f0065dc98af a schema:Place;
+  schema:name "Centre d'exposition l'Imagier"@fr;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-193", "http://kg.footlight.io/resource/93deaf19-4540-4eee-9dc2-eda575fb8616";
+  schema:description ""@fr, ""@en;
+  schema:address footlight:645bb32a7db98f0065dc98a4 .
+
+footlight:645bb32a7db98f0065dc98a4 a schema:PostalAddress;
+  schema:addressCountry "CA"@fr, "Canada";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J9H 4W8";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "9 Rue Front"@fr, "9 Rue Front"@en .
+
+footlight:64a577f73c19fa0064e6348a a schema:Place;
+  schema:name "Centre de plein air Hélène-Larochelle"@fr, "Centre de plein air Hélène-Larochelle"@en;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-460";
+  schema:description ""@fr, ""@en;
+  schema:address footlight:64a577f73c19fa0064e63482;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2f001 .
+
+footlight:64a577f73c19fa0064e63482 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J8T 3R6";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "741 Boulevard Maloney E"@fr, "741 Boulevard Maloney E"@en .
+
+footlight:6504d190521d460064322812 a schema:Place;
+  schema:name "Centre de production DAÏMÔN"@fr;
+  schema:address footlight:6504d190521d460064322809;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2efed .
+
+footlight:6504d190521d460064322809 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J8Y 3M5";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "78 Rue Hanson"@fr, "78 Rue Hanson"@en .
+
+footlight:6511c4705db0a100651ede53 a schema:Place;
+  schema:name "Centre des congrès de Gatineau"@fr;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-40";
+  schema:address footlight:6511c4705db0a100651ede4a .
+
+footlight:6511c4705db0a100651ede4a a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J8X 0A3";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "50 Boulevard Maisonneuve"@fr, "50 Boulevard Maisonneuve"@en .
+
+footlight:64b578f73c19fa0064e8c466 a schema:Place;
+  schema:name "Centre d’exposition Napoléon-Bourassa"@fr, "Centre d’exposition Napoléon-Bourassa"@en;
+  schema:description ""@fr, ""@en;
+  schema:address footlight:64b578f73c19fa0064e8c45e .
+
+footlight:64b578f73c19fa0064e8c45e a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Montebello"@fr, "Montebello"@en;
+  schema:postalCode "J0V 1L0";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "548 rue Notre–Dame"@fr, "548 rue Notre–Dame"@en .
+
+footlight:64b578f73c19fa0064e8c466 schema:additionalType footlight:6418cdb35e4d4e0066a2efed .
+
+footlight:6418cdb35e4d4e0066a2efed skos:prefLabel "Artist-run centre"@en, "Centre d'artistes"@fr .
+
+footlight:65088d6e521d460064324464 a schema:Place;
+  schema:name "Centre Moon Rain"@fr;
+  schema:address footlight:65088d6e521d46006432445b;
+  schema:additionalType footlight:642c839fcf606a0064e5e961 .
+
+footlight:65088d6e521d46006432445b a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Val-des-Monts"@fr, "Val-des-Monts"@en;
+  schema:postalCode "J8N 3B6";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "105 Chemin de la Savane"@fr, "105 Chemin de la Savane"@en .
+
+footlight:642c839fcf606a0064e5e961 skos:prefLabel "Performing arts building (Q57660343)"@en,
+    "Bâtiment des arts de la scène (Q57660343)"@fr .
+
+footlight:665825b58c76ef00645669cf a schema:Place;
+  schema:name "Centre nautique de la Lièvre"@fr;
+  schema:sameAs "https://maps.google.com/?cid=2174005475496335687", "http://kg.footlight.io/resource/5703705e-213a-444d-8a60-93bc3541de63";
+  schema:address footlight:665825b58c76ef00645669bb .
+
+footlight:665825b58c76ef00645669bb a schema:PostalAddress;
+  schema:addressCountry "CA"@fr;
+  schema:addressLocality "Gatineau"@fr;
+  schema:postalCode "J8L 2E9";
+  schema:addressRegion "QC"@fr;
+  schema:streetAddress "255 Ave. de Buckingham"@fr .
+
+footlight:666a9a9184e9330064941cab a schema:Place;
+  schema:name "Centre nautique de la Lièvre"@fr;
+  schema:sameAs "http://kg.footlight.io/resource/5703705e-213a-444d-8a60-93bc3541de63",
+    "http://kg.artsdata.ca/resource/K5-811";
+  schema:address footlight:666a9a9184e9330064941c9f .
+
+footlight:666a9a9184e9330064941c9f a schema:PostalAddress;
+  schema:addressCountry "CA"@fr;
+  schema:addressLocality "Gatineau"@fr;
+  schema:postalCode "J8L 2E9";
+  schema:addressRegion "QC"@fr;
+  schema:streetAddress "255 Ave. de Buckingham"@fr .
+
+footlight:64aeaa7a3c19fa0064e712de a schema:Place;
+  schema:name "Centre régional d'archives de l'Outaouais"@fr, "Centre régional d'archives de l'Outaouais"@en;
+  schema:description "<p>Le Centre régional d’archives de l’Outaouais (CRAO) œuvre à l’acquisition, au traitement, à la conservation et à la mise en valeur des archives privées de l’Outaouais. Le 13 juin 2002, il a reçu l’agréation du ministère de la Culture et des Communications du Québec qui reconnaît ainsi son professionnalisme dans la poursuite de sa mission.</p>"@fr;
+  schema:address footlight:64aeaa7a3c19fa0064e712d6;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2effb .
+
+footlight:64aeaa7a3c19fa0064e712d6 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J8T 8H9";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "855 Boulevard de la Gappe"@fr, "855 Boulevard de la Gappe"@en .
+
+footlight:6418cdb35e4d4e0066a2effb skos:prefLabel "Library"@en, "Bibliothèque"@fr .
+
+footlight:648cd3685526a700645066c8 a schema:Place;
+  schema:name "Champboisé de L'Ange-Gardien"@fr, "Champboisé de L'Ange-Gardien"@en;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-378", "http://kg.footlight.io/resource/fb79ba77-94f2-4574-b440-8c16f14af70f";
+  schema:address footlight:648cd3685526a700645066bd .
+
+footlight:648cd3685526a700645066bd a schema:PostalAddress;
+  schema:addressCountry "CA"@fr, "CA";
+  schema:addressLocality "L'Ange-Gardien"@fr, "L'Ange-Gardien"@en;
+  schema:postalCode "J8L 4C2";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "1521 QC-309"@fr, "1521 QC-309"@en .
+
+footlight:6558c60e122bad00640bd5eb a schema:Place;
+  schema:name "Château Monsarrat"@fr;
+  schema:address footlight:6558c60e122bad00640bd5e2;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2f009 .
+
+footlight:6558c60e122bad00640bd5e2 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J9A 1T3";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "100 Rue du Château"@fr, "100 Rue du Château"@en .
+
+footlight:6418cdb35e4d4e0066a2f009 skos:prefLabel "Other"@en, "Autre"@fr .
+
+footlight:645bb0d07db98f0065dc788e a schema:Place;
+  schema:name "Château Montsarrat"@fr, "Château Montsarrat"@en;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-190", "http://kg.footlight.io/resource/4fbad877-21be-4c51-84b9-11ca366d05b7";
+  schema:description ""@fr, ""@en;
+  schema:address footlight:645b93b27db98f0065dc4f37;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2effd .
+
+footlight:645b93b27db98f0065dc4f37 a schema:PostalAddress;
+  schema:addressCountry "CA"@fr, "CA";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J9A 1T3";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "100 Rue du Château"@fr, "100 Rue du Château"@en .
+
+footlight:6418cdb35e4d4e0066a2effd skos:prefLabel "Historical site"@en, "Site patrimonial"@fr .
+
+footlight:667b0ec61180fb0064624879 a schema:Place;
+  schema:name "Tour des ateliers, Chelsea Wakefield"@fr, "Chelsea Quebec"@en;
+  schema:address footlight:667b0ec61180fb006462486f;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2efef .
+
+footlight:667b0ec61180fb006462486f a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Chelsea"@fr, "Chelsea"@en;
+  schema:postalCode "J9B 1R6";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "138 Chemin Scott"@fr, "138 Chemin Scott"@en .
+
+footlight:6418cdb35e4d4e0066a2efef skos:prefLabel "Artist studio"@en, "Atelier d'artistes"@fr .
+
+footlight:6499d4f03c19fa0064e4cfa2 a schema:Place;
+  schema:name "Bibliothèque municipale de Chénéville / Lac-Simon"@fr, "Chénéville / Lac-Simon Municipal Library"@en;
+  schema:description ""@fr, ""@en;
+  schema:address footlight:6499d4f03c19fa0064e4cf9a;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2effb .
+
+footlight:6499d4f03c19fa0064e4cf9a a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Chénéville"@fr, "Chénéville"@en;
+  schema:postalCode "J0V 1E0";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "77, rue de l'Hôtel-de-Ville"@fr, "77, rue de l'Hôtel-de-Ville"@en .
+
+footlight:66c6e2fa34513100643ebcff a schema:Place;
+  schema:name "Cimetière Notre-Dame"@fr;
+  schema:sameAs "http://kg.footlight.io/resource/76ecaf74-103b-47ba-89c7-d7c45e998731",
+    "http://kg.artsdata.ca/resource/K5-809";
+  schema:address footlight:66c6e2fa34513100643ebcf3 .
+
+footlight:66c6e2fa34513100643ebcf3 a schema:PostalAddress;
+  schema:addressCountry "CA"@fr;
+  schema:addressLocality "Gatineau"@fr;
+  schema:postalCode "J8X 3P5";
+  schema:addressRegion "QC"@fr .
+
+footlight:665825b98c76ef0064566a9b a schema:Place;
+  schema:name "Cimetière St-James"@fr;
+  schema:sameAs "https://maps.google.com/?cid=13633932113905177713", "http://kg.footlight.io/resource/1dd45c68-b471-4a29-971c-c1018461d96e";
+  schema:address footlight:665825b98c76ef0064566a8f .
+
+footlight:665825b98c76ef0064566a8f a schema:PostalAddress;
+  schema:addressCountry "CA"@fr;
+  schema:addressLocality "Gatineau"@fr;
+  schema:postalCode "J8Y 3L7";
+  schema:addressRegion "QC"@fr;
+  schema:streetAddress "190 Boul. Alexandre-Taché"@fr .
+
+footlight:666a9a9784e9330064941eca a schema:Place;
+  schema:name "Cimetière St-James"@fr;
+  schema:sameAs "http://kg.footlight.io/resource/1dd45c68-b471-4a29-971c-c1018461d96e",
+    "http://kg.artsdata.ca/resource/K5-802";
+  schema:address footlight:666a9a9784e9330064941ebe .
+
+footlight:666a9a9784e9330064941ebe a schema:PostalAddress;
+  schema:addressCountry "CA"@fr;
+  schema:addressLocality "Gatineau"@fr;
+  schema:postalCode "J8Y 3L7";
+  schema:addressRegion "QC"@fr;
+  schema:streetAddress "190 Boul. Alexandre-Taché"@fr .
+
+footlight:663d2a670796c300645f79d8 a schema:Place;
+  schema:name "Collège Saint-Alexandre de la Gatineau"@fr, "Collège Saint-Alexandre"@en;
+  schema:address footlight:663d2a660796c300645f79cf;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2f009 .
+
+footlight:663d2a660796c300645f79cf a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J8V 1E7";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "2425 Rue Saint-Louis"@fr, "2425 Rue Saint-Louis"@en .
+
+footlight:64909c295526a7006450b864 a schema:Place;
+  schema:name "Complexe Whissell"@fr, "Complexe Whissell"@en;
+  schema:description ""@fr, ""@en;
+  schema:address footlight:64909c295526a7006450b85c .
+
+footlight:64909c295526a7006450b85c a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Saint-André-Avellin"@fr, "Saint-André-Avellin"@en;
+  schema:postalCode "J0V 1W0";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "530 Rue Charles Auguste Montreuil"@fr, "530 Rue Charles Auguste Montreuil"@en .
+
+footlight:64dd41257d6aa80064335ac5 a schema:Place;
+  schema:name "Conservatoire de musique de Gatineau"@fr, "Conservatoire de musique de Gatineau"@en;
+  schema:description "<p>Le Conservatoire est une institution d’enseignement de haut niveau dont la tradition musicale peuple la ville de Gatineau depuis 1967. Dès l’âge de huit ans, le Conservatoire offre des programmes de formation en interprétation ultra personnalisés s’étalant jusqu’au deuxième cycle universitaire.</p>"@fr,
+    "<p>The objects of the Conservatoire are to administer and operate, in various regions of Québec, institutions providing instruction in music and institutions providing instruction in dramatic arts for the professional training and continuing education of performing artists and creative artists.&nbsp;In the pursuit of its objects, the Conservatoire takes into account the specific characteristics of each of those institutions.</p>"@en;
+  schema:address footlight:64dd41257d6aa80064335abd;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2f009 .
+
+footlight:64dd41257d6aa80064335abd a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J9A 1M7";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "430 Boulevard Alexandre-Taché"@fr, "430 Boulevard Alexandre-Taché"@en .
+
+footlight:646282832fb72400648cb374 a schema:Place;
+  schema:name "Coopérative de Solidarité Place du Marché"@fr, "Coopérative de Solidarité Place du Marché"@en;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-647";
+  schema:description ""@fr, ""@en;
+  schema:address footlight:646282832fb72400648cb36c .
+
+footlight:646282832fb72400648cb36c a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Ripon"@fr, "Ripon"@en;
+  schema:postalCode "J0V 1V0";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "4 rue du marche"@fr, "4 rue du marche"@en .
+
+footlight:6654e2c0a09d0900633d2370 a schema:Place;
+  schema:name "Studio d'enregistrement Daboof"@fr, "Daboof Recording Studios"@en;
+  schema:address footlight:6654e2c0a09d0900633d2366;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2efed, footlight:6418cdb35e4d4e0066a2f009 .
+
+footlight:6654e2c0a09d0900633d2366 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "Boulevard Saint-Joseph"@fr, "Boulevard Saint-Joseph"@en .
+
+footlight:645d3b502fb72400648c2161 a schema:Place;
+  schema:name "DAÏMÔN"@fr, "DAÏMÔN"@en;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-640";
+  schema:address footlight:645d3b502fb72400648c2159 .
+
+footlight:645d3b502fb72400648c2159 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J8Y 3M5";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "78 Rue Hanson"@fr, "78 Rue Hanson"@en .
+
+footlight:651b0e365cc75600644f6824 a schema:Place;
+  schema:name "Atelier de Danou"@fr, "Danou's Workshop"@en;
+  schema:description "<p>Atelier d'ébénisterie.&nbsp;</p>"@fr, "<p>Woodworking workshop.&nbsp;</p>"@en;
+  schema:address footlight:651b0e365cc75600644f681b;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2f009 .
+
+footlight:651b0e365cc75600644f681b a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Cantley"@fr, "Cantley"@en;
+  schema:postalCode "J8V 3H3";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "325 Chemin Taché"@fr, "325 Chemin Taché"@en .
+
+footlight:662271b70796c30064544f49 a schema:Place;
+  schema:name "Devenirs corps"@fr, "Devenirs corps"@en;
+  schema:description "<p><span style=\"background-color: transparent;\">Devenir(</span><em style=\"background-color: transparent;\">s</em><span style=\"background-color: transparent;\">) corps est un organisme à but non lucratif qui développe actuellement un espace de recherche et de création dédié aux arts vivants dans la région de la Petite-Nation, en Outaouais.</span></p><p>&nbsp;</p><p><span style=\"background-color: transparent;\">À chaque année, l'organisme proposera un programme de résidences artistiques ouverts aux artistes d’ici et d’ailleurs.</span></p>"@fr,
+    "<p>Devenir<em>(s)</em> corps is a not-for-profit organisation currently developing a research and creation space dedicated to the performing arts in the Petite-Nation region of the Outaouais.</p><p><br></p><p>Each year, the organisation offers a programme of artistic residencies open to artists from near and far.</p>"@en;
+  schema:address footlight:662271b70796c30064544f40;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2efed, footlight:642c839fcf606a0064e5e961 .
+
+footlight:662271b70796c30064544f40 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Montpellier"@fr, "Montpellier"@en;
+  schema:postalCode "J0V 1M0";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "44 Rue Florimont"@fr, "44 Rue Florimont"@en .
+
+footlight:65ea0c31bec01b006430caff a schema:Place;
+  schema:name "Distillerie du Square"@fr, "Distillerie du Square"@en;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-627";
+  schema:description "<p>La Distillerie du Square fait partie du Square Old Chelsea. Elle ne se contente pas d'éveiller vos papilles, elle stimule aussi vos sens avec une programmation culturelle riche et variée. Des spectacles envoûtants viennent animer notre espace, créant une atmosphère unique. Que vous soyez amateur de spiritueux ou passionné de culture, la Distillerie du Square est l'endroit idéal où vivre des moments inoubliables.</p>"@fr,
+    "<p>The Distillerie du Square is part of Old Chelsea Square. Not only does it delight your taste buds, it also sparks your senses with a rich and varied cultural programme. Live performances bring our space to life, creating a unique atmosphere. Whether you're a spirits lover or a cultural enthusiast, the Distillerie du Square is the ideal place to experience unforgettable moments.</p>"@en;
+  schema:address footlight:65ea0c31bec01b006430caf5;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2f003 .
+
+footlight:65ea0c31bec01b006430caf5 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Chelsea"@fr, "Chelsea"@en;
+  schema:postalCode "J9B 1J3";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "248 Chemin Old Chelsea"@fr, "248 Chemin Old Chelsea"@en .
+
+footlight:6418cdb35e4d4e0066a2f003 skos:prefLabel "Bar / restaurant"@en, "Bar / restaurant"@fr .
+
+footlight:65e373a1bec01b00642ed3d1 a schema:Place;
+  schema:name "Domaine du Cerf"@fr, "Domaine du Cerf"@en;
+  schema:description "<p>Le Domaine du Cerf offre un service de restauration licencié pouvant accueillir une centaine de personnes. Profitez des activités familiales telles que la glissade à l’extérieur et la promenade en traîneaux avec chevaux (sur réservation). Au printemps, la cabane à sucre offre la transformation du sirop d'érable (beurre, tire sur neige, etc.) Vous y trouverez aussi un service de location de chalet avec vue pittoresque.</p>"@fr,
+    "<p>Domaine du Cerf offers licensed catering for up to 100 people. Enjoy family activities such as outdoor sliding and horse-drawn sleigh rides (booking required). In spring, the sugar shack offers maple syrup processing (butter, taffy on snow, etc.) You'll also find a cottage rental service with a picturesque view.</p>"@en;
+  schema:address footlight:65e373a1bec01b00642ed3c7;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2f003 .
+
+footlight:65e373a1bec01b00642ed3c7 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Blue Sea"@fr, "Blue Sea"@en;
+  schema:postalCode "J0X 1C0";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "92 Montée des Pins"@fr .
+
+footlight:64a073ab3c19fa0064e5c10b a schema:Place;
+  schema:name "Domaine Fairview"@fr;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-410", "http://kg.footlight.io/resource/1d4bcbf3-cfb7-4390-97bf-7f0ff3cf42d5";
+  schema:address footlight:64a073ab3c19fa0064e5c100 .
+
+footlight:64a073ab3c19fa0064e5c100 a schema:PostalAddress;
+  schema:addressCountry "CA"@fr;
+  schema:addressLocality "Gatineau"@fr;
+  schema:postalCode "J8Y 1V9";
+  schema:addressRegion "QC"@fr;
+  schema:streetAddress "100 Rue Gamelin"@fr .
+
+footlight:6499d5d03c19fa0064e4cfc7 a schema:Place;
+  schema:name "Bibliothèque municipale de Duhamel"@fr, "Duhamel Municipal Library"@en;
+  schema:description ""@fr, ""@en;
+  schema:address footlight:6499d5d03c19fa0064e4cfbf;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2effb .
+
+footlight:6499d5d03c19fa0064e4cfbf a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Duhamel"@fr, "Duhamel"@en;
+  schema:postalCode "J0V 1G0";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "1899, rue Principale"@fr, "1899, rue Principale"@en .
+
+footlight:646274482fb72400648ca895 a schema:Place;
+  schema:name "École du Sommet"@fr, "École du Sommet"@en;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-646";
+  schema:description ""@fr, ""@en;
+  schema:address footlight:646274482fb72400648ca88d .
+
+footlight:646274482fb72400648ca88d a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Val-des-Monts"@fr, "Val-des-Monts"@en;
+  schema:postalCode "J8N 7C9";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "2197 Montée Paiement"@fr, "2197 Montée Paiement"@en .
+
+footlight:6420c6142831190064570c9c a schema:Place;
+  schema:name "École Polyvalente Nicolas-Gatineau"@fr, "École Polyvalente Nicolas-Gatineau"@en;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-4", "http://kg.footlight.io/resource/b0e5da46-6b55-48f4-b6f9-3e9aa43100d4";
+  schema:description ""@fr, ""@en;
+  schema:address footlight:6420c6142831190064570c92 .
+
+footlight:6420c6142831190064570c92 a schema:PostalAddress;
+  schema:addressCountry "CA"@fr, "CA";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J8P 6K7";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "360 Bd la Vérendrye E"@fr, "360 Bd la Vérendrye E"@en .
+
+footlight:650889f8521d460064323bb8 a schema:Place;
+  schema:name "Édifice Curé A.-Allard"@fr;
+  schema:address footlight:650889f8521d460064323baf;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2f009 .
+
+footlight:650889f8521d460064323baf a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Val-des-Monts"@fr, "Val-des-Monts"@en;
+  schema:postalCode "J8N 7E8";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "1 Chemin Saint-Joseph"@fr, "1 Chemin Saint-Joseph"@en .
+
+footlight:6420c63b2831190064570ff3 a schema:Place;
+  schema:name "Église de Montebello"@en;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-36", "http://kg.footlight.io/resource/5c032ba1-4785-4b4b-a921-ca8de2818c29";
+  schema:description ""@fr, ""@en;
+  schema:address footlight:6420c63b2831190064570fe9 .
+
+footlight:6420c63b2831190064570fe9 a schema:PostalAddress;
+  schema:addressCountry "CA"@fr, "CA";
+  schema:addressLocality "Montebello"@fr, "Montebello"@en;
+  schema:postalCode "J0V 1L0";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "545 Rue Notre Dame"@fr, "545 Rue Notre Dame"@en .
+
+footlight:6420c6312831190064570f11 a schema:Place;
+  schema:name "Église de St-Stephen de Chelsea"@fr, "Église de St-Stephen de Chelsea"@en;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-24", "http://kg.footlight.io/resource/1df0a034-8a3f-4437-9ffb-4940ec17715a";
+  schema:description ""@fr, ""@en;
+  schema:address footlight:6420c6312831190064570f07;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2f007 .
+
+footlight:6420c6312831190064570f07 a schema:PostalAddress;
+  schema:addressCountry "CA"@fr, "CA";
+  schema:addressLocality "Chelsea"@fr, "Chelsea"@en;
+  schema:postalCode "J9B 1J4";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "212 chemin Old Chelsea"@fr, "212 chemin Old Chelsea"@en .
+
+footlight:6418cdb35e4d4e0066a2f007 skos:prefLabel "Church"@en, "Église"@fr .
+
+footlight:665f1f21beddbb0064661a6e a schema:Place;
+  schema:name "Église Notre-Dame de Bonsecours"@fr, "Église Notre-Dame de Bonsecours"@en;
+  schema:address footlight:665f1f21beddbb0064661a64;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2f001 .
+
+footlight:665f1f21beddbb0064661a64 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Montebello"@fr, "Montebello"@en;
+  schema:postalCode "J0V 1L0";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "545 Rue Notre-Dame"@fr, "545 Rue Notre-Dame"@en .
+
+footlight:6418cdb35e4d4e0066a2f001 skos:prefLabel "Park"@en, "Parc"@fr .
+
+footlight:646907d5137a2200640d88e8 a schema:Place;
+  schema:name "Église Notre-dame-de-la-Guadeloupe"@fr, "Église Notre-dame-de-la-Guadeloupe"@en;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-917";
+  schema:description "<p><br></p>"@fr;
+  schema:address footlight:646907d5137a2200640d88e0;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2f007 .
+
+footlight:646907d5137a2200640d88e0 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J8Y 5T6";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "30 Rue Saint-Onge"@fr, "30 Rue Saint-Onge"@en .
+
+footlight:65a997b29468f3006377d0fa a schema:Place;
+  schema:name "Église Saint Matthieu"@fr;
+  schema:address footlight:65a997b29468f3006377d0f1;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2f007 .
+
+footlight:65a997b29468f3006377d0f1 a schema:PostalAddress .
+
+footlight:6676d9661180fb006460bd45 a schema:Place;
+  schema:name "Église Saint-André Avellin"@fr;
+  schema:address footlight:6676d9661180fb006460bd3b;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2f007 .
+
+footlight:6676d9661180fb006460bd3b a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Saint-André-Avellin"@fr, "Saint-André-Avellin"@en;
+  schema:postalCode "J0V 1W0";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "8 Rue Saint André"@fr, "8 Rue Saint André"@en .
+
+footlight:645bb3287db98f0065dc9809 a schema:Place;
+  schema:name "Église Saint-François-de-Sales"@fr, "Église Saint-François-de-Sales"@en;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-187", "http://kg.footlight.io/resource/2f6c141f-71b6-447e-b245-a707c5dda1d5";
+  schema:description ""@fr, ""@en;
+  schema:address footlight:645bb3287db98f0065dc97fe;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2f007 .
+
+footlight:645bb3287db98f0065dc97fe a schema:PostalAddress;
+  schema:addressCountry "CA"@fr, "CA";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J8T 2W1";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "799 Rue Jacques-Cartier"@fr, "799 Rue Jacques-Cartier"@en .
+
+footlight:6495a92a95ffd60064aa985a a schema:Place;
+  schema:name "Église Saint-Grégoire-de-Nazianze"@fr;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-391", "http://kg.footlight.io/resource/146ce1e4-9be6-4f7a-b5ec-d9a852f5cfe2";
+  schema:address footlight:6495a92a95ffd60064aa984f .
+
+footlight:6495a92a95ffd60064aa984f a schema:PostalAddress;
+  schema:addressCountry "CA"@fr;
+  schema:addressLocality "Gatineau"@fr;
+  schema:postalCode "J8L 1K1";
+  schema:addressRegion "QC"@fr;
+  schema:streetAddress "150 Rue Maclaren E"@fr .
+
+footlight:645d3d7f2fb72400648c21e7 a schema:Place;
+  schema:name "Église Saint-Nom-de-Marie"@fr, "Église Saint-Nom-de-Marie"@en;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-642";
+  schema:address footlight:645d3d7e2fb72400648c21df .
+
+footlight:645d3d7e2fb72400648c21df a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Lac-Sainte-Marie"@fr, "Lac-Sainte-Marie"@en;
+  schema:postalCode "J0X 1Z0";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "9 Rue de l'Église"@fr, "9 Rue de l'Église"@en .
+
+footlight:6558c2e2122bad00640bd499 a schema:Place;
+  schema:name "Église St-Paul"@fr;
+  schema:address footlight:6558c2e2122bad00640bd490;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2f007 .
+
+footlight:6558c2e2122bad00640bd490 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J9H 4J9";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "26 Chemin Eardley"@fr, "26 Chemin Eardley"@en .
+
+footlight:649f51da3c19fa0064e5919d a schema:Place;
+  schema:name "Entrée du cimetière"@fr;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-404", "http://kg.footlight.io/resource/79373dbe-e94b-43a3-9eb6-166989c654a5";
+  schema:address footlight:649f51da3c19fa0064e59192 .
+
+footlight:649f51da3c19fa0064e59192 a schema:PostalAddress;
+  schema:addressCountry "CA"@fr;
+  schema:addressLocality "Gatineau"@fr;
+  schema:postalCode "J9H 5V1";
+  schema:addressRegion "QC"@fr;
+  schema:streetAddress "1030 Chem. d'Aylmer"@fr .
+
+footlight:648cd3665526a70064506676 a schema:Place;
+  schema:name "Ergon"@fr;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-375", "http://kg.footlight.io/resource/1851d8b3-cdeb-4fcb-b337-329897b682bc";
+  schema:address footlight:648cd3665526a7006450666b .
+
+footlight:648cd3665526a7006450666b a schema:PostalAddress;
+  schema:addressCountry "CA"@fr;
+  schema:addressLocality "Gatineau"@fr;
+  schema:postalCode "J9J 4K3";
+  schema:addressRegion "QC"@fr;
+  schema:streetAddress "20 Allée de Hambourg"@fr .
+
+footlight:660726a1140606006461265f a schema:Place;
+  schema:name "Espace Canevas"@fr;
+  schema:address footlight:660726a11406060064612655;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2efef, footlight:6418cdb35e4d4e0066a2f005 .
+
+footlight:660726a11406060064612655 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J8Y";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "425 Boulevard Saint-Joseph"@fr, "425 Boulevard Saint-Joseph"@en .
+
+footlight:6418cdb35e4d4e0066a2f005 skos:prefLabel "Café"@en, "Café"@fr .
+
+footlight:645bb1037db98f0065dc8895 a schema:Place;
+  schema:name "ESPACE DEP Sylvestre"@fr, "ESPACE DEP Sylvestre"@en;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-186", "http://kg.footlight.io/resource/1938294f-8690-41fa-8284-4bf202fd067c";
+  schema:description ""@fr, ""@en;
+  schema:address footlight:645b93e57db98f0065dc5ed5;
+  schema:additionalType footlight:642c8832cf606a0064e5ee78 .
+
+footlight:645b93e57db98f0065dc5ed5 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J8Y 3C1";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "230 Rue Montcalm"@fr, "230 Rue Montcalm"@en .
+
+footlight:642c8832cf606a0064e5ee78 skos:prefLabel "Cultural center (Q1329623)"@en,
+    "Centre culturel (Q1329623)"@fr .
+
+footlight:6420c6192831190064570d00 a schema:Place;
+  schema:name "Espace Pierre-Debain"@fr, "Espace Pierre-Debain"@en;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-13", "http://kg.footlight.io/resource/2f559e8d-2ed4-43af-9c30-1ba868378cc5";
+  schema:description "<p><span style=\"color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);\">Situé au rez-de-chaussée du Centre culturel du Vieux-Aylmer, en plein coeur du quartier patrimonial du secteur d'Aylmer de la ville de Gatineau, l'Espace Pierre-Debain a ouvert ses portes en 2002. Ce lieu intime offre une fenêtre de choix aux créateurs professionnels en métiers d'art de provenance régionale, nationale ou internationale. Cinq expositions temporaires y sont présentées annuellement. Elles visent à favoriser la diffusion d'oeuvres des artisans créateurs et à développer la curiosité du public pour toute forme d'expression créatrice liée au domaine des métiers d'art.</span></p>"@fr;
+  schema:address footlight:645bb3217db98f0065dc95ff;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2eff1 .
+
+footlight:645bb3217db98f0065dc95ff a schema:PostalAddress;
+  schema:addressCountry "CA"@fr, "CA";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J9H 3M3";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "120 Rue Principale"@fr, "120 Rue Principale"@en .
+
+footlight:6418cdb35e4d4e0066a2eff1 skos:prefLabel "Gallery"@en, "Galerie"@fr .
+
+footlight:64515af9e19f7200646d0d0c a schema:Place;
+  schema:name "Espace René-Provost"@fr, "Espace René-Provost"@en;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-12", "http://kg.footlight.io/resource/134b9203-9448-4f5d-8395-d4b0c88aadce";
+  schema:description ""@fr, ""@en;
+  schema:address footlight:645b93ab7db98f0065dc4d12;
+  schema:additionalType footlight:642c839fcf606a0064e5e956 .
+
+footlight:645b93ab7db98f0065dc4d12 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J8X 3A3";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "39 Rue Leduc"@fr, "39 Rue Leduc"@en .
+
+footlight:642c839fcf606a0064e5e956 skos:prefLabel "Performance Hall (Q112688641)"@en,
+    "Salle de spectacle (Q112688641)"@fr .
+
+footlight:6675a2731180fb006460384a a schema:Place;
+  schema:name "Espace René-Provost, 39, rue Leduc, secteur de Hull"@fr, "Espace René-Provost, 39, rue Leduc, secteur de Hull"@en;
+  schema:address footlight:6675a2731180fb0064603840;
+  schema:additionalType footlight:642c8832cf606a0064e5ee78 .
+
+footlight:6675a2731180fb0064603840 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J8X 3A3";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "39 Rue Leduc"@fr, "39 Rue Leduc"@en .
+
+footlight:659d721850bec800641d18db a schema:Place;
+  schema:name "Centre patrimonial de la Maison Fairbairn"@fr, "Fairbairn House Heritage Centre"@en;
+  schema:description "<p>L'une des plus anciennes habitations de Wakefield, la Maison Fairbairn était la demeure du colon écossais William Fairbairn et de son épouse, Jean Wanless.</p><p><br></p><p><span style=\"background-color: transparent;\">La maison, construite par William dans les années 1860, se dresse aujourd'hui fièrement sur la rive Est de la rivière Gatineau, à quelques pas du centre du village de Wakefield et non loin de l'emplacement de la ferme d'origine de William Fairbairn.&nbsp;</span></p><p><br></p><p><span style=\"background-color: transparent;\">La maison a un passé riche en aventures, puisqu'elle a été déplacée à deux reprises. Menacée de démolition en 1993 pour faire place à une route d'accès au nouveau pont sur la rivière Gatineau, elle a été déplacée de l'autre côté de la route 105 depuis son emplacement à la ferme par Andy Tommy.</span></p><p><br></p><p><span style=\"background-color: transparent;\">En 2005, sur le point d'être démolie pour faire place à des logements en copropriété, la maison a été sauvée à nouveau avec l'aide de la municipalité de La Pêche.</span></p><p><br></p><p><span style=\"background-color: transparent;\">Le 1er septembre 2012, grâce aux efforts inlassables d'une équipe de bénévoles dévoués dirigée par Michael Cooper, le nouveau centre du patrimoine de la Maison Fairbairn a ouvert ses portes pour la première fois aux visiteurs.</span></p><p><br></p><p><span style=\"background-color: transparent;\">Avec des expositions, des programmes et une liste permanente d'événements spéciaux, la maison Fairbairn a un objectif renouvelé, qui met l'accent sur notre histoire unique et renforce le potentiel de la région en tant que destination récréotouristique.</span></p>"@fr,
+    "<p>One of Wakefield’s oldest dwellings, Fairbairn House was the home of Scottish settler William Fairbairn and his wife, Jean Wanless.</p><p><br></p><p><span style=\"background-color: transparent;\">The house, built by William in the 1860s, now sits proudly on the east bank of the Gatineau River, a short walk from the centre of Wakefield village and not far from William Fairbairn’s original farm location.&nbsp;</span></p><p><br></p><p><span style=\"background-color: transparent;\">The house has an adventure-filled past, having been relocated twice. Threatened with demolition in 1993 to make way for a road approach to the new bridge over the Gatineau River, it was moved across Route 105 from its farm location by Andy Tommy.</span></p><p><br></p><p><span style=\"background-color: transparent;\">In 2005, about to be torn down to provide space for condo housing, the house was rescued again with the assistance of the Municipality of La Pêche.</span></p><p><br></p><p><span style=\"background-color: transparent;\">On September 1, 2012, following the tireless efforts of a dedicated team of volunteers led by Michael Cooper,the new Fairbairn House Heritage Centre first opened its doors to visitors.</span></p><p><br></p><p><span style=\"background-color: transparent;\">With exhibits, programmes and an ongoing roster of special events, Fairbairn House has a renewed purpose, focussing on our unique history and enhancing the area’s potential as a recreo-touristic destination.</span></p>"@en;
+  schema:address footlight:659d721850bec800641d18d3;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2eff5, footlight:6418cdb35e4d4e0066a2effd .
+
+footlight:659d721850bec800641d18d3 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Wakefield"@fr, "Wakefield"@en;
+  schema:postalCode "J0X 3G0";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "45 Chemin de Wakefield Heights"@fr, "45 Chemin de Wakefield Heights"@en .
+
+footlight:6418cdb35e4d4e0066a2eff5 skos:prefLabel "Centre d'interprétation"@fr .
+
+footlight:655fa8c81285b100641e261e a schema:Place;
+  schema:name "Place des Artistes de Farrellton"@fr, "Farrellton Artists’ Space"@en;
+  schema:description "<p>Créée en 2013, Place des Artistes de Farrellton/Farrellton Artists' Space est une coopérative d'artistes à but non lucratif dédiée à la production et au développement des arts et de la culture dans l'Outaouais et au-delà.</p><p><br></p><p>Situé dans une école rurale réaménagée dans les collines de la Gatineau, PAF-FAS offre des espaces de studio abordables, des résidences d'artistes, des expositions d'art, des symposiums d'artistes et des ateliers. L'école comprend un gymnase remis à neuf, qui accueille une variété d'événements et de résidences, et qui peut être loué à court terme.</p><p><br></p><p>Nos membres sont des producteurs culturels émergents et établis qui travaillent dans diverses disciplines, notamment les pratiques sociales, le théâtre, le feutrage, la peinture, la photographie, la sculpture et bien d'autres encore.</p><p><br></p><p>Grâce à la production en studio, à la programmation et aux événements spéciaux, le PAF aspire à devenir un centre culturel pour la création artistique et la connexion dans la communauté artistique de l'Outaouais. En cette période sans précédent, le PAF continue de chercher à établir des liens avec la communauté par le biais des arts en utilisant des plateformes numériques émergentes pour partager le travail des artistes, des ateliers et plus encore.</p>"@fr,
+    "<p>Created in 2013, Place des Artistes de Farrellton/Farrellton Artists’ Space is a non-profit cooperative artist-run space dedicated to the production and development of arts and culture in the Outaouais and beyond.</p><p><br></p><p>Located in a repurposed rural school in the Gatineau Hills, PAF-FAS offers affordable studio spaces, artist residencies, art exhibitions, artist symposiums and workshops. The school includes a refurbished gymnasium, which hosts a variety of events and residencies, and is available for short term rental.</p><p>Our membership consists of emerging and established cultural producers working across a variety of disciplines, including: social practices, theatre, felting, painting, photography, sculpture and more.</p><p><br></p><p>Through studio production, programming and special events, PAF aspires to be a cultural hub for artistic creation and connection in the Outaouais art community. During these unprecedented times, PAF continues to seek community connection through the arts by using emerging digital platforms to share artists’ work, workshops and more.</p>"@en;
+  schema:address footlight:655fa8c71285b100641e2616;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2efed .
+
+footlight:655fa8c71285b100641e2616 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Farrellton"@fr, "Farrellton"@en;
+  schema:postalCode "J0X 1T0";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "42 Chemin Plunkett"@fr, "42 Chemin Plunkett"@en .
+
+footlight:6499d6cd3c19fa0064e4cfec a schema:Place;
+  schema:name "Biliothèque municipale de Fassett / Notre-Dame-de-Bonsecours"@fr, "Fassett / Notre-Dame-de-Bonsecours Municipal Library"@en;
+  schema:description ""@fr, ""@en;
+  schema:address footlight:6499d6cd3c19fa0064e4cfe4;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2effb .
+
+footlight:6499d6cd3c19fa0064e4cfe4 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Fassett"@fr, "Fassett"@en;
+  schema:postalCode "J0V 1H0";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "19, rue Gendron, C.P. 60"@fr, "19, rue Gendron, C.P. 60"@en .
+
+footlight:64ee63967d6aa8006434a9e3 a schema:Place;
+  schema:name "Ferme Moore"@fr;
+  schema:address footlight:64ee63967d6aa8006434a9da;
+  schema:additionalType footlight:642c839fcf606a0064e5e953 .
+
+footlight:64ee63967d6aa8006434a9da a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J9A 3G5";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "670 Boulevard Alexandre-Taché"@fr, "670 Boulevard Alexandre-Taché"@en .
+
+footlight:642c839fcf606a0064e5e953 skos:prefLabel "Event Venue (Q18674739)"@en, "Lieu pour des événements (Q18674739)"@fr .
+
+footlight:645bf5417db98f0065dd6a78 a schema:Place;
+  schema:name "Folklore Outaouais"@fr, "Folklore Outaouais"@en;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-639";
+  schema:description ""@fr, ""@en;
+  schema:address footlight:645bf5417db98f0065dd6a70 .
+
+footlight:645bf5417db98f0065dd6a70 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J8X 1C5";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "115 Bd Sacré-Coeur"@fr, "115 Bd Sacré-Coeur"@en .
+
+footlight:6420c61a2831190064570d1c a schema:Place;
+  schema:name "Galerie Montcalm"@fr, "Galerie Montcalm"@en;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-8", "http://kg.footlight.io/resource/104f2f12-4430-40be-9c66-71c58542b853";
+  schema:description ""@fr, ""@en;
+  schema:address footlight:645b939a7db98f0065dc47de .
+
+footlight:645b939a7db98f0065dc47de a schema:PostalAddress;
+  schema:addressCountry "CA"@fr, "CA";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J8X 3Y9";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "25 rue Laurier"@fr, "25 rue Laurier"@en .
+
+footlight:6420c6232831190064570dc9 a schema:Place;
+  schema:name "Galerie Old Chelsea"@fr, "Galerie Old Chelsea"@en;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-27", "http://kg.footlight.io/resource/939a1c6e-c3aa-408a-a5a8-c9a990045102";
+  schema:description "<p>&nbsp;</p>"@fr, "<p>&nbsp;</p>"@en;
+  schema:address footlight:645bb3237db98f0065dc9675;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2eff1 .
+
+footlight:645bb3237db98f0065dc9675 a schema:PostalAddress;
+  schema:addressCountry "CA"@fr, "CA";
+  schema:addressLocality "Chelsea"@fr, "Gatineau"@en;
+  schema:postalCode "J9B 1P1";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "783 route 105"@fr, "783 route 105"@en .
+
+footlight:6420c662283119006457133e a schema:Place;
+  schema:name "Galerie UQO"@fr, "Galerie UQO"@en;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-5", "http://kg.footlight.io/resource/81d0dfe1-157d-4655-a8b9-4c194a5a9d35";
+  schema:description ""@fr, ""@en;
+  schema:address footlight:6420c6622831190064571334;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2eff1 .
+
+footlight:6420c6622831190064571334 a schema:PostalAddress;
+  schema:addressCountry "CA"@fr, "CA";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J8Y 3G5";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "101 rue Saint-Jean-Bosco"@fr, "101 rue Saint-Jean-Bosco"@en .
+
+footlight:66e88414cc25ad00631eb955 a schema:Place;
+  schema:name "Galeries Aylmer"@fr, "Galeries Aylmer"@en;
+  schema:address footlight:66e88413cc25ad00631eb94b;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2f009 .
+
+footlight:66e88413cc25ad00631eb94b a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J9H 6J9";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "181 Rue Principale"@fr, "181 Rue Principale"@en .
+
+footlight:645bb3277db98f0065dc97b6 a schema:Place;
+  schema:name "Golf Lac Ste-Marie"@fr, "Golf Lac Ste-Marie"@en;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-184", "http://kg.footlight.io/resource/05769734-ab8d-4831-b1f1-a49713765292";
+  schema:description ""@fr, ""@en;
+  schema:address footlight:645bb3267db98f0065dc97ab .
+
+footlight:645bb3267db98f0065dc97ab a schema:PostalAddress;
+  schema:addressCountry "CA"@fr, "Canada";
+  schema:addressLocality "Lac-Sainte-Marie"@fr, "Lac-Sainte-Marie"@en;
+  schema:postalCode "J0X 1Z0";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "89 Ch Ryanville"@fr, "89 Ch Ryanville"@en .
+
+footlight:6499d7db3c19fa0064e4d011 a schema:Place;
+  schema:name "Bibliothèque municipale de Gracefield"@fr, "Gracefield Municipal Library"@en;
+  schema:description ""@fr, ""@en;
+  schema:address footlight:6499d7db3c19fa0064e4d009;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2effb .
+
+footlight:6499d7db3c19fa0064e4d009 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Gracefield"@fr, "Gracefield"@en;
+  schema:postalCode "J0X 1W0";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "1, rue de la Polyvalente, C.P. 312"@fr, "1, rue de la Polyvalente, C.P. 312"@en .
+
+footlight:6499d8c23c19fa0064e4d036 a schema:Place;
+  schema:name "Bibliothèque municipale de Grand-Remous"@fr, "Grand-Remous Municipal Library"@en;
+  schema:description ""@fr, ""@en;
+  schema:address footlight:6499d8c23c19fa0064e4d02e;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2effb .
+
+footlight:6499d8c23c19fa0064e4d02e a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Grand-Remous"@fr, "Grand-Remous"@en;
+  schema:postalCode "J0W 1E0";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "1508, Route Transcanadienne"@fr, "1508, Route Transcanadienne"@en .
+
+footlight:6420c63c283119006457100f a schema:Place;
+  schema:name "Hilton lac-Leamy"@fr, "Hilton lac-Leamy"@en;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-37", "http://kg.footlight.io/resource/8f055292-96a4-47f0-b2a4-737cc51d7f85";
+  schema:description ""@fr, ""@en;
+  schema:address footlight:6420c63c2831190064571005 .
+
+footlight:6420c63c2831190064571005 a schema:PostalAddress;
+  schema:addressCountry "CA"@fr, "CA";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J8Y 6X4";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "3 Bd du Casino"@fr, "3 Bd du Casino"@en .
+
+footlight:6609d7d01406060064617f55 a schema:Place;
+  schema:name "https://cagavl.ca/"@fr;
+  schema:address footlight:6609d7d01406060064617f4b;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2efed, footlight:6418cdb35e4d4e0066a2f009 .
+
+footlight:6609d7d01406060064617f4b a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J8L 2G7";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "390 Avenue de Buckingham"@fr, "390 Avenue de Buckingham"@en .
+
+footlight:6499fa1a3c19fa0064e4e175 a schema:Place;
+  schema:name "Bibliothèque de L'Île-du-Grand-Calumet"@fr, "Île-du-Grand-Calumet Library"@en;
+  schema:description ""@fr, ""@en;
+  schema:address footlight:6499fa1a3c19fa0064e4e16d;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2effb .
+
+footlight:6499fa1a3c19fa0064e4e16d a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Île-du-Grand-Calumet"@fr, "Île-du-Grand-Calumet"@en;
+  schema:postalCode "J0X 1J0";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "2A, rue Brizard, C.P. 9"@fr, "2A, rue Brizard, C.P. 9"@en .
+
+footlight:6499d9853c19fa0064e4d05b a schema:Place;
+  schema:name "Bibliothèque municipale de Kazabazua"@fr, "Kazabazua Municipal Library"@en;
+  schema:description ""@fr, ""@en;
+  schema:address footlight:6499d9853c19fa0064e4d053;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2effb .
+
+footlight:6499d9853c19fa0064e4d053 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Kazabazua"@fr, "Kazabazua"@en;
+  schema:postalCode "J0X 1X0";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "373, route 105"@fr, "373, route 105"@en .
+
+footlight:6499fb433c19fa0064e4e1b8 a schema:Place;
+  schema:name "Bibliothèque de L'Isle-aux-Allumettes / Sheenboro"@fr, "L'Isle-aux-Allumettes / Sheenboro Library"@en;
+  schema:description ""@fr, ""@en;
+  schema:address footlight:6499fb433c19fa0064e4e1b0;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2effb .
+
+footlight:6499fb433c19fa0064e4e1b0 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "L'Isle-aux-Allumettes"@fr, "L'Isle-aux-Allumettes"@en;
+  schema:postalCode "J0X 1M0";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "104, Notre-Dame, C.P. 157"@fr, "104, Notre-Dame, C.P. 157"@en .
+
+footlight:653a6de9a37f770066e76938 a schema:Place;
+  schema:name "La Fab sur Mill"@fr, "La Fab sur Mill"@en;
+  schema:address footlight:653a6de9a37f770066e76930;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2efed, footlight:6418cdb35e4d4e0066a2eff1 .
+
+footlight:653a6de9a37f770066e76930 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Chelsea"@fr, "Chelsea"@en;
+  schema:postalCode "J9B 1K8";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "8 Chemin Mill"@fr, "8 Chemin Mill"@en .
+
+footlight:6418cdb35e4d4e0066a2eff1 skos:prefLabel "Gallery"@en, "Galerie"@fr .
+
+footlight:6420c6292831190064570e69 a schema:Place;
+  schema:name "La Filature"@fr, "La Filature"@en;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-26", "http://kg.footlight.io/resource/892a39c3-8962-45b7-9244-627f246e3cd9";
+  schema:description ""@fr, ""@en;
+  schema:address footlight:6420c6292831190064570e5f .
+
+footlight:6420c6292831190064570e5f a schema:PostalAddress;
+  schema:addressCountry "CA"@fr, "CA";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J8Y 3M5";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "82 rue Hanson"@fr, "82 rue Hanson"@en .
+
+footlight:64516bfce19f7200646d3b12 a schema:Place;
+  schema:name "La Grange de la Gatineau"@fr, "La Grange de la Gatineau"@en;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-30", "http://kg.footlight.io/resource/ddfe073a-500e-44a6-8e8e-500b58a3ead3";
+  schema:description "<p class=\"ql-align-justify\"><span style=\"background-color: transparent;\">La Grange de la Gatineau est un magnifique bâtiment en bois rond, construit à l'origine comme une grange pionnière en 1819. Aujourd'hui, un centre d'événements au bord de la Rivière Gatineau, entouré de jardins et de la forêt à seulement 20 minutes d'Ottawa/Gatineau. Avec son décor rustique et son histoire, La Grange de la Gatineau offre un excellent service et une cuisine raffinée pour les mariages, les réunions et les célébrations.</span></p>"@fr,
+    "<p>The Grange de Gatineau is a magnificent log building, originally built as a pioneer barn in 1819. Today, an event centre on the banks of the Gatineau River, surrounded by gardens and forest just 20 minutes from Ottawa/Gatineau. With its rustic decor and history, La Grange de la Gatineau offers excellent service and fine cuisine for weddings, meetings and celebrations.</p>"@en;
+  schema:address footlight:64516bfce19f7200646d3b07;
+  schema:additionalType footlight:642c839fcf606a0064e5e956 .
+
+footlight:64516bfce19f7200646d3b07 a schema:PostalAddress;
+  schema:addressCountry "CA"@fr, "CA";
+  schema:addressLocality "Cantley"@fr, "Cantley"@en;
+  schema:postalCode "J8V 3J3";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "80 Chem. Summer"@fr, "80 Chem. Summer"@en .
+
+footlight:642c839fcf606a0064e5e956 skos:prefLabel "Performance Hall (Q112688641)"@en,
+    "Salle de spectacle (Q112688641)"@fr .
+
+footlight:647e192e8b11c40064878d47 a schema:Place;
+  schema:name "La Shed Qui Tourne"@fr, "La Shed Qui Tourne"@en;
+  schema:description ""@fr, ""@en;
+  schema:address footlight:647e192e8b11c40064878d3f;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2eff7 .
+
+footlight:647e192e8b11c40064878d3f a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Montebello"@fr, "Montebello"@en;
+  schema:postalCode "J0V 1L0";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "610 Rue Notre-Dame"@fr, "610 Rue Notre-Dame"@en .
+
+footlight:6418cdb35e4d4e0066a2eff7 skos:prefLabel "Boutique"@en, "Boutique"@fr .
+
+footlight:6499f19d3c19fa0064e4dddc a schema:Place;
+  schema:name "Bibliothèque du Lac-des-Loups"@fr, "Lac-des-Loups Library"@en;
+  schema:description ""@fr, ""@en;
+  schema:address footlight:6499f19d3c19fa0064e4ddd4;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2effb .
+
+footlight:6499f19d3c19fa0064e4ddd4 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "La Pêche"@fr, "La Pêche"@en;
+  schema:postalCode "J0X 3K0";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "275, rue Pontbriand"@fr, "275, rue Pontbriand"@en .
+
+footlight:6418cdb35e4d4e0066a2effb skos:prefLabel "Library"@en, "Bibliothèque"@fr .
+
+footlight:6499f3bf3c19fa0064e4de17 a schema:Place;
+  schema:name "Bibliothèque de Lac-des-Plages"@fr, "Lac-des-Plages Library"@en;
+  schema:description ""@fr, ""@en;
+  schema:address footlight:6499f3bf3c19fa0064e4de0f;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2effb .
+
+footlight:6499f3bf3c19fa0064e4de0f a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Lac-des-Plages"@fr, "Lac-des-Plages"@en;
+  schema:postalCode "J0T 1K0";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "2053, chemin Tour-du-Lac"@fr, "2053, chemin Tour-du-Lac"@en .
+
+footlight:645bb32a7db98f0065dc98c3 a schema:Place;
+  schema:name "Lac-Sainte-Marie (Vallée-de-la-Gatineau)"@fr;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-194", "http://kg.footlight.io/resource/a7a70b7d-94d8-48af-ba27-90458aefea25";
+  schema:description ""@fr, ""@en;
+  schema:address footlight:645bb32a7db98f0065dc98b8 .
+
+footlight:645bb32a7db98f0065dc98b8 a schema:PostalAddress;
+  schema:addressCountry "CA"@fr, "CA";
+  schema:addressLocality "Lac-Sainte-Marie"@fr, "Lac-Sainte-Marie"@en;
+  schema:postalCode "J0X 1Z0";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "9 Rue de l'Église"@fr, "9 Rue de l'Église"@en .
+
+footlight:6499f4b33c19fa0064e4de4e a schema:Place;
+  schema:name "Bibliothèque municipale de Lac-Sainte-Marie"@fr, "Lac-Sainte-Marie Municipal Library"@en;
+  schema:description ""@fr, ""@en;
+  schema:address footlight:6499f4b23c19fa0064e4de46;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2effb .
+
+footlight:6499f4b23c19fa0064e4de46 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Lac-Sainte-Marie"@fr, "Lac-Sainte-Marie"@en;
+  schema:postalCode "J0X 1Z0";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "121, chemin Lac-Sainte-Marie"@fr, "121, chemin Lac-Sainte-Marie"@en .
+
+footlight:65d7c236bec01b00642c0588 a schema:Place;
+  schema:name "Laurin Atelier Galerie"@fr, "Laurin Atelier Galerie"@en;
+  schema:description "<p>Laurin, une artiste peintre expressionniste, entretient une relation spéciale avec ses portraits. Dans une conversation silencieuse avec chaque sujet, elle observe chaque trait, nuance et expression du visage. Ce processus créatif implique une introspection profonde, une exploration de soi à travers les yeux des autres. Chaque portrait est le fruit d'une conversation intime, un voyage à travers les sentiments et les pensées du sujet. Grâce à sa capacité à se connecter profondément à ses portraits, Laurin a créé une collection d'œuvres expressives et captivantes, racontant des histoires uniques et personnelles. </p>"@fr,
+    "<p>Laurin, an expressionist painter, maintains a special relationship with her portraits. In a silent conversation with each subject, she observes every feature, shade, and facial expression. This creative process involves deep introspection, exploring herself through the eyes of others. Each portrait is the result of an intimate conversation, a journey through the subject's feelings and thoughts. Thanks to her ability to deeply connect with her portraits, Laurin has created a collection of expressive and captivating works of art, telling unique and personal stories.</p>"@en;
+  schema:address footlight:65d7c236bec01b00642c057f;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2efef, footlight:6418cdb35e4d4e0066a2eff1 .
+
+footlight:65d7c236bec01b00642c057f a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J8L 2G8";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "465 Avenue de Buckingham"@fr, "465 Avenue de Buckingham"@en .
+
+footlight:6418cdb35e4d4e0066a2efef skos:prefLabel "Artist studio"@en, "Atelier d'artistes"@fr .
+
+footlight:65e88beabec01b00642f94b7 a schema:Place;
+  schema:name "Le Forum"@fr, "Le Forum"@en;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-628";
+  schema:description "<p>Situé sur le bord de la magnifique Rivière des Outaouais, Le Forum rassemble toutes les ambiances sous un seul et même toit.</p>"@fr,
+    "<p>Situated on the banks of the magnificent Rivière des Outaouais, Le Forum brings together every kind of atmosphere under one roof.</p>"@en;
+  schema:address footlight:65e88beabec01b00642f94ae;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2f003 .
+
+footlight:65e88beabec01b00642f94ae a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J8T 2W2";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "815 Rue Jacques-Cartier"@fr, "815 Rue Jacques-Cartier"@en .
+
+footlight:6418cdb35e4d4e0066a2f003 skos:prefLabel "Bar / restaurant"@en, "Bar / restaurant"@fr .
+
+footlight:653173cba37f770066e5eeb1 a schema:Place;
+  schema:name "Le St-André"@fr, "Le St-André"@en;
+  schema:address footlight:653173caa37f770066e5eea9;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2f003 .
+
+footlight:653173caa37f770066e5eea9 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Saint-André-Avellin"@fr, "Saint-André-Avellin"@en;
+  schema:postalCode "J0V 1W0";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "35 Rue Principale"@fr, "35 Rue Principale"@en .
+
+footlight:645bb0bb7db98f0065dc71c0 a schema:Place;
+  schema:name "Le Troquet"@fr, "Le Troquet"@en;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-192", "http://kg.footlight.io/resource/6495698f-6bb7-463b-9301-29f15a7c977e";
+  schema:description ""@fr, ""@en;
+  schema:address footlight:645b939d7db98f0065dc48bf;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2f003 .
+
+footlight:645b939d7db98f0065dc48bf a schema:PostalAddress;
+  schema:addressCountry "CA"@fr, "CA";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J8X 3G8";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "41 Rue Laval"@fr, "41 Rue Laval"@en .
+
+footlight:6504e52b521d460064322a52 a schema:Place;
+  schema:name "Stationnement Leduc"@fr, "Leduc Parking"@en;
+  schema:address footlight:6504e52b521d460064322a49;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2f009 .
+
+footlight:6504e52b521d460064322a49 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J8X 2Z9";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "15 Rue Leduc"@fr, "15 Rue Leduc"@en .
+
+footlight:6418cdb35e4d4e0066a2f009 skos:prefLabel "Other"@en, "Autre"@fr .
+
+footlight:64c027a63c19fa0064e96dde a schema:Place;
+  schema:name "Les productions musicales L’Artishow"@fr, "Les productions musicales L’Artishow"@en;
+  schema:description "<p>L’Artishow est un lieu de formation et de création qui donne accès à des équipements culturels aux personnes de la population qui désirent apprendre les arts de la scène, qui aspirent à des études supérieures ou à une carrière professionnelle. Les artistes qui sont inscrits à L’Artishow sont formés et encadrés par des professionnels du milieu.&nbsp;</p><p><br></p><p>L’Artishow promeut le théâtre musical dans la culture francophone en produisant des spectacles professionnels et communautaires, issus d’oeuvres originales ou d’adaptations. Il contribue à l’enrichissement de notre patrimoine culturel francophone et au développement de nouveau public. L’Artishow stimule par le fait même le développement de la culture et l’industrie du théâtre musical francophone en appuyant la diffusion et la circulation de spectacles de théâtre musical.</p>"@fr,
+    "<p>L'Artishow is a training and creative centre that provides access to cultural facilities for members of the public who want to learn the performing arts, or who aspire to higher education or a professional career. Artists enrolled at L'Artishow are trained and supervised by professionals in the field.&nbsp;</p><p><br></p><p>L'Artishow promotes musical theatre in Francophone culture by producing professional and community shows, based on original works or adaptations. It contributes to the enrichment of our francophone cultural heritage and the development of new audiences. At the same time, Artishow stimulates the development of French-language musical theatre culture and industry by supporting the dissemination and circulation of musical theatre shows.</p>"@en;
+  schema:address footlight:64c027a63c19fa0064e96dd6;
+  schema:additionalType footlight:642c839fcf606a0064e5e961 .
+
+footlight:64c027a63c19fa0064e96dd6 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J8Y 6X1";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "217 Rue Montcalm, unité 202"@fr, "217 Rue Montcalm, unit 202"@en .
+
+footlight:642c839fcf606a0064e5e961 skos:prefLabel "Performing arts building (Q57660343)"@en,
+    "Bâtiment des arts de la scène (Q57660343)"@fr .
+
+footlight:6604658214060600645ffb02 a schema:Place;
+  schema:name "Librairie Louis Fréchette"@fr;
+  schema:address footlight:6604658214060600645ffaf8;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2eff9 .
+
+footlight:6604658214060600645ffaf8 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J8P 1L2";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "313 Rue Notre Dame"@fr, "313 Rue Notre Dame"@en .
+
+footlight:6418cdb35e4d4e0066a2eff9 skos:prefLabel "Bookstore"@en, "Librairie"@fr .
+
+footlight:6499fbd73c19fa0064e4e2a3 a schema:Place;
+  schema:name "Bibliothèque municipale de Low"@fr, "Low Municipal Library"@en;
+  schema:description ""@fr, ""@en;
+  schema:address footlight:6499fbd73c19fa0064e4e29b;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2effb .
+
+footlight:6499fbd73c19fa0064e4e29b a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Low"@fr, "Low"@en;
+  schema:postalCode "J0X 2C0";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "4A, chemin D'Amour, C.P. 100"@fr, "4A, chemin D'Amour, C.P. 100"@en .
+
+footlight:652e973813a9e200642620b1 a schema:Place;
+  schema:name "Auditorium du Pavillon Lucien-Brault"@fr, "Lucien-Brault Pavilion Auditorium"@en;
+  schema:address footlight:652e973813a9e200642620a9;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2f009 .
+
+footlight:652e973813a9e200642620a9 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J8Y 3G5";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "101 Rue Saint-Jean-Bosco"@fr, "101 Rue Saint-Jean-Bosco"@en .
+
+footlight:6499fc3e3c19fa0064e4e2df a schema:Place;
+  schema:name "Bibliothèque de Luskville"@fr, "Luskville Library"@en;
+  schema:description ""@fr, ""@en;
+  schema:address footlight:6499fc3e3c19fa0064e4e2d7;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2effb .
+
+footlight:6499fc3e3c19fa0064e4e2d7 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Luskville"@fr, "Luskville"@en;
+  schema:postalCode "J0X 2G0";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "2024 Québec 148"@fr, "2024 Québec 148"@en .
+
+footlight:647e02358b11c40064878ad4 a schema:Place;
+  schema:name "L’Avant-première"@fr, "L’Avant-première"@en;
+  schema:description ""@fr, ""@en;
+  schema:address footlight:647e02358b11c40064878acc;
+  schema:additionalType footlight:642c8832cf606a0064e5ee78 .
+
+footlight:647e02358b11c40064878acc a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J8Y 6X1";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "217 Rue Montcalm"@fr, "217 Rue Montcalm"@en .
+
+footlight:642c8832cf606a0064e5ee78 skos:prefLabel "Cultural center (Q1329623)"@en,
+    "Centre culturel (Q1329623)"@fr .
+
+footlight:645bb3287db98f0065dc9831 a schema:Place;
+  schema:name "Maison de la culture de Gatineau"@fr, "Maison de la culture de Gatineau"@en;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-189", "http://kg.footlight.io/resource/3fb96842-99c2-4833-b271-0e8c8fcc7e0b";
+  schema:description ""@fr, ""@en;
+  schema:address footlight:645bb3287db98f0065dc9826;
+  schema:additionalType footlight:642c8832cf606a0064e5ee78 .
+
+footlight:645bb3287db98f0065dc9826 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J8T 8H9";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "855 Boulevard de la Gappe"@fr, "855 Boulevard de la Gappe"@en .
+
+footlight:649050a65526a70064509587 a schema:Place;
+  schema:name "Maison des créateurs en art populaire du Québec"@fr, "Maison des créateurs en art populaire du Québec"@en;
+  schema:description ""@fr, ""@en;
+  schema:address footlight:649050a65526a7006450957f;
+  schema:additionalType footlight:642c8832cf606a0064e5ee78 .
+
+footlight:649050a65526a7006450957f a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Plaisance"@fr, "Plaisance"@en;
+  schema:postalCode "J0V 1S0";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "276 Rue Desjardins"@fr, "276 Rue Desjardins"@en .
+
+footlight:64a073713c19fa0064e5ba29 a schema:Place;
+  schema:name "Maison du citoyen"@fr, "Maison du citoyen"@en;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-419", "http://kg.footlight.io/resource/c2ef02ee-6682-424a-93df-5d46478bc7f7";
+  schema:address footlight:64a073713c19fa0064e5ba1e .
+
+footlight:64a073713c19fa0064e5ba1e a schema:PostalAddress;
+  schema:addressCountry "CA"@fr, "CA";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J8X 4C8";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "25 Rue Laurier"@fr, "25 Rue Laurier"@en .
+
+footlight:665f70a3beddbb0064665408 a schema:Place;
+  schema:name "Maison Fairview"@fr;
+  schema:address footlight:665f70a3beddbb00646653fe;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2eff3 .
+
+footlight:665f70a3beddbb00646653fe a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J8Y 1V9";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "100 Rue Gamelin"@fr, "100 Rue Gamelin"@en .
+
+footlight:6418cdb35e4d4e0066a2eff3 skos:prefLabel "Museum"@en, "Musée"@fr .
+
+footlight:66cdf1b834513100644307a6 a schema:Place;
+  schema:name "Maison Fairview"@fr, "Maison Fairview"@en;
+  schema:address footlight:66cdf1b8345131006443079d;
+  schema:additionalType footlight:642c8832cf606a0064e5ee78 .
+
+footlight:66cdf1b8345131006443079d a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J8Y 1V9";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "100 Rue Gamelin"@fr, "100 Rue Gamelin"@en .
+
+footlight:6499f9d03c19fa0064e4e162 a schema:Place;
+  schema:name "Maison Scott-Fairview"@fr, "Maison Scott-Fairview"@en;
+  schema:description ""@fr, ""@en;
+  schema:address footlight:6499f9d03c19fa0064e4e15a;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2eff3 .
+
+footlight:6499f9d03c19fa0064e4e15a a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J8Y 1V9";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "100 Rue Gamelin"@fr, "100 Rue Gamelin"@en .
+
+footlight:6499fd003c19fa0064e4e304 a schema:Place;
+  schema:name "Bibliothèque de Maniwaki / Déléage / Egan-Sud"@fr, "Maniwaki / Déléage / Egan-Sud Library"@en;
+  schema:description ""@fr, ""@en;
+  schema:address footlight:6499fd003c19fa0064e4e2fc;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2effb .
+
+footlight:6499fd003c19fa0064e4e2fc a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Maniwaki"@fr, "Maniwaki"@en;
+  schema:postalCode "J9E 2R8";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "14, rue Comeau"@fr, "14, rue Comeau"@en .
+
+footlight:649a04093c19fa0064e4e3eb a schema:Place;
+  schema:name "Bibliothèque municipale de Mansfield-et-Pontefract"@fr, "Mansfield-et-Pontefract Municipal Library"@en;
+  schema:description ""@fr, ""@en;
+  schema:address footlight:649a04093c19fa0064e4e3e3;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2effb .
+
+footlight:649a04093c19fa0064e4e3e3 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Mansfield-et-Pontefract"@fr, "Mansfield-et-Pontefract"@en;
+  schema:postalCode "J0X 1R0";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "314 rue Principale (Route 148)"@fr, "314 rue Principale (Route 148)"@en .
+
+footlight:66e1d67820b0270064b122d7 a schema:Place;
+  schema:name "Marché de l'Outaouais"@fr, "Marché de l'Outaouais"@en;
+  schema:address footlight:66e1d67820b0270064b122ce;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2f009 .
+
+footlight:66e1d67820b0270064b122ce a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J8X 2W1";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "71 Rue Eddy"@fr, "71 Rue Eddy"@en .
+
+footlight:666ca0bc8f26ff0064c53742 a schema:Place;
+  schema:name "Marché fermier de Buckingham"@fr;
+  schema:address footlight:666ca0bc8f26ff0064c53739;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2f001 .
+
+footlight:666ca0bc8f26ff0064c53739 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J8L 2G7";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "390 Avenue de Buckingham"@fr, "390 Avenue de Buckingham"@en .
+
+footlight:6418cdb35e4d4e0066a2f001 skos:prefLabel "Park"@en, "Parc"@fr .
+
+footlight:649a04bf3c19fa0064e4e410 a schema:Place;
+  schema:name "Bibliothèque municipale de Messines"@fr, "Messines Municipal Library"@en;
+  schema:description ""@fr, ""@en;
+  schema:address footlight:649a04be3c19fa0064e4e408;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2effb .
+
+footlight:649a04be3c19fa0064e4e408 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Messines"@fr, "Messines"@en;
+  schema:postalCode "J0X 2J0";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "3, chemin de la Ferme"@fr, "3, chemin de la Ferme"@en .
+
+footlight:645bb32b7db98f0065dc9916 a schema:Place;
+  schema:name "Microbrasserie 5e Baron"@fr;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-197", "http://kg.footlight.io/resource/f0352b7b-5828-4b0d-a476-af72b9061a19";
+  schema:description ""@fr, ""@en;
+  schema:address footlight:645bb32b7db98f0065dc990b .
+
+footlight:645bb32b7db98f0065dc990b a schema:PostalAddress;
+  schema:addressCountry "CA"@fr, "CA";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J9H 3L4";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "55 Rue Principale"@fr, "55 Rue Principale"@en .
+
+footlight:64413e1f7a29930064510b82 a schema:Place;
+  schema:name "Minotaure"@fr, "Minotaure"@en;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-69", "http://kg.footlight.io/resource/32166f01-28d5-4d55-8fff-e83a0ab3a795";
+  schema:description ""@fr, ""@en;
+  schema:address footlight:64413e1f7a29930064510b77;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2f003, footlight:642c839fcf606a0064e5e953,
+    footlight:642c839fcf606a0064e5e956 .
+
+footlight:64413e1f7a29930064510b77 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J8X 3J8";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "3 Rue Kent"@fr, "3 Rue Kent"@en .
+
+footlight:642c839fcf606a0064e5e953 skos:prefLabel "Event Venue (Q18674739)"@en, "Lieu pour des événements (Q18674739)"@fr .
+
+footlight:649b34333c19fa0064e50eef a schema:Place;
+  schema:name "Bibliothèque municipale de Montcerf-Lytton"@fr, "Montcerf-Lytton Municipal Library"@en;
+  schema:description ""@fr, ""@en;
+  schema:address footlight:649b34333c19fa0064e50ee7;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2effb .
+
+footlight:649b34333c19fa0064e50ee7 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Montcerf-Lytton"@fr, "Montcerf-Lytton"@en;
+  schema:postalCode "J0W 1N0";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "16, rue Principale nord, 2e étage"@fr, "16, rue Principale nord, 2e étage"@en .
+
+footlight:649b35cb3c19fa0064e50f23 a schema:Place;
+  schema:name "Bibliothèque de Montebello"@fr, "Montebello Livrary"@en;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-631";
+  schema:description ""@fr, ""@en;
+  schema:address footlight:649b35cb3c19fa0064e50f1b;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2effb .
+
+footlight:649b35cb3c19fa0064e50f1b a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Montebello"@fr, "Montebello"@en;
+  schema:postalCode "J0V 1L0";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "220, rue Bonsecours"@fr, "220, rue Bonsecours"@en .
+
+footlight:65282cbed84d1a0064d93331 a schema:Place;
+  schema:name "Montgomery Scotch Lounge"@fr, "Montgomery Scotch Lounge"@en;
+  schema:address footlight:65282cbed84d1a0064d93329;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2f003 .
+
+footlight:65282cbed84d1a0064d93329 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Ottawa"@fr, "Ottawa"@en;
+  schema:postalCode "K1R 6X5";
+  schema:addressRegion "ON"@fr, "ON"@en;
+  schema:streetAddress "750 Gladstone Avenue"@fr, "750 Gladstone Avenue"@en .
+
+footlight:649b36713c19fa0064e50f48 a schema:Place;
+  schema:name "Bibliothèque de Montpellier"@fr, "Montpellier Library"@en;
+  schema:description ""@fr, ""@en;
+  schema:address footlight:649b36713c19fa0064e50f40;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2effb .
+
+footlight:649b36713c19fa0064e50f40 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Montpellier"@fr, "Montpellier"@en;
+  schema:postalCode "J0V 1M0";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "4 Rue du Bosquet"@fr, "4 Rue du Bosquet"@en .
+
+footlight:65f1f888997b810063719abc a schema:Place;
+  schema:name "MRC Vallée-de-la-Gatineau"@fr, "MRC Vallée-de-la-Gatineau"@en;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-626";
+  schema:address footlight:65f1f888997b810063719ab3;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2f009 .
+
+footlight:65f1f888997b810063719ab3 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Gracefield"@fr, "Gracefield"@en;
+  schema:postalCode "J0X 1W0";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "7 Rue de la Polyvalente"@fr, "7 Rue de la Polyvalente"@en .
+
+footlight:649b37083c19fa0064e50fb4 a schema:Place;
+  schema:name "Bibliothèque de Mulgrave-et-Derry"@fr, "Mulgrave-et-Derry Library"@en;
+  schema:description ""@fr, ""@en;
+  schema:address footlight:649b37083c19fa0064e50fac;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2effb .
+
+footlight:649b37083c19fa0064e50fac a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Mulgrave-et-Derry"@fr, "Mulgrave-et-Derry"@en;
+  schema:postalCode "J8L 2W9";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "941-A chemin de la Mine"@fr, "941-A chemin de la Mine"@en .
+
+footlight:64fb3be4a59a070066bcaee0 a schema:Place;
+  schema:name "Municipalité de L'Ange-Gardien"@fr;
+  schema:address footlight:64fb3be3a59a070066bcaed7;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2f009 .
+
+footlight:64fb3be3a59a070066bcaed7 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "L'Ange-Gardien"@fr, "L'Ange-Gardien"@en;
+  schema:postalCode "J8L 0L4";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "1177 Québec 315"@fr, "1177 Québec 315"@en .
+
+footlight:64f8cfa37d6aa80064355485 a schema:Place;
+  schema:name "Municipalité de Ripon"@fr, "Municipalité de Ripon"@en;
+  schema:description ""@fr, ""@en;
+  schema:address footlight:64f8cfa37d6aa8006435547d;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2f009 .
+
+footlight:64f8cfa37d6aa8006435547d a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Ripon"@fr, "Ripon"@en;
+  schema:postalCode "J0V 1V0";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "31 Rue Coursol"@fr, "31 Rue Coursol"@en .
+
+footlight:6480a5b2371b8f006490ffce a schema:Place;
+  schema:name "Muraï céramique"@fr, "Muraï céramique"@en;
+  schema:description ""@fr, ""@en;
+  schema:address footlight:6480a5b2371b8f006490ffc6;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2f009 .
+
+footlight:6480a5b2371b8f006490ffc6 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Wakefield"@fr, "Wakefield"@en;
+  schema:postalCode "J0X";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress ""@fr, ""@en .
+
+footlight:65c3a1f17f90c7006364df16 a schema:Place;
+  schema:name "Musée canadien de l'histoire"@fr;
+  schema:address footlight:65c3a1f17f90c7006364df0d;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2eff3 .
+
+footlight:65c3a1f17f90c7006364df0d a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "K1A 0M8";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "100 Rue Laurier"@fr, "100 Rue Laurier"@en .
+
+footlight:6420c62a2831190064570e8d a schema:Place;
+  schema:name "Musée de l'Auberge Symmes"@fr, "Musée de l'Auberge Symmes"@en;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-29", "http://kg.footlight.io/resource/d8b815d1-f58c-4bf4-8a2b-d5bf4378eb2a";
+  schema:description ""@fr, ""@en;
+  schema:address footlight:6420c62a2831190064570e83;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2eff3 .
+
+footlight:6420c62a2831190064570e83 a schema:PostalAddress;
+  schema:addressCountry "CA"@fr, "CA";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J9H 4W8";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "1 rue Front"@fr, "1 rue Front"@en .
+
+footlight:649b381a3c19fa0064e5104c a schema:Place;
+  schema:name "Bibliothèque de Namur"@fr, "Namur Library"@en;
+  schema:description ""@fr, ""@en;
+  schema:address footlight:649b381a3c19fa0064e51044;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2effb .
+
+footlight:649b381a3c19fa0064e51044 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Namur"@fr, "Namur"@en;
+  schema:postalCode "J0V 1N0";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "331, rue Hôtel-de-Ville"@fr, "331, rue Hôtel-de-Ville"@en .
+
+footlight:65675b52bae4a80063541341 a schema:Place;
+  schema:name "Musée des beaux-arts du Canada"@fr, "National Gallery of Canada"@en;
+  schema:sameAs "http://kg.artsdata.ca/resource/K11-9";
+  schema:description "<p>musée d'art à Ottawa</p>"@fr, "<p>museum of art in Ottawa</p>"@en;
+  schema:address footlight:65f0d4f1997b8100637153df .
+
+footlight:65f0d4f1997b8100637153df a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Ottawa"@fr, "Ottawa"@en;
+  schema:postalCode "K1N 9N4";
+  schema:addressRegion "ON"@fr, "ON"@en;
+  schema:streetAddress "380 Sussex Drive"@fr, "380 Sussex Drive"@en .
+
+footlight:66d68c1c3451310064470e68 a schema:Place;
+  schema:name "New French Name or Title"@fr, "New English Name or Title"@en;
+  schema:sameAs "http://kg.artsdata.ca/resource/K11-240";
+  schema:address footlight:66d68c1c3451310064470e5f .
+
+footlight:66d68c1c3451310064470e5f a schema:PostalAddress;
+  schema:addressCountry "CA"@fr, "CA";
+  schema:addressLocality "Laval"@fr, "Laval"@en;
+  schema:postalCode "H7N 0E4";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "1950 Rue Claude-Gagné"@fr, "1950 Rue Claude-Gagné"@en .
+
+footlight:66d68c423451310064470ef2 a schema:Place;
+  schema:name "New French Name or Title"@fr, "New English Name or Title"@en;
+  schema:description "<p><br></p>"@fr, "<p><br></p>"@en;
+  schema:address footlight:66d68c423451310064470ee9;
+  schema:additionalType footlight:642c839fcf606a0064e5e958 .
+
+footlight:66d68c423451310064470ee9 a schema:PostalAddress;
+  schema:postalCode "H1A1A1";
+  schema:streetAddress "Addresse fr"@fr, "en address"@en .
+
+footlight:642c839fcf606a0064e5e958 skos:prefLabel "Building (Q41176)"@en, "Bâtiment (Q41176)"@fr .
+
+footlight:65fdffe1997b810063750a1f a schema:Place;
+  schema:name "Église de Notre-Dame-de-Bonsecours"@fr, "Notre-Dame-de-Bonsecours Church"@en;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-624";
+  schema:address footlight:65fdffe1997b810063750a16;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2f007 .
+
+footlight:65fdffe1997b810063750a16 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Montebello"@fr, "Montebello"@en;
+  schema:postalCode "J0V 1L0";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "545 Rue Notre-Dame"@fr, "545 Rue Notre-Dame"@en .
+
+footlight:6418cdb35e4d4e0066a2f007 skos:prefLabel "Church"@en, "Église"@fr .
+
+footlight:649b38c73c19fa0064e51071 a schema:Place;
+  schema:name "Bibliothèque de Notre-Dame-de-la-Paix"@fr, "Notre-Dame-de-la-Paix Library"@en;
+  schema:description ""@fr, ""@en;
+  schema:address footlight:649b38c73c19fa0064e51069;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2effb .
+
+footlight:649b38c73c19fa0064e51069 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Notre-Dame-de-la-Paix"@fr, "Notre-Dame-de-la-Paix"@en;
+  schema:postalCode "J0V 1P0";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "10, rue Saint-Jean-Baptiste"@fr, "10, rue Saint-Jean-Baptiste"@en .
+
+footlight:649b39813c19fa0064e51096 a schema:Place;
+  schema:name "Bibliothèque de Notre-Dame-de-la-Salette"@fr, "Notre-Dame-de-la-Salette Library"@en;
+  schema:description ""@fr, ""@en;
+  schema:address footlight:649b39813c19fa0064e5108e;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2effb .
+
+footlight:649b39813c19fa0064e5108e a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Notre-Dame-de-la-Salette"@fr, "Notre-Dame-de-la-Salette"@en;
+  schema:postalCode "J0X 2L0";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "68, rue des Saules"@fr, "68, rue des Saules"@en .
+
+footlight:65df7b24bec01b00642dbb1c a schema:Place;
+  schema:name "Square Old Chelsea"@fr, "Old Chelsea Square"@en;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-629";
+  schema:description "<p>Juste pour être bien! Telle est la devise du Square Old Chelsea. Niché à l’entrée du parc de la Gatineau, ce lieu emblématique incarne la chaleur et l'hospitalité. Que ce soit pour les soupers-spectacle chaleureux chez Biscotti &amp; Cie, les soirées festives au Pub Chelsea ou l’écomusée de la Distillerie du Square ou les événements à son bar à cocktails, La Cocktailerie, vous y découvrirez un espace dédié à faire briller l’Outaouais sous toutes ses facettes.</p>"@fr,
+    "<p>Just to feel good! That's the motto of Old Chelsea Square. Nestled at the entrance to Gatineau Park, this iconic location embodies warmth and hospitality. Whether it's a hearty dinner show at Biscotti &amp; Cie, festive evenings at Pub Chelsea or the eco-museum of the Distillerie du Square, or events at its cocktail bar, La Cocktailerie, you'll discover a space dedicated to making the Outaouais shine in all its facets.</p>"@en;
+  schema:address footlight:65df7b24bec01b00642dbb13;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2f003 .
+
+footlight:65df7b24bec01b00642dbb13 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Chelsea"@fr, "Chelsea"@en;
+  schema:postalCode "J9B 1J3";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "248 Chemin Old Chelsea"@fr, "248 Chemin Old Chelsea"@en .
+
+footlight:6490c8c85526a7006450c878 a schema:Place;
+  schema:name "Vieux-Aylmer"@fr, "Old-Aylmer"@en;
+  schema:description ""@fr, ""@en;
+  schema:address footlight:6490c8c85526a7006450c870;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2f009 .
+
+footlight:6490c8c85526a7006450c870 a schema:PostalAddress;
+  schema:addressCountry "CA"@fr, "CA";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J9H";
+  schema:addressRegion "QC"@fr, "QC"@en .
+
+footlight:649b3e203c19fa0064e510e4 a schema:Place;
+  schema:name "Bibliothèque de Otter Lake"@fr, "Otter Lake Library"@en;
+  schema:description ""@fr, ""@en;
+  schema:address footlight:649b3e203c19fa0064e510dc;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2effb .
+
+footlight:649b3e203c19fa0064e510dc a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Otter Lake"@fr, "Otter Lake"@en;
+  schema:postalCode "J0X 2P0";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "340, Avenue Martineau C.P. 489"@fr, "340, Avenue Martineau C.P. 489"@en .
+
+footlight:651717705cc75600644f2d28 a schema:Place;
+  schema:name "Palais des congrès de Gatineau"@fr, "Palais des congrès de Gatineau"@en;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-40";
+  schema:description "<p>Situé au cœur du centre-ville et entièrement rénové, le Palais des congrès de Gatineau est un complexe multifonctionnel unique dans la région de l’Outaouais. Il se distingue en offrant 12 salles de conférences sans pilier sur une superficie de plus de 5&nbsp;100 mètres carrés. Désirant occuper une place grandissante dans le circuit des congrès et grands événements, le Palais des congrès offre plusieurs services: audiovisuel de qualité, services de traiteur et autres! Réservez dès maintenant afin d’assurer le succès de votre événement!</p><p class=\"ql-align-center\"><br></p><p class=\"ql-align-center\"><br></p>"@fr,
+    "<p>Conveniently located in the downtown core, the totally renovated Palais des congrès de Gatineau is the only multifunctional complex in the Outaouais region. Its distinguishing features include 12 pillar-free conference rooms in a convention space totalling more than 5,100 square metres. A fast-growing presence on the event and convention circuit, the Palais des congrès offers a full range of facilities and services, including state-of-the-art audiovisual equipment, catering, and more. Book today to ensure the success of your event!</p><p class=\"ql-align-center\"><br></p><p class=\"ql-align-center\"><br></p>"@en;
+  schema:address footlight:651717705cc75600644f2d20 .
+
+footlight:651717705cc75600644f2d20 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J8X 4H4";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "50 Boulevard Maisonneuve"@fr, "50 Boulevard Maisonneuve"@en .
+
+footlight:649b44da3c19fa0064e51109 a schema:Place;
+  schema:name "Bibliothèque de Papineauville / Lochaber"@fr, "Papineauville / Lochaber Library"@en;
+  schema:description ""@fr, ""@en;
+  schema:address footlight:649b44d93c19fa0064e51101;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2effb .
+
+footlight:649b44d93c19fa0064e51101 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Papineauville"@fr, "Papineauville"@en;
+  schema:postalCode "J0V 1R0";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "188, rue Jeanne-d'Arc"@fr, "188, rue Jeanne-d'Arc"@en .
+
+footlight:65088c24521d460064323fcf a schema:Place;
+  schema:name "Parc Claudette-Lavergne"@fr;
+  schema:address footlight:65088c24521d460064323fc6;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2f001 .
+
+footlight:65088c24521d460064323fc6 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Val-des-Monts"@fr, "Val-des-Monts"@en;
+  schema:postalCode "J8N 7E8";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "1733 Route du Carrefour"@fr, "1733 Route du Carrefour"@en .
+
+footlight:65bb454768f14b00644b5479 a schema:Place;
+  schema:name "Parc de l'Érablière"@fr;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-445", "http://kg.footlight.io/resource/93328a8f-f439-4353-bf23-1b7cfaa1c916";
+  schema:address footlight:65bb454668f14b00644b546e .
+
+footlight:65bb454668f14b00644b546e a schema:PostalAddress;
+  schema:addressCountry "CA"@fr;
+  schema:addressLocality "Gatineau"@fr;
+  schema:postalCode "J8M";
+  schema:addressRegion "QC"@fr;
+  schema:streetAddress "185 Rue des Samares"@fr .
+
+footlight:64ac5ad43c19fa0064e6d564 a schema:Place;
+  schema:name "Parc de l'Imaginaire"@fr, "Parc de l'Imaginaire"@en;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-422", "http://kg.footlight.io/resource/44ea64f5-9513-45ce-8a95-11dfabb7bae8";
+  schema:address footlight:64ac5ad43c19fa0064e6d559;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2f001 .
+
+footlight:64ac5ad43c19fa0064e6d559 a schema:PostalAddress;
+  schema:addressCountry "CA"@fr, "CA";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J9H 4W8";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "9 Rue Front"@fr, "9 Rue Front"@en .
+
+footlight:6490b43c5526a7006450bc2c a schema:Place;
+  schema:name "Parc de la Baie"@fr, "Parc de la Baie"@en;
+  schema:description ""@fr, ""@en;
+  schema:address footlight:6490b43c5526a7006450bc24;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2f001 .
+
+footlight:6490b43c5526a7006450bc24 a schema:PostalAddress;
+  schema:addressCountry "CA"@fr, "CA";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J8T 2S4";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "988 Rue Saint-Louis"@fr, "988 Rue Saint-Louis"@en .
+
+footlight:648cd36b5526a7006450674d a schema:Place;
+  schema:name "Parc de La Baie | 988, rue Saint-Louis, Gatineau"@fr;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-376", "http://kg.footlight.io/resource/920b09b1-06d7-45f3-9d8a-ca12614fbff4";
+  schema:address footlight:648cd36b5526a70064506742 .
+
+footlight:648cd36b5526a70064506742 a schema:PostalAddress;
+  schema:addressCountry "CA"@fr;
+  schema:addressLocality "Gatineau"@fr;
+  schema:postalCode "J8T 2S4";
+  schema:addressRegion "QC"@fr;
+  schema:streetAddress "988 Rue Saint-Louis"@fr .
+
+footlight:649f520b3c19fa0064e59638 a schema:Place;
+  schema:name "Parc de la Ferme-Dalton"@fr;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-407";
+  schema:address footlight:649f520b3c19fa0064e5962d .
+
+footlight:649f520b3c19fa0064e5962d a schema:PostalAddress;
+  schema:addressCountry "CA"@fr;
+  schema:addressLocality "Gatineau"@fr;
+  schema:postalCode "J8R 0B3";
+  schema:addressRegion "QC"@fr;
+  schema:streetAddress "199 Mnt Dalton"@fr .
+
+footlight:649f520b3c19fa0064e59638 a schema:Place;
+  schema:sameAs "http://kg.footlight.io/resource/57dcf1a1-8f61-4261-9ae4-0d87122131bd" .
+
+footlight:6495c43495ffd60064aaba3a a schema:Place;
+  schema:name "Parc de Neuville"@fr;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-397", "http://kg.footlight.io/resource/cd2df386-bf9c-4624-a468-56daa91d4c2b";
+  schema:address footlight:6495c43495ffd60064aaba2f .
+
+footlight:6495c43495ffd60064aaba2f a schema:PostalAddress;
+  schema:addressCountry "CA"@fr;
+  schema:addressLocality "Gatineau"@fr;
+  schema:postalCode "J8M 1W3";
+  schema:addressRegion "QC"@fr;
+  schema:streetAddress "1178 Rue de Neuville"@fr .
+
+footlight:64a0736c3c19fa0064e5b989 a schema:Place;
+  schema:name "Parc des Cèdres"@fr;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-417", "http://kg.footlight.io/resource/c2403611-1ce3-4c22-8d19-cd9e146ee4be";
+  schema:address footlight:64a0736c3c19fa0064e5b97e .
+
+footlight:64a0736c3c19fa0064e5b97e a schema:PostalAddress;
+  schema:addressCountry "CA"@fr;
+  schema:addressLocality "Gatineau"@fr;
+  schema:postalCode "J9H 6J2";
+  schema:addressRegion "QC"@fr;
+  schema:streetAddress "15 Rue Raoul-Roy"@fr .
+
+footlight:6509c3ee521d460064325f15 a schema:Place;
+  schema:name "Parc des chars de combat"@fr;
+  schema:address footlight:6509c3ee521d460064325f0c;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2f001 .
+
+footlight:6509c3ee521d460064325f0c a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J8Y 3W4";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "70 Boulevard Saint-Joseph"@fr, "70 Boulevard Saint-Joseph"@en .
+
+footlight:6418cdb35e4d4e0066a2f001 skos:prefLabel "Park"@en, "Parc"@fr .
+
+footlight:64a073993c19fa0064e5beef a schema:Place;
+  schema:name "Parc des Ormes"@fr;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-413", "http://kg.footlight.io/resource/666744b2-aaef-4bdb-8176-063c6908458e";
+  schema:address footlight:64a073983c19fa0064e5bee4 .
+
+footlight:64a073983c19fa0064e5bee4 a schema:PostalAddress;
+  schema:addressCountry "CA"@fr;
+  schema:addressLocality "Gatineau"@fr;
+  schema:postalCode "J8Y";
+  schema:addressRegion "QC"@fr;
+  schema:streetAddress "32 Rue des Ormes"@fr .
+
+footlight:66ab334c508ed10064fc23df a schema:Place;
+  schema:name "Parc des Servantes"@fr;
+  schema:sameAs "http://kg.footlight.io/resource/8d68ba0c-961b-4668-aced-d10e210f450f",
+    "http://kg.artsdata.ca/resource/K5-814";
+  schema:address footlight:66ab334c508ed10064fc23d3 .
+
+footlight:66ab334c508ed10064fc23d3 a schema:PostalAddress;
+  schema:addressCountry "CA"@fr;
+  schema:addressLocality "Gatineau"@fr;
+  schema:postalCode "J8M 1B9";
+  schema:addressRegion "QC"@fr;
+  schema:streetAddress "46 Rue des Servantes"@fr .
+
+footlight:668f84a0ee118d00649bea37 a schema:Place;
+  schema:name "Parc des Trembles"@fr;
+  schema:sameAs "http://kg.footlight.io/resource/ff0f6917-f48f-4485-8460-ed995296625c",
+    "http://kg.artsdata.ca/resource/K5-820";
+  schema:address footlight:668f84a0ee118d00649bea2b .
+
+footlight:668f84a0ee118d00649bea2b a schema:PostalAddress;
+  schema:addressCountry "CA"@fr;
+  schema:addressLocality "Gatineau"@fr;
+  schema:postalCode "J9A 2G8";
+  schema:addressRegion "QC"@fr;
+  schema:streetAddress "150 Bd des Trembles"@fr .
+
+footlight:6686495e9d0a290064ba2f61 a schema:Place;
+  schema:name "Parc du 8 octobre 1906"@fr;
+  schema:sameAs "http://kg.footlight.io/resource/1ab78ede-28b4-4f7a-80c9-78023e75cbe1",
+    "http://kg.artsdata.ca/resource/K5-801";
+  schema:address footlight:6686495e9d0a290064ba2f55 .
+
+footlight:6686495e9d0a290064ba2f55 a schema:PostalAddress;
+  schema:addressCountry "CA"@fr;
+  schema:addressLocality "Gatineau"@fr;
+  schema:postalCode "J8L 0B3";
+  schema:addressRegion "QC"@fr .
+
+footlight:6523df72448580ab1dd10688 a schema:Place;
+  schema:name "Parc du Lac-Beauchamp"@fr;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-430", "http://kg.footlight.io/resource/010bb036-c504-4a4f-b357-6b84b01d9299";
+  schema:address footlight:6523df6f448580ab1dd1067d .
+
+footlight:6523df6f448580ab1dd1067d a schema:PostalAddress;
+  schema:addressCountry "CA"@fr;
+  schema:addressLocality "Gatineau"@fr;
+  schema:postalCode "J8P";
+  schema:addressRegion "QC"@fr;
+  schema:streetAddress "741 Boulevard Maloney E"@fr .
+
+footlight:6495a8ef95ffd60064aa92c7 a schema:Place;
+  schema:name "Parc du Landing"@fr;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-396", "http://kg.footlight.io/resource/9d52e4dc-89b1-4045-8a56-e139b5fe72d9";
+  schema:address footlight:6495a8ef95ffd60064aa92bc .
+
+footlight:6495a8ef95ffd60064aa92bc a schema:PostalAddress;
+  schema:addressCountry "CA"@fr;
+  schema:addressLocality "Gatineau"@fr;
+  schema:postalCode "J8L 2E9";
+  schema:addressRegion "QC"@fr;
+  schema:streetAddress "241 Ave. de Buckingham"@fr .
+
+footlight:64ba31423c19fa0064e93fb5 a schema:Place;
+  schema:name "Parc du Plateau"@fr;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-429", "http://kg.footlight.io/resource/dcc751b2-d971-4ecd-81a1-c868e41646e1";
+  schema:address footlight:64ba31423c19fa0064e93faa .
+
+footlight:64ba31423c19fa0064e93faa a schema:PostalAddress;
+  schema:addressCountry "CA"@fr;
+  schema:addressLocality "Gatineau"@fr;
+  schema:postalCode "J9A 3H9";
+  schema:addressRegion "QC"@fr;
+  schema:streetAddress "155 Rue de l'Atmosphère"@fr .
+
+footlight:665f1e4fbeddbb00646618a8 a schema:Place;
+  schema:name "Parc du ruisseau de la brasserie"@fr, "Parc du ruisseau de la brasserie"@en;
+  schema:address footlight:665f1e4fbeddbb006466189e;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2f001 .
+
+footlight:665f1e4fbeddbb006466189e a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J8X 2L5";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "69 Rue Montcalm"@fr, "69 Rue Montcalm"@en .
+
+footlight:6658257a8c76ef0064565dcd a schema:Place;
+  schema:name "Parc Dupuis"@fr;
+  schema:sameAs "https://maps.google.com/?q=50+Rue+Isidore-Ostiguy,+Gatineau,+QC+J8X+3B8,+Canada&ftid=0x4cce04927f6dfaff:0x547c7aece3d781aa",
+    "http://kg.footlight.io/resource/84dd8840-575d-43c7-a0ef-a37dcdab2c69";
+  schema:address footlight:6658257a8c76ef0064565dc1 .
+
+footlight:6658257a8c76ef0064565dc1 a schema:PostalAddress;
+  schema:addressCountry "CA"@fr;
+  schema:addressLocality "Gatineau"@fr;
+  schema:postalCode "J8X 3B8";
+  schema:addressRegion "QC"@fr;
+  schema:streetAddress "50 Rue Isidore-Ostiguy"@fr .
+
+footlight:666a9a3a84e933006493ff51 a schema:Place;
+  schema:name "Parc Dupuis"@fr;
+  schema:sameAs "http://kg.footlight.io/resource/84dd8840-575d-43c7-a0ef-a37dcdab2c69",
+    "http://kg.artsdata.ca/resource/K5-813";
+  schema:address footlight:666a9a3a84e933006493ff45 .
+
+footlight:666a9a3a84e933006493ff45 a schema:PostalAddress;
+  schema:addressCountry "CA"@fr;
+  schema:addressLocality "Gatineau"@fr;
+  schema:postalCode "J8X 3B8";
+  schema:addressRegion "QC"@fr;
+  schema:streetAddress "50 Rue Isidore-Ostiguy"@fr .
+
+footlight:6658257a8c76ef0064565d8f a schema:Place;
+  schema:name "Parc Édouard-Mercier"@fr;
+  schema:sameAs "http://kg.footlight.io/resource/e2cd8b45-6a3f-42ee-a9a7-f3a2d6a1a720",
+    "http://kg.artsdata.ca/resource/K5-443";
+  schema:address footlight:6658257a8c76ef0064565d83 .
+
+footlight:6658257a8c76ef0064565d83 a schema:PostalAddress;
+  schema:addressCountry "CA"@fr;
+  schema:addressLocality "Gatineau"@fr;
+  schema:postalCode "J8P";
+  schema:addressRegion "QC"@fr;
+  schema:streetAddress "555 Rue Gouin"@fr .
+
+footlight:66b46dd6d09b4d00634f2312 a schema:Place;
+  schema:name "Parc Émile"@fr;
+  schema:sameAs "http://caligram.com/place/2851", "https://www.laval.ca/43eeb32b-11f8-4719-bee8-d1e15c5f16ed",
+    "http://kg.artsdata.ca/resource/K5-246";
+  schema:address footlight:66b46dd6d09b4d00634f2306 .
+
+footlight:66b46dd6d09b4d00634f2306 a schema:PostalAddress;
+  schema:addressLocality "Laval"@fr;
+  schema:postalCode "H7N 2H4";
+  schema:addressRegion "QC"@fr;
+  schema:streetAddress "55, boulevard Cartier"@fr .
+
+footlight:6490971b5526a7006450b3f7 a schema:Place;
+  schema:name "Parc Fontaine"@fr, "Parc Fontaine"@en;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-403";
+  schema:description ""@fr, ""@en;
+  schema:address footlight:6490971b5526a7006450b3ef;
+  schema:additionalType footlight:642c839fcf606a0064e5e95a .
+
+footlight:6490971b5526a7006450b3ef a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J8X 1R2";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "120 Rue Charlevoix"@fr, "120 Rue Charlevoix"@en .
+
+footlight:642c839fcf606a0064e5e95a skos:prefLabel "Open-air Event Venue (Q117187730)"@en,
+    "Lieu pour événements en plein air (Q117187730)"@fr .
+
+footlight:649f51df3c19fa0064e5920c a schema:Place;
+  schema:name "Parc Front"@fr;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-405", "http://kg.footlight.io/resource/5a74fdee-62b3-4f1b-ab5b-0f11c495d706";
+  schema:address footlight:649f51df3c19fa0064e59201 .
+
+footlight:649f51df3c19fa0064e59201 a schema:PostalAddress;
+  schema:addressCountry "CA"@fr;
+  schema:addressLocality "Gatineau"@fr;
+  schema:postalCode "J9H 5S9";
+  schema:addressRegion "QC"@fr;
+  schema:streetAddress "175 Rue Front"@fr .
+
+footlight:664f63323d923900642013dc a schema:Place;
+  schema:name "Parc Gilles-Maisonneuve"@fr;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-449", "http://kg.footlight.io/resource/d8c18622-0509-402d-bc66-143338a69b1a" .
+
+footlight:64e6195c7d6aa8006433e648 a schema:Place;
+  schema:name "Parc Henri-Bourassa"@fr;
+  schema:address footlight:64e6195c7d6aa8006433e63f;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2f001 .
+
+footlight:64e6195c7d6aa8006433e63f a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Papineauville"@fr, "Papineauville"@en;
+  schema:postalCode "J0V 1R0";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "277 Rue Papineau"@fr, "277 Rue Papineau"@en .
+
+footlight:6495c43695ffd60064aaba62 a schema:Place;
+  schema:name "Parc Jack-Eyamie"@fr;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-399", "http://kg.footlight.io/resource/e188af8e-0ba9-4681-b443-a3e7ffeba39b";
+  schema:address footlight:6495c43695ffd60064aaba57 .
+
+footlight:6495c43695ffd60064aaba57 a schema:PostalAddress;
+  schema:addressCountry "CA"@fr;
+  schema:addressLocality "Gatineau"@fr;
+  schema:postalCode "J8M 1E9";
+  schema:addressRegion "QC"@fr;
+  schema:streetAddress "40 Rue du Bass."@fr .
+
+footlight:665825868c76ef006456600e a schema:Place;
+  schema:name "Parc John-R.-Luck"@fr;
+  schema:sameAs "https://maps.google.com/?q=172+Rue+Fernand-Arvisais,+Gatineau,+QC+J8P+4Y8,+Canada&ftid=0x4cce1af1fea053dd:0x75e08b07bd76b141",
+    "http://kg.footlight.io/resource/24c6fb15-7a51-4650-9112-f8fc00d0e02f";
+  schema:address footlight:665825868c76ef0064566000 .
+
+footlight:665825868c76ef0064566000 a schema:PostalAddress;
+  schema:addressCountry "CA"@fr;
+  schema:addressLocality "Gatineau"@fr;
+  schema:postalCode "J8P 4Y8";
+  schema:addressRegion "QC"@fr;
+  schema:streetAddress "172 Rue Fernand-Arvisais"@fr .
+
+footlight:666a9a4c84e93300649403fa a schema:Place;
+  schema:name "Parc John-R.-Luck"@fr;
+  schema:sameAs "http://kg.footlight.io/resource/24c6fb15-7a51-4650-9112-f8fc00d0e02f",
+    "http://kg.artsdata.ca/resource/K5-804";
+  schema:address footlight:666a9a4c84e93300649403e9 .
+
+footlight:666a9a4c84e93300649403e9 a schema:PostalAddress;
+  schema:addressCountry "CA"@fr;
+  schema:addressLocality "Gatineau"@fr;
+  schema:postalCode "J8P 4Y8";
+  schema:addressRegion "QC"@fr;
+  schema:streetAddress "172 Rue Fernand-Arvisais"@fr .
+
+footlight:66bda858d09b4d0063537734 a schema:Place;
+  schema:name "Parc Joseph-H.-Maloney"@fr, "Parc Joseph-H.-Maloney"@en;
+  schema:sameAs "http://kg.footlight.io/resource/efeb627f-4ba5-4dbd-b862-c3c2f0f66f30",
+    "http://kg.artsdata.ca/resource/K5-450";
+  schema:address footlight:66bda857d09b4d0063537728 .
+
+footlight:66bda857d09b4d0063537728 a schema:PostalAddress;
+  schema:addressCountry "CA"@fr, "CA";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J8R";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "548 Rue A.-Gibeault"@fr, "548 Rue A.-Gibeault"@en .
+
+footlight:6495a8e895ffd60064aa924f a schema:Place;
+  schema:name "Parc La Vérendrye"@fr;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-390", "http://kg.footlight.io/resource/0ea7f004-bc36-498f-8e56-4a771be7afb5";
+  schema:address footlight:6495a8e895ffd60064aa9244 .
+
+footlight:6495a8e895ffd60064aa9244 a schema:PostalAddress;
+  schema:addressCountry "CA"@fr;
+  schema:addressLocality "Gatineau"@fr;
+  schema:postalCode "J8R 1S5";
+  schema:addressRegion "QC"@fr;
+  schema:streetAddress "Rue Main"@fr .
+
+footlight:665825ad8c76ef0064566848 a schema:Place;
+  schema:name "Parc Laflèche"@fr;
+  schema:sameAs "https://maps.google.com/?cid=9615996906565032156", "http://kg.footlight.io/resource/f596f859-dcce-48c0-87cf-64db9570e851";
+  schema:address footlight:665825ad8c76ef006456683c .
+
+footlight:665825ad8c76ef006456683c a schema:PostalAddress;
+  schema:addressCountry "CA"@fr;
+  schema:addressLocality "Gatineau"@fr;
+  schema:postalCode "J8T 7Z5";
+  schema:addressRegion "QC"@fr;
+  schema:streetAddress "181 Rue de Lausanne"@fr .
+
+footlight:666a9a8684e93300649418d7 a schema:Place;
+  schema:name "Parc Laflèche"@fr;
+  schema:sameAs "http://kg.footlight.io/resource/f596f859-dcce-48c0-87cf-64db9570e851",
+    "http://kg.artsdata.ca/resource/K5-819";
+  schema:address footlight:666a9a8584e93300649418cb .
+
+footlight:666a9a8584e93300649418cb a schema:PostalAddress;
+  schema:addressCountry "CA"@fr;
+  schema:addressLocality "Gatineau"@fr;
+  schema:postalCode "J8T 7Z5";
+  schema:addressRegion "QC"@fr;
+  schema:streetAddress "181 Rue de Lausanne"@fr .
+
+footlight:6673d542ca2fdb0064cf8f04 a schema:Place;
+  schema:name "Parc Laframboise"@fr;
+  schema:sameAs "http://kg.footlight.io/resource/a48ffa91-54f0-4311-9e65-c3e901b5933c",
+    "http://kg.artsdata.ca/resource/K5-816";
+  schema:address footlight:6673d542ca2fdb0064cf8ee8 .
+
+footlight:6673d542ca2fdb0064cf8ee8 a schema:PostalAddress;
+  schema:addressCountry "CA"@fr;
+  schema:addressLocality "Gatineau"@fr;
+  schema:postalCode "J8L 2V6";
+  schema:addressRegion "QC"@fr;
+  schema:streetAddress "565 Rue Laframboise"@fr .
+
+footlight:6495a8ed95ffd60064aa929f a schema:Place;
+  schema:name "Parc Louis-Philion"@fr;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-398", "http://kg.footlight.io/resource/d481fad0-859c-4440-91ce-4e4173d98f3e";
+  schema:address footlight:6495a8ed95ffd60064aa9294 .
+
+footlight:6495a8ed95ffd60064aa9294 a schema:PostalAddress;
+  schema:addressCountry "CA"@fr;
+  schema:addressLocality "Gatineau"@fr;
+  schema:postalCode "J8P 1X7";
+  schema:addressRegion "QC"@fr;
+  schema:streetAddress "13 Rue du Curé Labelle"@fr .
+
+footlight:649f51e43c19fa0064e59297 a schema:Place;
+  schema:name "Parc Maclaren"@fr;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-408", "http://kg.footlight.io/resource/34604c7d-65e0-4e6c-9062-5f55db8330a4";
+  schema:address footlight:649f51e33c19fa0064e5928c .
+
+footlight:649f51e33c19fa0064e5928c a schema:PostalAddress;
+  schema:addressCountry "CA"@fr;
+  schema:addressLocality "Gatineau"@fr;
+  schema:postalCode "J8L 2H2";
+  schema:addressRegion "QC"@fr;
+  schema:streetAddress "575 Ave. de Buckingham"@fr .
+
+footlight:665f2172beddbb0064661dcf a schema:Place;
+  schema:name "Parc Madaire"@fr, "Parc Madaire"@en;
+  schema:address footlight:665f2172beddbb0064661dc5;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2f001 .
+
+footlight:665f2172beddbb0064661dc5 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J9H 1X5";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "57 Chemin Vanier"@fr, "57 Chemin Vanier"@en .
+
+footlight:665f2059beddbb0064661c4c a schema:Place;
+  schema:name "Parc Mary-Anne-Phillips"@fr, "Parc Mary-Anne-Phillips"@en;
+  schema:address footlight:665f2059beddbb0064661c42;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2f001 .
+
+footlight:665f2059beddbb0064661c42 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Cantley"@fr, "Cantley"@en;
+  schema:postalCode "J8V 3J3";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "47 Chemin Summer"@fr, "47 Chemin Summer"@en .
+
+footlight:6495a91995ffd60064aa96e6 a schema:Place;
+  schema:name "Parc Moussette"@fr;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-392", "http://kg.footlight.io/resource/4acc8361-2d2f-4229-ac7e-affff284f98c";
+  schema:address footlight:6495a91995ffd60064aa96db .
+
+footlight:6495a91995ffd60064aa96db a schema:PostalAddress;
+  schema:addressCountry "CA"@fr;
+  schema:addressLocality "Gatineau"@fr;
+  schema:postalCode "J9A";
+  schema:addressRegion "QC"@fr;
+  schema:streetAddress "361 Bd de Lucerne"@fr .
+
+footlight:664cf9c63d923900641e965e a schema:Place;
+  schema:name "Parc national de Plaisance"@fr, "Parc national de Plaisance"@en;
+  schema:address footlight:664cf9c63d923900641e9654;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2f001 .
+
+footlight:664cf9c63d923900641e9654 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Plaisance"@fr, "Plaisance"@en;
+  schema:postalCode "J0V 1S0";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "1001 Chemin de la Grande Presqu'île"@fr, "1001 Chemin de la Grande Presqu'île"@en .
+
+footlight:6495c43895ffd60064aaba8a a schema:Place;
+  schema:name "Parc Raymond-Madore"@fr;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-400", "http://kg.footlight.io/resource/15537162-f117-4648-8de8-0d7cbc11bc0c";
+  schema:address footlight:6495c43895ffd60064aaba7f .
+
+footlight:6495c43895ffd60064aaba7f a schema:PostalAddress;
+  schema:addressCountry "CA"@fr;
+  schema:addressLocality "Gatineau"@fr;
+  schema:postalCode "J8R 1N6";
+  schema:addressRegion "QC"@fr;
+  schema:streetAddress "160 Rue des Fleurs"@fr .
+
+footlight:665825718c76ef0064565bec a schema:Place;
+  schema:name "Parc René-Lévesque"@fr;
+  schema:sameAs "http://kg.footlight.io/resource/62e07779-c3e0-4271-a9d2-f3769dad45eb",
+    "http://kg.artsdata.ca/resource/K5-428";
+  schema:address footlight:665825718c76ef0064565be0 .
+
+footlight:665825718c76ef0064565be0 a schema:PostalAddress;
+  schema:addressCountry "CA"@fr;
+  schema:addressLocality "Gatineau"@fr;
+  schema:postalCode "J8V 2H2";
+  schema:addressRegion "QC"@fr;
+  schema:streetAddress "288 Chem. Lebaudy"@fr .
+
+footlight:6495a8f695ffd60064aa936d a schema:Place;
+  schema:name "Parc Saint-Gérard"@fr;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-393", "http://kg.footlight.io/resource/626ed1a2-efdb-4fea-b59f-fe99c2cc3274";
+  schema:address footlight:6495a8f695ffd60064aa9362 .
+
+footlight:6495a8f695ffd60064aa9362 a schema:PostalAddress;
+  schema:addressCountry "CA"@fr;
+  schema:addressLocality "Gatineau"@fr;
+  schema:postalCode "J8P 1J2";
+  schema:addressRegion "QC"@fr;
+  schema:streetAddress "1259 Boulevard Maloney E"@fr .
+
+footlight:65088d1d521d460064324307 a schema:Place;
+  schema:name "Parc Saint-Germain"@fr;
+  schema:address footlight:65088d1d521d4600643242fe;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2f001 .
+
+footlight:65088d1d521d4600643242fe a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Val-des-Monts"@fr, "Val-des-Monts"@en;
+  schema:postalCode "J8N 2H7";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "2720 Route Principale"@fr, "2720 Route Principale"@en .
+
+footlight:665825af8c76ef00645668b1 a schema:Place;
+  schema:name "Parc Saint-René"@fr;
+  schema:sameAs "https://maps.google.com/?cid=15634679740358394239", "http://kg.footlight.io/resource/a12f2c93-1fee-47e6-af4d-46a61e7f569d";
+  schema:address footlight:665825af8c76ef00645668a1 .
+
+footlight:665825af8c76ef00645668a1 a schema:PostalAddress;
+  schema:addressCountry "CA"@fr;
+  schema:addressLocality "Gatineau"@fr;
+  schema:postalCode "J8P";
+  schema:addressRegion "QC"@fr;
+  schema:streetAddress "238 Bd Saint-René E"@fr .
+
+footlight:666a9a8984e93300649419f0 a schema:Place;
+  schema:name "Parc Saint-René"@fr;
+  schema:sameAs "http://kg.footlight.io/resource/a12f2c93-1fee-47e6-af4d-46a61e7f569d",
+    "http://kg.artsdata.ca/resource/K5-815";
+  schema:address footlight:666a9a8984e93300649419e0 .
+
+footlight:666a9a8984e93300649419e0 a schema:PostalAddress;
+  schema:addressCountry "CA"@fr;
+  schema:addressLocality "Gatineau"@fr;
+  schema:postalCode "J8P";
+  schema:addressRegion "QC"@fr;
+  schema:streetAddress "238 Bd Saint-René E"@fr .
+
+footlight:64de82467d6aa80064339f67 a schema:Place;
+  schema:name "Paroisse Saint-Grégoire-de-Nazianze"@fr;
+  schema:address footlight:64de82467d6aa80064339f5e .
+
+footlight:64de82467d6aa80064339f5e a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J8L 1K4";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "150 Rue Maclaren Est"@fr, "150 Rue Maclaren Est"@en .
+
+footlight:649c3a473c19fa0064e514ee a schema:Place;
+  schema:name "Bibliothèque de Perkins (Val-des-Monts)"@fr, "Perkins (Val-des-Monts) Library"@en;
+  schema:description ""@fr, ""@en;
+  schema:address footlight:649c3a473c19fa0064e514e6;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2effb .
+
+footlight:649c3a473c19fa0064e514e6 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Val-des-Monts"@fr, "Val-des-Monts"@en;
+  schema:postalCode "J8N 7E8";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "17, chemin du Manoir"@fr, "17, chemin du Manoir"@en .
+
+footlight:6418cdb35e4d4e0066a2effb skos:prefLabel "Library"@en, "Bibliothèque"@fr .
+
+footlight:65f1ef48997b810063719252 a schema:Place;
+  schema:name "Place de la Cité"@fr;
+  schema:sameAs "http://kg.artsdata.ca/resource/K2-240", "http://scenepro.ca#Venue213",
+    "http://www.wikidata.org/entity/Q111668889";
+  schema:description "La place de la Cité accueille des spectacles offerts gratuitement durant la période estivale. Elle accueille également la programmation du Festival d&#39;Humour de Gatineau."@fr .
+
+footlight:6495a8ea95ffd60064aa9277 a schema:Place;
+  schema:name "Place de la Francophonie"@fr;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-394", "http://kg.footlight.io/resource/89cc7890-e021-49ce-b5ef-4b85ad49ff97";
+  schema:address footlight:6495a8ea95ffd60064aa926c .
+
+footlight:6495a8ea95ffd60064aa926c a schema:PostalAddress;
+  schema:addressCountry "CA"@fr;
+  schema:addressLocality "Gatineau"@fr;
+  schema:postalCode "J8X 4B4";
+  schema:addressRegion "QC"@fr;
+  schema:streetAddress "11 Rue Montcalm"@fr .
+
+footlight:6499f7d33c19fa0064e4e09b a schema:Place;
+  schema:name "Place de la Francophonie"@fr, "Place de la Francophonie"@en;
+  schema:description ""@fr, ""@en;
+  schema:address footlight:6499f7d33c19fa0064e4e093 .
+
+footlight:6499f7d33c19fa0064e4e093 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J8X";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "Sentier du Ruisseau-de-la-Brasserie"@fr, "Sentier du Ruisseau-de-la-Brasserie"@en .
+
+footlight:665948d0beddbb00645d6bb0 a schema:Place;
+  schema:name "Place Gatineau pour la vie"@fr;
+  schema:address footlight:665948d0beddbb00645d6ba6;
+  schema:additionalType footlight:642c839fcf606a0064e5e95a .
+
+footlight:665948d0beddbb00645d6ba6 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J8X 0A3";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "165 Rue de l'Hôtel-de-Ville"@fr, "165 Rue de l'Hôtel-de-Ville"@en .
+
+footlight:6495a8e695ffd60064aa9227 a schema:Place;
+  schema:name "Place Laval"@fr, "Place Laval"@en;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-395", "http://kg.footlight.io/resource/9bf3a8e5-3ca4-482e-bdaf-913c8ce0b0fd";
+  schema:description ""@fr, ""@en;
+  schema:address footlight:6495a8e695ffd60064aa921c;
+  schema:additionalType footlight:642c839fcf606a0064e5e95a .
+
+footlight:6495a8e695ffd60064aa921c a schema:PostalAddress;
+  schema:addressCountry "CA"@fr, "CA";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J8X 2J3";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "173 Rue Wellington"@fr, "173 Rue Wellington"@en .
+
+footlight:649c3b2b3c19fa0064e51513 a schema:Place;
+  schema:name "Bibliothèque municipale de Poltimore / Denholm"@fr, "Poltimore / Denholm Municipal Library"@en;
+  schema:description ""@fr, ""@en;
+  schema:address footlight:649c3b2b3c19fa0064e5150b;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2effb .
+
+footlight:649c3b2b3c19fa0064e5150b a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Val-des-Monts"@fr, "Val-des-Monts"@en;
+  schema:postalCode "J8N 2H7";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "2720, route Principale"@fr, "2720, route Principale"@en .
+
+footlight:6420c6172831190064570ce4 a schema:Place;
+  schema:name "Pont Félix Gabriel Marchand"@fr, "Pont Félix Gabriel Marchand"@en;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-10", "http://kg.footlight.io/resource/39432ed4-855b-4a63-bc05-46f48f05af88";
+  schema:description ""@fr, ""@en;
+  schema:address footlight:6420c6172831190064570cda .
+
+footlight:6420c6172831190064570cda a schema:PostalAddress;
+  schema:addressCountry "CA"@fr, "CA";
+  schema:addressLocality "Mansfield-et-Pontefract"@fr, "Mansfield-et-Pontefract"@en;
+  schema:postalCode "J0X 1R0";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "300 Rue Principale"@fr, "300 rue Principale"@en .
+
+footlight:6675a9611180fb0064603d3f a schema:Place;
+  schema:name "Près de l’oeuvre Jouer avec le feu sur le Sentier culturel, secteur de Hull (182 Prom. du Portage)"@fr;
+  schema:address footlight:6675a9611180fb0064603d35;
+  schema:additionalType footlight:642c839fcf606a0064e5e95a .
+
+footlight:6675a9611180fb0064603d35 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J8X 2K3";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "182 Promenade du Portage"@fr, "182 Promenade du Portage"@en .
+
+footlight:645bb1037db98f0065dc88d5 a schema:Place;
+  schema:name "Résidence privée (sous Chapiteau)"@fr, "Private home (under the tent)"@en;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-195", "http://kg.footlight.io/resource/aacdb41f-166c-4706-8d06-3a3a7a3322fb";
+  schema:description ""@fr, ""@en;
+  schema:address footlight:645b93e57db98f0065dc5ef4;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2f009 .
+
+footlight:645b93e57db98f0065dc5ef4 a schema:PostalAddress;
+  schema:addressCountry "CA"@fr, "CA";
+  schema:addressLocality "Cantley"@fr, "Cantley"@en;
+  schema:postalCode "J8V 3J1";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "42 Rue de Portneuf"@fr, "42 Rue de Portneuf"@en .
+
+footlight:6418cdb35e4d4e0066a2f009 skos:prefLabel "Other"@en, "Autre"@fr .
+
+footlight:645d3cd72fb72400648c2186 a schema:Place;
+  schema:name "Propulsion scène"@fr, "Propulsion scène"@en;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-641";
+  schema:address footlight:645d3cd72fb72400648c217e .
+
+footlight:645d3cd72fb72400648c217e a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J8P 1K8";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "330, rue Notre-Dame, entrée via, Rue Saint-André"@fr, "330, rue Notre-Dame, entrée via, Rue Saint-André"@en .
+
+footlight:6499f8513c19fa0064e4e0c0 a schema:Place;
+  schema:name "Quai des Artistes"@fr, "Quai des Artistes"@en;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-415";
+  schema:description ""@fr, ""@en;
+  schema:address footlight:6499f8513c19fa0064e4e0b8;
+  schema:additionalType footlight:642c839fcf606a0064e5e95a .
+
+footlight:6499f8513c19fa0064e4e0b8 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J8T 2W3";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "Rue Jacques-Cartier"@fr, "Rue Jacques-Cartier"@en .
+
+footlight:645bb32b7db98f0065dc9902 a schema:Place;
+  schema:name "Quai des Légendes"@fr;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-196", "http://kg.footlight.io/resource/e4156b5c-4f87-452c-8259-3c4ff2eff15f";
+  schema:description ""@fr, ""@en;
+  schema:address footlight:645bb32b7db98f0065dc98f7 .
+
+footlight:645bb32b7db98f0065dc98f7 a schema:PostalAddress;
+  schema:addressCountry "CA"@fr, "CA";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J8T 2W3";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "1015 rue Jacques-Cartier"@fr, "1015 rue Jacques-Cartier"@en .
+
+footlight:649c3d1d3c19fa0064e5163a a schema:Place;
+  schema:name "Bibliothèque de Quyon (Pontiac)"@fr, "Quyon Library"@en;
+  schema:description ""@fr, ""@en;
+  schema:address footlight:649c3d1c3c19fa0064e51632;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2effb .
+
+footlight:649c3d1c3c19fa0064e51632 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Quyon"@fr, "Quyon"@en;
+  schema:postalCode "J0X 2V0";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "12 Saint-John Street, C.P. 70"@fr, "12 Saint-John Street, C.P. 70"@en .
+
+footlight:663d41420796c300645f820a a schema:Place;
+  schema:name "Résidence Le Monarque"@fr, "Résidence Le Monarque"@en;
+  schema:address footlight:663d41420796c300645f8201;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2f009 .
+
+footlight:663d41420796c300645f8201 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Plaisance"@fr, "Plaisance"@en;
+  schema:postalCode "J0V 1S0";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "41 Chemin des Presqu'îles"@fr, "41 Chemin des Presqu'îles"@en .
+
+footlight:645d4e4a2fb72400648c23a4 a schema:Place;
+  schema:name "Restaurant Chez Malo"@fr, "Restaurant Chez Malo"@en;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-645";
+  schema:address footlight:645d4e4a2fb72400648c239c .
+
+footlight:645d4e4a2fb72400648c239c a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Lac-Sainte-Marie"@fr, "Lac-Sainte-Marie"@en;
+  schema:postalCode "J0X 1Z0";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "306 Chem. de Lac Sainte-Marie"@fr, "306 Chem. de Lac Sainte-Marie"@en .
+
+footlight:645d3dd42fb72400648c220c a schema:Place;
+  schema:name "Restaurant Lachapelle"@fr, "Restaurant Lachapelle"@en;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-643";
+  schema:address footlight:645d3dd42fb72400648c2204 .
+
+footlight:645d3dd42fb72400648c2204 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Kazabazua"@fr, "Kazabazua"@en;
+  schema:postalCode "J0X 1X0";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "454 Rte 105"@fr, "454 Rte 105"@en .
+
+footlight:649c3d9b3c19fa0064e5166b a schema:Place;
+  schema:name "Bibliothèque municipale de Ripon"@fr, "Ripon Municipal Library"@en;
+  schema:description ""@fr, ""@en;
+  schema:address footlight:649c3d9b3c19fa0064e51663;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2effb .
+
+footlight:649c3d9b3c19fa0064e51663 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Ripon"@fr, "Ripon"@en;
+  schema:postalCode "J0V 1V0";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "31, rue Coursol, C.P. 2026"@fr, "31, rue Coursol, C.P. 2026"@en .
+
+footlight:64d645cb7d6aa8006432fda4 a schema:Place;
+  schema:name "Studio Rosalie Gingras"@fr, "Rosalie Gingras Studio"@en;
+  schema:description ""@fr, ""@en;
+  schema:address footlight:64d645cb7d6aa8006432fd9c;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2efef .
+
+footlight:64d645cb7d6aa8006432fd9c a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Chelsea"@fr, "Chelsea"@en;
+  schema:postalCode "J9B 1J3";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "248 chemin Ladyfield"@fr, "248 chemin Ladyfield"@en .
+
+footlight:6418cdb35e4d4e0066a2efef skos:prefLabel "Artist studio"@en, "Atelier d'artistes"@fr .
+
+footlight:65d6482e79151d0064f3c2b3 a schema:Place;
+  schema:name "Rouge Lune Resto Bar"@fr;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-467";
+  schema:address footlight:65d6482e79151d0064f3c2a9;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2f003 .
+
+footlight:65d6482e79151d0064f3c2a9 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J8X 2K1";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "70 Promenade du Portage"@fr, "70 Promenade du Portage"@en .
+
+footlight:6418cdb35e4d4e0066a2f003 skos:prefLabel "Bar / restaurant"@en, "Bar / restaurant"@fr .
+
+footlight:666a9abc84e9330064942968 a schema:Place;
+  schema:name "Rue Eddy"@fr;
+  schema:sameAs "https://maps.google.com/?q=Rue+Eddy,+Gatineau,+QC,+Canada&ftid=0x4cce048acc57197d:0x115497201e135d0f",
+    "http://kg.footlight.io/resource/ab888ca5-fed9-41e1-a824-0206587ac6ec";
+  schema:address footlight:666a9abc84e933006494295c .
+
+footlight:666a9abc84e933006494295c a schema:PostalAddress;
+  schema:addressCountry "CA"@fr;
+  schema:addressLocality "Gatineau"@fr;
+  schema:addressRegion "QC"@fr;
+  schema:streetAddress "Rue Eddy"@fr .
+
+footlight:648bbb2c5526a700645045bc a schema:Place;
+  schema:name "Rue Laval"@fr, "Rue Laval"@en;
+  schema:description ""@fr, ""@en;
+  schema:address footlight:648bbb2c5526a700645045b4;
+  schema:additionalType footlight:642c839fcf606a0064e5e95a .
+
+footlight:648bbb2c5526a700645045b4 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J8X";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "Rue Laval"@fr, "Rue Laval"@en .
+
+footlight:649c716f3c19fa0064e54b6d a schema:Place;
+  schema:name "Bibliothèque de Saint-Émile-de-Suffolk"@fr, "Saint-Émile-de-Suffolk Library"@en;
+  schema:description ""@fr, ""@en;
+  schema:address footlight:649c716f3c19fa0064e54b65;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2effb .
+
+footlight:649c716f3c19fa0064e54b65 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Saint-Émile-de-Suffolk"@fr, "Saint-Émile-de-Suffolk"@en;
+  schema:postalCode "J0V 1Y0";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "299, Route des Cantons"@fr, "299, Route des Cantons"@en .
+
+footlight:649c3bde3c19fa0064e5156e a schema:Place;
+  schema:name "Bibliothèque de Saint-Pierre-de-Wakefield (Val-des-Monts)"@fr, "Saint-Pierre-de-Wakefield (Val-des-Monts) Library"@en;
+  schema:description ""@fr, ""@en;
+  schema:address footlight:649c3bde3c19fa0064e51566;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2effb .
+
+footlight:649c3bde3c19fa0064e51566 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Val-des-Monts"@fr, "Val-des-Monts"@en;
+  schema:postalCode "J8N 4J8";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "24, chemin du Parc"@fr, "24, chemin du Parc"@en .
+
+footlight:649c72ae3c19fa0064e54d5a a schema:Place;
+  schema:name "Bibliothèque de Saint-Sixte"@fr, "Saint-Sixte Library"@en;
+  schema:description ""@fr, ""@en;
+  schema:address footlight:649c72ae3c19fa0064e54d52;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2effb .
+
+footlight:649c72ae3c19fa0064e54d52 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Saint-Sixte"@fr, "Saint-Sixte"@en;
+  schema:postalCode "J0X 3B0";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "25, rue Principale"@fr, "25, rue Principale"@en .
+
+footlight:649c70ec3c19fa0064e54961 a schema:Place;
+  schema:name "Bibliothèque de Sainte-Cécile-de-Masham (La Pêche)"@fr, "Sainte-Cécile-de-Masham (La Pêche) Library"@en;
+  schema:description ""@fr, ""@en;
+  schema:address footlight:649c70ec3c19fa0064e54959;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2effb .
+
+footlight:649c70ec3c19fa0064e54959 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "La Pêche"@fr, "La Pêche"@en;
+  schema:postalCode "J0X 2W0";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "5-A, route Principale ouest"@fr, "5-A, route Principale ouest"@en .
+
+footlight:649c73463c19fa0064e54f90 a schema:Place;
+  schema:name "Bibliothèque municipale de Sainte-Thérèse-de-la-Gatineau"@fr, "Sainte-Thérèse-de-la-Gatineau Municipal Library"@en;
+  schema:description ""@fr, ""@en;
+  schema:address footlight:649c73463c19fa0064e54f88;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2effb .
+
+footlight:649c73463c19fa0064e54f88 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Sainte-Thérèse-de-la-Gatineau"@fr, "Sainte-Thérèse-de-la-Gatineau"@en;
+  schema:postalCode "J0X 2X0";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "29, rue Principale, Suite 3, C.P. 53"@fr, "29, rue Principale, Suite 3, C.P. 53"@en .
+
+footlight:660ee50f1406060064638945 a schema:Place;
+  schema:name "Salle communautaire Plaisance"@fr;
+  schema:address footlight:660ee50f140606006463893c;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2f009 .
+
+footlight:660ee50f140606006463893c a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Plaisance"@fr, "Plaisance"@en;
+  schema:postalCode "J0V 1S0";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "281 Rue Desjardins"@fr, "281 Rue Desjardins"@en .
+
+footlight:645d4dce2fb72400648c237f a schema:Place;
+  schema:name "Salle communautaire Réjean Lafrenière"@fr;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-644";
+  schema:address footlight:645d4dcd2fb72400648c2377 .
+
+footlight:645d4dcd2fb72400648c2377 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Messines"@fr, "Messines"@en;
+  schema:postalCode "J0X 2J0";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "70 Rue Principale, Messines"@fr, "70 Rue Principale, Messines"@en .
+
+footlight:6420c63d283119006457102b a schema:Place;
+  schema:name "Salle Desjardins de la Petite-Nation"@fr, "Salle Desjardins de la Petite-Nation"@en;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-35", "http://kg.footlight.io/resource/ca5975ab-2d0b-4110-b211-ca71e06ecc4f";
+  schema:description ""@fr, ""@en;
+  schema:address footlight:6420c63d2831190064571021 .
+
+footlight:6420c63d2831190064571021 a schema:PostalAddress;
+  schema:addressCountry "CA"@fr, "CA";
+  schema:addressLocality "Papineauville"@fr, "Papineauville"@en;
+  schema:postalCode "J0V 1R0";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "378 Rue Papineau"@fr, "378 Rue Papineau"@en .
+
+footlight:6420c64f28311900645711aa a schema:Place;
+  schema:name "Salle Jean-Despréz"@fr, "Salle Jean-Despréz"@en;
+  schema:sameAs "http://kg.artsdata.ca/resource/K5-38", "http://kg.footlight.io/resource/d10ebb30-f930-4465-ab9f-66b66d86f78d";
+  schema:address footlight:645b93a07db98f0065dc498d .
+
+footlight:645b93a07db98f0065dc498d a schema:PostalAddress;
+  schema:addressCountry "CA"@fr;
+  schema:addressLocality "Gatineau"@fr;
+  schema:postalCode "J8X 3Y9";
+  schema:addressRegion "QC"@fr;
+  schema:streetAddress "25 Rue Laurier"@fr .
+
+footlight:65088925521d460064323a0c a schema:Place;
+  schema:name "Salle Marcel-Périard"@fr;
+  schema:address footlight:65088925521d460064323a03;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2f009 .
+
+footlight:65088925521d460064323a03 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Val-des-Monts"@fr, "Val-des-Monts"@en;
+  schema:postalCode "J8N 7E8";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "17 Chemin du Manoir"@fr, "17 Chemin du Manoir"@en .
+
+footlight:6420c6112831190064570c5c a schema:Place;
+  schema:name "Salle Odyssée"@fr, "Salle Odyssée"@en;
+  schema:sameAs "http://kg.artsdata.ca/resource/K2-197";
+  schema:description "<p><br></p>"@fr, "<p><br></p>"@en;
+  schema:address footlight:64515ae5e19f7200646d07a7 .
+
+footlight:64515ae5e19f7200646d07a7 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J8T 8H9";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "855 Boulevard de la Gappe"@fr, "855 Boulevard de la Gappe"@en .
+
+footlight:6420c6112831190064570c5c a schema:Place;
+  schema:additionalType footlight:642c839fcf606a0064e5e956;
+  schema:sameAs "http://www.wikidata.org/entity/Q107015498" .
+
+footlight:642c839fcf606a0064e5e956 skos:prefLabel "Performance Hall (Q112688641)"@en,
+    "Salle de spectacle (Q112688641)"@fr .
+
+footlight:649c743a3c19fa0064e55198 a schema:Place;
+  schema:name "Bibliothèque de Shawville / Clarendon / Thorne"@fr, "Shawville / Clarendon / Thorne Library"@en;
+  schema:description ""@fr, ""@en;
+  schema:address footlight:649c743a3c19fa0064e55190;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2effb .
+
+footlight:649c743a3c19fa0064e55190 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Shawville"@fr, "Shawville"@en;
+  schema:postalCode "J0X 2Y0";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "356, rue Main, C.P. 44"@fr, "356, rue Main, C.P. 44"@en .
+
+footlight:6418cdb35e4d4e0066a2effb skos:prefLabel "Library"@en, "Bibliothèque"@fr .
+
+footlight:666a9a1384e933006493f717 a schema:Place;
+  schema:name "Site Zibi"@fr;
+  schema:sameAs "http://kg.footlight.io/resource/43686ad5-f6d8-43c6-b55e-226e1ae63671",
+    "http://kg.artsdata.ca/resource/K5-807";
+  schema:address footlight:666a9a1384e933006493f70b .
+
+footlight:666a9a1384e933006493f70b a schema:PostalAddress;
+  schema:addressCountry "CA"@fr;
+  schema:addressLocality "Gatineau"@fr;
+  schema:postalCode "J8X 0C2";
+  schema:addressRegion "QC"@fr;
+  schema:streetAddress "25 Rue Jos-Montferrand"@fr .
+
+footlight:6685639e9d0a290064b97175 a schema:Place;
+  schema:name "Stationnement de la Place du centre (P2 – 2e étage), secteur de Hull"@fr;
+  schema:address footlight:6685639d9d0a290064b9716b;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2f009 .
+
+footlight:6685639d9d0a290064b9716b a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J8X 0A3";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "50 Boulevard Maisonneuve"@fr, "50 Boulevard Maisonneuve"@en .
+
+footlight:6418cdb35e4d4e0066a2f009 skos:prefLabel "Other"@en, "Autre"@fr .
+
+footlight:665825b38c76ef0064566977 a schema:Place;
+  schema:name "Stationnement du lac Leamy"@fr;
+  schema:sameAs "https://maps.google.com/?q=Lac+Leamy&ftid=0x4cce04a4602baea7:0x156376838c13da92",
+    "http://kg.footlight.io/resource/ec13c3bc-cb9c-4fa3-96bf-27f7260a745d";
+  schema:address footlight:665825b38c76ef006456696b .
+
+footlight:665825b38c76ef006456696b a schema:PostalAddress;
+  schema:addressCountry "CA"@fr;
+  schema:addressLocality "Gatineau"@fr;
+  schema:addressRegion "QC"@fr .
+
+footlight:663c75be0796c300645ea63f a schema:Place;
+  schema:name "Terrasse de la Chaudière (Édifice Sud)"@fr;
+  schema:sameAs "https://maps.google.com/?q=15+Rue+Eddy,+Gatineau,+QC+K1A+0N9,+Canada&ftid=0x4cce0460008e8bfd:0x48b8918cec443dc6",
+    "http://kg.footlight.io/resource/ee310ca3-e997-4f5b-8f95-f2bf96b186b6";
+  schema:address footlight:663c75be0796c300645ea633 .
+
+footlight:663c75be0796c300645ea633 a schema:PostalAddress;
+  schema:addressCountry "CA"@fr;
+  schema:addressLocality "Gatineau"@fr;
+  schema:postalCode "K1A 0N9";
+  schema:addressRegion "QC"@fr;
+  schema:streetAddress "15 Rue Eddy"@fr .
+
+footlight:664252880796c30064614e55 a schema:Place;
+  schema:name "Terrasse du Square"@fr, "Terrasse du Square"@en;
+  schema:address footlight:664252880796c30064614e4b;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2f009 .
+
+footlight:664252880796c30064614e4b a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Chelsea"@fr, "Chelsea"@en;
+  schema:postalCode "J9B 1J3";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "248 Chemin Old Chelsea"@fr, "248 Chemin Old Chelsea"@en .
+
+footlight:66d68cdc3451310064471140 a schema:Place;
+  schema:name "tests Place en - admin"@fr, "tests Place en - admin"@en;
+  schema:description "<p style=\"background: yellow; border: 2px solid red; font: inherit;\"><br></p>"@fr,
+    "<p style=\"background: yellow; border: 2px solid red; font: inherit;\"><br></p>"@en;
+  schema:address footlight:66d68cdb3451310064471137;
+  schema:additionalType footlight:642c839fcf606a0064e5e958 .
+
+footlight:66d68cdb3451310064471137 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "100 Mile House"@fr, "100 Mile House"@en;
+  schema:postalCode "H1A1A1";
+  schema:addressRegion "BC"@fr, "BC"@en;
+  schema:streetAddress "Addresse fr"@fr, "en address"@en .
+
+footlight:642c839fcf606a0064e5e958 skos:prefLabel "Building (Q41176)"@en, "Bâtiment (Q41176)"@fr .
+
+footlight:66d68d283451310064471268 a schema:Place;
+  schema:name "tests Place en - guest"@fr, "tests Place en - guest"@en;
+  schema:description "<p style=\"background: yellow; border: 2px solid red; font: inherit;\"><br></p>"@fr,
+    "<p style=\"background: yellow; border: 2px solid red; font: inherit;\"><br></p>"@en;
+  schema:address footlight:66d68d27345131006447125e;
+  schema:additionalType footlight:642c839fcf606a0064e5e958 .
+
+footlight:66d68d27345131006447125e a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "100 Mile House"@fr, "100 Mile House"@en;
+  schema:postalCode "H1A1A1";
+  schema:addressRegion "BC"@fr, "BC"@en;
+  schema:streetAddress "Addresse fr"@fr, "en address"@en .
+
+footlight:66d68c8a345131006447101a a schema:Place;
+  schema:name "tests Place fr - guest"@fr, "tests Place fr - guest"@en;
+  schema:description "<p style=\"background: yellow; border: 2px solid red; font: inherit;\"><br></p>"@fr,
+    "<p style=\"background: yellow; border: 2px solid red; font: inherit;\"><br></p>"@en;
+  schema:address footlight:66d68c893451310064471010;
+  schema:additionalType footlight:642c839fcf606a0064e5e958 .
+
+footlight:66d68c893451310064471010 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "100 Mile House"@fr, "100 Mile House"@en;
+  schema:postalCode "H1A1A1";
+  schema:addressRegion "BC"@fr, "BC"@en;
+  schema:streetAddress "Addresse fr"@fr, "en address"@en .
+
+footlight:64515aece19f7200646d09f3 a schema:Place;
+  schema:name "Théâtre de l'Île"@fr, "Théâtre de l'Île"@en;
+  schema:sameAs "http://kg.artsdata.ca/resource/K13-234", "http://capacitor.culturecreates.com/2100d544-1f37-4d3a-a115-ce98772309ec";
+  schema:description ""@fr, ""@en;
+  schema:address footlight:645b939b7db98f0065dc4817;
+  schema:additionalType footlight:642c839fcf606a0064e5e956 .
+
+footlight:645b939b7db98f0065dc4817 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J8X 2H3";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "2 rue Wellington"@fr, "2 rue Wellington"@en .
+
+footlight:65ea20bfbec01b006430d811 a schema:Place;
+  schema:name "Ville de Thurso"@fr, "Thurso"@en;
+  schema:address footlight:65ea20bebec01b006430d808;
+  schema:additionalType footlight:642c839fcf606a0064e5e95a .
+
+footlight:65ea20bebec01b006430d808 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Thurso"@fr, "Thurso"@en;
+  schema:postalCode "J0X 3B0";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "337 Rue Élisabeth"@fr, "337 Rue Élisabeth"@en .
+
+footlight:642c839fcf606a0064e5e95a skos:prefLabel "Open-air Event Venue (Q117187730)"@en,
+    "Lieu pour événements en plein air (Q117187730)"@fr .
+
+footlight:649c74d63c19fa0064e55463 a schema:Place;
+  schema:name "Bibliothèque de Thurso / Lochaber-Partie-Ouest"@fr, "Thurso / Lochaber-Partie-Ouest Library"@en;
+  schema:description ""@fr, ""@en;
+  schema:address footlight:649c74d63c19fa0064e5545b;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2effb .
+
+footlight:649c74d63c19fa0064e5545b a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Thurso"@fr, "Thurso"@en;
+  schema:postalCode "J0X 3B0";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "341-A, rue Victoria"@fr, "341-A, rue Victoria"@en .
+
+footlight:6657417f8c76ef006455a4c5 a schema:Place;
+  schema:name "Tourisme Outaouais"@fr;
+  schema:address footlight:6657417f8c76ef006455a4bb;
+  schema:additionalType footlight:642c839fcf606a0064e5e958 .
+
+footlight:6657417f8c76ef006455a4bb a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J8X 3V8";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "103 Rue Laurier"@fr, "103 Rue Laurier"@en .
+
+footlight:64c2738f3c19fa0064e9811a a schema:Place;
+  schema:name "Traces Arts Visuels"@fr, "Traces Arts Visuels"@en;
+  schema:description "<p>Traces Arts Visuels est un organisme à but non lucratif incorporé depuis 2014, dont la mission est de faire rayonner les arts visuels par le biais d’événements où les participants sont invités à laisser leur trace via la création.</p><p>Nos buts et objectifs : Mettre en place des événements de diffusion, d’éducation et de création artistique de niveau national et international.</p><p>Promouvoir les arts visuels. Mettre en valeur la création artistique. Diffuser les artistes de l’Outaouais et d’ailleurs. Démocratiser l’art en le rendant plus accessible. Provoquer des échanges artistiques et culturels.</p><p>Créer des environnements propices à l’épanouissement par l’art tout en intégrant l’expérimentation créative. Encourager le développement d’artistes émergents.&nbsp;</p>"@fr,
+    "<p>Traces Arts Visuels is a non-profit organisation incorporated in 2014, whose mission is to promote the visual arts through events where participants are invited to leave their mark via creation.</p><p>Our aims and objectives: To set up national and international events for the dissemination, education and creation of art.</p><p>To promote the visual arts. To showcase artistic creation. To showcase artists from the Outaouais region and beyond. Democratise art by making it more accessible. Promote artistic and cultural exchanges.</p><p>To create environments conducive to artistic development and creative experimentation. Encourage the development of emerging artists.</p>"@en;
+  schema:address footlight:64c2738f3c19fa0064e98112;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2efed .
+
+footlight:64c2738f3c19fa0064e98112 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J8L 2G7";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "408 Ave. de Buckingham"@fr, "408 Ave. de Buckingham"@en .
+
+footlight:6418cdb35e4d4e0066a2efed skos:prefLabel "Artist-run centre"@en, "Centre d'artistes"@fr .
+
+footlight:64be78d13c19fa0064e953c7 a schema:Place;
+  schema:name "Festival de la fibre Twist"@fr, "Twist Fibre Festival"@en;
+  schema:description "<p>Le festival de la fibre Twist, c’est le plus important festival de la fibre textile au Canada. Il réunit les plus importants acteurs de l’industrie.</p>"@fr,
+    "<p>The Twist Fibre Festival is the most important fiber festival in Canada. It brings together the most important players in the industry.</p>"@en;
+  schema:address footlight:64be78d13c19fa0064e953bf;
+  schema:additionalType footlight:642c8832cf606a0064e5ee78 .
+
+footlight:64be78d13c19fa0064e953bf a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Saint-André-Avellin"@fr, "Saint-André-Avellin"@en;
+  schema:postalCode "J0V 1W0";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "530 Rue Charles Auguste Montreuil"@fr, "530 Rue Charles Auguste Montreuil"@en .
+
+footlight:642c8832cf606a0064e5ee78 skos:prefLabel "Cultural center (Q1329623)"@en,
+    "Centre culturel (Q1329623)"@fr .
+
+footlight:665e6ff2beddbb00646597b2 a schema:Place;
+  schema:name "Val-des-Bois"@fr, "Val-des-Bois"@en;
+  schema:address footlight:665e6ff2beddbb00646597a8;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2f001 .
+
+footlight:665e6ff2beddbb00646597a8 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:postalCode "J0X 3C0";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "594 Québec 309"@fr, "594 Québec 309"@en .
+
+footlight:6418cdb35e4d4e0066a2f001 skos:prefLabel "Park"@en, "Parc"@fr .
+
+footlight:649c756e3c19fa0064e554de a schema:Place;
+  schema:name "Bibliothèque Val-des-Bois / Bowman"@fr, "Val-des-Bois / Bowman Library"@en;
+  schema:description ""@fr, ""@en;
+  schema:address footlight:649c756e3c19fa0064e554d6;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2effb .
+
+footlight:649c756e3c19fa0064e554d6 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Val-des-Bois"@fr, "Val-des-Bois"@en;
+  schema:postalCode "J0X 3C0";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "593 Québec 309"@fr, "593 Québec 309"@en .
+
+footlight:6616dfdf140606006469fbac a schema:Place;
+  schema:name "Val-des-Monts"@fr, "Val-des-Monts (QC)"@en;
+  schema:description "<p>La Municipalité de Val-des-Monts offre une foule d'activités culturelles à ses citoyens et ses visiteurs toute l'année!</p>"@fr;
+  schema:address footlight:6616dfdf140606006469fba2;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2f009 .
+
+footlight:6616dfdf140606006469fba2 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Val-des-Monts"@fr;
+  schema:postalCode "J8N4E9";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "1, route du Carrefour"@fr .
+
+footlight:6632e3ed0796c300645a4d62 a schema:Place;
+  schema:name "Ville de Gatineau"@fr;
+  schema:sameAs "http://kg.footlight.io/resource/1bafe7d0-d084-4e0e-a2c1-ac1d3d49e2de",
+    "http://kg.artsdata.ca/resource/K5-637";
+  schema:address footlight:667d0e4e2a23ca0060e0dc80 .
+
+footlight:667d0e4e2a23ca0060e0dc80 a schema:PostalAddress;
+  schema:addressCountry "CA"@fr;
+  schema:addressLocality "Gatineau"@fr;
+  schema:postalCode "J8X 2K1";
+  schema:addressRegion "QC"@fr .
+
+footlight:649c75f13c19fa0064e55595 a schema:Place;
+  schema:name "Bibliothèque Wakefield (La Pêche)"@fr, "Wakefield Library"@en;
+  schema:description ""@fr, ""@en;
+  schema:address footlight:649c75f13c19fa0064e5558d;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2effb .
+
+footlight:649c75f13c19fa0064e5558d a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Wakefield"@fr, "Wakefield"@en;
+  schema:postalCode "J0X 3G0";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "38 Chemin de la Vallée de Wakefield"@fr, "38 Chemin de la Vallée de Wakefield"@en .
+
+footlight:666211dc620a270064114b0b a schema:Place;
+  schema:name "Parc Wellington"@fr, "Wellington Park"@en;
+  schema:address footlight:666211dc620a270064114b02;
+  schema:additionalType footlight:6418cdb35e4d4e0066a2f001 .
+
+footlight:666211dc620a270064114b02 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J8X 2J2";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "120 Rue Wellington"@fr, "120 Rue Wellington"@en .
+
+footlight:64909c405526a7006450b889 a schema:Place;
+  schema:name "Wööl"@fr, "Wööl"@en;
+  schema:description ""@fr, ""@en;
+  schema:address footlight:64909c405526a7006450b881 .
+
+footlight:64909c405526a7006450b881 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Montebello"@fr, "Montebello"@en;
+  schema:postalCode "J0V 1L0";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "538 Rue Notre-Dame"@fr, "538 Rue Notre-Dame"@en .
+
+footlight:663c75c00796c300645ea661 a schema:Place;
+  schema:name "Zibi"@fr, "Zibi"@en;
+  schema:sameAs "https://maps.google.com/?q=25+Rue+Jos-Montferrand,+Gatineau,+QC+J8X+0C2,+Canada&ftid=0x4cce045f0f3f3267:0x568741866ce13e58",
+    "http://kg.footlight.io/resource/43686ad5-f6d8-43c6-b55e-226e1ae63671";
+  schema:address footlight:663c75c00796c300645ea655 .
+
+footlight:663c75c00796c300645ea655 a schema:PostalAddress;
+  schema:addressCountry "Canada"@fr, "Canada";
+  schema:addressLocality "Gatineau"@fr, "Gatineau"@en;
+  schema:postalCode "J8X 0E1";
+  schema:addressRegion "QC"@fr, "QC"@en;
+  schema:streetAddress "15 Rue Jos-Montferrand"@fr, "15 Rue Jos-Montferrand"@en .
+
+footlight:64e28cae7d6aa8006433b9ff a schema:Place;
+  schema:name "zoom"@fr, "zoom"@en;
+  schema:address footlight:64e28cae7d6aa8006433b9f6 .
+
+footlight:64e28cae7d6aa8006433b9f6 a schema:PostalAddress .
