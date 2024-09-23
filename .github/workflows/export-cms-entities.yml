@@ -1,0 +1,165 @@
+name: Export Footlight-CMS entities to Artsdata
+
+on:
+  workflow_call:
+    inputs:
+      source:
+        required: true
+        type: string
+    secrets:
+      PUBLISHER_URI_GREGORY:
+        required: true
+      S3_ACCESS_KEY_ID:
+        required: true
+      S3_SECRET_ACCESS_KEY:
+        required: true
+
+jobs:
+  transform-taxonomies:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10' 
+
+      - name: Download taxonomies from calendar
+        run: curl 'https://api.footlight.io/calendars/${{inputs.source}}/taxonomies?page=1&limit=300' >> taxonomies.json
+
+      - name: Run Python script
+        run: python ./util/flatten-cms-taxonomies.py taxonomies.json
+
+      - name: Upload json into artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: taxonomies
+          path: ./flatten-taxonomies.json
+          retention-days: 1
+
+  transform-calendar:
+    runs-on: ubuntu-latest
+    needs: transform-taxonomies
+    container:
+      image: ontotext/refine:1.2.1
+      options: --user root
+      ports:
+        - 7333:7333
+
+    steps:
+      - name: Install requirements
+        id: step-1
+        run: apk update && apk add curl && apk add util-linux
+
+      - name: Run Onto Refine server
+        id: step-2
+        run: /opt/ontorefine/dist/bin/ontorefine &
+
+      - name: Download data from artifact
+        id: step-3
+        uses: actions/download-artifact@v4
+        with:
+          name: taxonomies
+
+      - name: Download data from calendar
+        id: step-4
+        run: |
+          curl 'https://api.footlight.io/calendars/${{inputs.source}}/events?page=1&limit=300' >> events.json &&
+          curl 'https://api.footlight.io/calendars/${{inputs.source}}/places?page=1&limit=300' >> places.json &&
+          curl 'https://api.footlight.io/calendars/${{inputs.source}}/organizations?page=1&limit=300' >> organizations.json &&
+          curl 'https://api.footlight.io/calendars/${{inputs.source}}/people?page=1&limit=300' >> people.json 
+      
+      - name: Download configuration files for transformation
+        id: step-5
+        run: |
+          curl 'https://raw.githubusercontent.com/culturecreates/artsdata-planet-footlight/main/ontotext-refine/cms-events-configuration.json' >> event-transform-config.json &&
+          curl 'https://raw.githubusercontent.com/culturecreates/artsdata-planet-footlight/main/ontotext-refine/cms-places-configuration.json' >> place-transform-config.json &&
+          curl 'https://raw.githubusercontent.com/culturecreates/artsdata-planet-footlight/main/ontotext-refine/cms-organizations-configuration.json' >> organization-transform-config.json &&
+          curl 'https://raw.githubusercontent.com/culturecreates/artsdata-planet-footlight/main/ontotext-refine/cms-people-configuration.json' >> person-transform-config.json &&
+          curl 'https://raw.githubusercontent.com/culturecreates/artsdata-planet-footlight/main/ontotext-refine/cms-taxonomies-configuration.json' >> taxonomy-transform-config.json
+
+
+      - name: Transform events in JSON  to RDF
+        id: step-7
+        run: |
+          /opt/ontorefine/dist/bin/ontorefine-cli \
+          transform events.json \
+          -u http://localhost:7333 \
+          --configurations event-transform-config.json \
+          -f json >> events.ttl
+
+      - name: Transform places in JSON to RDF
+        id: step-8
+        run: |
+          /opt/ontorefine/dist/bin/ontorefine-cli \
+          transform places.json \
+          -u http://localhost:7333 \
+          --configurations place-transform-config.json \
+          -f json >> places.ttl
+
+      - name: Transform organizations in JSON to RDF
+        id: step-9
+        run: |
+          /opt/ontorefine/dist/bin/ontorefine-cli \
+          transform organizations.json \
+          -u http://localhost:7333 \
+          --configurations organization-transform-config.json \
+          -f json >> organizations.ttl
+
+      - name: Transform people in JSON to RDF
+        id: step-10
+        run: |
+          /opt/ontorefine/dist/bin/ontorefine-cli \
+          transform people.json \
+          -u http://localhost:7333 \
+          --configurations person-transform-config.json \
+          -f json >> people.ttl
+
+      - name: Transform taxonomies in JSON to RDF
+        id: step-11
+        run: |
+          /opt/ontorefine/dist/bin/ontorefine-cli \
+          transform '/__w/artsdata-planet-footlight/artsdata-planet-footlight/flatten-taxonomies.json' \
+          -u http://localhost:7333 \
+          --configurations taxonomy-transform-config.json \
+          -f json >> taxonomies.ttl
+
+      - name: Concatenate the files
+        run : |
+          cat \
+          events.ttl \
+          places.ttl \
+          organizations.ttl \
+          people.ttl \
+          taxonomies.ttl \
+          > ${{inputs.source}}.ttl
+
+      - name: Upload entities in RDF to S3
+        uses: keithweaver/aws-s3-github-action@v1.0.0
+        with:
+            command: cp
+            source: ${{inputs.source}}.ttl
+            destination: s3://footlight-cms-entities-exported/
+            aws_access_key_id: ${{ secrets.S3_ACCESS_KEY_ID}}
+            aws_secret_access_key: ${{ secrets.S3_SECRET_ACCESS_KEY }}
+            aws_region: ca-central-1
+            flags: --acl public-read --content-type text/turtle
+          
+  import-entities-to-artsdata:
+    needs: transform-calendar
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Set current date as output
+        id: step-1
+        run: echo "dumpdate=$(date +'%Y-%m-%dT%H-%M-%S')" >> $GITHUB_OUTPUT
+
+      - name: Call artsdata pipeline action
+        id: step-2
+        uses: culturecreates/artsdata-pipeline-action@v1.1.0
+        with:
+          artifact: ${{inputs.source}}
+          publisher: ${{ secrets.PUBLISHER_URI_GREGORY }}
+          downloadUrl: "https://footlight-cms-entities-exported.s3.ca-central-1.amazonaws.com/${{inputs.source}}.ttl"
