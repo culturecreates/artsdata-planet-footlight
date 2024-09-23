@@ -82,7 +82,7 @@ jobs:
 
 
       - name: Transform events in JSON  to RDF
-        id: step-7
+        id: step-6
         run: |
           /opt/ontorefine/dist/bin/ontorefine-cli \
           transform events.json \
@@ -91,7 +91,7 @@ jobs:
           -f json >> events.ttl
 
       - name: Transform places in JSON to RDF
-        id: step-8
+        id: step-7
         run: |
           /opt/ontorefine/dist/bin/ontorefine-cli \
           transform places.json \
@@ -100,7 +100,7 @@ jobs:
           -f json >> places.ttl
 
       - name: Transform organizations in JSON to RDF
-        id: step-9
+        id: step-8
         run: |
           /opt/ontorefine/dist/bin/ontorefine-cli \
           transform organizations.json \
@@ -109,7 +109,7 @@ jobs:
           -f json >> organizations.ttl
 
       - name: Transform people in JSON to RDF
-        id: step-10
+        id: step-9
         run: |
           /opt/ontorefine/dist/bin/ontorefine-cli \
           transform people.json \
@@ -118,7 +118,7 @@ jobs:
           -f json >> people.ttl
 
       - name: Transform taxonomies in JSON to RDF
-        id: step-11
+        id: step-10
         run: |
           /opt/ontorefine/dist/bin/ontorefine-cli \
           transform '/__w/artsdata-planet-footlight/artsdata-planet-footlight/flatten-taxonomies.json' \
@@ -127,6 +127,7 @@ jobs:
           -f json >> taxonomies.ttl
 
       - name: Concatenate the files
+        id: step-11
         run : |
           cat \
           events.ttl \
@@ -137,6 +138,7 @@ jobs:
           > ${{inputs.source}}.ttl
 
       - name: Upload entities in RDF to S3
+        id: step-12
         uses: keithweaver/aws-s3-github-action@v1.0.0
         with:
             command: cp
@@ -151,13 +153,7 @@ jobs:
     needs: transform-calendar
     runs-on: ubuntu-latest
     steps:
-
-      - name: Set current date as output
-        id: step-1
-        run: echo "dumpdate=$(date +'%Y-%m-%dT%H-%M-%S')" >> $GITHUB_OUTPUT
-
       - name: Call artsdata pipeline action
-        id: step-2
         uses: culturecreates/artsdata-pipeline-action@v1.1.0
         with:
           artifact: ${{inputs.source}}
