@@ -1,0 +1,93 @@
+{
+    "statusCode": "success",
+    "data": [
+    {
+    "id": "666c4b768f26ff0064c51cd1",
+    "name": {
+    "fr": "3677 Rue Nérée-Beauchemin"
+    },
+    "geo": {
+    "latitude": "46.3626594",
+    "longitude": "-72.5693343"
+    },
+    "address": {
+    "id": "666c4b768f26ff0064c51cc8",
+    "streetAddress": {
+    "fr": "3677 Rue Nérée-Beauchemin"
+    },
+    "addressLocality": {
+    "fr": "Trois-Rivières"
+    },
+    "addressRegion": {
+    "fr": "QC"
+    },
+    "postalCode": "G8Y 1C7",
+    "addressCountry": {
+    "fr": "Canada"
+    }
+    },
+    "additionalType": [
+    {
+    "id": "64304b60cf606a0064e64820",
+    "name": {
+    "fr": "Lieu pour des événements (Q18674739)"
+    }
+    }
+    ],
+    "regions": [
+    {
+    "id": "66952f2276b7340063d118ad",
+    "name": {
+    "en": "",
+    "fr": "Hors Laval"
+    }
+    }
+    ],
+    "type": "Place",
+    "sameAs": []
+    },
+    {
+    "id": "6605a352140606006460d1d5",
+    "name": {
+    "@none": "Centre communautaire Laval-Ouest",
+    "fr": "Centre communautaire Laval-Ouest"
+    },
+    "disambiguatingDescription": {
+    "@none": "Laval (QC) CA"
+    },
+    "geo": {},
+    "address": {
+    "id": "6605a352140606006460d1c9",
+    "streetAddress": {
+    "@none": "6600 29e Avenue"
+    },
+    "addressLocality": {
+    "@none": "Laval"
+    },
+    "addressRegion": {
+    "@none": "QC"
+    },
+    "postalCode": "H7R 3M3",
+    "addressCountry": {
+    "@none": "CA"
+    }
+    },
+    "regions": [
+    {
+    "id": "63f632ee7b0635006458460f",
+    "name": {
+    "fr": "Laval-Ouest"
+    }
+    }
+    ],
+    "type": "Place",
+    "sameAs": []
+    }
+    ],
+    "meta": {
+    "currentPage": 1,
+    "totalCount": 281,
+    "limit": 100,
+    "pageCount": 3
+    }
+    }

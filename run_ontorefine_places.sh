@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Start the services in the background
-sudo docker compose up -d
+docker compose up -d
 
 # Wait for the server to start
 echo "Waiting for server to start..."
@@ -12,10 +12,10 @@ echo "Server started!"
 
 # Send a command to the running container
 echo "Running OntoRefine CLI using config.json..."
-sudo docker exec onto_refine /opt/ontorefine/dist/bin/ontorefine-cli transform ../data/dump/events.json \
+docker exec onto_refine /opt/ontorefine/dist/bin/ontorefine-cli transform ../data/dump/places.json \
   -u http://localhost:7333  \
   --no-clean \
-  --configurations ../data/ontotext-refine/cms-events-configuration.json  \
+  --configurations ../data/ontotext-refine/cms-places-configuration.json  \
   -f json >> event-entities.ttl
 
 # Open the default browser

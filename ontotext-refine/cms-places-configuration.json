@@ -240,7 +240,7 @@
                               },
                               "transformation": {
                                 "language": "grel",
-                                "expression": "if(cells[\"_ - address - addressCountry - fr\"].value != null,cells[\"_ - address - addressCountry - fr\"].value,null )"
+                                "expression": "if(\n  cells[\"_ - address - addressCountry - fr\"].value != null,\n  cells[\"_ - address - addressCountry - fr\"].value, \n  if(\n    cells[\"_ - address - addressCountry - @none\"].value != null,\n    cells[\"_ - address - addressCountry - @none\"].value,\n    null\n  )\n)\n"
                               },
                               "valueType": {
                                 "type": "language_literal",
@@ -284,7 +284,7 @@
                               },
                               "transformation": {
                                 "language": "grel",
-                                "expression": "if(cells[\"_ - address - addressLocality - fr\"].value != null,cells[\"_ - address - addressLocality - fr\"].value,null )"
+                                "expression": "if(\n  cells[\"_ - address - addressLocality - fr\"].value != null,\n  cells[\"_ - address - addressLocality - fr\"].value, \n  if(\n    cells[\"_ - address - addressLocality - @none\"].value != null,\n    cells[\"_ - address - addressLocality - @none\"].value,\n    null\n  )\n)"
                               },
                               "valueType": {
                                 "type": "language_literal",
@@ -360,7 +360,7 @@
                               },
                               "transformation": {
                                 "language": "grel",
-                                "expression": "if(cells[\"_ - address - addressRegion - fr\"].value != null,cells[\"_ - address - addressRegion - fr\"].value,null )"
+                                "expression": "if(\n  cells[\"_ - address - addressRegion - fr\"].value != null,\n  cells[\"_ - address - addressRegion - fr\"].value, \n  if(\n    cells[\"_ - address - addressRegion - @none\"].value != null,\n    cells[\"_ - address - addressRegion - @none\"].value,\n    null\n  )\n)\n"
                               },
                               "valueType": {
                                 "type": "language_literal",
@@ -410,7 +410,7 @@
                               },
                               "transformation": {
                                 "language": "grel",
-                                "expression": "if(cells[\"_ - address - streetAddress - fr\"].value != null,cells[\"_ - address - streetAddress - fr\"].value,null )"
+                                "expression": "if(\n  cells[\"_ - address - streetAddress - fr\"].value != null,\n  cells[\"_ - address - streetAddress - fr\"].value, \n  if(\n    cells[\"_ - address - streetAddress - @none\"].value != null,\n    cells[\"_ - address - streetAddress - @none\"].value,\n    null\n  )\n)\n"
                               },
                               "valueType": {
                                 "type": "language_literal",
