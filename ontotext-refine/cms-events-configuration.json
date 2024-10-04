@@ -21,6 +21,84 @@
   ],
   "operations": [
     {
+      "op": "core/column-addition",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "baseColumnName": "_ - id",
+      "expression": "set-to-blank",
+      "onError": "set-to-blank",
+      "newColumnName": "_ - name - en",
+      "columnInsertIndex": 1,
+      "description": "Create column _ - name - en at index 1 based on column _ - id using expression set-to-blank"
+    },
+    {
+      "op": "core/column-addition",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "baseColumnName": "_ - id",
+      "expression": "set-to-blank",
+      "onError": "set-to-blank",
+      "newColumnName": "_ - location - _ - url",
+      "columnInsertIndex": 1,
+      "description": "Create column _ - location - _ - url at index 1 based on column _ - id using expression set-to-blank"
+    },
+    {
+      "op": "core/column-addition",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "baseColumnName": "_ - id",
+      "expression": "set-to-blank",
+      "onError": "set-to-blank",
+      "newColumnName": "_ - location - _ - name - en",
+      "columnInsertIndex": 1,
+      "description": "Create column _ - location - _ - name - en at index 1 based on column _ - id using expression set-to-blank"
+    },
+    {
+      "op": "core/column-addition",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "baseColumnName": "_ - id",
+      "expression": "set-to-blank",
+      "onError": "set-to-blank",
+      "newColumnName": "_ - description - en",
+      "columnInsertIndex": 1,
+      "description": "Create column _ - description - en at index 1 based on column _ - id using expression set-to-blank"
+    },
+    {
+      "op": "core/column-addition",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "baseColumnName": "_ - id",
+      "expression": "set-to-blank",
+      "onError": "set-to-blank",
+      "newColumnName": "_ - organizers - _ - name - en",
+      "columnInsertIndex": 1,
+      "description": "Create column _ - organizers - _ - name - en at index 1 based on column _ - id using expression set-to-blank"
+    },
+    {
+      "op": "core/column-addition",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "baseColumnName": "_ - id",
+      "expression": "set-to-blank",
+      "onError": "set-to-blank",
+      "newColumnName": "_ - additionalType - _ - name - en",
+      "columnInsertIndex": 1,
+      "description": "Create column _ - additionalType - _ - name - en at index 1 based on column _ - id using expression set-to-blank"
+    },
+    {
       "op": "core/fill-down",
       "engineConfig": {
         "facets": [],
@@ -78,11 +156,8 @@
                 "values": [
                   {
                     "valueSource": {
-                      "source": "row_index"
-                    },
-                    "transformation": {
-                      "language": "grel",
-                      "expression": "if(cells[\"_ - name - fr\"].value != null,cells[\"_ - name - fr\"].value,null )"
+                      "source": "column",
+                      "columnName": "_ - name - fr"
                     },
                     "valueType": {
                       "type": "language_literal",
@@ -96,11 +171,8 @@
                   },
                   {
                     "valueSource": {
-                      "source": "row_index"
-                    },
-                    "transformation": {
-                      "language": "grel",
-                      "expression": "if(cells[\"_ - name - en\"].value != null,cells[\"_ - name - en\"].value,null )"
+                      "source": "column",
+                      "columnName": "_ - name - en"
                     },
                     "valueType": {
                       "type": "language_literal",
@@ -193,11 +265,8 @@
                           "values": [
                             {
                               "valueSource": {
-                                "source": "row_index"
-                              },
-                              "transformation": {
-                                "language": "grel",
-                                "expression": "if((cells[\"_ - location - _ - name - en\"].value != null).and(cells[\"_ - location - _ - name - en\"].value != \"\") ,cells[\"_ - location - _ - name - en\"].value,null )"
+                                "source": "column",
+                                "columnName": "_ - location - _ - name - en"
                               },
                               "valueType": {
                                 "type": "language_literal",
@@ -211,11 +280,8 @@
                             },
                             {
                               "valueSource": {
-                                "source": "row_index"
-                              },
-                              "transformation": {
-                                "language": "grel",
-                                "expression": "if((cells[\"_ - location - _ - name - fr\"].value != null).and(cells[\"_ - location - _ - name - fr\"].value != \"\") ,cells[\"_ - location - _ - name - fr\"].value,null )"
+                                "source": "column",
+                                "columnName": "_ - location - _ - name - fr"
                               },
                               "valueType": {
                                 "type": "language_literal",
@@ -509,11 +575,8 @@
                           "values": [
                             {
                               "valueSource": {
-                                "source": "row_index"
-                              },
-                              "transformation": {
-                                "language": "grel",
-                                "expression": "if((cells[\"_ - location - _ - url\"].value !=null).and(cells[\"_ - location - _ - url\"].value !=\"\"),cells[\"_ - location - _ - url\"].value,null )"
+                                "source": "column",
+                                "columnName": "_ - location - _ - url"
                               },
                               "valueType": {
                                 "type": "literal"
@@ -535,11 +598,8 @@
                           "values": [
                             {
                               "valueSource": {
-                                "source": "row_index"
-                              },
-                              "transformation": {
-                                "language": "grel",
-                                "expression": "if((cells[\"_ - location - _ - name - en\"].value !=null).and(cells[\"_ - location - _ - name - en\"].value !=\"\"),cells[\"_ - location - _ - name - en\"].value,null )"
+                                "source": "column",
+                                "columnName": "_ - location - _ - name - en"
                               },
                               "valueType": {
                                 "type": "language_literal",
@@ -553,14 +613,17 @@
                             },
                             {
                               "valueSource": {
-                                "source": "row_index"
-                              },
-                              "transformation": {
-                                "language": "grel",
-                                "expression": "if((cells[\"_ - location - _ - name - fr\"].value !=null).and(cells[\"_ - location - _ - name - fr\"].value !=\"\"),cells[\"_ - location - _ - name - fr\"].value,null )"
+                                "source": "column",
+                                "columnName": "_ - location - _ - name - fr"
                               },
                               "valueType": {
-                                "type": "literal"
+                                "type": "language_literal",
+                                "language": {
+                                  "valueSource": {
+                                    "source": "constant",
+                                    "constant": "fr"
+                                  }
+                                }
                               }
                             }
                           ]
@@ -670,11 +733,8 @@
                 "values": [
                   {
                     "valueSource": {
-                      "source": "row_index"
-                    },
-                    "transformation": {
-                      "language": "grel",
-                      "expression": "if(cells[\"_ - startDate\"].value != null,cells[\"_ - startDate\"].value,null )"
+                      "source": "column",
+                      "columnName": "_ - startDate"
                     },
                     "valueType": {
                       "type": "datatype_literal",
@@ -692,11 +752,8 @@
                   },
                   {
                     "valueSource": {
-                      "source": "row_index"
-                    },
-                    "transformation": {
-                      "language": "grel",
-                      "expression": "if(cells[\"_ - startDateTime\"].value != null,cells[\"_ - startDateTime\"].value,null )\n"
+                      "source": "column",
+                      "columnName": "_ - startDateTime"
                     },
                     "valueType": {
                       "type": "datatype_literal",
@@ -728,11 +785,8 @@
                 "values": [
                   {
                     "valueSource": {
-                      "source": "row_index"
-                    },
-                    "transformation": {
-                      "language": "grel",
-                      "expression": "if(cells[\"_ - endDate\"].value != null,cells[\"_ - endDate\"].value,null )\n"
+                      "source": "column",
+                      "columnName": "_ - endDate"
                     },
                     "valueType": {
                       "type": "datatype_literal",
@@ -750,11 +804,8 @@
                   },
                   {
                     "valueSource": {
-                      "source": "row_index"
-                    },
-                    "transformation": {
-                      "language": "grel",
-                      "expression": "if(cells[\"_ - endDateTime\"].value != null,cells[\"_ - endDateTime\"].value,null )\n"
+                      "source": "column",
+                      "columnName": "_ - endDateTime"
                     },
                     "valueType": {
                       "type": "datatype_literal",
@@ -786,11 +837,8 @@
                 "values": [
                   {
                     "valueSource": {
-                      "source": "row_index"
-                    },
-                    "transformation": {
-                      "language": "grel",
-                      "expression": "if(cells[\"_ - url\"].value != null,cells[\"_ - url\"].value,null )\n"
+                      "source": "column",
+                      "columnName": "_ - url"
                     },
                     "valueType": {
                       "type": "literal"
@@ -812,11 +860,8 @@
                 "values": [
                   {
                     "valueSource": {
-                      "source": "row_index"
-                    },
-                    "transformation": {
-                      "language": "grel",
-                      "expression": "if(cells[\"_ - description - fr\"].value != null,cells[\"_ - description - fr\"].value,null )"
+                      "source": "column",
+                      "columnName": "_ - description - fr"
                     },
                     "valueType": {
                       "type": "language_literal",
@@ -830,11 +875,8 @@
                   },
                   {
                     "valueSource": {
-                      "source": "row_index"
-                    },
-                    "transformation": {
-                      "language": "grel",
-                      "expression": "if(cells[\"_ - description - en\"].value != null,cells[\"_ - description - en\"].value,null )"
+                      "source": "column",
+                      "columnName": "_ - description - en"
                     },
                     "valueType": {
                       "type": "language_literal",
@@ -920,11 +962,8 @@
                           "values": [
                             {
                               "valueSource": {
-                                "source": "row_index"
-                              },
-                              "transformation": {
-                                "language": "grel",
-                                "expression": "if(cells[\"_ - performers - _ - name - en\"].value != null,cells[\"_ - performers - _ - name - en\"].value,null )\n"
+                                "source": "column",
+                                "columnName": "_ - performers - _ - name - en"
                               },
                               "valueType": {
                                 "type": "language_literal",
@@ -938,11 +977,8 @@
                             },
                             {
                               "valueSource": {
-                                "source": "row_index"
-                              },
-                              "transformation": {
-                                "language": "grel",
-                                "expression": "if(cells[\"_ - performers - _ - name - fr\"].value != null,cells[\"_ - performers - _ - name - fr\"].value,null )"
+                                "source": "column",
+                                "columnName": "_ - performers - _ - name - fr"
                               },
                               "valueType": {
                                 "type": "language_literal",
@@ -1010,11 +1046,8 @@
                           "values": [
                             {
                               "valueSource": {
-                                "source": "row_index"
-                              },
-                              "transformation": {
-                                "language": "grel",
-                                "expression": "if(cells[\"_ - organizers - _ - name - en\"].value != null,cells[\"_ - organizers - _ - name - en\"].value,null )"
+                                "source": "column",
+                                "columnName": "_ - organizers - _ - name - en"
                               },
                               "valueType": {
                                 "type": "language_literal",
@@ -1028,11 +1061,8 @@
                             },
                             {
                               "valueSource": {
-                                "source": "row_index"
-                              },
-                              "transformation": {
-                                "language": "grel",
-                                "expression": "if(cells[\"_ - organizers - _ - name - fr\"].value != null,cells[\"_ - organizers - _ - name - fr\"].value,null )"
+                                "source": "column",
+                                "columnName": "_ - organizers - _ - name - fr"
                               },
                               "valueType": {
                                 "type": "language_literal",
@@ -1180,11 +1210,8 @@
                 "values": [
                   {
                     "valueSource": {
-                      "source": "row_index"
-                    },
-                    "transformation": {
-                      "language": "grel",
-                      "expression": "if(cells[\"_ - additionalType - _ - name - fr\"].value != null,cells[\"_ - additionalType - _ - name - fr\"].value,null )"
+                      "source": "column",
+                      "columnName": "_ - additionalType - _ - name - fr"
                     },
                     "valueType": {
                       "type": "language_literal",
@@ -1198,11 +1225,8 @@
                   },
                   {
                     "valueSource": {
-                      "source": "row_index"
-                    },
-                    "transformation": {
-                      "language": "grel",
-                      "expression": "if(cells[\"_ - additionalType - _ - name - en\"].value != null,cells[\"_ - additionalType - _ - name - en\"].value,null )"
+                      "source": "column",
+                      "columnName": "_ - additionalType - _ - name - en"
                     },
                     "valueType": {
                       "type": "language_literal",
