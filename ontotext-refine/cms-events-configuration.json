@@ -42,6 +42,19 @@
       "baseColumnName": "_ - id",
       "expression": "set-to-blank",
       "onError": "set-to-blank",
+      "newColumnName": "_ - name - fr",
+      "columnInsertIndex": 1,
+      "description": "Create column _ - name - fr at index 1 based on column _ - id using expression set-to-blank"
+    },
+    {
+      "op": "core/column-addition",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "baseColumnName": "_ - id",
+      "expression": "set-to-blank",
+      "onError": "set-to-blank",
       "newColumnName": "_ - location - _ - url",
       "columnInsertIndex": 1,
       "description": "Create column _ - location - _ - url at index 1 based on column _ - id using expression set-to-blank"
@@ -68,9 +81,35 @@
       "baseColumnName": "_ - id",
       "expression": "set-to-blank",
       "onError": "set-to-blank",
+      "newColumnName": "_ - location - _ - name - fr",
+      "columnInsertIndex": 1,
+      "description": "Create column _ - location - _ - name - fr at index 1 based on column _ - id using expression set-to-blank"
+    },
+    {
+      "op": "core/column-addition",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "baseColumnName": "_ - id",
+      "expression": "set-to-blank",
+      "onError": "set-to-blank",
       "newColumnName": "_ - description - en",
       "columnInsertIndex": 1,
       "description": "Create column _ - description - en at index 1 based on column _ - id using expression set-to-blank"
+    },
+    {
+      "op": "core/column-addition",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "baseColumnName": "_ - id",
+      "expression": "set-to-blank",
+      "onError": "set-to-blank",
+      "newColumnName": "_ - description - fr",
+      "columnInsertIndex": 1,
+      "description": "Create column _ - description - fr at index 1 based on column _ - id using expression set-to-blank"
     },
     {
       "op": "core/column-addition",
@@ -94,9 +133,35 @@
       "baseColumnName": "_ - id",
       "expression": "set-to-blank",
       "onError": "set-to-blank",
+      "newColumnName": "_ - organizers - _ - name - fr",
+      "columnInsertIndex": 1,
+      "description": "Create column _ - organizers - _ - name - fr at index 1 based on column _ - id using expression set-to-blank"
+    },
+    {
+      "op": "core/column-addition",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "baseColumnName": "_ - id",
+      "expression": "set-to-blank",
+      "onError": "set-to-blank",
       "newColumnName": "_ - additionalType - _ - name - en",
       "columnInsertIndex": 1,
       "description": "Create column _ - additionalType - _ - name - en at index 1 based on column _ - id using expression set-to-blank"
+    },
+    {
+      "op": "core/column-addition",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "baseColumnName": "_ - id",
+      "expression": "set-to-blank",
+      "onError": "set-to-blank",
+      "newColumnName": "_ - additionalType - _ - name - fr",
+      "columnInsertIndex": 1,
+      "description": "Create column _ - additionalType - _ - name - fr at index 1 based on column _ - id using expression set-to-blank"
     },
     {
       "op": "core/fill-down",

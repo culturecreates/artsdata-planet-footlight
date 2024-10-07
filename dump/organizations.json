@@ -1,0 +1,443 @@
+{
+    "status": "success",
+    "data": [
+      {
+        "id": "665964cdbeddbb00645d7be6",
+        "name": {
+          "en": "#Je lis autochtonne",
+          "fr": "#Je lis autochtonne"
+        },
+        "description": {},
+        "logo": {
+          "type": "ImageObject",
+          "original": "https://cdn.footlight.io/iiif/3/339a1dd0-d2d9-4266-8896-49e84934b5b1.png/full/max/0/default.png",
+          "thumbnail": "https://cdn.footlight.io/iiif/3/339a1dd0-d2d9-4266-8896-49e84934b5b1.png/full/max/0/default.png",
+          "large": "https://cdn.footlight.io/iiif/3/339a1dd0-d2d9-4266-8896-49e84934b5b1.png/full/max/0/default.png"
+        },
+        "alternateName": {},
+        "type": "Organization",
+        "url": "https://jelisautochtone.ca/",
+        "sameAs": []
+      },
+      {
+        "id": "6629f52d0796c3006456e815",
+        "name": {
+          "en": "2frères",
+          "fr": "2frères"
+        },
+        "description": {
+          "en": "band",
+          "fr": "band"
+        },
+        "alternateName": {},
+        "contactPoint": null,
+        "type": "Organization",
+        "url": "https://2freres.com",
+        "sameAs": [
+          "http://kg.artsdata.ca/resource/K10-435"
+        ]
+      },
+      {
+        "id": "65f46feb997b81006372d32e",
+        "name": {
+          "en": "4CPA",
+          "fr": "4CPA"
+        },
+        "description": {},
+        "logo": {
+          "type": "ImageObject",
+          "original": "https://cdn.footlight.io/iiif/3/0290387e-4aa3-4aab-9ca2-fd46a32e7ad3.png/full/max/0/default.png",
+          "thumbnail": "https://cdn.footlight.io/iiif/3/0290387e-4aa3-4aab-9ca2-fd46a32e7ad3.png/full/max/0/default.png",
+          "large": "https://cdn.footlight.io/iiif/3/0290387e-4aa3-4aab-9ca2-fd46a32e7ad3.png/full/max/0/default.png"
+        },
+        "alternateName": {},
+        "type": "Organization",
+        "url": "https://quatrecpa.com/",
+        "sameAs": []
+      },
+      {
+        "id": "66fdab4aa7faf200649dfc54",
+        "name": {
+          "en": "À la dérive - Artisanal Brewery",
+          "fr": "À la dérive - Brasserie Artisanale"
+        },
+        "description": {
+          "en": "<p>Rooted in the local community thanks to the cultural dimension of the project, the brewery stands out for its independent room, which enables it to organize literary, musical and comedy events. The tasting room also offers unique events. Check out our calendar of events!</p>",
+          "fr": "<p>Enracinée dans la communauté locale grâce à la dimension culturelle du projet, la brasserie se démarque par sa salle indépendante qui lui permet d’organiser des événements de littérature, de musique et d’humour. Aussi, le salon de dégustation offre des évènements uniques en leur genre. Consultez notre calendrier d'événements!</p>"
+        },
+        "image": {
+          "type": "ImageObject",
+          "width": 2048,
+          "height": 1366,
+          "original": "https://cdn.footlight.io/iiif/3/10d138a6-c006-46cb-ac44-1428855f013c.jpg/full/max/0/default.jpg",
+          "thumbnail": "https://cdn.footlight.io/iiif/3/10d138a6-c006-46cb-ac44-1428855f013c.jpg/170,0,1708,1366/600,/0/default.jpg",
+          "large": "https://cdn.footlight.io/iiif/3/10d138a6-c006-46cb-ac44-1428855f013c.jpg/0,0,2048,1152/1200,/0/default.jpg"
+        },
+        "logo": {
+          "type": "ImageObject",
+          "width": 2000,
+          "height": 2000,
+          "original": "https://cdn.footlight.io/iiif/3/52f2424f-91f8-4971-8508-e83343d0ee80.jpg/full/max/0/default.jpg",
+          "thumbnail": "https://cdn.footlight.io/iiif/3/52f2424f-91f8-4971-8508-e83343d0ee80.jpg/full/600,/0/default.jpg",
+          "large": "https://cdn.footlight.io/iiif/3/52f2424f-91f8-4971-8508-e83343d0ee80.jpg/full/1200,/0/default.jpg"
+        },
+        "alternateName": {},
+        "location": {
+          "id": "6420c6152831190064570cc0",
+          "name": {
+            "en": "À La Dérive - Brasserie Artisanale",
+            "fr": "À La Dérive - Brasserie Artisanale"
+          },
+          "description": {},
+          "alternateName": {},
+          "geo": {
+            "latitude": "45.4562953",
+            "longitude": "-75.6916072"
+          },
+          "accessibilityNote": {},
+          "openingHours": "https://aladerivebrasserieartisanale.ca/pub/index-pub.php",
+          "address": {
+            "id": "6420c6152831190064570cb6",
+            "streetAddress": {
+              "en": "1015 rue Jacques-Cartier",
+              "fr": "1015 rue Jacques-Cartier"
+            },
+            "addressLocality": {
+              "en": "Gatineau",
+              "fr": "Gatineau"
+            },
+            "addressRegion": {
+              "en": "QC",
+              "fr": "QC"
+            },
+            "postalCode": "J8T 2W3",
+            "addressCountry": {
+              "en": "CA",
+              "fr": "CA"
+            }
+          },
+          "additionalType": [
+            {
+              "id": "6418cdb35e4d4e0066a2f003",
+              "name": {
+                "fr": "Bar / restaurant",
+                "en": "Bar / restaurant"
+              }
+            }
+          ],
+          "regions": [
+            {
+              "id": "63bc0b2d1c6b6c005aad524f",
+              "name": {
+                "fr": "Gatineau",
+                "en": "Gatineau"
+              }
+            }
+          ],
+          "type": "Place",
+          "sameAs": [
+            "http://kg.artsdata.ca/resource/K5-9",
+            "http://kg.footlight.io/resource/4c6cf40e-a823-41f7-bafb-ce6b0c0e79f4"
+          ]
+        },
+        "type": "Organization",
+        "url": "https://a-la-derive-st-joseph.myshopify.com/",
+        "sameAs": [
+          "www.facebook.com/brasserieartisanalealaderive/?locale=fr_CA"
+        ],
+        "63d1676b016e830064fbafe1": [
+          {
+            "id": "63d167da016e830064fbb03b",
+            "name": {
+              "en": "Culture Outaouais",
+              "fr": "Culture Outaouais"
+            }
+          }
+        ],
+        "taxonomyMap": [
+          {
+            "id": "63d1676b016e830064fbafe1",
+            "name": {
+              "en": "Member of an organization",
+              "fr": "Membre d'organisme"
+            }
+          }
+        ]
+      },
+      {
+        "id": "6451600fe19f7200646d1fca",
+        "name": {
+          "en": "Académie de danse de l'Outaouais",
+          "fr": "Académie de danse de l'Outaouais"
+        },
+        "description": {
+          "en": "<p>The mandate of the Académie de danse de l'Outaouais is to promote the development of dance in the Outaouais region and to disseminate quality dance education. </p><p><br></p><p>Its niche is defined as a training school in the performing arts, to be compared with the field of variety. </p><p><br></p><p>The Académie offers training, initiation and personal development programs, mainly in classical dance, modern dance, creative dance, trapeze dance, Indian dance and fitness. </p><p><br></p><p>The role of a professional dance training school is to pass on the tradition, arouse and develop the interest of young people, participate in the training of the next generation of dancers, develop the artistic potential of the community and contribute to the education of the individual.</p><p><br></p><p>The Académie de danse de l'Outaouais intends to interpret its primary mandate as a dance training school by facilitating access to solid, comprehensive training for young people aspiring to a career in the arts, by enriching its program to provide students with training in line with current trends in the artistic milieu, by continuing to offer courses and animation programs aimed at the cultural awakening and development of a greater number of enthusiasts, and by designing special programs (e.g. for young athletes).</p><p><br></p><p>Two studios, 30' x 40' and 40' x 50' respectively, allow for a larger number of students to be accommodated, a varied program of classes to be presented and intensive training programs to be developed. The floors, very important for the dance discipline, are made of wood, designed to ensure resilience for balanced muscle development and the prevention of physical injuries to the dancer. The floor covering is a dance mat that provides a non-slip surface for soft shoe work, pointe work, etc.</p>",
+          "fr": "<p>L’Académie de danse de l’Outaouais a comme <strong>mandat de promouvoir le développement de la danse dans l’Outaouais et de diffuser un enseignement en danse de qualité.</strong> </p><p><br></p><p>Le créneau qu’elle occupe se définit comme école de formation en arts d’interprétation à comparer au domaine des variétés. </p><p><br></p><p>L’Académie offre des programmes de formation, d’initiation et de développement personnel principalement en <strong>danse classique, danse moderne, danse créative, danse trapèze, danse indienne, mise en forme. </strong></p><p><br></p><p>Le rôle d’une école de formation à but professionnel en danse est de<strong> transmettre la tradition, de susciter et de développer l’intérêt des jeunes, de participer à la formation de la relève en danse, de développer le potentiel artistique du milieu et de contribuer à l’éducation de l’individu.</strong></p><p><br></p><p>L’Académie de danse de l’Outaouais entend interpréter son mandat principal d’école de formation en danse en facilitant l’accès à une formation solide et complète aux jeunes qui aspirent à une carrière artistique, en enrichissant son programme afin de donner aux élèves une formation répondant aux tendances actuelles du milieu artistique, en continuant à offrir des cours et des programmes d’animation visant l’éveil et l’épanouissement culturels d’un plus grand nombre d’adeptes, en concevant des programmes spéciaux (ex.: pour jeunes athlètes).</p><p><br></p><p>L’Académie dispose d’espaces professionnels propres à l’entraînement en danse. Deux studios, dont les dimensions sont respectivement 30’ x 40’ et 40’ x 50’, permettent <strong>d’accueillir un plus grand nombre d’élèves, de présenter une programmation de cours variée et de développer des programmes de formation intensive. </strong></p><p><br></p><p>Les planchers, très importants pour la discipline danse, sont faits en bois, conçus pour assurer une résilience permettant un développement musculaire équilibré et la prévention des blessures physiques chez le danseur. Le recouvrement est un tapis de danse qui offre une surface antidérapante tant pour le travail en chausson mou et en chausson de pointe.</p>"
+        },
+        "image": {
+          "type": "ImageObject",
+          "width": 2048,
+          "height": 1365,
+          "original": "https://cdn.footlight.io/iiif/3/c6c1bfc3-621d-4551-9eff-0b9436d7d1c7.jpg/full/max/0/default.jpg",
+          "thumbnail": "https://cdn.footlight.io/iiif/3/c6c1bfc3-621d-4551-9eff-0b9436d7d1c7.jpg/171,0,1706,1365/600,/0/default.jpg",
+          "large": "https://cdn.footlight.io/iiif/3/c6c1bfc3-621d-4551-9eff-0b9436d7d1c7.jpg/0,147,2048,1152/1200,/0/default.jpg"
+        },
+        "logo": {
+          "type": "ImageObject",
+          "width": 800,
+          "height": 800,
+          "original": "https://cdn.footlight.io/iiif/3/0b6fe093-05f5-4e9e-b141-32d6cd447cc7.jpg/full/max/0/default.jpg",
+          "thumbnail": "https://cdn.footlight.io/iiif/3/0b6fe093-05f5-4e9e-b141-32d6cd447cc7.jpg/full/600,/0/default.jpg",
+          "large": "https://cdn.footlight.io/iiif/3/0b6fe093-05f5-4e9e-b141-32d6cd447cc7.jpg/full/800,/0/default.jpg"
+        },
+        "alternateName": {},
+        "contactPoint": {
+          "telephone": "819 243-1726",
+          "url": {
+            "uri": "https://jedanse.ca/"
+          }
+        },
+        "location": {
+          "id": "645bb3287db98f0065dc9831",
+          "name": {
+            "en": "Maison de la culture de Gatineau",
+            "fr": "Maison de la culture de Gatineau"
+          },
+          "description": {},
+          "alternateName": {},
+          "geo": {
+            "latitude": "45.4844444",
+            "longitude": "-75.6816667"
+          },
+          "accessibilityNote": {},
+          "openingHours": "https://www.maisondelaculture.ca/maison-de-la-culture-de-gatineau.html",
+          "address": {
+            "id": "645bb3287db98f0065dc9826",
+            "streetAddress": {
+              "en": "855 Boulevard de la Gappe",
+              "fr": "855 Boulevard de la Gappe"
+            },
+            "addressLocality": {
+              "en": "Gatineau",
+              "fr": "Gatineau"
+            },
+            "addressRegion": {
+              "en": "QC",
+              "fr": "QC"
+            },
+            "postalCode": "J8T 8H9",
+            "addressCountry": {
+              "en": "Canada",
+              "fr": "Canada"
+            }
+          },
+          "additionalType": [
+            {
+              "id": "642c8832cf606a0064e5ee78",
+              "name": {
+                "fr": "Centre culturel (Q1329623)",
+                "en": "Cultural center (Q1329623)"
+              }
+            }
+          ],
+          "accessibility": [
+            {
+              "id": "642b2684cf606a0064e5d100",
+              "name": {
+                "fr": "Entrée de plain-pied",
+                "en": "Ground level entrance"
+              }
+            },
+            {
+              "id": "642b2684cf606a0064e5d103",
+              "name": {
+                "fr": "Ascenseurs",
+                "en": "Elevators"
+              }
+            },
+            {
+              "id": "642b2684cf606a0064e5d105",
+              "name": {
+                "fr": "Toilettes accessibles",
+                "en": "Accessible toilets"
+              }
+            },
+            {
+              "id": "642b2684cf606a0064e5d107",
+              "name": {
+                "fr": "Places de stationnement réservées",
+                "en": "Reserved parking spaces"
+              }
+            },
+            {
+              "id": "642b2684cf606a0064e5d109",
+              "name": {
+                "fr": "Assistance disponible",
+                "en": "Assistance available"
+              }
+            },
+            {
+              "id": "642b2684cf606a0064e5d10b",
+              "name": {
+                "fr": "Signalisation visible et compréhensible",
+                "en": "Visible and understandable signage"
+              }
+            }
+          ],
+          "regions": [
+            {
+              "id": "63bc0b2d1c6b6c005aad524f",
+              "name": {
+                "fr": "Gatineau",
+                "en": "Gatineau"
+              }
+            }
+          ],
+          "type": "Place",
+          "sameAs": [
+            "http://kg.artsdata.ca/resource/K5-189",
+            "http://kg.footlight.io/resource/3fb96842-99c2-4833-b271-0e8c8fcc7e0b"
+          ]
+        },
+        "type": "Organization",
+        "url": "http://jedanse.ca/",
+        "sameAs": [
+          "http://toutculture.ca/organization/1",
+          "http://kg.artsdata.ca/resource/K5-149",
+          "www.facebook.com/academiededanseoutaouais",
+          "www.youtube.com/user/AcadDanseOutaouais#p/u/0/gTe-xLnMI_A"
+        ],
+        "63d1676b016e830064fbafe1": [
+          {
+            "id": "63d167da016e830064fbb03b",
+            "name": {
+              "en": "Culture Outaouais",
+              "fr": "Culture Outaouais"
+            }
+          }
+        ],
+        "taxonomyMap": [
+          {
+            "id": "63d1676b016e830064fbafe1",
+            "name": {
+              "en": "Member of an organization",
+              "fr": "Membre d'organisme"
+            }
+          }
+        ]
+      },
+      {
+        "id": "6408f8057b063500645889a7",
+        "name": {
+          "en": "Agence Minimal",
+          "fr": "Agence Minimal"
+        },
+        "description": {},
+        "logo": {
+          "type": "ImageObject",
+          "original": "https://cdn.footlight.io/iiif/3/b9ae976e-ffaa-443c-a47c-043c9eed77f3.png/full/max/0/default.png",
+          "thumbnail": "https://cdn.footlight.io/iiif/3/b9ae976e-ffaa-443c-a47c-043c9eed77f3.png/full/max/0/default.png",
+          "large": "https://cdn.footlight.io/iiif/3/b9ae976e-ffaa-443c-a47c-043c9eed77f3.png/full/max/0/default.png"
+        },
+        "alternateName": {},
+        "type": "Organization",
+        "url": "www.agenceminimal.com/",
+        "sameAs": [
+          "www.facebook.com/agenceminimal",
+          "www.instagram.com/agenceminimal/",
+          "www.behance.net/agenceminimal",
+          "www.linkedin.com/company/agenceminimal/",
+          "www.tiktok.com/@agenceminimal"
+        ],
+        "taxonomyMap": [
+          {
+            "id": "63d1676b016e830064fbafe1",
+            "name": {
+              "en": "Member of an organization",
+              "fr": "Membre d'organisme"
+            }
+          }
+        ]
+      },
+      {
+        "id": "6629f51c0796c3006456e728",
+        "name": {
+          "en": "Alaclair Ensemble",
+          "fr": "Alaclair Ensemble"
+        },
+        "description": {
+          "en": "Canadian musical group",
+          "fr": "Canadian musical group"
+        },
+        "alternateName": {},
+        "contactPoint": null,
+        "type": "Organization",
+        "url": "http://alaclairensemble.com",
+        "sameAs": [
+          "http://kg.artsdata.ca/resource/K10-428"
+        ]
+      },
+      {
+        "id": "64eea56b7d6aa8006434aa6b",
+        "name": {
+          "en": "ALEO Achat Local & Evenement Outaouais",
+          "fr": "ALEO Achat Local & Evenement Outaouais"
+        },
+        "description": {},
+        "logo": {
+          "type": "ImageObject",
+          "width": 1365,
+          "height": 2048,
+          "original": "https://cdn.footlight.io/iiif/3/1bf41023-25be-4c84-9ec6-bd85b870bd9b.jpg/full/max/0/default.jpg",
+          "thumbnail": "https://cdn.footlight.io/iiif/3/1bf41023-25be-4c84-9ec6-bd85b870bd9b.jpg/full/600,/0/default.jpg",
+          "large": "https://cdn.footlight.io/iiif/3/1bf41023-25be-4c84-9ec6-bd85b870bd9b.jpg/full/1200,/0/default.jpg"
+        },
+        "alternateName": {},
+        "type": "Organization",
+        "url": "https://www.fermemoore.ca/",
+        "sameAs": []
+      },
+      {
+        "id": "65f46e22997b81006372d187",
+        "name": {
+          "en": "Amazon Music",
+          "fr": "Amazon Music"
+        },
+        "description": {},
+        "logo": {
+          "type": "ImageObject",
+          "original": "https://cdn.footlight.io/iiif/3/89510607-4791-42f6-a06f-5d1ccbb735ad.png/full/max/0/default.png",
+          "thumbnail": "https://cdn.footlight.io/iiif/3/89510607-4791-42f6-a06f-5d1ccbb735ad.png/full/max/0/default.png",
+          "large": "https://cdn.footlight.io/iiif/3/89510607-4791-42f6-a06f-5d1ccbb735ad.png/full/max/0/default.png"
+        },
+        "alternateName": {},
+        "type": "Organization",
+        "url": "https://music.amazon.com/",
+        "sameAs": []
+      },
+      {
+        "id": "650c76da5db0a100651e511a",
+        "name": {
+          "en": "Ambassade de France au Canada",
+          "fr": "Ambassade de France au Canada"
+        },
+        "description": {},
+        "logo": {
+          "type": "ImageObject",
+          "original": "https://cdn.footlight.io/iiif/3/28f13fdd-44d7-4db4-a752-419ecca554a2.jpg/full/max/0/default.jpg",
+          "thumbnail": "https://cdn.footlight.io/iiif/3/28f13fdd-44d7-4db4-a752-419ecca554a2.jpg/full/max/0/default.jpg",
+          "large": "https://cdn.footlight.io/iiif/3/28f13fdd-44d7-4db4-a752-419ecca554a2.jpg/full/max/0/default.jpg"
+        },
+        "alternateName": {},
+        "type": "Organization",
+        "url": "https://ca.ambafrance.org/-Francais-",
+        "sameAs": []
+      }
+    ],
+    "meta": {
+      "currentPage": 1,
+      "totalCount": 199,
+      "pageCount": 20,
+      "limit": 10
+    }
+  }

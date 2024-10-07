@@ -30,6 +30,102 @@
       "description": "Fill down cells in column _ - id"
     },
     {
+      "op": "core/column-addition",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "baseColumnName": "_ - id",
+      "expression": "set-to-blank",
+      "onError": "set-to-blank",
+      "newColumnName": "_ - name - fr",
+      "columnInsertIndex": 1
+    },
+    {
+      "op": "core/column-addition",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "baseColumnName": "_ - id",
+      "expression": "set-to-blank",
+      "onError": "set-to-blank",
+      "newColumnName": "_ - name - en",
+      "columnInsertIndex": 1
+    },
+    {
+      "op": "core/column-addition",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "baseColumnName": "_ - id",
+      "expression": "set-to-blank",
+      "onError": "set-to-blank",
+      "newColumnName": "_ - description - en",
+      "columnInsertIndex": 1
+    },
+    {
+      "op": "core/column-addition",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "baseColumnName": "_ - id",
+      "expression": "set-to-blank",
+      "onError": "set-to-blank",
+      "newColumnName": "_ - description - fr",
+      "columnInsertIndex": 1
+    },
+    {
+      "op": "core/column-addition",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "baseColumnName": "_ - id",
+      "expression": "set-to-blank",
+      "onError": "set-to-blank",
+      "newColumnName": "_ - image - original",
+      "columnInsertIndex": 1
+    },
+    {
+      "op": "core/column-addition",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "baseColumnName": "_ - id",
+      "expression": "set-to-blank",
+      "onError": "set-to-blank",
+      "newColumnName": "_ - location - name - en",
+      "columnInsertIndex": 1
+    },
+    {
+      "op": "core/column-addition",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "baseColumnName": "_ - id",
+      "expression": "set-to-blank",
+      "onError": "set-to-blank",
+      "newColumnName": "_ - location - name - fr",
+      "columnInsertIndex": 1
+    },
+    {
+      "op": "core/column-addition",
+      "engineConfig": {
+        "facets": [],
+        "mode": "row-based"
+      },
+      "baseColumnName": "_ - id",
+      "expression": "set-to-blank",
+      "onError": "set-to-blank",
+      "newColumnName": "_ - url",
+      "columnInsertIndex": 1
+    },
+    {
       "op": "mapping-editor/save-rdf-mapping",
       "mapping": {
         "baseIRI": "http://example.com/base/",
@@ -76,11 +172,8 @@
                 "values": [
                   {
                     "valueSource": {
-                      "source": "row_index"
-                    },
-                    "transformation": {
-                      "language": "grel",
-                      "expression": "if(cells[\"_ - name - en\"].value != null,cells[\"_ - name - en\"].value,null )"
+                      "source": "column",
+                      "columnName": "_ - name - en"
                     },
                     "valueType": {
                       "type": "language_literal",
@@ -94,11 +187,8 @@
                   },
                   {
                     "valueSource": {
-                      "source": "row_index"
-                    },
-                    "transformation": {
-                      "language": "grel",
-                      "expression": "if(cells[\"_ - name - fr\"].value != null,cells[\"_ - name - fr\"].value,null )"
+                      "source": "column",
+                      "columnName": "_ - name - fr"
                     },
                     "valueType": {
                       "type": "language_literal",
@@ -126,11 +216,8 @@
                 "values": [
                   {
                     "valueSource": {
-                      "source": "row_index"
-                    },
-                    "transformation": {
-                      "language": "grel",
-                      "expression": "if(cells[\"_ - description - en\"].value != null,cells[\"_ - description - en\"].value,null )"
+                      "source": "column",
+                      "columnName": "_ - description - en"
                     },
                     "valueType": {
                       "type": "language_literal",
@@ -144,11 +231,8 @@
                   },
                   {
                     "valueSource": {
-                      "source": "row_index"
-                    },
-                    "transformation": {
-                      "language": "grel",
-                      "expression": "if(cells[\"_ - description - fr\"].value != null,cells[\"_ - description - fr\"].value,null )"
+                      "source": "column",
+                      "columnName": "_ - description - fr"
                     },
                     "valueType": {
                       "type": "language_literal",
@@ -204,11 +288,8 @@
                 "values": [
                   {
                     "valueSource": {
-                      "source": "row_index"
-                    },
-                    "transformation": {
-                      "language": "grel",
-                      "expression": "if(cells[\"_ - image - original\"].value != null,cells[\"_ - image - original\"].value,null )"
+                      "source": "column",
+                      "columnName": "_ - image - original"
                     },
                     "valueType": {
                       "type": "literal"
@@ -265,11 +346,8 @@
                           "values": [
                             {
                               "valueSource": {
-                                "source": "row_index"
-                              },
-                              "transformation": {
-                                "language": "grel",
-                                "expression": "if(cells[\"_ - location - name - en\"].value != null,cells[\"_ - location - name - en\"].value,null )"
+                                "source": "column",
+                                "columnName": "_ - location - name - en"
                               },
                               "valueType": {
                                 "type": "language_literal",
@@ -283,11 +361,8 @@
                             },
                             {
                               "valueSource": {
-                                "source": "row_index"
-                              },
-                              "transformation": {
-                                "language": "grel",
-                                "expression": "if(cells[\"_ - location - name - fr\"].value != null,cells[\"_ - location - name - fr\"].value,null )"
+                                "source": "column",
+                                "columnName": "_ - location - name - fr"
                               },
                               "valueType": {
                                 "type": "language_literal",
@@ -320,11 +395,8 @@
                 "values": [
                   {
                     "valueSource": {
-                      "source": "row_index"
-                    },
-                    "transformation": {
-                      "language": "grel",
-                      "expression": "if(cells[\"_ - url\"].value != null,cells[\"_ - url\"].value,null )"
+                      "source": "column",
+                      "columnName": "_ - url"
                     },
                     "valueType": {
                       "type": "literal"
