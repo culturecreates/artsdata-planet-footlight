@@ -1,0 +1,182 @@
+[
+    {
+        "op": "core/column-addition",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "baseColumnName": "_ - id",
+        "expression": "set-to-blank",
+        "onError": "set-to-blank",
+        "newColumnName": "_ - name - fr",
+        "columnInsertIndex": 1
+    },
+    {
+        "op": "core/column-addition",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "baseColumnName": "_ - id",
+        "expression": "set-to-blank",
+        "onError": "set-to-blank",
+        "newColumnName": "_ - name - en",
+        "columnInsertIndex": 1
+    },
+    {
+        "op": "core/column-addition",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "baseColumnName": "_ - id",
+        "expression": "set-to-blank",
+        "onError": "set-to-blank",
+        "newColumnName": "_ - description - fr",
+        "columnInsertIndex": 1
+    },
+    {
+        "op": "core/column-addition",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "baseColumnName": "_ - id",
+        "expression": "set-to-blank",
+        "onError": "set-to-blank",
+        "newColumnName": "_ - description - en",
+        "columnInsertIndex": 1
+    },
+    {
+        "op": "core/column-addition",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "baseColumnName": "_ - id",
+        "expression": "set-to-blank",
+        "onError": "set-to-blank",
+        "newColumnName": "_ - address - addressCountry - fr",
+        "columnInsertIndex": 1
+    },
+    {
+        "op": "core/column-addition",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "baseColumnName": "_ - id",
+        "expression": "set-to-blank",
+        "onError": "set-to-blank",
+        "newColumnName": "_ - address - addressCountry - en",
+        "columnInsertIndex": 1
+    },
+    {
+        "op": "core/column-addition",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "baseColumnName": "_ - id",
+        "expression": "set-to-blank",
+        "onError": "set-to-blank",
+        "newColumnName": "_ - address - addressLocality - fr",
+        "columnInsertIndex": 1
+    },
+    {
+        "op": "core/column-addition",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "baseColumnName": "_ - id",
+        "expression": "set-to-blank",
+        "onError": "set-to-blank",
+        "newColumnName": "_ - address - addressLocality - en",
+        "columnInsertIndex": 1
+    },
+    {
+        "op": "core/column-addition",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "baseColumnName": "_ - id",
+        "expression": "set-to-blank",
+        "onError": "set-to-blank",
+        "newColumnName": "_ - address - postalCode",
+        "columnInsertIndex": 1
+    },
+    {
+        "op": "core/column-addition",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "baseColumnName": "_ - id",
+        "expression": "set-to-blank",
+        "onError": "set-to-blank",
+        "newColumnName": "_ - address - addressRegion - fr",
+        "columnInsertIndex": 1
+    },
+    {
+        "op": "core/column-addition",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "baseColumnName": "_ - id",
+        "expression": "set-to-blank",
+        "onError": "set-to-blank",
+        "newColumnName": "_ - address - addressRegion - en",
+        "columnInsertIndex": 1
+    },
+    {
+        "op": "core/column-addition",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "baseColumnName": "_ - id",
+        "expression": "set-to-blank",
+        "onError": "set-to-blank",
+        "newColumnName": "_ - address - streetAddress - fr",
+        "columnInsertIndex": 1
+    },
+    {
+        "op": "core/column-addition",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "baseColumnName": "_ - id",
+        "expression": "set-to-blank",
+        "onError": "set-to-blank",
+        "newColumnName": "_ - address - streetAddress - en",
+        "columnInsertIndex": 1
+    },
+    {
+        "op": "core/column-addition",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "baseColumnName": "_ - id",
+        "expression": "set-to-blank",
+        "onError": "set-to-blank",
+        "newColumnName": "_ - additionalType - _ - name - en",
+        "columnInsertIndex": 1
+    },
+    {
+        "op": "core/column-addition",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "baseColumnName": "_ - id",
+        "expression": "set-to-blank",
+        "onError": "set-to-blank",
+        "newColumnName": "_ - additionalType - _ - name - fr",
+        "columnInsertIndex": 1
+    }
+]

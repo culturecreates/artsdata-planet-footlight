@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# Update the Config file
+cms_file="ontotext-refine/cms-places-configuration.json"
+column_additions_file="ontotext-refine/column-additions/place.json"
+jq '.operations |= (input + .)' $cms_file $column_additions_file > updated-cms-places-configuration.json
+
 # Start the services in the background
 docker compose up -d
 
@@ -15,7 +20,7 @@ echo "Running OntoRefine CLI using config.json..."
 docker exec onto_refine /opt/ontorefine/dist/bin/ontorefine-cli transform ../data/dump/places.json \
   -u http://localhost:7333  \
   --no-clean \
-  --configurations ../data/ontotext-refine/cms-places-configuration.json  \
+  --configurations ../data/updated-cms-places-configuration.json  \
   -f json >> place-entities.ttl
 
 # Open the default browser

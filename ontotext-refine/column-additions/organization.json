@@ -1,0 +1,98 @@
+[
+    {
+        "op": "core/column-addition",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "baseColumnName": "_ - id",
+        "expression": "set-to-blank",
+        "onError": "set-to-blank",
+        "newColumnName": "_ - name - fr",
+        "columnInsertIndex": 1
+    },
+    {
+        "op": "core/column-addition",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "baseColumnName": "_ - id",
+        "expression": "set-to-blank",
+        "onError": "set-to-blank",
+        "newColumnName": "_ - name - en",
+        "columnInsertIndex": 1
+    },
+    {
+        "op": "core/column-addition",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "baseColumnName": "_ - id",
+        "expression": "set-to-blank",
+        "onError": "set-to-blank",
+        "newColumnName": "_ - description - en",
+        "columnInsertIndex": 1
+    },
+    {
+        "op": "core/column-addition",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "baseColumnName": "_ - id",
+        "expression": "set-to-blank",
+        "onError": "set-to-blank",
+        "newColumnName": "_ - description - fr",
+        "columnInsertIndex": 1
+    },
+    {
+        "op": "core/column-addition",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "baseColumnName": "_ - id",
+        "expression": "set-to-blank",
+        "onError": "set-to-blank",
+        "newColumnName": "_ - image - original",
+        "columnInsertIndex": 1
+    },
+    {
+        "op": "core/column-addition",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "baseColumnName": "_ - id",
+        "expression": "set-to-blank",
+        "onError": "set-to-blank",
+        "newColumnName": "_ - location - name - en",
+        "columnInsertIndex": 1
+    },
+    {
+        "op": "core/column-addition",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "baseColumnName": "_ - id",
+        "expression": "set-to-blank",
+        "onError": "set-to-blank",
+        "newColumnName": "_ - location - name - fr",
+        "columnInsertIndex": 1
+    },
+    {
+        "op": "core/column-addition",
+        "engineConfig": {
+            "facets": [],
+            "mode": "row-based"
+        },
+        "baseColumnName": "_ - id",
+        "expression": "set-to-blank",
+        "onError": "set-to-blank",
+        "newColumnName": "_ - url",
+        "columnInsertIndex": 1
+    }
+]

@@ -51,7 +51,7 @@ jobs:
     steps:
       - name: Install requirements
         id: step-1
-        run: apk update && apk add curl && apk add util-linux
+        run: apk update && apk add curl && apk add util-linux && apk add jq
 
       - name: Run Onto Refine server
         id: step-2
@@ -80,9 +80,32 @@ jobs:
           curl 'https://raw.githubusercontent.com/culturecreates/artsdata-planet-footlight/main/ontotext-refine/cms-people-configuration.json' >> person-transform-config.json &&
           curl 'https://raw.githubusercontent.com/culturecreates/artsdata-planet-footlight/main/ontotext-refine/cms-taxonomies-configuration.json' >> taxonomy-transform-config.json
 
+      - name: Download column addition files for transformation
+        id: step-6
+        run: |
+          curl 'https://raw.githubusercontent.com/culturecreates/artsdata-planet-footlight/main/ontotext-refine/column-additions/event.json' >> event-columns.json &&
+          curl 'https://raw.githubusercontent.com/culturecreates/artsdata-planet-footlight/main/ontotext-refine/column-additions/place.json' >> place-columns.json &&
+          curl 'https://raw.githubusercontent.com/culturecreates/artsdata-planet-footlight/main/ontotext-refine/column-additions/organization.json' >> organization-columns.json &&
+          curl 'https://raw.githubusercontent.com/culturecreates/artsdata-planet-footlight/main/ontotext-refine/column-additions/person.json' >> person-columns.json
+
+      - name: Transform configurations to include column additions
+        id: step-7
+        shell: bash
+        run: |
+          entities=("event" "place" "organization" "person")
+          
+          for entity in "${entities[@]}"; do
+            config_file="${entity}-transform-config.json"
+            column_file="${entity}-columns.json"
+            tmp_file=$(mktemp)
+
+            jq '.operations |= (input + .)' "$config_file" "$column_file" > "$tmp_file"
+            mv "$tmp_file" "$config_file"
+          done
+
 
       - name: Transform events in JSON  to RDF
-        id: step-6
+        id: step-8
         run: |
           /opt/ontorefine/dist/bin/ontorefine-cli \
           transform events.json \
@@ -91,7 +114,7 @@ jobs:
           -f json >> events.ttl
 
       - name: Transform places in JSON to RDF
-        id: step-7
+        id: step-9
         run: |
           /opt/ontorefine/dist/bin/ontorefine-cli \
           transform places.json \
@@ -100,7 +123,7 @@ jobs:
           -f json >> places.ttl
 
       - name: Transform organizations in JSON to RDF
-        id: step-8
+        id: step-10
         run: |
           /opt/ontorefine/dist/bin/ontorefine-cli \
           transform organizations.json \
@@ -109,7 +132,7 @@ jobs:
           -f json >> organizations.ttl
 
       - name: Transform people in JSON to RDF
-        id: step-9
+        id: step-11
         run: |
           /opt/ontorefine/dist/bin/ontorefine-cli \
           transform people.json \
@@ -118,7 +141,7 @@ jobs:
           -f json >> people.ttl
 
       - name: Transform taxonomies in JSON to RDF
-        id: step-10
+        id: step-12
         run: |
           /opt/ontorefine/dist/bin/ontorefine-cli \
           transform '/__w/artsdata-planet-footlight/artsdata-planet-footlight/flatten-taxonomies.json' \
@@ -127,7 +150,7 @@ jobs:
           -f json >> taxonomies.ttl
 
       - name: Concatenate the files
-        id: step-11
+        id: step-13
         run : |
           cat \
           events.ttl \
@@ -138,7 +161,7 @@ jobs:
           > ${{inputs.source}}.ttl
 
       - name: Upload entities in RDF to S3
-        id: step-12
+        id: step-14
         uses: keithweaver/aws-s3-github-action@v1.0.0
         with:
             command: cp
