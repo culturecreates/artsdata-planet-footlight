@@ -6,6 +6,9 @@ on:
       source:
         required: true
         type: string
+      event_mapping_file:
+        required: false
+        type: string
     secrets:
       PUBLISHER_URI_GREGORY:
         required: true
@@ -74,11 +77,13 @@ jobs:
       - name: Download configuration files for transformation
         id: step-5
         run: |
-          curl 'https://raw.githubusercontent.com/culturecreates/artsdata-planet-footlight/main/ontotext-refine/cms-events-configuration.json' >> event-transform-config.json &&
+          event_url=${{ inputs.event_mapping_file || 'cms-events-configuration.json' }}
+          
+          curl "https://raw.githubusercontent.com/culturecreates/artsdata-planet-footlight/main/ontotext-refine/${event_url}" >> event-transform-config.json &&
           curl 'https://raw.githubusercontent.com/culturecreates/artsdata-planet-footlight/main/ontotext-refine/cms-places-configuration.json' >> place-transform-config.json &&
           curl 'https://raw.githubusercontent.com/culturecreates/artsdata-planet-footlight/main/ontotext-refine/cms-organizations-configuration.json' >> organization-transform-config.json &&
           curl 'https://raw.githubusercontent.com/culturecreates/artsdata-planet-footlight/main/ontotext-refine/cms-people-configuration.json' >> person-transform-config.json &&
-          curl 'https://raw.githubusercontent.com/culturecreates/artsdata-planet-footlight/main/ontotext-refine/cms-taxonomies-configuration.json' >> taxonomy-transform-config.json
+          curl 'https://raw.githubusercontent.com/culturecreates/artsdata-planet-footlight/main/ontotext-refine/cms-taxonomies-configuration.json' >> taxonomy-transform-config.json    
 
       - name: Download column addition files for transformation
         id: step-6
