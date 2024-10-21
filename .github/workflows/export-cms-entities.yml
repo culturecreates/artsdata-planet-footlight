@@ -187,7 +187,8 @@ jobs:
           cat \
           ${{inputs.source}}.ttl \
           custom.ttl \
-          > ${{inputs.source}}.ttl
+          > temp.ttl
+          mv temp.ttl ${{inputs.source}}.ttl
 
       - name: Upload entities in RDF to S3
         id: step-17
