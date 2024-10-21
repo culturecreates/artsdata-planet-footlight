@@ -1,0 +1,120 @@
+{
+    "importOptions": [
+      {
+        "recordPath": [
+          "_",
+          "data",
+          "_"
+        ],
+        "limit": -1,
+        "trimStrings": false,
+        "guessCellValueTypes": false,
+        "storeEmptyStrings": false,
+        "includeFileSources": false,
+        "includeArchiveFileName": false,
+        "disableAutoPreview": false,
+        "projectName": "cli-transform-events.json-2024-08-02",
+        "projectTags": [],
+        "fileSource": "events.json",
+        "archiveFileName": null
+      }
+    ],
+    "operations": [
+      {
+        "op": "core/fill-down",
+        "engineConfig": {
+          "facets": [],
+          "mode": "record-based"
+        },
+        "columnName": "_ - id",
+        "description": "Fill down cells in column _ - id"
+      },
+      {
+        "op": "core/column-addition-by-fetching-urls",
+        "engineConfig": {
+          "facets": [],
+          "mode": "row-based"
+        },
+        "baseColumnName": "_ - id",
+        "urlExpression": "grel:\"https://api.footlight.io/events/\" + value",
+        "onError": "set-to-blank",
+        "newColumnName": "eventType",
+        "columnInsertIndex": 1,
+        "delay": 5000,
+        "cacheResponses": true,
+        "httpHeadersJson": [
+          {
+            "name": "authorization",
+            "value": ""
+          },
+          {
+            "name": "user-agent",
+            "value": "OpenRefine  [1]"
+          },
+          {
+            "name": "accept",
+            "value": "*/*"
+          }
+        ],
+        "description": "Create column eventType at index 1 by fetching URLs based on column _ - id using expression grel:\"https://api.footlight.io/events/\" + value"
+      },
+      {
+        "op": "mapping-editor/save-rdf-mapping",
+        "mapping": {
+          "baseIRI": "http://lod.footlight.io/resource/",
+          "namespaces": {
+            "xsd": "http://www.w3.org/2001/XMLSchema#",
+            "schema": "http://schema.org/",
+            "skos": "http://www.w3.org/2004/02/skos/core#",
+            "footlight": "http://lod.footlight.io/resource/"
+          },
+          "subjectMappings": [
+            {
+              "subject": {
+                "valueSource": {
+                  "source": "column",
+                  "columnName": "_ - id"
+                },
+                "transformation": {
+                  "language": "prefix",
+                  "expression": "footlight"
+                }
+              },
+              "typeMappings": [],
+              "propertyMappings": [
+                {
+                  "property": {
+                    "valueSource": {
+                      "source": "constant",
+                      "constant": "additionalType"
+                    },
+                    "transformation": {
+                      "language": "prefix",
+                      "expression": "schema"
+                    }
+                  },
+                  "values": [
+                    {
+                      "valueSource": {
+                        "source": "row_index"
+                      },
+                      "transformation": {
+                        "language": "grel",
+                        "expression": "forEach(parseJson(cells[\"eventType\"].value).data[\"63bd80901c6b6c005aad6f4b\"], v, \"http://lod.footlight.io/resource/\" + v.id)"
+                      },
+                      "valueType": {
+                        "type": "iri",
+                        "typeMappings": [],
+                        "propertyMappings": []
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "description": "Save RDF Mapping"
+      }
+    ]
+  }

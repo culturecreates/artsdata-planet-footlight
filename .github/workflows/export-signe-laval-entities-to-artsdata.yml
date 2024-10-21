@@ -10,7 +10,7 @@ jobs:
     uses: ./.github/workflows/export-cms-entities.yml
     with:
       source: signe-laval
-      event_mapping_file: "cms-events-signe-laval-configuration.json"
+      custom_config_file: "cms-custom-signe-laval-configuration.json"
     secrets:
       PUBLISHER_URI_GREGORY: ${{ secrets.PUBLISHER_URI_GREGORY }}
       S3_ACCESS_KEY_ID: ${{ secrets.S3_ACCESS_KEY_ID }}

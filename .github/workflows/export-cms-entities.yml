@@ -6,7 +6,7 @@ on:
       source:
         required: true
         type: string
-      event_mapping_file:
+      custom_config_file:
         required: false
         type: string
     secrets:
@@ -76,17 +76,22 @@ jobs:
       
       - name: Download configuration files for transformation
         id: step-5
-        run: |
-          event_url=${{ inputs.event_mapping_file || 'cms-events-configuration.json' }}
-          
-          curl "https://raw.githubusercontent.com/culturecreates/artsdata-planet-footlight/main/ontotext-refine/${event_url}" >> event-transform-config.json &&
+        run: |          
+          curl "https://raw.githubusercontent.com/culturecreates/artsdata-planet-footlight/main/ontotext-refine/cms-events-configuration.json" >> event-transform-config.json &&
           curl 'https://raw.githubusercontent.com/culturecreates/artsdata-planet-footlight/main/ontotext-refine/cms-places-configuration.json' >> place-transform-config.json &&
           curl 'https://raw.githubusercontent.com/culturecreates/artsdata-planet-footlight/main/ontotext-refine/cms-organizations-configuration.json' >> organization-transform-config.json &&
           curl 'https://raw.githubusercontent.com/culturecreates/artsdata-planet-footlight/main/ontotext-refine/cms-people-configuration.json' >> person-transform-config.json &&
-          curl 'https://raw.githubusercontent.com/culturecreates/artsdata-planet-footlight/main/ontotext-refine/cms-taxonomies-configuration.json' >> taxonomy-transform-config.json    
+          curl 'https://raw.githubusercontent.com/culturecreates/artsdata-planet-footlight/main/ontotext-refine/cms-taxonomies-configuration.json' >> taxonomy-transform-config.json  
+          
+      - name: Download custom configuration file
+        id: step-6
+        if: ${{ inputs.custom_config_file }}
+        run: |
+          custom_url=${{ inputs.custom_config_file }}
+          curl "https://raw.githubusercontent.com/culturecreates/artsdata-planet-footlight/main/ontotext-refine/${custom_url}" >> custom-transform-config.json
 
       - name: Download column addition files for transformation
-        id: step-6
+        id: step-7
         run: |
           curl 'https://raw.githubusercontent.com/culturecreates/artsdata-planet-footlight/main/ontotext-refine/column-additions/event.json' >> event-columns.json &&
           curl 'https://raw.githubusercontent.com/culturecreates/artsdata-planet-footlight/main/ontotext-refine/column-additions/place.json' >> place-columns.json &&
@@ -94,7 +99,7 @@ jobs:
           curl 'https://raw.githubusercontent.com/culturecreates/artsdata-planet-footlight/main/ontotext-refine/column-additions/person.json' >> person-columns.json
 
       - name: Transform configurations to include column additions
-        id: step-7
+        id: step-8
         shell: bash
         run: |
           entities=("event" "place" "organization" "person")
@@ -110,7 +115,7 @@ jobs:
 
 
       - name: Transform events in JSON  to RDF
-        id: step-8
+        id: step-9
         run: |
           /opt/ontorefine/dist/bin/ontorefine-cli \
           transform events.json \
@@ -119,7 +124,7 @@ jobs:
           -f json >> events.ttl
 
       - name: Transform places in JSON to RDF
-        id: step-9
+        id: step-10
         run: |
           /opt/ontorefine/dist/bin/ontorefine-cli \
           transform places.json \
@@ -128,7 +133,7 @@ jobs:
           -f json >> places.ttl
 
       - name: Transform organizations in JSON to RDF
-        id: step-10
+        id: step-11
         run: |
           /opt/ontorefine/dist/bin/ontorefine-cli \
           transform organizations.json \
@@ -137,7 +142,7 @@ jobs:
           -f json >> organizations.ttl
 
       - name: Transform people in JSON to RDF
-        id: step-11
+        id: step-12
         run: |
           /opt/ontorefine/dist/bin/ontorefine-cli \
           transform people.json \
@@ -146,16 +151,26 @@ jobs:
           -f json >> people.ttl
 
       - name: Transform taxonomies in JSON to RDF
-        id: step-12
+        id: step-13
         run: |
           /opt/ontorefine/dist/bin/ontorefine-cli \
           transform '/__w/artsdata-planet-footlight/artsdata-planet-footlight/flatten-taxonomies.json' \
           -u http://localhost:7333 \
           --configurations taxonomy-transform-config.json \
           -f json >> taxonomies.ttl
+      
+      - name: Transform custom fields in JSON to RDF
+        if: ${{ inputs.custom_config_file }}
+        id: step-14
+        run: |
+          /opt/ontorefine/dist/bin/ontorefine-cli \
+          transform events.json \
+          -u http://localhost:7333 \
+          --configurations custom-transform-config.json \
+          -f json >> custom.ttl
 
       - name: Concatenate the files
-        id: step-13
+        id: step-15
         run : |
           cat \
           events.ttl \
@@ -165,8 +180,17 @@ jobs:
           taxonomies.ttl \
           > ${{inputs.source}}.ttl
 
+      - name: Concatenate custom fields
+        id: step-16
+        if: ${{ inputs.custom_config_file }}
+        run: |
+          cat \
+          ${{inputs.source}}.ttl \
+          custom.ttl \
+          > ${{inputs.source}}.ttl
+
       - name: Upload entities in RDF to S3
-        id: step-14
+        id: step-17
         uses: keithweaver/aws-s3-github-action@v1.0.0
         with:
             command: cp
