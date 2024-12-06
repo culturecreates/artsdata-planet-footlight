@@ -58,7 +58,7 @@ jobs:
       - name: Export entities
         run: |
             curl -X 'GET' \
-            'https://api.cms.footlight.io/entities/export?file-format=ttl&entity=Event' \
+            'https://api.cms.footlight.io/entities/export?file-format=ttl&entity=Event&upcoming-events-only=true' \
             -H 'accept: */*' \
             -H 'calendar-id: ${{inputs.calendar_id}}' \
             -H 'Referer: https://api.cms.footlight.io/export' \
