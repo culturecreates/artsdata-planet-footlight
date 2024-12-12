@@ -5,10 +5,12 @@ on:
 
 jobs:
   call-export-workflow:
-    uses: ./.github/workflows/export-cms-entities.yml
+    uses: ./.github/workflows/export-cms-entitiesv2.yml
     with:
-      source: nac-cna
+      calendar_id: ${{ vars.NAC_OSAKA_PROD_CALENDAR_ID }}
+      login_email: ${{ vars.CMS_LOGIN_EMAIL }}
     secrets:
       PUBLISHER_URI_GREGORY: ${{ secrets.PUBLISHER_URI_GREGORY }}
       S3_ACCESS_KEY_ID: ${{ secrets.S3_ACCESS_KEY_ID }}
       S3_SECRET_ACCESS_KEY: ${{ secrets.S3_SECRET_ACCESS_KEY }}
+      LOGIN_PASSWORD: ${{ secrets.CMS_LOGIN_PASSWORD }}
