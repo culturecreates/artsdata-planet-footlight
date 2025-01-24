@@ -89,13 +89,13 @@ jobs:
             -H 'Authorization: Bearer ${{steps.login-step.outputs.ACCESS_TOKEN}}' \
             >> places.ttl
           
-          curl -X 'GET' \
-          'https://api.cms.footlight.io/entities/export?file-format=ttl&entity=Taxonomy' \
-          -H 'accept: */*' \
-          -H 'calendar-id: ${{inputs.calendar_id}}' \
-          -H 'Referer: https://api.cms.footlight.io/export' \
-          -H 'Authorization: Bearer ${{steps.login-step.outputs.ACCESS_TOKEN}}' \
-          >> taxonomies.ttl
+            curl -X 'GET' \
+            'https://api.cms.footlight.io/entities/export?file-format=ttl&entity=Taxonomy' \
+            -H 'accept: */*' \
+            -H 'calendar-id: ${{inputs.calendar_id}}' \
+            -H 'Referer: https://api.cms.footlight.io/export' \
+            -H 'Authorization: Bearer ${{steps.login-step.outputs.ACCESS_TOKEN}}' \
+            >> taxonomies.ttl
 
       - name: Concatenate the files
         run : |
