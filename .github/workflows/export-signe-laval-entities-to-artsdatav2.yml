@@ -1,4 +1,4 @@
-name: Export Signe Laval calendar to Artsdata
+name: Export Signe Laval calendar to Artsdata (V2)
 
 on:
   workflow_dispatch:

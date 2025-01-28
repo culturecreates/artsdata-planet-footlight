@@ -1,4 +1,4 @@
-name: Export Culture Mauricie calendar to Artsdata
+name: Export Culture Mauricie (DICI.ca) calendar to Artsdata
 
 on:
   workflow_dispatch:
