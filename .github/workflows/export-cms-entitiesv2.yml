@@ -128,3 +128,15 @@ jobs:
           artifact: "${{needs.get-rdf-data.outputs.calendar-slug}}v2"
           publisher: ${{ secrets.PUBLISHER_URI_GREGORY }}
           downloadUrl: "https://footlight-cms-entities-exported.s3.ca-central-1.amazonaws.com/${{needs.get-rdf-data.outputs.calendar-slug}}.ttl"
+
+  send-failure-notification:
+    runs-on: ubuntu-latest
+    if: failure()
+    steps:
+      - uses: licenseware/send-email-notification@v1
+        with:
+          api-key: ${{ secrets.SENDGRID_API_KEY }}
+          subject: "Medium Alert - ${{github.repository}} [${{github.workflow}}]"
+          from-email: ${{ vars.SENDGRID_FROM_EMAIL }}
+          to-email: ${{ vars.MEDIUM_ALERTS_EMAIL }}
+          markdown-body: ${{github.workflow}} in ${{github.repository}} failed.
