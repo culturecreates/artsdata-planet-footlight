@@ -1,4 +1,4 @@
-name: Export artsculturenb calendar to Artsdata (V2)
+name: Export artsculturenb calendar to Artsdata
 
 on:
   workflow_dispatch:
