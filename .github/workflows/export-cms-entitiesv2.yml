@@ -125,7 +125,7 @@ jobs:
       - name: Call artsdata pipeline action
         uses: culturecreates/artsdata-pipeline-action@v1.1.0
         with:
-          artifact: "${{needs.get-rdf-data.outputs.calendar-slug}}v2"
+          artifact: "${{needs.get-rdf-data.outputs.calendar-slug}}"
           publisher: ${{ secrets.PUBLISHER_URI_GREGORY }}
           downloadUrl: "https://footlight-cms-entities-exported.s3.ca-central-1.amazonaws.com/${{needs.get-rdf-data.outputs.calendar-slug}}.ttl"
 

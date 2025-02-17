@@ -1,17 +1,18 @@
-name: Export Signe Laval calendar to Artsdata
+name: Export Signe Laval calendar to Artsdata (V2)
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 5 * * 3"  # Run at 1:00 AM ET every Wednesday
-
+    - cron: "0 5 * * 3"  # Run at 1:00 AM EST every Wednesday
 jobs:
   call-export-workflow:
-    uses: ./.github/workflows/export-cms-entities.yml
+    uses: ./.github/workflows/export-cms-entitiesv2.yml
     with:
-      source: signe-laval
-      custom_config_file: "cms-custom-signe-laval-configuration.json"
+      calendar_id: ${{ vars.SIGNE_LAVAL_CALENDAR_ID }}
+      login_email: ${{ vars.CMS_LOGIN_EMAIL }}
     secrets:
       PUBLISHER_URI_GREGORY: ${{ secrets.PUBLISHER_URI_GREGORY }}
       S3_ACCESS_KEY_ID: ${{ secrets.S3_ACCESS_KEY_ID }}
       S3_SECRET_ACCESS_KEY: ${{ secrets.S3_SECRET_ACCESS_KEY }}
+      LOGIN_PASSWORD: ${{ secrets.CMS_LOGIN_PASSWORD }}
+

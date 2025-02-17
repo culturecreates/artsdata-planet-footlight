@@ -3,7 +3,7 @@ name: Export artsculturenb calendar to Artsdata (V2)
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 9 * * 4"  # Run at 5:00 AM EST (9AM GMT) every Thursday
+    - cron: "30 9 * * 4"  # Run at 5:30 AM EST (9:30 AM GMT) every Thursday
 
 jobs:
   call-export-workflow:

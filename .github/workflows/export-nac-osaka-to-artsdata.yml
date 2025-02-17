@@ -1,4 +1,4 @@
-name: Export Tout Culture calendar to Artsdata (V2)
+name: Export NAC Osaka calendar to Artsdata
 
 on:
   workflow_dispatch:
@@ -7,7 +7,7 @@ jobs:
   call-export-workflow:
     uses: ./.github/workflows/export-cms-entitiesv2.yml
     with:
-      calendar_id: ${{ vars.TOUT_CULTURE_CALENDAR_ID }}
+      calendar_id: ${{ vars.NAC_OSAKA_PROD_CALENDAR_ID }}
       login_email: ${{ vars.CMS_LOGIN_EMAIL }}
     secrets:
       PUBLISHER_URI_GREGORY: ${{ secrets.PUBLISHER_URI_GREGORY }}
