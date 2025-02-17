@@ -7,7 +7,7 @@ on:
 
 jobs:
   call-export-workflow:
-    uses: ./.github/workflows/export-cms-entitiesv2.yml
+    uses: ./.github/workflows/export-cms-entities.yml
     with:
       calendar_id: ${{ vars.ARTSCULTURENB_CALENDAR_ID }}
       login_email: ${{ vars.CMS_LOGIN_EMAIL }}
