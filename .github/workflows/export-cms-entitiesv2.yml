@@ -100,9 +100,6 @@ jobs:
       - name: List files
         run: ls -a
 
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
       - name: Concatenate jsonld files
         id: concat-jsonld
         run: python ./util/concat-jsonld.py ${{steps.get-calendar-slug.outputs.CALENDAR_SLUG}}.jsonld

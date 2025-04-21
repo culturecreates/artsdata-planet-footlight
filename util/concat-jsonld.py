@@ -21,7 +21,7 @@ if __name__ == "__main__":
     if len(sys.argv) > 1:
         file_name = sys.argv[1]
 
-    input_files = [ 'events.jsonld','people.jsonld', 'organizations.jsonld', 'places.jsonld', 'taxonomies.jsonld']
+    input_files = [ '../events.jsonld','../people.jsonld', '../organizations.jsonld', '../places.jsonld', '../taxonomies.jsonld']
     combined_result = concatenate_jsonld(input_files)
     with open(file_name, 'w') as output_file:
         json.dump(combined_result, output_file, indent=2)
