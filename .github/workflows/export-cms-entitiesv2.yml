@@ -97,6 +97,9 @@ jobs:
           -H 'Authorization: Bearer ${{steps.login-step.outputs.ACCESS_TOKEN}}' \
           -o taxonomies.jsonld
 
+      - name: List files
+        run: ls -a
+
       - name: Checkout repository
         uses: actions/checkout@v4
 
