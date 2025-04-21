@@ -19,7 +19,6 @@ on:
       LOGIN_PASSWORD:
         required: true
 
-
 jobs:
   get-rdf-data:
     runs-on: ubuntu-latest
@@ -50,9 +49,9 @@ jobs:
               -H "accept: */*" \
               -H "Authorization: Bearer ${{steps.login-step.outputs.ACCESS_TOKEN}}" \
               -H "Referer: https://api.cms.footlight.io/export")
-          
+
           slug=$(echo "$response" | jq -r '.slug')
-          
+
           echo "CALENDAR_SLUG=$slug" >> $GITHUB_OUTPUT
 
       - name: Export entities
@@ -65,7 +64,7 @@ jobs:
           -H 'Referer: https://api.cms.footlight.io/export' \
           -H 'Authorization: Bearer ${{steps.login-step.outputs.ACCESS_TOKEN}}' \
           -o events.jsonld
-          
+
           curl -X 'GET' \
           'https://api.cms.footlight.io/export/entities?file-format=json-ld&entity=Person' \
           -H 'accept: */*' \
@@ -73,7 +72,7 @@ jobs:
           -H 'Referer: https://api.cms.footlight.io/export' \
           -H 'Authorization: Bearer ${{steps.login-step.outputs.ACCESS_TOKEN}}' \
           -o people.jsonld
-          
+
           curl -X 'GET' \
           'https://api.cms.footlight.io/export/entities?file-format=json-ld&entity=Organization' \
           -H 'accept: */*' \
@@ -81,7 +80,7 @@ jobs:
           -H 'Referer: https://api.cms.footlight.io/export' \
           -H 'Authorization: Bearer ${{steps.login-step.outputs.ACCESS_TOKEN}}' \
           -o organizations.jsonld
-          
+
           curl -X 'GET' \
           'https://api.cms.footlight.io/export/entities?file-format=json-ld&entity=Place' \
           -H 'accept: */*' \
@@ -89,7 +88,7 @@ jobs:
           -H 'Referer: https://api.cms.footlight.io/export' \
           -H 'Authorization: Bearer ${{steps.login-step.outputs.ACCESS_TOKEN}}' \
           -o places.jsonld
-          
+
           curl -X 'GET' \
           'https://api.cms.footlight.io/export/entities?file-format=json-ld&entity=Taxonomy' \
           -H 'accept: */*' \
@@ -120,7 +119,6 @@ jobs:
           flags: --acl public-read --content-type application/ld+json
 
   import-entities-to-artsdata:
-    needs: upload-s3
     runs-on: ubuntu-latest
     steps:
       - name: Call artsdata pipeline action
