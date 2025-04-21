@@ -103,6 +103,9 @@ jobs:
       - name: List files
         run: ls -a
 
+      - name: PWD
+        run: pwd
+
       - name: Concatenate jsonld files
         id: concat-jsonld
         run: python ./util/concat-jsonld.py ${{steps.get-calendar-slug.outputs.CALENDAR_SLUG}}.jsonld
