@@ -24,89 +24,79 @@ jobs:
   get-rdf-data:
     runs-on: ubuntu-latest
     outputs:
-        calendar-slug: ${{ steps.get-calendar-slug.outputs.CALENDAR_SLUG }}
+      calendar-slug: ${{ steps.get-calendar-slug.outputs.CALENDAR_SLUG }}
     steps:
       - name: Login to CMS
         id: login-step
         run: |
-            response=$(curl -s -X 'POST' \
-              'https://api.cms.footlight.io/login' \
-              -H 'accept: */*' \
-              -H 'Content-Type: application/json' \
-              -H 'Referer: https://api.cms.footlight.io/export' \
-              -d '{
-                  "email": "'"${{inputs.login_email}}"'", 
-                  "password": "'"${{secrets.LOGIN_PASSWORD}}"'" 
-              }')
-            token=$(echo $response | jq -r '.accessToken')
-            echo "::add-mask::$token" # Mask the token
-            echo "ACCESS_TOKEN=$token" >> $GITHUB_OUTPUT
+          response=$(curl -s -X 'POST' \
+            'https://api.cms.footlight.io/login' \
+            -H 'accept: */*' \
+            -H 'Content-Type: application/json' \
+            -H 'Referer: https://api.cms.footlight.io/export' \
+            -d '{
+                "email": "'"${{inputs.login_email}}"'",
+                "password": "'"${{secrets.LOGIN_PASSWORD}}"'"
+            }')
+          token=$(echo $response | jq -r '.accessToken')
+          echo "::add-mask::$token" # Mask the token
+          echo "ACCESS_TOKEN=$token" >> $GITHUB_OUTPUT
 
       - name: Get calendar slug
         id: get-calendar-slug
         run: |
-            response=$(curl -X 'GET' \
-                "https://api.cms.footlight.io/calendars/${{inputs.calendar_id}}" \
-                -H "accept: */*" \
-                -H "Authorization: Bearer ${{steps.login-step.outputs.ACCESS_TOKEN}}" \
-                -H "Referer: https://api.cms.footlight.io/export")
+          response=$(curl -X 'GET' \
+              "https://api.cms.footlight.io/calendars/${{inputs.calendar_id}}" \
+              -H "accept: */*" \
+              -H "Authorization: Bearer ${{steps.login-step.outputs.ACCESS_TOKEN}}" \
+              -H "Referer: https://api.cms.footlight.io/export")
+          
+          slug=$(echo "$response" | jq -r '.slug')
+          
+          echo "CALENDAR_SLUG=$slug" >> $GITHUB_OUTPUT
 
-            slug=$(echo "$response" | jq -r '.slug')
-
-            echo "CALENDAR_SLUG=$slug" >> $GITHUB_OUTPUT
-    
       - name: Export entities
         id: export-entities
         run: |
-            curl -X 'GET' \
-            'https://api.cms.footlight.io/export/entities?file-format=json-ld&entity=Event&upcoming-events-only=true' \
-            -H 'accept: */*' \
-            -H 'calendar-id: ${{inputs.calendar_id}}' \
-            -H 'Referer: https://api.cms.footlight.io/export' \
-            -H 'Authorization: Bearer ${{steps.login-step.outputs.ACCESS_TOKEN}}' \
-            >> events.jsonld
+          curl -X 'GET' \
+          'https://api.cms.footlight.io/export/entities?file-format=json-ld&entity=Event&upcoming-events-only=true' \
+          -H 'accept: */*' \
+          -H 'calendar-id: ${{inputs.calendar_id}}' \
+          -H 'Referer: https://api.cms.footlight.io/export' \
+          -H 'Authorization: Bearer ${{steps.login-step.outputs.ACCESS_TOKEN}}' \
+          -o events.jsonld
           
-            curl -X 'GET' \
-            'https://api.cms.footlight.io/export/entities?file-format=json-ld&entity=Person' \
-            -H 'accept: */*' \
-            -H 'calendar-id: ${{inputs.calendar_id}}' \
-            -H 'Referer: https://api.cms.footlight.io/export' \
-            -H 'Authorization: Bearer ${{steps.login-step.outputs.ACCESS_TOKEN}}' \
-            >> people.jsonld
-
-            curl -X 'GET' \
-            'https://api.cms.footlight.io/export/entities?file-format=json-ld&entity=Organization' \
-            -H 'accept: */*' \
-            -H 'calendar-id: ${{inputs.calendar_id}}' \
-            -H 'Referer: https://api.cms.footlight.io/export' \
-            -H 'Authorization: Bearer ${{steps.login-step.outputs.ACCESS_TOKEN}}' \
-            >> organizations.jsonld
-
-            curl -X 'GET' \
-            'https://api.cms.footlight.io/export/entities?file-format=json-ld&entity=Place' \
-            -H 'accept: */*' \
-            -H 'calendar-id: ${{inputs.calendar_id}}' \
-            -H 'Referer: https://api.cms.footlight.io/export' \
-            -H 'Authorization: Bearer ${{steps.login-step.outputs.ACCESS_TOKEN}}' \
-            >> places.jsonld
+          curl -X 'GET' \
+          'https://api.cms.footlight.io/export/entities?file-format=json-ld&entity=Person' \
+          -H 'accept: */*' \
+          -H 'calendar-id: ${{inputs.calendar_id}}' \
+          -H 'Referer: https://api.cms.footlight.io/export' \
+          -H 'Authorization: Bearer ${{steps.login-step.outputs.ACCESS_TOKEN}}' \
+          -o people.jsonld
           
-            curl -X 'GET' \
-            'https://api.cms.footlight.io/export/entities?file-format=json-ld&entity=Taxonomy' \
-            -H 'accept: */*' \
-            -H 'calendar-id: ${{inputs.calendar_id}}' \
-            -H 'Referer: https://api.cms.footlight.io/export' \
-            -H 'Authorization: Bearer ${{steps.login-step.outputs.ACCESS_TOKEN}}' \
-            >> taxonomies.jsonld
-
-#      - name: Concatenate the files
-#        run : |
-#          cat \
-#          events.ttl \
-#          places.ttl \
-#          organizations.ttl \
-#          people.ttl \
-#          taxonomies.ttl \
-#           ${{steps.get-calendar-slug.outputs.CALENDAR_SLUG}}.ttl
+          curl -X 'GET' \
+          'https://api.cms.footlight.io/export/entities?file-format=json-ld&entity=Organization' \
+          -H 'accept: */*' \
+          -H 'calendar-id: ${{inputs.calendar_id}}' \
+          -H 'Referer: https://api.cms.footlight.io/export' \
+          -H 'Authorization: Bearer ${{steps.login-step.outputs.ACCESS_TOKEN}}' \
+          -o organizations.jsonld
+          
+          curl -X 'GET' \
+          'https://api.cms.footlight.io/export/entities?file-format=json-ld&entity=Place' \
+          -H 'accept: */*' \
+          -H 'calendar-id: ${{inputs.calendar_id}}' \
+          -H 'Referer: https://api.cms.footlight.io/export' \
+          -H 'Authorization: Bearer ${{steps.login-step.outputs.ACCESS_TOKEN}}' \
+          -o places.jsonld
+          
+          curl -X 'GET' \
+          'https://api.cms.footlight.io/export/entities?file-format=json-ld&entity=Taxonomy' \
+          -H 'accept: */*' \
+          -H 'calendar-id: ${{inputs.calendar_id}}' \
+          -H 'Referer: https://api.cms.footlight.io/export' \
+          -H 'Authorization: Bearer ${{steps.login-step.outputs.ACCESS_TOKEN}}' \
+          -o taxonomies.jsonld
 
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -116,27 +106,21 @@ jobs:
         needs: export-entities
         run: python ./util/concat-jsonld.py ${{steps.get-calendar-slug.outputs.CALENDAR_SLUG}}.jsonld
 
-
-#      - name: Upload json into artifact
-#        uses: actions/upload-artifact@v4
-#        with:
-#          name: taxonomies
-#          path: ./flatten-taxonomies.json
-#          retention-days: 1
-
-      - name: Upload entities in RDF to S3
+      - name: Upload entities in JSON-LD to S3
+        id: upload-s3
+        needs: concat-jsonld
         uses: keithweaver/aws-s3-github-action@v1.0.0
         with:
-            command: cp
-            source: ${{steps.get-calendar-slug.outputs.CALENDAR_SLUG}}.jsonld
-            destination: s3://footlight-cms-entities-exported/
-            aws_access_key_id: ${{ secrets.S3_ACCESS_KEY_ID}}
-            aws_secret_access_key: ${{ secrets.S3_SECRET_ACCESS_KEY }}
-            aws_region: ca-central-1
-            flags: --acl public-read --content-type text/turtle
+          command: cp
+          source: ${{steps.get-calendar-slug.outputs.CALENDAR_SLUG}}.jsonld
+          destination: s3://footlight-cms-entities-exported/
+          aws_access_key_id: ${{ secrets.S3_ACCESS_KEY_ID}}
+          aws_secret_access_key: ${{ secrets.S3_SECRET_ACCESS_KEY }}
+          aws_region: ca-central-1
+          flags: --acl public-read --content-type application/ld+json
 
   import-entities-to-artsdata:
-    needs: get-rdf-data
+    needs: upload-s3
     runs-on: ubuntu-latest
     steps:
       - name: Call artsdata pipeline action
