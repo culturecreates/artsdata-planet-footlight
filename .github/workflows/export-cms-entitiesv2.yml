@@ -107,7 +107,6 @@ jobs:
 
       - name: Upload entities in JSON-LD to S3
         id: upload-s3
-        needs: concat-jsonld
         uses: keithweaver/aws-s3-github-action@v1.0.0
         with:
           command: cp
@@ -120,6 +119,7 @@ jobs:
 
   import-entities-to-artsdata:
     runs-on: ubuntu-latest
+    needs: get-rdf-data
     steps:
       - name: Call artsdata pipeline action
         uses: culturecreates/artsdata-pipeline-action@v1.1.0
