@@ -1,4 +1,5 @@
 import json
+import sys
 
 def concatenate_jsonld(files):
     result = {"@context": {"@vocab": "http://schema.org/"}, "@graph": []}
