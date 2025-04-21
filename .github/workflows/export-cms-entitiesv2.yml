@@ -100,12 +100,6 @@ jobs:
           -H 'Authorization: Bearer ${{steps.login-step.outputs.ACCESS_TOKEN}}' \
           -o taxonomies.jsonld
 
-      - name: List files
-        run: ls -a
-
-      - name: PWD
-        run: pwd
-
       - name: Concatenate jsonld files
         id: concat-jsonld
         run: python ./util/concat-jsonld.py ${{steps.get-calendar-slug.outputs.CALENDAR_SLUG}}.jsonld
