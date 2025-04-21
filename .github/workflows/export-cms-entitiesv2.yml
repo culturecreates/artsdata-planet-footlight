@@ -25,6 +25,9 @@ jobs:
     outputs:
       calendar-slug: ${{ steps.get-calendar-slug.outputs.CALENDAR_SLUG }}
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
       - name: Login to CMS
         id: login-step
         run: |
