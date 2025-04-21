@@ -102,7 +102,6 @@ jobs:
 
       - name: Concatenate jsonld files
         id: concat-jsonld
-        needs: export-entities
         run: python ./util/concat-jsonld.py ${{steps.get-calendar-slug.outputs.CALENDAR_SLUG}}.jsonld
 
       - name: Upload entities in JSON-LD to S3
