@@ -107,6 +107,9 @@ jobs:
 #          taxonomies.ttl \
 #           ${{steps.get-calendar-slug.outputs.CALENDAR_SLUG}}.ttl
 
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
       - name: Concatenate jsonld files
         run: python ./util/concat-jsonld.py ${{steps.get-calendar-slug.outputs.CALENDAR_SLUG}}.jsonld
 
