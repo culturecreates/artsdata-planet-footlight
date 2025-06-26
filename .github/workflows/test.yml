@@ -1,15 +1,14 @@
-name: Export Signe Laval calendar to Artsdata (V2)
+name: Notification Test
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "0 5 * * 3"  # Run at 1:00 AM EST every Wednesday
+
 jobs:
   call-export-workflow:
     uses: ./.github/workflows/export-cms-entitiesv2.yml
     with:
-      calendar_id: ${{ vars.SIGNE_LAVAL_CALENDAR_ID }}
-      login_email: ${{ vars.CMS_LOGIN_EMAIL }}
+      calendar_id: ${{ vars.ARTSCULTURENB_CALENDAR_ID }}
+      login_email: "test@culturecreates.com"
       SENDGRID_FROM_EMAIL: ${{ vars.SENDGRID_FROM_EMAIL }}
       MEDIUM_ALERTS_EMAIL: ${{ vars.MEDIUM_ALERTS_EMAIL }}
     secrets:
@@ -18,4 +17,3 @@ jobs:
       S3_SECRET_ACCESS_KEY: ${{ secrets.S3_SECRET_ACCESS_KEY }}
       LOGIN_PASSWORD: ${{ secrets.CMS_LOGIN_PASSWORD }}
       SENDGRID_API_KEY: ${{ secrets.SENDGRID_API_KEY }}
-

@@ -9,6 +9,14 @@ on:
       login_email:
         required: true
         type: string
+      SENDGRID_FROM_EMAIL:
+        required: true
+        type: string
+      MEDIUM_ALERTS_EMAIL:
+        required: true
+        type: string
+      
+      
     secrets:
       PUBLISHER_URI_GREGORY:
         required: true
@@ -17,6 +25,8 @@ on:
       S3_SECRET_ACCESS_KEY:
         required: true
       LOGIN_PASSWORD:
+        required: true
+      SENDGRID_API_KEY:
         required: true
 
 jobs:
@@ -136,6 +146,6 @@ jobs:
         with:
           api-key: ${{ secrets.SENDGRID_API_KEY }}
           subject: "Medium Alert - ${{github.repository}} [${{github.workflow}}]"
-          from-email: ${{ vars.SENDGRID_FROM_EMAIL }}
-          to-email: ${{ vars.MEDIUM_ALERTS_EMAIL }}
+          from-email: ${{ inputs.SENDGRID_FROM_EMAIL }}
+          to-email: ${{ inputs.MEDIUM_ALERTS_EMAIL }}
           markdown-body: ${{github.workflow}} in ${{github.repository}} failed.
