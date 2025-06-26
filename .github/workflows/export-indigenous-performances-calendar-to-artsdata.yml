@@ -11,8 +11,6 @@ jobs:
     with:
       calendar_id: ${{ vars.INDIGENOUS_PERFORMANCES_CALENDAR_ID }}
       login_email: ${{ vars.CMS_LOGIN_EMAIL }}
-      SENDGRID_FROM_EMAIL: ${{ vars.SENDGRID_FROM_EMAIL }}
-      MEDIUM_ALERTS_EMAIL: ${{ vars.MEDIUM_ALERTS_EMAIL }}
 
     secrets:
       PUBLISHER_URI_GREGORY: ${{ secrets.PUBLISHER_URI_GREGORY }}
