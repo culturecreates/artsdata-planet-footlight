@@ -36,10 +36,10 @@ jobs:
         id: login-step
         run: |
           response=$(curl -s -X 'POST' \
-            'https://staging.api.cms.footlight.io/login' \
+            'https://api.cms.footlight.io/login' \
             -H 'accept: */*' \
             -H 'Content-Type: application/json' \
-            -H 'Referer: https://staging.api.cms.footlight.io/export' \
+            -H 'Referer: https://api.cms.footlight.io/export' \
             -d '{
                 "email": "'"${{inputs.login_email}}"'",
                 "password": "'"${{secrets.LOGIN_PASSWORD}}"'"
@@ -52,10 +52,10 @@ jobs:
         id: get-calendar-slug
         run: |
           response=$(curl -X 'GET' \
-              "https://staging.api.cms.footlight.io/calendars/${{inputs.calendar_id}}" \
+              "https://api.cms.footlight.io/calendars/${{inputs.calendar_id}}" \
               -H "accept: */*" \
               -H "Authorization: Bearer ${{steps.login-step.outputs.ACCESS_TOKEN}}" \
-              -H "Referer: https://staging.api.cms.footlight.io/export")
+              -H "Referer: https://api.cms.footlight.io/export")
 
           slug=$(echo "$response" | jq -r '.slug')
 
@@ -65,42 +65,42 @@ jobs:
         id: export-entities
         run: |
           curl -X 'GET' \
-          'https://staging.api.cms.footlight.io/export/entities?file-format=json-ld&entity=Event&upcoming-events-only=true' \
+          'https://api.cms.footlight.io/export/entities?file-format=json-ld&entity=Event&upcoming-events-only=true' \
           -H 'accept: */*' \
           -H 'calendar-id: ${{inputs.calendar_id}}' \
-          -H 'Referer: https://staging.api.cms.footlight.io/export' \
+          -H 'Referer: https://api.cms.footlight.io/export' \
           -H 'Authorization: Bearer ${{steps.login-step.outputs.ACCESS_TOKEN}}' \
           -o events.jsonld
 
           curl -X 'GET' \
-          'https://staging.api.cms.footlight.io/export/entities?file-format=json-ld&entity=Person' \
+          'https://api.cms.footlight.io/export/entities?file-format=json-ld&entity=Person' \
           -H 'accept: */*' \
           -H 'calendar-id: ${{inputs.calendar_id}}' \
-          -H 'Referer: https://staging.api.cms.footlight.io/export' \
+          -H 'Referer: https://api.cms.footlight.io/export' \
           -H 'Authorization: Bearer ${{steps.login-step.outputs.ACCESS_TOKEN}}' \
           -o people.jsonld
 
           curl -X 'GET' \
-          'https://staging.api.cms.footlight.io/export/entities?file-format=json-ld&entity=Organization' \
+          'https://api.cms.footlight.io/export/entities?file-format=json-ld&entity=Organization' \
           -H 'accept: */*' \
           -H 'calendar-id: ${{inputs.calendar_id}}' \
-          -H 'Referer: https://staging.api.cms.footlight.io/export' \
+          -H 'Referer: https://api.cms.footlight.io/export' \
           -H 'Authorization: Bearer ${{steps.login-step.outputs.ACCESS_TOKEN}}' \
           -o organizations.jsonld
 
           curl -X 'GET' \
-          'https://staging.api.cms.footlight.io/export/entities?file-format=json-ld&entity=Place' \
+          'https://api.cms.footlight.io/export/entities?file-format=json-ld&entity=Place' \
           -H 'accept: */*' \
           -H 'calendar-id: ${{inputs.calendar_id}}' \
-          -H 'Referer: https://staging.api.cms.footlight.io/export' \
+          -H 'Referer: https://api.cms.footlight.io/export' \
           -H 'Authorization: Bearer ${{steps.login-step.outputs.ACCESS_TOKEN}}' \
           -o places.jsonld
 
           curl -X 'GET' \
-          'https://staging.api.cms.footlight.io/export/entities?file-format=json-ld&entity=Taxonomy' \
+          'https://api.cms.footlight.io/export/entities?file-format=json-ld&entity=Taxonomy' \
           -H 'accept: */*' \
           -H 'calendar-id: ${{inputs.calendar_id}}' \
-          -H 'Referer: https://staging.api.cms.footlight.io/export' \
+          -H 'Referer: https://api.cms.footlight.io/export' \
           -H 'Authorization: Bearer ${{steps.login-step.outputs.ACCESS_TOKEN}}' \
           -o taxonomies.jsonld
 
