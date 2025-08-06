@@ -2,7 +2,12 @@ import json
 import sys
 
 def concatenate_jsonld(files):
-    result = {"@context": {"@vocab": "http://schema.org/"}, "@graph": []}
+    result = {
+        "@context": {
+            "@vocab": "http://schema.org/",
+            "skos": "http://www.w3.org/2004/02/skos/core#"
+        }, "@graph": []
+    }
 
     for file in files:
         try:
