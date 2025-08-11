@@ -20,7 +20,9 @@ on:
         required: true
       LOGIN_PASSWORD:
         required: true
-      SENDGRID_API_KEY:
+      AWS_SES_ACCESS_KEY:
+        required: true
+      AWS_SES_SECRET_ACCESS_KEY:
         required: true
 
 jobs:
@@ -136,10 +138,15 @@ jobs:
     needs: import-entities-to-artsdata
     if: failure()
     steps:
-      - uses: licenseware/send-email-notification@v1
-        with:
-          api-key: ${{ secrets.SENDGRID_API_KEY }}
-          subject: "Medium Alert - ${{github.repository}} [${{github.workflow}}]"
-          from-email: ${{ vars.SENDGRID_FROM_EMAIL }}
-          to-email: ${{ vars.MEDIUM_ALERTS_EMAIL }}
-          markdown-body: ${{github.workflow}} in ${{github.repository}} failed.
+    - name: Send email via Amazon SES
+      uses: aws-actions/configure-aws-credentials@v2
+      with:
+        aws-access-key-id: ${{ secrets.AWS_SES_ACCESS_KEY }}
+        aws-secret-access-key: ${{ secrets.AWS_SES_SECRET_ACCESS_KEY }}
+        aws-region: ca-central-1
+    - name: Send email
+      run: |
+        aws ses send-email \
+          --from "info@footlight.io" \
+          --destination "ToAddresses=${{ vars.CRITICAL_ALERTS_EMAIL }}" \
+          --message "Subject={Data='Critical Alert - ${{github.repository}} [${{github.workflow}}]'},Body={Text={Data='${{github.workflow}} in ${{github.repository}} failed.'}}"
