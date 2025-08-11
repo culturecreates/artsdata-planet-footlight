@@ -147,6 +147,6 @@ jobs:
     - name: Send email
       run: |
         aws ses send-email \
-          --from "info@footlight.io" \
+          --from ${{vars.FOOTLIGHT_INFO_EMAIL}} \
           --destination "ToAddresses=${{ vars.MEDIUM_ALERTS_EMAIL }}" \
           --message "Subject={Data='Critical Alert - ${{github.repository}} [${{github.workflow}}]'},Body={Text={Data='${{github.workflow}} in ${{github.repository}} failed.'}}"
