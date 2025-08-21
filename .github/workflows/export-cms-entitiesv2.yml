@@ -68,35 +68,35 @@ jobs:
         run: |
           set -euo pipefail
           
-          curl --fail-with-body -s -o events.jsonld \
+          curl --fail -s -o events.jsonld \
             -H "accept: */*" \
             -H "calendar-id: ${{inputs.calendar_id}}" \
             -H "Referer: https://api.cms.footlight.io/export" \
             -H "Authorization: Bearer ${{steps.login-step.outputs.ACCESS_TOKEN}}" \
             "https://api.cms.footlight.io/entities/Event/export?file-format=json-ld&upcoming-events-only=true"
           
-          curl --fail-with-body -s -o people.jsonld \
+          curl --fail -s -o people.jsonld \
             -H "accept: */*" \
             -H "calendar-id: ${{inputs.calendar_id}}" \
             -H "Referer: https://api.cms.footlight.io/export" \
             -H "Authorization: Bearer ${{steps.login-step.outputs.ACCESS_TOKEN}}" \
             "https://api.cms.footlight.io/entities/Person/export?file-format=json-ld"
           
-          curl --fail-with-body -s -o organizations.jsonld \
+          curl --fail -s -o organizations.jsonld \
             -H "accept: */*" \
             -H "calendar-id: ${{inputs.calendar_id}}" \
             -H "Referer: https://api.cms.footlight.io/export" \
             -H "Authorization: Bearer ${{steps.login-step.outputs.ACCESS_TOKEN}}" \
             "https://api.cms.footlight.io/entities/Organization/export?file-format=json-ld"
           
-          curl --fail-with-body -s -o places.jsonld \
+          curl --fail -s -o places.jsonld \
             -H "accept: */*" \
             -H "calendar-id: ${{inputs.calendar_id}}" \
             -H "Referer: https://api.cms.footlight.io/export" \
             -H "Authorization: Bearer ${{steps.login-step.outputs.ACCESS_TOKEN}}" \
             "https://api.cms.footlight.io/entities/Place/export?file-format=json-ld"
           
-          curl --fail-with-body -s -o taxonomies.jsonld \
+          curl --fail -s -o taxonomies.jsonld \
             -H "accept: */*" \
             -H "calendar-id: ${{inputs.calendar_id}}" \
             -H "Referer: https://api.cms.footlight.io/export" \
