@@ -73,35 +73,35 @@ jobs:
             -H "calendar-id: ${{inputs.calendar_id}}" \
             -H "Referer: https://api.cms.footlight.io/export" \
             -H "Authorization: Bearer ${{steps.login-step.outputs.ACCESS_TOKEN}}" \
-            "https://api.cms.footlight.io/export/entities?file-format=json-ld&entity=Event&upcoming-events-only=true"
+            "https://api.cms.footlight.io/entities/Event/export?file-format=json-ld&upcoming-events-only=true"
           
           curl --fail-with-body -s -o people.jsonld \
             -H "accept: */*" \
             -H "calendar-id: ${{inputs.calendar_id}}" \
             -H "Referer: https://api.cms.footlight.io/export" \
             -H "Authorization: Bearer ${{steps.login-step.outputs.ACCESS_TOKEN}}" \
-            "https://api.cms.footlight.io/export/entities?file-format=json-ld&entity=Person"
+            "https://api.cms.footlight.io/entities/Person/export?file-format=json-ld"
           
           curl --fail-with-body -s -o organizations.jsonld \
             -H "accept: */*" \
             -H "calendar-id: ${{inputs.calendar_id}}" \
             -H "Referer: https://api.cms.footlight.io/export" \
             -H "Authorization: Bearer ${{steps.login-step.outputs.ACCESS_TOKEN}}" \
-            "https://api.cms.footlight.io/export/entities?file-format=json-ld&entity=Organization"
+            "https://api.cms.footlight.io/entities/Organization/export?file-format=json-ld"
           
           curl --fail-with-body -s -o places.jsonld \
             -H "accept: */*" \
             -H "calendar-id: ${{inputs.calendar_id}}" \
             -H "Referer: https://api.cms.footlight.io/export" \
             -H "Authorization: Bearer ${{steps.login-step.outputs.ACCESS_TOKEN}}" \
-            "https://api.cms.footlight.io/export/entities?file-format=json-ld&entity=Place"
+            "https://api.cms.footlight.io/entities/Place/export?file-format=json-ld"
           
           curl --fail-with-body -s -o taxonomies.jsonld \
             -H "accept: */*" \
             -H "calendar-id: ${{inputs.calendar_id}}" \
             -H "Referer: https://api.cms.footlight.io/export" \
             -H "Authorization: Bearer ${{steps.login-step.outputs.ACCESS_TOKEN}}" \
-            "https://api.cms.footlight.io/export/entities?file-format=json-ld&entity=Taxonomy"
+            "https://api.cms.footlight.io/entities/Taxonomy/export?file-format=json-ld"
 
       - name: Concatenate jsonld files
         id: concat-jsonld
