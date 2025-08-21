@@ -66,45 +66,42 @@ jobs:
       - name: Export entities
         id: export-entities
         run: |
-          curl -X 'GET' \
-          'https://api.cms.footlight.io/export/entities?file-format=json-ld&entity=Event&upcoming-events-only=true' \
-          -H 'accept: */*' \
-          -H 'calendar-id: ${{inputs.calendar_id}}' \
-          -H 'Referer: https://api.cms.footlight.io/export' \
-          -H 'Authorization: Bearer ${{steps.login-step.outputs.ACCESS_TOKEN}}' \
-          -o events.jsonld
-
-          curl -X 'GET' \
-          'https://api.cms.footlight.io/export/entities?file-format=json-ld&entity=Person' \
-          -H 'accept: */*' \
-          -H 'calendar-id: ${{inputs.calendar_id}}' \
-          -H 'Referer: https://api.cms.footlight.io/export' \
-          -H 'Authorization: Bearer ${{steps.login-step.outputs.ACCESS_TOKEN}}' \
-          -o people.jsonld
-
-          curl -X 'GET' \
-          'https://api.cms.footlight.io/export/entities?file-format=json-ld&entity=Organization' \
-          -H 'accept: */*' \
-          -H 'calendar-id: ${{inputs.calendar_id}}' \
-          -H 'Referer: https://api.cms.footlight.io/export' \
-          -H 'Authorization: Bearer ${{steps.login-step.outputs.ACCESS_TOKEN}}' \
-          -o organizations.jsonld
-
-          curl -X 'GET' \
-          'https://api.cms.footlight.io/export/entities?file-format=json-ld&entity=Place' \
-          -H 'accept: */*' \
-          -H 'calendar-id: ${{inputs.calendar_id}}' \
-          -H 'Referer: https://api.cms.footlight.io/export' \
-          -H 'Authorization: Bearer ${{steps.login-step.outputs.ACCESS_TOKEN}}' \
-          -o places.jsonld
-
-          curl -X 'GET' \
-          'https://api.cms.footlight.io/export/entities?file-format=json-ld&entity=Taxonomy' \
-          -H 'accept: */*' \
-          -H 'calendar-id: ${{inputs.calendar_id}}' \
-          -H 'Referer: https://api.cms.footlight.io/export' \
-          -H 'Authorization: Bearer ${{steps.login-step.outputs.ACCESS_TOKEN}}' \
-          -o taxonomies.jsonld
+          set -euo pipefail
+          
+          curl --fail-with-body -s -o events.jsonld \
+            -H "accept: */*" \
+            -H "calendar-id: ${{inputs.calendar_id}}" \
+            -H "Referer: https://api.cms.footlight.io/export" \
+            -H "Authorization: Bearer ${{steps.login-step.outputs.ACCESS_TOKEN}}" \
+            "https://api.cms.footlight.io/export/entities?file-format=json-ld&entity=Event&upcoming-events-only=true"
+          
+          curl --fail-with-body -s -o people.jsonld \
+            -H "accept: */*" \
+            -H "calendar-id: ${{inputs.calendar_id}}" \
+            -H "Referer: https://api.cms.footlight.io/export" \
+            -H "Authorization: Bearer ${{steps.login-step.outputs.ACCESS_TOKEN}}" \
+            "https://api.cms.footlight.io/export/entities?file-format=json-ld&entity=Person"
+          
+          curl --fail-with-body -s -o organizations.jsonld \
+            -H "accept: */*" \
+            -H "calendar-id: ${{inputs.calendar_id}}" \
+            -H "Referer: https://api.cms.footlight.io/export" \
+            -H "Authorization: Bearer ${{steps.login-step.outputs.ACCESS_TOKEN}}" \
+            "https://api.cms.footlight.io/export/entities?file-format=json-ld&entity=Organization"
+          
+          curl --fail-with-body -s -o places.jsonld \
+            -H "accept: */*" \
+            -H "calendar-id: ${{inputs.calendar_id}}" \
+            -H "Referer: https://api.cms.footlight.io/export" \
+            -H "Authorization: Bearer ${{steps.login-step.outputs.ACCESS_TOKEN}}" \
+            "https://api.cms.footlight.io/export/entities?file-format=json-ld&entity=Place"
+          
+          curl --fail-with-body -s -o taxonomies.jsonld \
+            -H "accept: */*" \
+            -H "calendar-id: ${{inputs.calendar_id}}" \
+            -H "Referer: https://api.cms.footlight.io/export" \
+            -H "Authorization: Bearer ${{steps.login-step.outputs.ACCESS_TOKEN}}" \
+            "https://api.cms.footlight.io/export/entities?file-format=json-ld&entity=Taxonomy"
 
       - name: Concatenate jsonld files
         id: concat-jsonld
