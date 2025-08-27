@@ -124,8 +124,9 @@ jobs:
     needs: get-rdf-data
     steps:
       - name: Call artsdata pipeline action
-        uses: culturecreates/artsdata-pipeline-action@v1.1.0
+        uses: culturecreates/artsdata-pipeline-action@v3
         with:
+          mode: "push"
           artifact: "${{needs.get-rdf-data.outputs.calendar-slug}}"
           publisher: ${{ secrets.PUBLISHER_URI_GREGORY }}
           downloadUrl: "https://footlight-cms-entities-exported.s3.ca-central-1.amazonaws.com/${{needs.get-rdf-data.outputs.calendar-slug}}.jsonld"
