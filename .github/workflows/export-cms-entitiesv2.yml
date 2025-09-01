@@ -38,10 +38,10 @@ jobs:
         id: login-step
         run: |
           response=$(curl -s -X 'POST' \
-            'https://api.cms.footlight.io/login' \
+            'https://staging.api.cms.footlight.io/login' \
             -H 'accept: */*' \
             -H 'Content-Type: application/json' \
-            -H 'Referer: https://api.cms.footlight.io/export' \
+            -H 'Referer: https://staging.api.cms.footlight.io/export' \
             -d '{
                 "email": "'"${{inputs.login_email}}"'",
                 "password": "'"${{secrets.LOGIN_PASSWORD}}"'"
@@ -54,10 +54,10 @@ jobs:
         id: get-calendar-slug
         run: |
           response=$(curl -X 'GET' \
-              "https://api.cms.footlight.io/calendars/${{inputs.calendar_id}}" \
+              "https://staging.api.cms.footlight.io/calendars/${{inputs.calendar_id}}" \
               -H "accept: */*" \
               -H "Authorization: Bearer ${{steps.login-step.outputs.ACCESS_TOKEN}}" \
-              -H "Referer: https://api.cms.footlight.io/export")
+              -H "Referer: https://staging.api.cms.footlight.io/export")
 
           slug=$(echo "$response" | jq -r '.slug')
 
@@ -71,37 +71,37 @@ jobs:
           curl --fail -s -o events.jsonld \
             -H "accept: */*" \
             -H "calendar-id: ${{inputs.calendar_id}}" \
-            -H "Referer: https://api.cms.footlight.io/export" \
+            -H "Referer: https://staging.api.cms.footlight.io/export" \
             -H "Authorization: Bearer ${{steps.login-step.outputs.ACCESS_TOKEN}}" \
-            "https://api.cms.footlight.io/entities/Event/export?file-format=json-ld&upcoming-events-only=true"
+            "https://staging.api.cms.footlight.io/entities/Event/export?file-format=json-ld&upcoming-events-only=true"
           
           curl --fail -s -o people.jsonld \
             -H "accept: */*" \
             -H "calendar-id: ${{inputs.calendar_id}}" \
-            -H "Referer: https://api.cms.footlight.io/export" \
+            -H "Referer: https://staging.api.cms.footlight.io/export" \
             -H "Authorization: Bearer ${{steps.login-step.outputs.ACCESS_TOKEN}}" \
-            "https://api.cms.footlight.io/entities/Person/export?file-format=json-ld"
+            "https://staging.api.cms.footlight.io/entities/Person/export?file-format=json-ld"
           
           curl --fail -s -o organizations.jsonld \
             -H "accept: */*" \
             -H "calendar-id: ${{inputs.calendar_id}}" \
-            -H "Referer: https://api.cms.footlight.io/export" \
+            -H "Referer: https://staging.api.cms.footlight.io/export" \
             -H "Authorization: Bearer ${{steps.login-step.outputs.ACCESS_TOKEN}}" \
-            "https://api.cms.footlight.io/entities/Organization/export?file-format=json-ld"
+            "https://staging.api.cms.footlight.io/entities/Organization/export?file-format=json-ld"
           
           curl --fail -s -o places.jsonld \
             -H "accept: */*" \
             -H "calendar-id: ${{inputs.calendar_id}}" \
-            -H "Referer: https://api.cms.footlight.io/export" \
+            -H "Referer: https://staging.api.cms.footlight.io/export" \
             -H "Authorization: Bearer ${{steps.login-step.outputs.ACCESS_TOKEN}}" \
-            "https://api.cms.footlight.io/entities/Place/export?file-format=json-ld"
+            "https://staging.api.cms.footlight.io/entities/Place/export?file-format=json-ld"
           
           curl --fail -s -o taxonomies.jsonld \
             -H "accept: */*" \
             -H "calendar-id: ${{inputs.calendar_id}}" \
-            -H "Referer: https://api.cms.footlight.io/export" \
+            -H "Referer: https://staging.api.cms.footlight.io/export" \
             -H "Authorization: Bearer ${{steps.login-step.outputs.ACCESS_TOKEN}}" \
-            "https://api.cms.footlight.io/entities/Taxonomy/export?file-format=json-ld"
+            "https://staging.api.cms.footlight.io/entities/Taxonomy/export?file-format=json-ld"
 
       - name: Concatenate jsonld files
         id: concat-jsonld
