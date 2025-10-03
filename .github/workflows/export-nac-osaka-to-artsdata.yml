@@ -2,7 +2,8 @@ name: Export NAC Osaka calendar to Artsdata
 
 on:
   workflow_dispatch:
-
+    schedule:
+      - cron: "30 5 * * 3"  # Run at 1:30 AM EST every Wednesday (5:30 GMT)
 jobs:
   call-export-workflow:
     uses: ./.github/workflows/export-cms-entitiesv2.yml
