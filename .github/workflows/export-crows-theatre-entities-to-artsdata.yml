@@ -6,7 +6,7 @@ jobs:
   call-export-workflow:
     uses: ./.github/workflows/export-cms-entitiesv2.yml
     with:
-      calendar_id: ${{ vars.TOUT_CULTURE_CALENDAR_ID }}
+      calendar_id: ${{ vars.CROWS_THEATRE_CALENDAR_ID }}
       login_email: ${{ vars.CMS_LOGIN_EMAIL }}
       server_url: https://staging.api.cms.footlight.io
       artsdata_databus_url: http://staging.api.artsdata.ca/databus/
