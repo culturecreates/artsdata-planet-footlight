@@ -8,7 +8,7 @@ jobs:
     with:
       calendar_id: ${{ vars.TOUT_CULTURE_CALENDAR_ID }}
       login_email: ${{ vars.CMS_LOGIN_EMAIL }}
-      server_url: https://staging.api.footlight.io
+      server_url: https://staging.api.cms.footlight.io
       artsdata_databus_url: http://staging.api.artsdata.ca/databus/
     secrets:
       PUBLISHER_URI_GREGORY: ${{ secrets.PUBLISHER_URI_GREGORY }}
