@@ -82,35 +82,35 @@ jobs:
             -H "calendar-id: ${{inputs.calendar_id}}" \
             -H "Referer: ${{inputs.server_url}}/export" \
             -H "Authorization: Bearer ${{steps.login-step.outputs.ACCESS_TOKEN}}" \
-            "${{inputs.server_url}}/entities/Event/export?file-format=json-ld&upcoming-events-only=true"
+            "${{inputs.server_url}}/entities/Event/export?file-format=jsonld&upcoming-events-only=true"
           
           curl --fail -s -o people.jsonld \
             -H "accept: */*" \
             -H "calendar-id: ${{inputs.calendar_id}}" \
             -H "Referer: ${{inputs.server_url}}/export" \
             -H "Authorization: Bearer ${{steps.login-step.outputs.ACCESS_TOKEN}}" \
-            "${{inputs.server_url}}/entities/Person/export?file-format=json-ld"
+            "${{inputs.server_url}}/entities/Person/export?file-format=jsonld"
           
           curl --fail -s -o organizations.jsonld \
             -H "accept: */*" \
             -H "calendar-id: ${{inputs.calendar_id}}" \
             -H "Referer:${{inputs.server_url}}/export" \
             -H "Authorization: Bearer ${{steps.login-step.outputs.ACCESS_TOKEN}}" \
-            "${{inputs.server_url}}/entities/Organization/export?file-format=json-ld"
+            "${{inputs.server_url}}/entities/Organization/export?file-format=jsonld"
           
           curl --fail -s -o places.jsonld \
             -H "accept: */*" \
             -H "calendar-id: ${{inputs.calendar_id}}" \
             -H "Referer: ${{inputs.server_url}}/export" \
             -H "Authorization: Bearer ${{steps.login-step.outputs.ACCESS_TOKEN}}" \
-            "${{inputs.server_url}}/entities/Place/export?file-format=json-ld"
+            "${{inputs.server_url}}/entities/Place/export?file-format=jsonld"
           
           curl --fail -s -o taxonomies.jsonld \
             -H "accept: */*" \
             -H "calendar-id: ${{inputs.calendar_id}}" \
             -H "Referer: ${{inputs.server_url}}/export" \
             -H "Authorization: Bearer ${{steps.login-step.outputs.ACCESS_TOKEN}}" \
-            "${{inputs.server_url}}/entities/Taxonomy/export?file-format=json-ld"
+            "${{inputs.server_url}}/entities/Taxonomy/export?file-format=jsonld"
 
       - name: Concatenate jsonld files
         id: concat-jsonld
