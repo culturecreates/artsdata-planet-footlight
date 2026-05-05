@@ -3,7 +3,7 @@ name: Export Indigenous Performances calendar to Artsdata (V2)
 on:
   workflow_dispatch:
   schedule:
-    - cron: "45 21 * * 3"  # Run at 5:45 AM EST
+    - cron: "45 21 * * 3"  # Run at 5:45 PM EST, every Wednesday
 
 jobs:
   call-export-workflow:
