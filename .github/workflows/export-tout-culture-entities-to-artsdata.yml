@@ -3,7 +3,7 @@ name: Export Tout Culture calendar to Artsdata (V2)
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 5 * * 4"  # Run at 1:00 AM EST every Thursday
+    - cron: "0 5 * * 1,4"  # Run at 1:00 AM EST every Monday and Thursday
 jobs:
   call-export-workflow:
     uses: ./.github/workflows/export-cms-entitiesv2.yml
