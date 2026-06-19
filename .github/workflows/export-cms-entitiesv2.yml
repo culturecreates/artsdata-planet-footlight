@@ -133,7 +133,7 @@ jobs:
     needs: get-rdf-data
     steps:
       - name: Call artsdata pipeline action
-        uses: culturecreates/artsdata-pipeline-action@v3
+        uses: culturecreates/artsdata-pipeline-action@v4
         with:
           mode: "push"
           artifact: "${{needs.get-rdf-data.outputs.calendar-slug}}"
