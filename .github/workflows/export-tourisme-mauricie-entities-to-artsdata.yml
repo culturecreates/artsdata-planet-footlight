@@ -3,7 +3,7 @@ name: Export Tourisme Mauricie calendar to Artsdata (V2)
 on:
   workflow_dispatch:
   schedule:
-    - cron: "30 5 * * 1,4"  # Run at 1:30 AM EST every Monday and Thursday
+    - cron: "45 5 * * *"  # Run at 12:45 AM EST (5:45 AM GMT) every day
 jobs:
   call-export-workflow:
     uses: ./.github/workflows/export-cms-entitiesv2.yml
