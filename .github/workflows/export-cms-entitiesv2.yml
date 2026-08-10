@@ -41,7 +41,7 @@ jobs:
       calendar-slug: ${{ steps.get-calendar-slug.outputs.CALENDAR_SLUG }}
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Login to CMS
         id: login-step
@@ -116,17 +116,20 @@ jobs:
         id: concat-jsonld
         run: python ./util/concat-jsonld.py ${{steps.get-calendar-slug.outputs.CALENDAR_SLUG}}.jsonld
 
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v5
+        with:
+          aws-access-key-id: ${{ secrets.S3_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.S3_SECRET_ACCESS_KEY }}
+          aws-region: ca-central-1
+
       - name: Upload entities in JSON-LD to S3
         id: upload-s3
-        uses: keithweaver/aws-s3-github-action@v1.0.0
-        with:
-          command: cp
-          source: ${{steps.get-calendar-slug.outputs.CALENDAR_SLUG}}.jsonld
-          destination: s3://footlight-cms-entities-exported/
-          aws_access_key_id: ${{ secrets.S3_ACCESS_KEY_ID}}
-          aws_secret_access_key: ${{ secrets.S3_SECRET_ACCESS_KEY }}
-          aws_region: ca-central-1
-          flags: --acl public-read --content-type application/ld+json
+        run: |
+          aws s3 cp ${{steps.get-calendar-slug.outputs.CALENDAR_SLUG}}.jsonld \
+            s3://footlight-cms-entities-exported/ \
+            --acl public-read \
+            --content-type application/ld+json
 
   import-entities-to-artsdata:
     runs-on: ubuntu-latest
@@ -147,7 +150,7 @@ jobs:
     if: failure()
     steps:
     - name: Send email via Amazon SES
-      uses: aws-actions/configure-aws-credentials@v2
+      uses: aws-actions/configure-aws-credentials@v5
       with:
         aws-access-key-id: ${{ secrets.AWS_SES_ACCESS_KEY }}
         aws-secret-access-key: ${{ secrets.AWS_SES_SECRET_ACCESS_KEY }}
